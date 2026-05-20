@@ -43,6 +43,15 @@ include ':ballerina:ecpositionmanagement'
 include ':ballerina:ecskillsmanagement'
 include ':ballerina:ecworkflow'
 include ':ballerina:employeecentralec'
+include ':ballerina:ecadvances'
+include ':ballerina:ecemployeecentralpayroll'
+include ':ballerina:ecfoundationorganization'
+include ':ballerina:ecglobalassignment'
+include ':ballerina:ecglobalbenefits'
+include ':ballerina:ecincometaxdeclaration'
+include ':ballerina:ecpaymentinformation'
+include ':ballerina:ecpersonalinformation'
+include ':ballerina:ectimeoff'
 
 project(':ballerina').projectDir = file("ballerina")
 project(':ballerina:ecalternativecostdistribution').projectDir = file("ballerina/ecalternativecostdistribution")
@@ -57,6 +66,15 @@ project(':ballerina:ecpositionmanagement').projectDir = file("ballerina/ecpositi
 project(':ballerina:ecskillsmanagement').projectDir = file("ballerina/ecskillsmanagement")
 project(':ballerina:ecworkflow').projectDir = file("ballerina/ecworkflow")
 project(':ballerina:employeecentralec').projectDir = file("ballerina/employeecentralec")
+project(':ballerina:ecadvances').projectDir = file("ballerina/ecadvances")
+project(':ballerina:ecemployeecentralpayroll').projectDir = file("ballerina/ecemployeecentralpayroll")
+project(':ballerina:ecfoundationorganization').projectDir = file("ballerina/ecfoundationorganization")
+project(':ballerina:ecglobalassignment').projectDir = file("ballerina/ecglobalassignment")
+project(':ballerina:ecglobalbenefits').projectDir = file("ballerina/ecglobalbenefits")
+project(':ballerina:ecincometaxdeclaration').projectDir = file("ballerina/ecincometaxdeclaration")
+project(':ballerina:ecpaymentinformation').projectDir = file("ballerina/ecpaymentinformation")
+project(':ballerina:ecpersonalinformation').projectDir = file("ballerina/ecpersonalinformation")
+project(':ballerina:ectimeoff').projectDir = file("ballerina/ectimeoff")
 
 gradleEnterprise {
     buildScan {

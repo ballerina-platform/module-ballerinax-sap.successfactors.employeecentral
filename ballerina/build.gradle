@@ -82,6 +82,15 @@ task build {
     dependsOn(':ballerina:ecskillsmanagement:build')
     dependsOn(':ballerina:ecworkflow:build')
     dependsOn(':ballerina:employeecentralec:build')
+    dependsOn(':ballerina:ecadvances:build')
+    dependsOn(':ballerina:ecemployeecentralpayroll:build')
+    dependsOn(':ballerina:ecfoundationorganization:build')
+    dependsOn(':ballerina:ecglobalassignment:build')
+    dependsOn(':ballerina:ecglobalbenefits:build')
+    dependsOn(':ballerina:ecincometaxdeclaration:build')
+    dependsOn(':ballerina:ecpaymentinformation:build')
+    dependsOn(':ballerina:ecpersonalinformation:build')
+    dependsOn(':ballerina:ectimeoff:build')
 }
 
 publishToMavenLocal.dependsOn build

@@ -41,3 +41,31 @@ This repository encompasses all Ballerina packages pertaining to the SAP Success
 11. **`ballerinax/sap.successfactors.ecworkflow`** - Manages workflow processes within Employee Central including approval workflows, notifications, and process automation.
 
 12. **`ballerinax/sap.successfactors.ecdismissalprotection`** - Handles dismissal protection and termination compliance features including legal requirements and documentation.
+
+### Financial and Payroll
+
+13. **`ballerinax/sap.successfactors.ecadvances`** - Provides APIs for managing employee salary advances, advance eligibility, accumulation, and installment schedules.
+
+14. **`ballerinax/sap.successfactors.ecemployeecentralpayroll`** - Enables access to Employee Central Payroll run results and payroll processing data.
+
+15. **`ballerinax/sap.successfactors.ecpaymentinformation`** - Manages employee payment information including bank accounts, payment methods, and direct deposit details.
+
+16. **`ballerinax/sap.successfactors.ecincometaxdeclaration`** - Handles income tax declaration management including investment declarations and fiscal year configurations.
+
+### Organization and Foundation
+
+17. **`ballerinax/sap.successfactors.ecfoundationorganization`** - Provides access to foundation organization objects including legal entities, departments, divisions, job classifications, cost centers, and pay structures.
+
+18. **`ballerinax/sap.successfactors.ecglobalassignment`** - Manages global assignment data for internationally mobile employees including assignment details and right-to-return records.
+
+### Personal Information
+
+19. **`ballerinax/sap.successfactors.ecpersonalinformation`** - Manages employee personal information including biographical data, addresses, contacts, national IDs, and social accounts.
+
+### Benefits
+
+20. **`ballerinax/sap.successfactors.ecglobalbenefits`** - Provides comprehensive benefits management APIs including insurance plans, savings plans, pension funds, company cars, and benefit enrollments.
+
+### Time Management
+
+21. **`ballerinax/sap.successfactors.ectimeoff`** - Manages time off and leave management including time accounts, holiday calendars, work schedules, and employee time records.

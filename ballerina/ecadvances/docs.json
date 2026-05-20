@@ -1,0 +1,7 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecadvances` package provides APIs to interact with the SAP SuccessFactors Employee Central Advances API.",
+  "communication-scenario": "Advances Management",
+  "import-statement": "import ballerinax/sap.successfactors.ecadvances as advances;",
+  "client-init": "advances:Client advancesClient = check new (",
+  "api-invocation": "advances:AdvancesInstallmentsWrapper result = check advancesClient->listAdvancesInstallmentss();"
+}

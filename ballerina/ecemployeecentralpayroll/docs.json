@@ -1,0 +1,7 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecemployeecentralpayroll` package provides APIs to interact with the SAP SuccessFactors Employee Central Employee Central Payroll API.",
+  "communication-scenario": "Payroll Run Results",
+  "import-statement": "import ballerinax/sap.successfactors.ecemployeecentralpayroll as employeentralpayroll;",
+  "client-init": "employeentralpayroll:Client employeentralpayrollClient = check new (",
+  "api-invocation": "employeentralpayroll:EmployeePayrollRunResultsItemsWrapper result = check employeentralpayrollClient->listEmployeePayrollRunResultsItemss();"
+}

@@ -1,0 +1,7 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecpersonalinformation` package provides APIs to interact with the SAP SuccessFactors Employee Central Personal Information API.",
+  "communication-scenario": "Personal Information",
+  "import-statement": "import ballerinax/sap.successfactors.ecpersonalinformation as personalinformation;",
+  "client-init": "personalinformation:Client personalinformationClient = check new (",
+  "api-invocation": "personalinformation:PerPersonWrapper result = check personalinformationClient->listPerPersons();"
+}

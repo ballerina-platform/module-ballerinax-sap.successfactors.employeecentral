@@ -631,7 +631,7 @@ function sanitizeClient(string modulePath, string apiPostfix) returns boolean|er
             j = j + 2;
         } else if i == serviceUrlLine {
             updatedClientFileLines[j] = clientFileLines[i];
-            string replaceText = "string serviceUrl = string `${hostname}:${port}/" + apiPostfix + "`;";
+            string replaceText = "string serviceUrl = string `https://${hostname}:${port}/" + apiPostfix + "`;";
             updatedClientFileLines[j + 1] = replaceText;
             j = j + 2;
         } else {
@@ -720,7 +720,16 @@ function getModuleList() returns string[] {
         "ecpositionmanagement",
         "ecskillsmanagement",
         "ecworkflow",
-        "employeecentralec"
+        "employeecentralec",
+        "ecadvances",
+        "ecemployeecentralpayroll",
+        "ecfoundationorganization",
+        "ecglobalassignment",
+        "ecglobalbenefits",
+        "ecincometaxdeclaration",
+        "ecpaymentinformation",
+        "ecpersonalinformation",
+        "ectimeoff"
     ];
 }
 

@@ -1,0 +1,7 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecfoundationorganization` package provides APIs to interact with the SAP SuccessFactors Employee Central Foundation Organization API.",
+  "communication-scenario": "Foundation Organization",
+  "import-statement": "import ballerinax/sap.successfactors.ecfoundationorganization as foundationorganization;",
+  "client-init": "foundationorganization:Client foundationorganizationClient = check new (",
+  "api-invocation": "foundationorganization:FOLegalEntityLocalUSAWrapper result = check foundationorganizationClient->listFOLegalEntityLocalUSAs();"
+}

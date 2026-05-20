@@ -1,0 +1,7 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ectimeoff` package provides APIs to interact with the SAP SuccessFactors Employee Central Time Off API.",
+  "communication-scenario": "Time Off Management",
+  "import-statement": "import ballerinax/sap.successfactors.ectimeoff as timeoff;",
+  "client-init": "timeoff:Client timeoffClient = check new (",
+  "api-invocation": "timeoff:EmployeeTimeWrapper result = check timeoffClient->listEmployeeTimes();"
+}

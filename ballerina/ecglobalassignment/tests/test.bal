@@ -1,4 +1,4 @@
-// Copyright (c) 2025, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
+// Copyright (c) 2026, WSO2 LLC. (http://www.wso2.org).
 //
 // WSO2 LLC. licenses this file to you under the Apache License,
 // Version 2.0 (the "License"); you may not use this file except
@@ -14,34 +14,57 @@
 // specific language governing permissions and limitations
 // under the License.
 
+import ballerinax/sap.successfactors.ecglobalassignment.mock as _;
+
+import ballerina/log;
 import ballerina/os;
 import ballerina/test;
 
 configurable boolean isTestOnLiveServer = os:getEnv("IS_TEST_ON_SUCCESSFACTORS_SERVER") == "true";
 
+configurable string hostname = isTestOnLiveServer ? os:getEnv("HOST_NAME") : "localhost";
+configurable string username = isTestOnLiveServer ? os:getEnv("USERNAME") : "admin";
+configurable string password = isTestOnLiveServer ? os:getEnv("PASSWORD") : "admin";
+
+boolean isBalBuild = os:getEnv("IS_BAL_BUILD") == "true";
+string certPathPostFix = isBalBuild ? "../" : "/home/ballerina/ballerina/";
+
 Client sfClient = test:mock(Client);
 
 @test:BeforeSuite
-function initializeClientsForServer() returns error? {
+function initializeClientsForSFServer() returns error? {
     if isTestOnLiveServer {
+        log:printInfo("Running tests on SuccessFactors server");
         sfClient = check new (
-            config = {
+            {
                 auth: {
-                    username: os:getEnv("SF_USERNAME"),
-                    password: os:getEnv("SF_PASSWORD")
+                    username,
+                    password
                 }
             },
-            hostname = os:getEnv("SF_HOSTNAME")
+            hostname
+        );
+    } else {
+        log:printInfo("Running tests on mock server");
+        sfClient = check new (
+            {
+                auth: {
+                    username,
+                    password
+                },
+                secureSocket: {
+                    cert: certPathPostFix + "resources/public.crt"
+                }
+            },
+            hostname,
+            9090
         );
     }
 }
 
-@test:Config
-function testEmpGlobalAssignment() returns error? {
-    if !isTestOnLiveServer {
-        test:assertTrue(true, "Skipping live server test");
-        return;
-    }
-    var result = sfClient->listEmpGlobalAssignments();
-    test:assertTrue(result !is error, "Expected successful response");
+@test:Config {
+}
+function testSecondaryAssignmentsItems() returns error? {
+    Wrapper listSecondaryAssignmentsItemsResult = check sfClient->listSecondaryAssignmentsItems();
+    test:assertTrue(listSecondaryAssignmentsItemsResult !is (), "Result should not be null");
 }

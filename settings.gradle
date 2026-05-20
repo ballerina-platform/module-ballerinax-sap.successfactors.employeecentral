@@ -76,6 +76,9 @@ project(':ballerina:ecpaymentinformation').projectDir = file("ballerina/ecpaymen
 project(':ballerina:ecpersonalinformation').projectDir = file("ballerina/ecpersonalinformation")
 project(':ballerina:ectimeoff').projectDir = file("ballerina/ectimeoff")
 
+include ':examples'
+project(':examples').projectDir = file("examples")
+
 gradleEnterprise {
     buildScan {
         termsOfServiceUrl = 'https://gradle.com/terms-of-service'

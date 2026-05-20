@@ -1,0 +1,9 @@
+[package]
+org = "integration_samples"
+name = "successfactors_to_slack"
+version = "0.1.0"
+distribution = "2201.13.0"
+
+[dependencies]
+"ballerinax/slack" = "3.0.0"
+"ballerinax/sap.successfactors.ecemploymentinformation" = "1.0.0"

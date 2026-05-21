@@ -19,17 +19,17 @@
 
 import ballerina/http;
 
-public type SFOData\.BenefitInsuranceEnrolleeType record {
+public type BenefitInsuranceEnrolleeType record {
     string mdfSystemEffectiveStartDate?;
     string relationShipType?;
 };
 
-public type SFOData\.BenefitSchedulePeriod record {
+public type BenefitSchedulePeriod record {
     string id?;
 };
 
 public type CollectionofBenefitInsuranceDependentDetail record {
-    SFOData\.BenefitInsuranceDependentDetail[] results?;
+    BenefitInsuranceDependentDetail[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitPensionFunds
@@ -51,7 +51,7 @@ public type ListBenefitPensionFundsQueries record {
 };
 
 public type BenefitDeductibleAllowanceEnrollment record {
-    SFOData\.BenefitDeductibleAllowanceEnrollment d?;
+    BenefitDeductibleAllowanceEnrollment d?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceEnrolleeOptions
@@ -80,13 +80,13 @@ public type ListBenefitDocumentssQueries record {
     ("createdBy"|"createdDateTime"|"effectiveStartDate"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"shortName"|"usefulLink")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionMinMaxContributionLimits record {
+public type BenefitPensionMinMaxContributionLimits record {
     string configurationTableId?;
     string effectiveStartDate?;
 };
 
 public type RelatedCollectionSFOData_BenefitOverviewHyperlinkDetails record {
-    SFOData\.BenefitOverviewHyperlinkDetails[] results?;
+    BenefitOverviewHyperlinkDetails[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitDeductibleAllowanceEnrollments
@@ -128,7 +128,7 @@ public type ListBenefitHSAEmployerContributionsQueries record {
 };
 
 public type BenefitInsuranceDependentDetail record {
-    SFOData\.BenefitInsuranceDependentDetail d?;
+    BenefitInsuranceDependentDetail d?;
 };
 
 # Represents the Queries record for the operation: listBenefitPensionAdditionalContributionLimitss
@@ -170,7 +170,7 @@ public type ListBenefitInsuranceCoverageDetailsQueries record {
 };
 
 public type CollectionofBenefitSavingsPlanContingentBeneficiary record {
-    SFOData\.BenefitSavingsPlanContingentBeneficiary[] results?;
+    BenefitSavingsPlanContingentBeneficiary[] results?;
 };
 
 # Represents the Queries record for the operation: listPensionBandingConfigurations
@@ -194,11 +194,11 @@ public type ListPensionBandingConfigurationsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitSavingsPlanERContributionConfigDetail record {
-    SFOData\.BenefitSavingsPlanERContributionConfigDetail[] results?;
+    BenefitSavingsPlanERContributionConfigDetail[] results?;
 };
 
 public type BenefitPensionNonDependentNominees record {
-    SFOData\.BenefitPensionNonDependentNominees d?;
+    BenefitPensionNonDependentNominees d?;
 };
 
 public type Wrapper_19 record {
@@ -206,7 +206,7 @@ public type Wrapper_19 record {
 };
 
 public type BenefitFuelReimbursement record {
-    SFOData\.BenefitFuelReimbursement d?;
+    BenefitFuelReimbursement d?;
 };
 
 # Represents the Queries record for the operation: listEmployeeWithEmployerMatchContributionEntriess
@@ -232,7 +232,7 @@ public type Wrapper_17 record {
 };
 
 public type CollectionofPensionBandingConfigurationDetails record {
-    SFOData\.PensionBandingConfigurationDetails[] results?;
+    PensionBandingConfigurationDetails[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitProgram
@@ -274,22 +274,22 @@ public type Wrapper_11 record {
 };
 
 public type RelatedCollectionSFOData_BenefitBalanceCarryForwardDetail record {
-    SFOData\.BenefitBalanceCarryForwardDetail[] results?;
+    BenefitBalanceCarryForwardDetail[] results?;
 };
 
 public type CreatedBenefitEmployeeLifeEventDeclarationForm record {
-    SFOData\.BenefitEmployeeLifeEventDeclarationForm d?;
+    BenefitEmployeeLifeEventDeclarationForm d?;
 };
 
 public type BenefitPensionDependentNominees record {
-    SFOData\.BenefitPensionDependentNominees d?;
+    BenefitPensionDependentNominees d?;
 };
 
 public type CollectionofIRSPremiumTable record {
-    SFOData\.IRSPremiumTable[] results?;
+    IRSPremiumTable[] results?;
 };
 
-public type SFOData\.BenefitHyperlinkConfiguration record {
+public type BenefitHyperlinkConfiguration record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string id?;
@@ -333,10 +333,10 @@ public type ListImputedCostForAgeRangessQueries record {
     ("IRSPremiumTable_configurationId"|"IRSPremiumTable_effectiveStartDate"|"ageFrom"|"ageTo"|"costPerAge"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitsConfirmationStatementConfiguration record {
+public type BenefitsConfirmationStatementConfiguration record {
     string effectiveStartDate?;
     string legalEntity?;
-    SFOData\.BenefitLegalEntity legalEntityNav?;
+    BenefitLegalEntity legalEntityNav?;
 };
 
 # Represents the Queries record for the operation: listLifeEventForBenefits
@@ -360,7 +360,7 @@ public type ListLifeEventForBenefitsQueries record {
 };
 
 public type CollectionofBenefitCompanyCarAllowedModels record {
-    SFOData\.BenefitCompanyCarAllowedModels[] results?;
+    BenefitCompanyCarAllowedModels[] results?;
 };
 
 # Represents the Queries record for the operation: listInsuranceEnrollmentFieldsConfigurations
@@ -434,11 +434,11 @@ public type GetSavingsAccountTierConfigurationQueries record {
 };
 
 public type BenefitPensionEnrollmentContributionDetail record {
-    SFOData\.BenefitPensionEnrollmentContributionDetail d?;
+    BenefitPensionEnrollmentContributionDetail d?;
 };
 
 public type BenefitPensionAdditionalContributionLimits record {
-    SFOData\.BenefitPensionAdditionalContributionLimits d?;
+    BenefitPensionAdditionalContributionLimits d?;
 };
 
 # Represents the Queries record for the operation: listBenefitInsuranceRateCharts
@@ -488,11 +488,11 @@ public type ListBenefitSavingsPlanERContributionConfigsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitCompanyCarRecommendedVendors record {
-    SFOData\.BenefitCompanyCarRecommendedVendors[] results?;
+    BenefitCompanyCarRecommendedVendors[] results?;
 };
 
 public type CollectionofBenefitSavingsPlanCatchUpDetail record {
-    SFOData\.BenefitSavingsPlanCatchUpDetail[] results?;
+    BenefitSavingsPlanCatchUpDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitLifeEventConfiguration
@@ -504,15 +504,15 @@ public type GetBenefitLifeEventConfigurationQueries record {
 };
 
 public type BenefitPensionAdditionalEmployeeContributionDetail record {
-    SFOData\.BenefitPensionAdditionalEmployeeContributionDetail d?;
+    BenefitPensionAdditionalEmployeeContributionDetail d?;
 };
 
 public type CollectionofBenefitDeductionDetails record {
-    SFOData\.BenefitDeductionDetails[] results?;
+    BenefitDeductionDetails[] results?;
 };
 
 public type RelatedCollectionSFOData_BenefitFuelReimbursementClaimDetail record {
-    SFOData\.BenefitFuelReimbursementClaimDetail[] results?;
+    BenefitFuelReimbursementClaimDetail[] results?;
 };
 
 public type Wrapper_49 record {
@@ -550,7 +550,7 @@ public type Wrapper_45 record {
 };
 
 public type CollectionofBenefitFuelReimbursement record {
-    SFOData\.BenefitFuelReimbursement[] results?;
+    BenefitFuelReimbursement[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitPensionFundEnrollmentContributionDetail
@@ -561,20 +561,20 @@ public type GetBenefitPensionFundEnrollmentContributionDetailQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"createdBy"|"createdDateTime"|"employeeContributionAmount"|"employeeContributionPercentage"|"employerContributionAmount"|"employerContributionPercentage"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"pensionFund")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionStatutoryMinimumLookup record {
+public type BenefitPensionStatutoryMinimumLookup record {
     string effectiveStartDate?;
     string externalCode?;
 };
 
 public type ModifiedBenefitEmployeeLifeEventDeclarationForm record {
-    SFOData\.BenefitEmployeeLifeEventDeclarationForm d?;
+    BenefitEmployeeLifeEventDeclarationForm d?;
 };
 
 public type RelatedCollectionSFOData_BenefitSchedulePeriod record {
-    SFOData\.BenefitSchedulePeriod[] results?;
+    BenefitSchedulePeriod[] results?;
 };
 
-public type SFOData\.BenefitOverviewHyperlinkDetails record {
+public type BenefitOverviewHyperlinkDetails record {
     string BenefitOverviewHyperlinkConfiguration_hyperlinkConfigurationId?;
     string id?;
 };
@@ -606,11 +606,11 @@ public type ListBenefitPensionFundEnrollmentContributionDetailsQueries record {
 };
 
 public type CollectionofBenefitDeductibleAllowanceEnrollment record {
-    SFOData\.BenefitDeductibleAllowanceEnrollment[] results?;
+    BenefitDeductibleAllowanceEnrollment[] results?;
 };
 
 public type PensionBandingConfiguration record {
-    SFOData\.PensionBandingConfiguration d?;
+    PensionBandingConfiguration d?;
 };
 
 # Represents the Queries record for the operation: getBenefitSavingsPlanPrimaryBeneficiary
@@ -627,7 +627,7 @@ public type GetBenefitEmployeeLifeEventDeclarationFormQueries record {
     ("createdBy"|"createdDateTime"|"employeeLifeEventId"|"lastModifiedBy"|"lastModifiedDateTime"|"lifeEventDate"|"lifeEventId"|"mdfSystemRecordStatus"|"workerId")[] \$select?;
 };
 
-public type SFOData\.BenefitInsurancePlanUSA record {
+public type BenefitInsurancePlanUSA record {
     string BenefitInsurancePlan_effectiveStartDate?;
     string BenefitInsurancePlan_id?;
     string id?;
@@ -682,7 +682,7 @@ public type Wrapper_57 record {
     CollectionofBenefitSavingsPlanEnrollmentContributionDetail d?;
 };
 
-public type SFOData\.SavingsAccountDeductionDetails record {
+public type SavingsAccountDeductionDetails record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string SavingsAccountBenefitDetails_externalCode?;
@@ -719,7 +719,7 @@ public type Wrapper_56 record {
 };
 
 public type CollectionofBenefitPensionFundEnrollmentContributionDetail record {
-    SFOData\.BenefitPensionFundEnrollmentContributionDetail[] results?;
+    BenefitPensionFundEnrollmentContributionDetail[] results?;
 };
 
 public type Wrapper_53 record {
@@ -759,7 +759,7 @@ public type Wrapper_50 record {
 };
 
 public type CollectionofBenefitsConfigUIScreenLookup record {
-    SFOData\.BenefitsConfigUIScreenLookup[] results?;
+    BenefitsConfigUIScreenLookup[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitSavingsPlanSubTypeCountryLookups
@@ -801,7 +801,7 @@ public type ListBenefitSchedulePeriodsQueries record {
 };
 
 public type CollectionofBenefitSavingsPlanSubTypeCountryLookup record {
-    SFOData\.BenefitSavingsPlanSubTypeCountryLookup[] results?;
+    BenefitSavingsPlanSubTypeCountryLookup[] results?;
 };
 
 public type Wrapper_28 record {
@@ -821,7 +821,7 @@ public type Wrapper_25 record {
 };
 
 public type BenefitEvent record {
-    SFOData\.BenefitEvent d?;
+    BenefitEvent d?;
 };
 
 public type Wrapper_22 record {
@@ -829,7 +829,7 @@ public type Wrapper_22 record {
 };
 
 public type BenefitSavingsPlanSubType record {
-    SFOData\.BenefitSavingsPlanSubType d?;
+    BenefitSavingsPlanSubType d?;
 };
 
 public type Wrapper_23 record {
@@ -868,28 +868,18 @@ public type ListPensionBandingConfigurationDetailsQueries record {
     ("PensionBandingConfiguration_bandingConfigurationId"|"PensionBandingConfiguration_effectiveStartDate"|"bandingDetailsId"|"createdBy"|"createdDateTime"|"employeePercentage"|"employerPercentage"|"lastModifiedBy"|"lastModifiedDateTime"|"lowerBandValue"|"mdfSystemRecordStatus"|"upperBandValue")[] \$select?;
 };
 
-public type SFOData\.PensionBandingConfiguration record {
-    string bandingConfigurationId?;
-    string effectiveStartDate?;
-    RelatedCollectionSFOData_PensionBandingConfigurationDetails pensionBandingConfigurationDetails?;
-};
-
-public type SFOData\.BenefitCompanyHousingEnrollment record {
+public type BenefitCompanyHousingEnrollment record {
     string BenefitEnrollment_effectiveStartDate?;
     string BenefitEnrollment_id?;
     string id?;
 };
 
-public type SavingsAccountDeductionDetails record {
-    SFOData\.SavingsAccountDeductionDetails d?;
-};
-
 public type BenefitFuelReimbursementClaimDetail record {
-    SFOData\.BenefitFuelReimbursementClaimDetail d?;
+    BenefitFuelReimbursementClaimDetail d?;
 };
 
 public type EmployeeWithEmployerMatchContributionEntries record {
-    SFOData\.EmployeeWithEmployerMatchContributionEntries d?;
+    EmployeeWithEmployerMatchContributionEntries d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeWithEmployerMatchContributionEntries
@@ -899,7 +889,7 @@ public type GetEmployeeWithEmployerMatchContributionEntriesQueries record {
 };
 
 public type BenefitCompanyCarRecommendedVendors record {
-    SFOData\.BenefitCompanyCarRecommendedVendors d?;
+    BenefitCompanyCarRecommendedVendors d?;
 };
 
 # Represents the Queries record for the operation: getBenefitEnrollmentDependencyDetails
@@ -910,14 +900,9 @@ public type GetBenefitEnrollmentDependencyDetailsQueries record {
     ("BenefitEnrollmentDependencyConfiguration_benefitDependencyId"|"BenefitEnrollmentDependencyConfiguration_effectiveStartDate"|"createdBy"|"createdDateTime"|"dependentBenefit"|"dependentInsurancePlan"|"enrollmentCondition"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"leadBenefit"|"leadInsurancePlan"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitDependentDetail record {
+public type BenefitDependentDetail record {
     string BenefitEmployeeClaim_id?;
     string dependentName?;
-};
-
-public type SFOData\.BenefitEvent record {
-    string effectiveStartDate?;
-    string eventCode?;
 };
 
 public type Wrapper_37 record {
@@ -954,11 +939,6 @@ public type Wrapper_32 record {
     CollectionofBenefitEmployeeClaimDetail d?;
 };
 
-public type SFOData\.BenefitFuelReimbursement record {
-    string BenefitEmployeeClaim_id?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: getBenefitInsuranceProvider
 public type GetBenefitInsuranceProviderQueries record {
     # Expand related entities, see [OData Expand](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -967,11 +947,11 @@ public type GetBenefitInsuranceProviderQueries record {
     ("contactEmail"|"contactPerson"|"contactPhone"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"providerId"|"providerName")[] \$select?;
 };
 
-public type SFOData\.BenefitSavingsPlanEnrollmentContributionDetail record {
+public type BenefitSavingsPlanEnrollmentContributionDetail record {
     string BenefitEnrollment_effectiveStartDate?;
     string BenefitEnrollment_id?;
     string id?;
-    SFOData\.BenefitPensionFund pensionFundNav?;
+    BenefitPensionFund pensionFundNav?;
 };
 
 # Represents the Queries record for the operation: listBenefitsConfigUIScreenLookups
@@ -999,7 +979,7 @@ public type GetBenefitPensionMinMaxContributionLimitsQueries record {
 };
 
 public type PensionBandingConfigurationDetails record {
-    SFOData\.PensionBandingConfigurationDetails d?;
+    PensionBandingConfigurationDetails d?;
 };
 
 # Represents the Queries record for the operation: getBenefitEvent
@@ -1058,7 +1038,7 @@ public type GetBenefitHSAEmployerContributionTierDetailQueries record {
     ("BenefitHSAEmployerContributionDetail_externalCode"|"BenefitHSAEmployerContribution_effectiveStartDate"|"BenefitHSAEmployerContribution_externalCode"|"coverageTier"|"createdBy"|"createdDateTime"|"employerContributionAmount"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.EmployeeWithEmployerMatchContributions record {
+public type EmployeeWithEmployerMatchContributions record {
     string configurationId?;
     string effectiveStartDate?;
     RelatedCollectionSFOData_EmployeeWithEmployerMatchContributionEntries employeeWithEmployerMatchContributionEntries?;
@@ -1084,7 +1064,7 @@ public type ListBenefitSchedulessQueries record {
     ("createdBy"|"createdDateTime"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"scheduleName")[] \$select?;
 };
 
-public type SFOData\.BenefitSavingsPlanSubTypeCountryLookup record {
+public type BenefitSavingsPlanSubTypeCountryLookup record {
     string country?;
     string effectiveStartDate?;
     RelatedCollectionSFOData_BenefitSavingsPlanSubType benefitSavingsPlanSubTypes?;
@@ -1097,7 +1077,7 @@ public type GetBenefitPensionEmployeeContributionDetailQueries record {
 };
 
 public type BenefitDeductionDetails record {
-    SFOData\.BenefitDeductionDetails d?;
+    BenefitDeductionDetails d?;
 };
 
 # Represents the Queries record for the operation: listBenefitEmployeeOptoutRequestss
@@ -1151,14 +1131,14 @@ public type ListBenefitBalanceCarryForwardsQueries record {
 };
 
 public type CollectionofACAReportingDependentDetails record {
-    SFOData\.ACAReportingDependentDetails[] results?;
+    ACAReportingDependentDetails[] results?;
 };
 
 public type BenefitPensionFundEnrollmentContributionDetail record {
-    SFOData\.BenefitPensionFundEnrollmentContributionDetail d?;
+    BenefitPensionFundEnrollmentContributionDetail d?;
 };
 
-public type SFOData\.BenefitPensionEmployeeContributionDetail record {
+public type BenefitPensionEmployeeContributionDetail record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string id?;
@@ -1188,14 +1168,8 @@ public type ListBenefitSavingsPlanEnrollmentDetailsQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"annualContributionAmount"|"annualMaxContributionAmount"|"annualMinContributionAmount"|"calculatedAnnualLimit"|"createdBy"|"createdDateTime"|"empBenefitPayComponent"|"estimatedAnnualContribution"|"estimatedEmployerContributionAmount"|"hsaAnnualContributionAmount"|"hsaPayPeriodContributionAmount"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payPeriodContributionAmount"|"payPeriodsRemaining"|"savingsPlanSubType"|"ytdContribution")[] \$select?;
 };
 
-public type SFOData\.EmployeeWithEmployerMatchContributionEntries record {
-    string EmployeeWithEmployerMatchContributions_configurationId?;
-    string EmployeeWithEmployerMatchContributions_effectiveStartDate?;
-    string eeERMatchValuesID?;
-};
-
 public type CollectionofBenefitCompanyCarClaim record {
-    SFOData\.BenefitCompanyCarClaim[] results?;
+    BenefitCompanyCarClaim[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitsException
@@ -1233,7 +1207,7 @@ public type GetBenefitProgramEnrollmentQueries record {
 };
 
 public type BenefitLeaveTravelReimbursementClaim record {
-    SFOData\.BenefitLeaveTravelReimbursementClaim d?;
+    BenefitLeaveTravelReimbursementClaim d?;
 };
 
 public type Wrapper_9 record {
@@ -1245,7 +1219,7 @@ public type Wrapper_4 record {
 };
 
 public type CollectionofBenefitFuelReimbursementClaimDetail record {
-    SFOData\.BenefitFuelReimbursementClaimDetail[] results?;
+    BenefitFuelReimbursementClaimDetail[] results?;
 };
 
 public type Wrapper_6 record {
@@ -1253,7 +1227,7 @@ public type Wrapper_6 record {
 };
 
 public type BenefitCompanyCarClaim record {
-    SFOData\.BenefitCompanyCarClaim d?;
+    BenefitCompanyCarClaim d?;
 };
 
 public type Wrapper_1 record {
@@ -1261,7 +1235,7 @@ public type Wrapper_1 record {
 };
 
 public type BenefitSavingsPlanPrimaryBeneficiary record {
-    SFOData\.BenefitSavingsPlanPrimaryBeneficiary d?;
+    BenefitSavingsPlanPrimaryBeneficiary d?;
 };
 
 public type Wrapper_3 record {
@@ -1289,7 +1263,7 @@ public type ListIRSPremiumTablesQueries record {
 };
 
 public type CollectionofEmployeeWithEmployerMatchContributionEntries record {
-    SFOData\.EmployeeWithEmployerMatchContributionEntries[] results?;
+    EmployeeWithEmployerMatchContributionEntries[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitSavingsPlanTierConfigurations
@@ -1332,12 +1306,6 @@ public type ListBenefitLifeEventConfigurationsQueries record {
     ("benefitEvent"|"configurationId"|"configurationName"|"createdBy"|"createdDateTime"|"effectiveStartDate"|"exceptionForPeriod"|"exceptionWindowRule"|"lastModifiedBy"|"lastModifiedDateTime"|"legalEntity"|"mdfSystemEffectiveEndDate"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.PensionBandingConfigurationDetails record {
-    string PensionBandingConfiguration_bandingConfigurationId?;
-    string PensionBandingConfiguration_effectiveStartDate?;
-    string bandingDetailsId?;
-};
-
 # Represents the Headers record for the operation: deleteBenefitEmployeeLifeEventDeclarationForm
 public type DeleteBenefitEmployeeLifeEventDeclarationFormHeaders record {
     # ETag
@@ -1345,10 +1313,10 @@ public type DeleteBenefitEmployeeLifeEventDeclarationFormHeaders record {
 };
 
 public type CollectionofImputedCostForAgeRanges record {
-    SFOData\.ImputedCostForAgeRanges[] results?;
+    ImputedCostForAgeRanges[] results?;
 };
 
-public type SFOData\.BenefitSchedules record {
+public type BenefitSchedules record {
     string id?;
     RelatedCollectionSFOData_BenefitSchedulePeriod periods?;
 };
@@ -1413,7 +1381,7 @@ public type GetBenefitProgramEnrollmentDetailQueries record {
     ("BenefitProgramEnrollment_effectiveStartDate"|"BenefitProgramEnrollment_id"|"benefit"|"benefitAmount"|"benefitAmountForComparison"|"benefitCurrency"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"selectionId")[] \$select?;
 };
 
-public type SFOData\.BenefitCompanyHousing record {
+public type BenefitCompanyHousing record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string id?;
@@ -1426,11 +1394,11 @@ public type GetBenefitEmployeeClaimDetailQueries record {
 };
 
 public type CollectionofBenefitLegalEntity record {
-    SFOData\.BenefitLegalEntity[] results?;
+    BenefitLegalEntity[] results?;
 };
 
 public type CollectionofBenefitsConfirmationStatementConfiguration record {
-    SFOData\.BenefitsConfirmationStatementConfiguration[] results?;
+    BenefitsConfirmationStatementConfiguration[] results?;
 };
 
 # Represents the Queries record for the operation: getLifeEventForBenefit
@@ -1441,20 +1409,16 @@ public type GetLifeEventForBenefitQueries record {
     ("createdBy"|"createdDateTime"|"daysLimitToReport"|"dependentInfoLinkApplicable"|"lastModifiedBy"|"lastModifiedDateTime"|"lifeEventId"|"lifeEventName"|"mdfSystemRecordStatus"|"personalInfoLinkApplicable")[] \$select?;
 };
 
-public type BenefitInsuranceEnrolleeType record {
-    SFOData\.BenefitInsuranceEnrolleeType d?;
-};
-
-public type SFOData\.BenefitLegalEntity record {
+public type BenefitLegalEntity record {
     string company?;
 };
 
 public type BenefitSavingsPlanEnrollmentDetails record {
-    SFOData\.BenefitSavingsPlanEnrollmentDetails d?;
+    BenefitSavingsPlanEnrollmentDetails d?;
 };
 
 public type CollectionofBenefitCompanyCar record {
-    SFOData\.BenefitCompanyCar[] results?;
+    BenefitCompanyCar[] results?;
 };
 
 # Represents the Queries record for the operation: getEmployeeWithEmployerMatchContributions
@@ -1500,7 +1464,7 @@ public type ListBenefitSavingsPlanCatchUpDetailsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitLegalEntity record {
-    SFOData\.BenefitLegalEntity[] results?;
+    BenefitLegalEntity[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitOverviewHyperlinkConfiguration
@@ -1558,10 +1522,10 @@ public type ListBenefitCompanyCarEnrollmentsQueries record {
 };
 
 public type CollectionofBenefitPensionEmployeeContributionDetail record {
-    SFOData\.BenefitPensionEmployeeContributionDetail[] results?;
+    BenefitPensionEmployeeContributionDetail[] results?;
 };
 
-public type SFOData\.BenefitDocuments record {
+public type BenefitDocuments record {
     string effectiveStartDate?;
     string id?;
 };
@@ -1638,7 +1602,7 @@ public type ListBenefitOverviewHyperlinkConfigurationsQueries record {
     ("createdBy"|"createdDateTime"|"hyperlinkConfigurationId"|"hyperlinkConfigurationName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionFund record {
+public type BenefitPensionFund record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string id?;
@@ -1665,7 +1629,7 @@ public type ListBenefitsQueries record {
 };
 
 public type LifeEventForBenefit record {
-    SFOData\.LifeEventForBenefit d?;
+    LifeEventForBenefit d?;
 };
 
 # Represents the Queries record for the operation: listBenefitEmployeeLifeEventDeclarationForms
@@ -1745,11 +1709,7 @@ public type GetBenefitInsuranceRateChartFixedAmountQueries record {
 };
 
 public type BenefitsConfigUIScreenLookup record {
-    SFOData\.BenefitsConfigUIScreenLookup d?;
-};
-
-public type BenefitDocuments record {
-    SFOData\.BenefitDocuments d?;
+    BenefitsConfigUIScreenLookup d?;
 };
 
 # Represents the Queries record for the operation: getBenefitEnrollment
@@ -1761,7 +1721,7 @@ public type GetBenefitEnrollmentQueries record {
 };
 
 public type CollectionofBenefitInsurancePlanUSA record {
-    SFOData\.BenefitInsurancePlanUSA[] results?;
+    BenefitInsurancePlanUSA[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitSchedulePeriod
@@ -1771,7 +1731,7 @@ public type GetBenefitSchedulePeriodQueries record {
 };
 
 public type CollectionofBenefitBalanceCarryForward record {
-    SFOData\.BenefitBalanceCarryForward[] results?;
+    BenefitBalanceCarryForward[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitEnrollmentDependencyConfiguration
@@ -1822,18 +1782,18 @@ public type GetBenefitLegalEntityQueries record {
     ("company"|"createdBy"|"createdDate"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"legalEntityName"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type SFOData\.BenefitSavingsPlanERContributionConfigDetail record {
+public type BenefitSavingsPlanERContributionConfigDetail record {
     string BenefitSavingsPlanERContributionConfig_effectiveStartDate?;
     string BenefitSavingsPlanERContributionConfig_employerContributionId?;
     string employerContributionDetailId?;
 };
 
 public type CollectionofSavingsAccountDeductionDetails record {
-    SFOData\.SavingsAccountDeductionDetails[] results?;
+    SavingsAccountDeductionDetails[] results?;
 };
 
 public type CollectionofBenefitPensionDependentNominees record {
-    SFOData\.BenefitPensionDependentNominees[] results?;
+    BenefitPensionDependentNominees[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitEmployeeClaims
@@ -1863,7 +1823,7 @@ public type GetBenefitPaymentOptionsQueries record {
 };
 
 public type CollectionofBenefitPensionFund record {
-    SFOData\.BenefitPensionFund[] results?;
+    BenefitPensionFund[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitPensionEnrollmentContributionDetails
@@ -1905,14 +1865,14 @@ public type ListSavingsAccountTierConfigurationsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitSavingsPlanSubType record {
-    SFOData\.BenefitSavingsPlanSubType[] results?;
+    BenefitSavingsPlanSubType[] results?;
 };
 
 public type CollectionofBenefitDependentDetail record {
-    SFOData\.BenefitDependentDetail[] results?;
+    BenefitDependentDetail[] results?;
 };
 
-public type SFOData\.BenefitCompanyCar record {
+public type BenefitCompanyCar record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string benefitCompanyCarId?;
@@ -1921,22 +1881,14 @@ public type SFOData\.BenefitCompanyCar record {
     RelatedCollectionSFOData_BenefitCompanyCarLeaseServiceProvider carLeaseServiceProviders?;
 };
 
-public type SFOData\.IRSPremiumTable record {
+public type IRSPremiumTable record {
     string configurationId?;
     string effectiveStartDate?;
     RelatedCollectionSFOData_ImputedCostForAgeRanges imputedCostForAgeRanges?;
 };
 
-public type BenefitSavingsPlanEnrollmentContributionDetail record {
-    SFOData\.BenefitSavingsPlanEnrollmentContributionDetail d?;
-};
-
-public type BenefitSchedules record {
-    SFOData\.BenefitSchedules d?;
-};
-
 public type CollectionofBenefitEmployeeClaimDetail record {
-    SFOData\.BenefitEmployeeClaimDetail[] results?;
+    BenefitEmployeeClaimDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getInsuranceBenefitDetails
@@ -1948,15 +1900,15 @@ public type GetInsuranceBenefitDetailsQueries record {
 };
 
 public type BenefitSavingsPlanContingentBeneficiary record {
-    SFOData\.BenefitSavingsPlanContingentBeneficiary d?;
+    BenefitSavingsPlanContingentBeneficiary d?;
 };
 
 public type RelatedCollectionSFOData_BenefitInsuranceEnrolleeType record {
-    SFOData\.BenefitInsuranceEnrolleeType[] results?;
+    BenefitInsuranceEnrolleeType[] results?;
 };
 
 public type CollectionofBenefitSavingsPlanPrimaryBeneficiary record {
-    SFOData\.BenefitSavingsPlanPrimaryBeneficiary[] results?;
+    BenefitSavingsPlanPrimaryBeneficiary[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitCompanyCarLeaseServiceProviders
@@ -1998,10 +1950,10 @@ public type ListBenefitInsuranceProvidersQueries record {
 };
 
 public type CollectionofBenefitLeaveTravelReimbursementClaim record {
-    SFOData\.BenefitLeaveTravelReimbursementClaim[] results?;
+    BenefitLeaveTravelReimbursementClaim[] results?;
 };
 
-public type SFOData\.ACAReportingDependentDetails record {
+public type ACAReportingDependentDetails record {
     string ACAReportingInformation_externalCode?;
     string externalCode?;
 };
@@ -2014,23 +1966,8 @@ public type GetBenefitPensionAdditionalEmployeeContributionDetailQueries record 
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"avcContributionId"|"avcLimitApplicable"|"avcLimitConfiguration"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitDeductionDetails record {
-    string Benefit_benefitId?;
-    string Benefit_effectiveStartDate?;
-    string dedcutionDetailId?;
-};
-
-public type BenefitCompanyHousing record {
-    SFOData\.BenefitCompanyHousing d?;
-};
-
-public type SFOData\.BenefitSavingsPlanSubType record {
-    string benefitSavingsPlanID?;
-    string effectiveStartDate?;
-};
-
 public type CollectionofBenefitSchedulePeriod record {
-    SFOData\.BenefitSchedulePeriod[] results?;
+    BenefitSchedulePeriod[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitCompanyHousingEnrollment
@@ -2066,7 +2003,7 @@ public type GetBenefitBalanceCarryForwardDetailQueries record {
 };
 
 public type CollectionofBenefitPensionEnrollmentContributionDetail record {
-    SFOData\.BenefitPensionEnrollmentContributionDetail[] results?;
+    BenefitPensionEnrollmentContributionDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitSavingsPlanCatchUpDetail
@@ -2076,11 +2013,11 @@ public type GetBenefitSavingsPlanCatchUpDetailQueries record {
 };
 
 public type BenefitBalanceCarryForward record {
-    SFOData\.BenefitBalanceCarryForward d?;
+    BenefitBalanceCarryForward d?;
 };
 
 public type RelatedCollectionSFOData_BenefitInsuranceDependentDetail record {
-    SFOData\.BenefitInsuranceDependentDetail[] results?;
+    BenefitInsuranceDependentDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceCoverageOptions
@@ -2098,15 +2035,15 @@ public type GetBenefitFuelReimbursementQueries record {
 };
 
 public type CollectionofBenefitDocuments record {
-    SFOData\.BenefitDocuments[] results?;
+    BenefitDocuments[] results?;
 };
 
 public type CollectionofBenefitOverviewHyperlinkDetails record {
-    SFOData\.BenefitOverviewHyperlinkDetails[] results?;
+    BenefitOverviewHyperlinkDetails[] results?;
 };
 
 public type CollectionofBenefitSavingsPlanEnrollmentDetails record {
-    SFOData\.BenefitSavingsPlanEnrollmentDetails[] results?;
+    BenefitSavingsPlanEnrollmentDetails[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitCompanyCarRecommendedVendorss
@@ -2125,12 +2062,6 @@ public type ListBenefitCompanyCarRecommendedVendorssQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("carVendorName"|"createdBy"|"createdDate"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
-};
-
-public type SFOData\.BenefitSavingsPlanContingentBeneficiary record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: listBenefitCompanyCarAllowedModelss
@@ -2152,33 +2083,21 @@ public type ListBenefitCompanyCarAllowedModelssQueries record {
 };
 
 public type CollectionofBenefitOverviewHyperlinkConfiguration record {
-    SFOData\.BenefitOverviewHyperlinkConfiguration[] results?;
-};
-
-public type BenefitOverviewHyperlinkDetails record {
-    SFOData\.BenefitOverviewHyperlinkDetails d?;
+    BenefitOverviewHyperlinkConfiguration[] results?;
 };
 
 public type CollectionofBenefitCompanyHousingEnrollment record {
-    SFOData\.BenefitCompanyHousingEnrollment[] results?;
-};
-
-public type BenefitSavingsPlanERContributionConfigDetail record {
-    SFOData\.BenefitSavingsPlanERContributionConfigDetail d?;
+    BenefitCompanyHousingEnrollment[] results?;
 };
 
 public type CollectionofBenefitSchedules record {
-    SFOData\.BenefitSchedules[] results?;
+    BenefitSchedules[] results?;
 };
 
-public type SFOData\.BenefitSavingsPlanERContributionConfig record {
+public type BenefitSavingsPlanERContributionConfig record {
     string effectiveStartDate?;
     string employerContributionId?;
     RelatedCollectionSFOData_BenefitSavingsPlanERContributionConfigDetail employerContributionDetail?;
-};
-
-public type BenefitCompanyHousingEnrollment record {
-    SFOData\.BenefitCompanyHousingEnrollment d?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -2225,16 +2144,8 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type EmployeeWithEmployerMatchContributions record {
-    SFOData\.EmployeeWithEmployerMatchContributions d?;
-};
-
 public type CollectionofLifeEventForBenefit record {
-    SFOData\.LifeEventForBenefit[] results?;
-};
-
-public type BenefitSavingsPlanSubTypeCountryLookup record {
-    SFOData\.BenefitSavingsPlanSubTypeCountryLookup d?;
+    LifeEventForBenefit[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitSavingsPlanContingentBeneficiarys
@@ -2283,12 +2194,8 @@ public type ListBenefitsIntegrationOneTimeInfosQueries record {
     ("benefit"|"benefitEnrollment"|"benefitSchedulePeriod"|"category"|"createdBy"|"createdDateTime"|"currency"|"effectiveStatus"|"externalName"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"payCompDate"|"payComponent"|"recordStatus"|"reference"|"unitOfMeasure"|"value"|"workerId")[] \$select?;
 };
 
-public type BenefitDependentDetail record {
-    SFOData\.BenefitDependentDetail d?;
-};
-
 public type CollectionofBenefitHyperlinkConfiguration record {
-    SFOData\.BenefitHyperlinkConfiguration[] results?;
+    BenefitHyperlinkConfiguration[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitEffectiveDateConfiguration
@@ -2312,7 +2219,7 @@ public type Wrapper_102 record {
 };
 
 public type CollectionofBenefitSavingsPlanEnrollmentContributionDetail record {
-    SFOData\.BenefitSavingsPlanEnrollmentContributionDetail[] results?;
+    BenefitSavingsPlanEnrollmentContributionDetail[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitPensionAdditionalEmployeeContributionDetails
@@ -2336,7 +2243,7 @@ public type ListBenefitPensionAdditionalEmployeeContributionDetailsQueries recor
 };
 
 public type CollectionofBenefitCompanyCarRecommendedVendors record {
-    SFOData\.BenefitCompanyCarRecommendedVendors[] results?;
+    BenefitCompanyCarRecommendedVendors[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitEnrollments
@@ -2377,16 +2284,12 @@ public type ListBenefitPensionEmployerContributionDetailsQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"createdBy"|"createdDate"|"createdDateTime"|"employeeCanEditEmployerContribution"|"employerContributionAmount"|"employerContributionPercentage"|"employerContributionRule"|"employerContributionType"|"employerStatutoryMinimumAmount"|"employerStatutoryMinimumPercentage"|"id"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type BenefitLegalEntity record {
-    SFOData\.BenefitLegalEntity d?;
-};
-
 public type CollectionofBenefitPensionStatutoryMinimumLookup record {
-    SFOData\.BenefitPensionStatutoryMinimumLookup[] results?;
+    BenefitPensionStatutoryMinimumLookup[] results?;
 };
 
 public type RelatedCollectionSFOData_BenefitEmployeeClaimDetail record {
-    SFOData\.BenefitEmployeeClaimDetail[] results?;
+    BenefitEmployeeClaimDetail[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitDeductionDetails
@@ -2425,12 +2328,8 @@ public type ListBenefitDependentDetailsQueries record {
     ("BenefitEmployeeClaim_id"|"createdBy"|"createdDateTime"|"dateOfBirth"|"dependentName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"relationShipType")[] \$select?;
 };
 
-public type BenefitPensionEmployeeContributionDetail record {
-    SFOData\.BenefitPensionEmployeeContributionDetail d?;
-};
-
 public type BenefitCompanyCarLeaseServiceProvider record {
-    SFOData\.BenefitCompanyCarLeaseServiceProvider d?;
+    BenefitCompanyCarLeaseServiceProvider d?;
 };
 
 # Represents the Queries record for the operation: getBenefitCompanyCarClaim
@@ -2439,23 +2338,12 @@ public type GetBenefitCompanyCarClaimQueries record {
     ("BenefitEmployeeClaim_id"|"carModel"|"carValue"|"carVendor"|"createdBy"|"createdDateTime"|"currency"|"id"|"installmentFrequency"|"lastModifiedBy"|"lastModifiedDateTime"|"leaseServiceProvider"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"policyDuration"|"unitOfPeriod")[] \$select?;
 };
 
-public type BenefitInsurancePlanUSA record {
-    SFOData\.BenefitInsurancePlanUSA d?;
-};
-
 public type CollectionofBenefitSavingsPlanERContributionConfigDetail record {
-    SFOData\.BenefitSavingsPlanERContributionConfigDetail[] results?;
+    BenefitSavingsPlanERContributionConfigDetail[] results?;
 };
 
 public type BenefitEmployeeClaimDetail record {
-    SFOData\.BenefitEmployeeClaimDetail d?;
-};
-
-public type SFOData\.BenefitPensionAdditionalEmployeeContributionDetail record {
-    string Benefit_benefitId?;
-    string Benefit_effectiveStartDate?;
-    string avcContributionId?;
-    RelatedCollectionSFOData_BenefitPensionAdditionalContributionLimits avcLimitConfigurationNav?;
+    BenefitEmployeeClaimDetail d?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceCoverage
@@ -2497,11 +2385,7 @@ public type ListBenefitContactsQueries record {
 };
 
 public type CollectionofInsuranceEnrollmentFieldsConfiguration record {
-    SFOData\.InsuranceEnrollmentFieldsConfiguration[] results?;
-};
-
-public type BenefitSchedulePeriod record {
-    SFOData\.BenefitSchedulePeriod d?;
+    InsuranceEnrollmentFieldsConfiguration[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitInsuranceDependentDetails
@@ -2541,7 +2425,7 @@ public type ListBenefitCompanyCarClaimsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitInsuranceRateChart record {
-    SFOData\.BenefitInsuranceRateChart[] results?;
+    BenefitInsuranceRateChart[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitSavingsPlanSubTypes
@@ -2563,7 +2447,7 @@ public type ListBenefitSavingsPlanSubTypesQueries record {
 };
 
 public type CollectionofBenefitPensionAdditionalContributionLimits record {
-    SFOData\.BenefitPensionAdditionalContributionLimits[] results?;
+    BenefitPensionAdditionalContributionLimits[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitHSAEmployerContributionDetail
@@ -2581,13 +2465,7 @@ public type GetBenefitBalanceCarryForwardQueries record {
 };
 
 public type BenefitBalanceCarryForwardDetail record {
-    SFOData\.BenefitBalanceCarryForwardDetail d?;
-};
-
-public type SFOData\.BenefitPensionDependentNominees record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string dependentName?;
+    BenefitBalanceCarryForwardDetail d?;
 };
 
 # Represents the Queries record for the operation: getBenefitEmployeeClaim
@@ -2599,7 +2477,7 @@ public type GetBenefitEmployeeClaimQueries record {
 };
 
 public type BenefitCompanyCarAllowedModels record {
-    SFOData\.BenefitCompanyCarAllowedModels d?;
+    BenefitCompanyCarAllowedModels d?;
 };
 
 # Represents the Queries record for the operation: listBenefitSavingsPlanPrimaryBeneficiarys
@@ -2621,7 +2499,7 @@ public type ListBenefitSavingsPlanPrimaryBeneficiarysQueries record {
 };
 
 public type CollectionofBenefitPensionEmployerContributionDetail record {
-    SFOData\.BenefitPensionEmployerContributionDetail[] results?;
+    BenefitPensionEmployerContributionDetail[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitEnrollmentGroups
@@ -2645,7 +2523,7 @@ public type ListBenefitEnrollmentGroupsQueries record {
 };
 
 public type CollectionofBenefitBalanceCarryForwardDetail record {
-    SFOData\.BenefitBalanceCarryForwardDetail[] results?;
+    BenefitBalanceCarryForwardDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitSavingsPlanERContributionConfig
@@ -2656,12 +2534,6 @@ public type GetBenefitSavingsPlanERContributionConfigQueries record {
     ("createdBy"|"createdDateTime"|"effectiveStartDate"|"employerContributionId"|"employerContributionName_de_DE"|"employerContributionName_defaultValue"|"employerContributionName_en_DEBUG"|"employerContributionName_en_GB"|"employerContributionName_en_US"|"employerContributionName_es_ES"|"employerContributionName_fr_FR"|"employerContributionName_ja_JP"|"employerContributionName_ko_KR"|"employerContributionName_localized"|"employerContributionName_nl_NL"|"employerContributionName_pt_BR"|"employerContributionName_pt_PT"|"employerContributionName_ru_RU"|"employerContributionName_zh_CN"|"employerContributionName_zh_TW"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemEffectiveEndDate"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitDeductibleAllowanceEnrollment record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string id?;
-};
-
 # Represents the Queries record for the operation: getBenefitHSAEmployerContribution
 public type GetBenefitHSAEmployerContributionQueries record {
     # Expand related entities, see [OData Expand](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -2670,12 +2542,12 @@ public type GetBenefitHSAEmployerContributionQueries record {
     ("createdBy"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_GB"|"externalName_en_US"|"externalName_es_ES"|"externalName_fr_FR"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_pt_PT"|"externalName_ru_RU"|"externalName_zh_CN"|"externalName_zh_TW"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitInsuranceCoverageDetails record {
+public type BenefitInsuranceCoverageDetails record {
     string BenefitInsuranceCoverageOptions_externalCode?;
     string BenefitInsurancePlan_effectiveStartDate?;
     string BenefitInsurancePlan_id?;
     string externalCode?;
-    SFOData\.BenefitInsuranceCoverage coverageNav?;
+    BenefitInsuranceCoverage coverageNav?;
     RelatedCollectionSFOData_BenefitInsuranceRateChart rateChartNav?;
 };
 
@@ -2687,13 +2559,13 @@ public type GetBenefitCompanyCarEnrollmentQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"benefitID"|"carLeaseEndDate"|"carLeaseServiceProvider"|"carLeaseStartDate"|"carModel"|"carRegistrationNumber"|"carVendor"|"createdBy"|"createdDate"|"createdDateTime"|"currency"|"effectiveStatus"|"emiAmount"|"employeeContribution"|"employerContribution"|"exShowroomValue"|"id"|"installmentFrequency"|"interestRate"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"periodDuration"|"unitOfPeriod")[] \$select?;
 };
 
-public type SFOData\.BenefitEmployeeLifeEventDeclarationForm record {
+public type BenefitEmployeeLifeEventDeclarationForm record {
     string employeeLifeEventId?;
-    SFOData\.LifeEventForBenefit lifeEventIdNav?;
+    LifeEventForBenefit lifeEventIdNav?;
 };
 
 public type RelatedCollectionSFOData_PensionBandingConfigurationDetails record {
-    SFOData\.PensionBandingConfigurationDetails[] results?;
+    PensionBandingConfigurationDetails[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitEnrollmentDependencyDetails
@@ -2716,24 +2588,18 @@ public type ListBenefitEnrollmentDependencyDetailsQueries record {
     ("BenefitEnrollmentDependencyConfiguration_benefitDependencyId"|"BenefitEnrollmentDependencyConfiguration_effectiveStartDate"|"createdBy"|"createdDateTime"|"dependentBenefit"|"dependentInsurancePlan"|"enrollmentCondition"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"leadBenefit"|"leadInsurancePlan"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionEmployerContributionDetail record {
+public type BenefitPensionEmployerContributionDetail record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string id?;
 };
 
-public type SFOData\.BenefitSavingsPlanEnrollmentDetails record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string id?;
-};
-
 public type ImputedCostForAgeRanges record {
-    SFOData\.ImputedCostForAgeRanges d?;
+    ImputedCostForAgeRanges d?;
 };
 
 public type BenefitOverviewHyperlinkConfiguration record {
-    SFOData\.BenefitOverviewHyperlinkConfiguration d?;
+    BenefitOverviewHyperlinkConfiguration d?;
 };
 
 # Represents the Queries record for the operation: listBenefitProgramEnrollments
@@ -2840,12 +2706,6 @@ public type GetBenefitDeductibleAllowanceEnrollmentQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"createdBy"|"createdDateTime"|"employeeContribution"|"employeeContributionPayComponent"|"employerContribution"|"employerContributionPayComponent"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitBalanceCarryForward record {
-    string Benefit_benefitId?;
-    string Benefit_effectiveStartDate?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: listBenefitPensionDependentNomineess
 public type ListBenefitPensionDependentNomineessQueries record {
     # Skip the first n items, see [OData Paging - Skip](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -2864,12 +2724,8 @@ public type ListBenefitPensionDependentNomineessQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"createdBy"|"createdDateTime"|"dateOfBirth"|"dependentName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"percentage"|"relationShipType")[] \$select?;
 };
 
-public type SFOData\.BenefitContact record {
+public type BenefitContact record {
     string externalCode?;
-};
-
-public type IRSPremiumTable record {
-    SFOData\.IRSPremiumTable d?;
 };
 
 # Represents the Queries record for the operation: listBenefitInsuranceRateChartEnrollees
@@ -2893,23 +2749,14 @@ public type ListBenefitInsuranceRateChartEnrolleesQueries record {
 };
 
 public type CollectionofBenefitCompanyCarLeaseServiceProvider record {
-    SFOData\.BenefitCompanyCarLeaseServiceProvider[] results?;
+    BenefitCompanyCarLeaseServiceProvider[] results?;
 };
 
-public type BenefitPensionEmployerContributionDetail record {
-    SFOData\.BenefitPensionEmployerContributionDetail d?;
-};
-
-public type SFOData\.InsuranceEnrollmentFieldsConfiguration record {
+public type InsuranceEnrollmentFieldsConfiguration record {
     string Benefit_benefitId?;
     string Benefit_effectiveStartDate?;
     string InsuranceBenefitDetails_externalCode?;
     string configurationId?;
-};
-
-public type SFOData\.BenefitCompanyCarLeaseServiceProvider record {
-    string effectiveStartDate?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: getBenefitPensionFund
@@ -2927,7 +2774,7 @@ public type GetSavingsAccountUSAQueries record {
 };
 
 public type CollectionofBenefitPaymentOptions record {
-    SFOData\.BenefitPaymentOptions[] results?;
+    BenefitPaymentOptions[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitEffectiveDateConfigurations
@@ -2951,7 +2798,7 @@ public type ListBenefitEffectiveDateConfigurationsQueries record {
 };
 
 public type CollectionofPensionBandingConfiguration record {
-    SFOData\.PensionBandingConfiguration[] results?;
+    PensionBandingConfiguration[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitInsuranceCoverageOptionss
@@ -2994,20 +2841,7 @@ public type ListBenefitInsurancePlanEnrollmentDetailsQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"benefitSalaryAmount"|"coverage"|"createdBy"|"createdDateTime"|"employeeContribution"|"employerContribution"|"enrolleeOptions"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"plan"|"provider"|"roundedCoverageAmount"|"smoking")[] \$select?;
 };
 
-public type BenefitPensionStatutoryMinimumLookup record {
-    SFOData\.BenefitPensionStatutoryMinimumLookup d?;
-};
-
-public type SFOData\.BenefitCompanyCarAllowedModels record {
-    string effectiveStartDate?;
-    string externalCode?;
-};
-
-public type BenefitCompanyCar record {
-    SFOData\.BenefitCompanyCar d?;
-};
-
-public type SFOData\.BenefitInsuranceCoverage record {
+public type BenefitInsuranceCoverage record {
     string coverageId?;
     RelatedCollectionSFOData_BenefitInsuranceCoverageDetails toCoverageDetails?;
 };
@@ -3071,7 +2905,7 @@ public type ListBenefitInsurancePlansQueries record {
 };
 
 public type CollectionofBenefitPensionNonDependentNominees record {
-    SFOData\.BenefitPensionNonDependentNominees[] results?;
+    BenefitPensionNonDependentNominees[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitsExceptions
@@ -3102,10 +2936,6 @@ public type GetBenefitSavingsPlanTierConfigurationQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"annualMaxContributionAmount"|"annualMinContributionAmount"|"coverageTier"|"createdBy"|"createdDateTime"|"employerContributionConfig"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type BenefitContact record {
-    SFOData\.BenefitContact d?;
-};
-
 public type Wrapper_88 record {
     CollectionofBenefitSavingsPlanContingentBeneficiary d?;
 };
@@ -3118,10 +2948,6 @@ public type Wrapper_87 record {
     CollectionofBenefitSavingsPlanPrimaryBeneficiary d?;
 };
 
-public type BenefitPensionMinMaxContributionLimits record {
-    SFOData\.BenefitPensionMinMaxContributionLimits d?;
-};
-
 public type Wrapper_82 record {
     CollectionofBenefitSavingsPlanERContributionConfigDetail d?;
 };
@@ -3131,7 +2957,7 @@ public type Wrapper_83 record {
 };
 
 public type CollectionofBenefitCompanyHousing record {
-    SFOData\.BenefitCompanyHousing[] results?;
+    BenefitCompanyHousing[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitPensionEmployeeContributionDetails
@@ -3157,7 +2983,7 @@ public type Wrapper_81 record {
 };
 
 public type RelatedCollectionSFOData_ImputedCostForAgeRanges record {
-    SFOData\.ImputedCostForAgeRanges[] results?;
+    ImputedCostForAgeRanges[] results?;
 };
 
 # Represents the Queries record for the operation: getIRSPremiumTable
@@ -3166,11 +2992,6 @@ public type GetIRSPremiumTableQueries record {
     ("*"|"imputedCostForAgeRanges")[] \$expand?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("ageVerificationDate"|"ageVerificationMonth"|"ageVerificationYear"|"configurationId"|"configurationName"|"createdBy"|"createdDateTime"|"currency"|"effectiveStartDate"|"exemptedAmount"|"factor"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemEffectiveEndDate"|"mdfSystemRecordStatus")[] \$select?;
-};
-
-public type SFOData\.BenefitEmployeeClaimDetail record {
-    string BenefitEmployeeClaim_id?;
-    string id?;
 };
 
 # Represents the Queries record for the operation: listBenefitsConfirmationStatementConfigurations
@@ -3193,7 +3014,7 @@ public type ListBenefitsConfirmationStatementConfigurationsQueries record {
     ("createdBy"|"createdDateTime"|"effectiveStartDate"|"lastModifiedBy"|"lastModifiedDateTime"|"legalEntity"|"mdfSystemEffectiveEndDate"|"mdfSystemRecordStatus"|"templateId")[] \$select?;
 };
 
-public type SFOData\.BenefitSavingsPlanCatchUpDetail record {
+public type BenefitSavingsPlanCatchUpDetail record {
     string catchUpDetailCode?;
     string effectiveStartDate?;
 };
@@ -3206,17 +3027,8 @@ public type GetBenefitClaimAccumulationQueries record {
     ("accumulatedAmount"|"accumulatedCredits"|"balanceCarryForwardAmount"|"balanceCredits"|"benefit"|"claimWindowEnd"|"claimWindowStart"|"createdBy"|"createdDateTime"|"currency"|"exception"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"remainingAmount"|"schedulePeriod"|"workerId")[] \$select?;
 };
 
-public type BenefitSavingsPlanERContributionConfig record {
-    SFOData\.BenefitSavingsPlanERContributionConfig d?;
-};
-
 public type RelatedCollectionSFOData_BenefitPensionAdditionalContributionLimits record {
-    SFOData\.BenefitPensionAdditionalContributionLimits[] results?;
-};
-
-public type SFOData\.BenefitPensionAdditionalContributionLimits record {
-    string contributionLimitId?;
-    string effectiveStartDate?;
+    BenefitPensionAdditionalContributionLimits[] results?;
 };
 
 # Represents the Queries record for the operation: getPensionBandingConfigurationDetails
@@ -3230,7 +3042,7 @@ public type Wrapper_98 record {
 };
 
 public type RelatedCollectionSFOData_IRSPremiumTable record {
-    SFOData\.IRSPremiumTable[] results?;
+    IRSPremiumTable[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitCompanyCarAllowedModels
@@ -3243,16 +3055,12 @@ public type Wrapper_91 record {
     CollectionofBenefitOverviewHyperlinkDetails d?;
 };
 
-public type ACAReportingDependentDetails record {
-    SFOData\.ACAReportingDependentDetails d?;
-};
-
 public type Wrapper_90 record {
     CollectionofBenefitOverviewHyperlinkConfiguration d?;
 };
 
 public type RelatedCollectionSFOData_EmployeeWithEmployerMatchContributionEntries record {
-    SFOData\.EmployeeWithEmployerMatchContributionEntries[] results?;
+    EmployeeWithEmployerMatchContributionEntries[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceRateChart
@@ -3282,12 +3090,7 @@ public type ListBenefitEventsQueries record {
 };
 
 public type CollectionofBenefitEvent record {
-    SFOData\.BenefitEvent[] results?;
-};
-
-public type SFOData\.BenefitOverviewHyperlinkConfiguration record {
-    string hyperlinkConfigurationId?;
-    RelatedCollectionSFOData_BenefitOverviewHyperlinkDetails benefitOverviewHyperlinkDetails?;
+    BenefitEvent[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitProgramExceptionDetails
@@ -3323,7 +3126,7 @@ public type Wrapper_69 record {
 };
 
 public type RelatedCollectionSFOData_BenefitCompanyCarAllowedModels record {
-    SFOData\.BenefitCompanyCarAllowedModels[] results?;
+    BenefitCompanyCarAllowedModels[] results?;
 };
 
 public type Wrapper_66 record {
@@ -3368,11 +3171,6 @@ public type ListBenefitOpenEnrollmentCycleConfigurationsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("cartWorkflowId"|"createdBy"|"createdDateTime"|"effectiveStartDate"|"instructionTextURL"|"lastModifiedBy"|"lastModifiedDateTime"|"legalEntity"|"mdfSystemEffectiveEndDate"|"mdfSystemRecordStatus"|"openEnrollmentId"|"openEnrollmentSchedule"|"tncURL")[] \$select?;
-};
-
-public type SFOData\.LifeEventForBenefit record {
-    string lifeEventId?;
-    RelatedCollectionSFOData_BenefitLegalEntity legalEntities?;
 };
 
 # Represents the Queries record for the operation: listBenefitHSAEmployerContributionTierDetails
@@ -3424,13 +3222,7 @@ public type ListBenefitFuelReimbursementClaimDetailsQueries record {
 };
 
 public type CollectionofBenefitPensionMinMaxContributionLimits record {
-    SFOData\.BenefitPensionMinMaxContributionLimits[] results?;
-};
-
-public type SFOData\.BenefitPensionEnrollmentContributionDetail record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string contributionId?;
+    BenefitPensionMinMaxContributionLimits[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitProgramExceptionDetails
@@ -3442,7 +3234,7 @@ public type GetBenefitProgramExceptionDetailsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitInsuranceCoverageDetails record {
-    SFOData\.BenefitInsuranceCoverageDetails[] results?;
+    BenefitInsuranceCoverageDetails[] results?;
 };
 
 # Represents the Queries record for the operation: getACAReportingInformation
@@ -3453,19 +3245,10 @@ public type GetACAReportingInformationQueries record {
     ("benefit"|"benefitEligibilityEndDate"|"createdBy"|"createdDateTime"|"enrollmentEffectiveFrom"|"enrollmentRequestDate"|"exceptionId"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"mecPlan"|"minimumCostValue"|"offerDate"|"offerStatus"|"optOutDate"|"schedulePeriod"|"workerId")[] \$select?;
 };
 
-public type BenefitsConfirmationStatementConfiguration record {
-    SFOData\.BenefitsConfirmationStatementConfiguration d?;
-};
-
 # Represents the Queries record for the operation: getBenefitPensionDependentNominees
 public type GetBenefitPensionDependentNomineesQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"createdBy"|"createdDateTime"|"dateOfBirth"|"dependentName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"percentage"|"relationShipType")[] \$select?;
-};
-
-public type SFOData\.BenefitCompanyCarClaim record {
-    string BenefitEmployeeClaim_id?;
-    string id?;
 };
 
 # Represents the Queries record for the operation: listBenefitOverviewHyperlinkDetails
@@ -3521,11 +3304,11 @@ public type GetBenefitAutomaticActionConfigurationQueries record {
 };
 
 public type CollectionofBenefitSavingsPlanSubType record {
-    SFOData\.BenefitSavingsPlanSubType[] results?;
+    BenefitSavingsPlanSubType[] results?;
 };
 
 public type CollectionofBenefitInsuranceEnrolleeType record {
-    SFOData\.BenefitInsuranceEnrolleeType[] results?;
+    BenefitInsuranceEnrolleeType[] results?;
 };
 
 public type Wrapper_71 record {
@@ -3534,10 +3317,6 @@ public type Wrapper_71 record {
 
 public type Wrapper_72 record {
     CollectionofBenefitsConfirmationStatementConfiguration d?;
-};
-
-public type SFOData\.BenefitsConfigUIScreenLookup record {
-    string objectType?;
 };
 
 public type Wrapper_70 record {
@@ -3552,14 +3331,8 @@ public type GetBenefitEmployeeOptoutRequestsQueries record {
     ("createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workerId")[] \$select?;
 };
 
-public type SFOData\.ImputedCostForAgeRanges record {
-    string IRSPremiumTable_configurationId?;
-    string IRSPremiumTable_effectiveStartDate?;
-    string externalCode?;
-};
-
 public type BenefitPaymentOptions record {
-    SFOData\.BenefitPaymentOptions d?;
+    BenefitPaymentOptions d?;
 };
 
 # Represents the Queries record for the operation: getBenefit
@@ -3571,7 +3344,7 @@ public type GetBenefitQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitPaymentOptions record {
-    SFOData\.BenefitPaymentOptions[] results?;
+    BenefitPaymentOptions[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitInsuranceEnrolleeOptionss
@@ -3594,20 +3367,10 @@ public type ListBenefitInsuranceEnrolleeOptionssQueries record {
     ("createdBy"|"createdDateTime"|"depEligibilityRule"|"dependentOption"|"enrolleeOptionsName"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"maxTotalDependents"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"minTotalDependents")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionNonDependentNominees record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string nomineesId?;
-};
-
 # Represents the Queries record for the operation: getBenefitDeductionDetails
 public type GetBenefitDeductionDetailsQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"basePayComponent"|"createdBy"|"createdDateTime"|"dedcutionDetailId"|"deductionPayComponent"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payFrequency")[] \$select?;
-};
-
-public type BenefitSavingsPlanCatchUpDetail record {
-    SFOData\.BenefitSavingsPlanCatchUpDetail d?;
 };
 
 # Represents the Queries record for the operation: listBenefitBalanceCarryForwardDetails
@@ -3637,7 +3400,7 @@ public type DeleteBenefitEnrollmentDependencyConfigurationHeaders record {
 };
 
 public type CollectionofBenefitEmployeeLifeEventDeclarationForm record {
-    SFOData\.BenefitEmployeeLifeEventDeclarationForm[] results?;
+    BenefitEmployeeLifeEventDeclarationForm[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitLeaveTravelReimbursementClaims
@@ -3659,7 +3422,7 @@ public type ListBenefitLeaveTravelReimbursementClaimsQueries record {
 };
 
 public type CollectionofBenefitContact record {
-    SFOData\.BenefitContact[] results?;
+    BenefitContact[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceCoverageDetails
@@ -3670,15 +3433,8 @@ public type GetBenefitInsuranceCoverageDetailsQueries record {
     ("BenefitInsuranceCoverageOptions_externalCode"|"BenefitInsurancePlan_effectiveStartDate"|"BenefitInsurancePlan_id"|"coverage"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"rateChart")[] \$select?;
 };
 
-public type SFOData\.BenefitInsuranceDependentDetail record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string BenefitInsurancePlanEnrollmentDetails_externalCode?;
-    string dependentName?;
-};
-
 public type CollectionofEmployeeWithEmployerMatchContributions record {
-    SFOData\.EmployeeWithEmployerMatchContributions[] results?;
+    EmployeeWithEmployerMatchContributions[] results?;
 };
 
 # Represents the Queries record for the operation: listSavingsAccountDeductionDetails
@@ -3723,13 +3479,8 @@ public type ListBenefitLegalEntitysQueries record {
     ("company"|"createdBy"|"createdDate"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"legalEntityName"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type SFOData\.BenefitCompanyCarRecommendedVendors record {
-    string effectiveStartDate?;
-    string externalCode?;
-};
-
 public type CollectionofBenefitSavingsPlanERContributionConfig record {
-    SFOData\.BenefitSavingsPlanERContributionConfig[] results?;
+    BenefitSavingsPlanERContributionConfig[] results?;
 };
 
 # Represents the Queries record for the operation: getSavingsAccountBenefitDetails
@@ -3741,7 +3492,7 @@ public type GetSavingsAccountBenefitDetailsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitCompanyCarLeaseServiceProvider record {
-    SFOData\.BenefitCompanyCarLeaseServiceProvider[] results?;
+    BenefitCompanyCarLeaseServiceProvider[] results?;
 };
 
 # Represents the Queries record for the operation: listInsuranceBenefitDetails
@@ -3785,11 +3536,7 @@ public type ListBenefitEnrollmentDependencyConfigurationsQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitDependentDetail record {
-    SFOData\.BenefitDependentDetail[] results?;
-};
-
-public type BenefitHyperlinkConfiguration record {
-    SFOData\.BenefitHyperlinkConfiguration d?;
+    BenefitDependentDetail[] results?;
 };
 
 # Represents the Queries record for the operation: getInsuranceEnrollmentFieldsConfiguration
@@ -3798,26 +3545,8 @@ public type GetInsuranceEnrollmentFieldsConfigurationQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"InsuranceBenefitDetails_externalCode"|"configurationId"|"createdBy"|"createdDateTime"|"insuranceFieldName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"visibilitySettingsEnum")[] \$select?;
 };
 
-public type SFOData\.BenefitBalanceCarryForwardDetail record {
-    string BenefitClaimAccumulation_externalCode?;
-    string externalCode?;
-    SFOData\.BenefitSchedulePeriod schedulePeriodNav?;
-};
-
-public type BenefitPensionFund record {
-    SFOData\.BenefitPensionFund d?;
-};
-
-public type BenefitEmployeeLifeEventDeclarationForm record {
-    SFOData\.BenefitEmployeeLifeEventDeclarationForm d?;
-};
-
 public type CollectionofBenefitPensionAdditionalEmployeeContributionDetail record {
-    SFOData\.BenefitPensionAdditionalEmployeeContributionDetail[] results?;
-};
-
-public type InsuranceEnrollmentFieldsConfiguration record {
-    SFOData\.InsuranceEnrollmentFieldsConfiguration d?;
+    BenefitPensionAdditionalEmployeeContributionDetail[] results?;
 };
 
 # Represents the Queries record for the operation: listBenefitHSAEmployerContributionDetails
@@ -3858,13 +3587,6 @@ public type ListBenefitPensionNonDependentNomineessQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"address"|"contact"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"name"|"nomineesId"|"percentage")[] \$select?;
 };
 
-public type SFOData\.BenefitPensionFundEnrollmentContributionDetail record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string id?;
-    SFOData\.BenefitPensionFund pensionFundNav?;
-};
-
 # Represents the Queries record for the operation: getBenefitInsuranceRateChartEnrollee
 public type GetBenefitInsuranceRateChartEnrolleeQueries record {
     # Expand related entities, see [OData Expand](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -3897,22 +3619,10 @@ public type GetBenefitInsuranceDependentDetailQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"BenefitInsurancePlanEnrollmentDetails_externalCode"|"createdBy"|"createdDateTime"|"dateOfBirth"|"dependentName"|"gender"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"relationShipType"|"smoking")[] \$select?;
 };
 
-public type SFOData\.BenefitSavingsPlanPrimaryBeneficiary record {
-    string BenefitEnrollment_effectiveStartDate?;
-    string BenefitEnrollment_id?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: getImputedCostForAgeRanges
 public type GetImputedCostForAgeRangesQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("IRSPremiumTable_configurationId"|"IRSPremiumTable_effectiveStartDate"|"ageFrom"|"ageTo"|"costPerAge"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
-};
-
-public type SFOData\.BenefitPaymentOptions record {
-    string Benefit_benefitId?;
-    string Benefit_effectiveStartDate?;
-    string payComponent?;
 };
 
 # Represents the Queries record for the operation: listBenefitCompanyHousings
@@ -3940,7 +3650,7 @@ public type GetBenefitPensionStatutoryMinimumLookupQueries record {
 };
 
 public type RelatedCollectionSFOData_BenefitContact record {
-    SFOData\.BenefitContact[] results?;
+    BenefitContact[] results?;
 };
 
 # Represents the Queries record for the operation: getBenefitInsuranceEnrolleeType
@@ -3975,18 +3685,10 @@ public type ListBenefitAutomaticActionConfigurationsQueries record {
     ("BenefitLifeEventConfiguration_configurationId"|"BenefitLifeEventConfiguration_effectiveStartDate"|"actionFor"|"benefit"|"createdBy"|"createdDateTime"|"deductionEffectiveDateRule"|"effectiveDateRule"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.BenefitLeaveTravelReimbursementClaim record {
-    string BenefitEmployeeClaim_id?;
-    string id?;
-};
-
-public type SFOData\.BenefitFuelReimbursementClaimDetail record {
-    string BenefitEmployeeClaim_id?;
-    string id?;
-};
-
 # Represents the Queries record for the operation: getBenefitContact
 public type GetBenefitContactQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("contactEmail"|"contactEmployeeId"|"contactPhone"|"contactType"|"createdBy"|"createdDate"|"createdDateTime"|"employeeName"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
+# Stub type for OData navigation property reference
+public type BenefitInsuranceRateChart record {|anydata...;|};

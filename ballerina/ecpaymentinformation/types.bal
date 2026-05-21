@@ -20,19 +20,19 @@
 import ballerina/http;
 
 public type ModifiedPaymentInformationDetailV3GBR record {
-    SFOData\.PaymentInformationDetailV3GBR d?;
+    PaymentInformationDetailV3GBR d?;
 };
 
 public type CreatedPaymentInformationDetailV3ESP record {
-    SFOData\.PaymentInformationDetailV3ESP d?;
+    PaymentInformationDetailV3ESP d?;
 };
 
 public type CollectionofPaymentInformationDetailV3COL record {
-    SFOData\.PaymentInformationDetailV3COL[] results?;
+    PaymentInformationDetailV3COL[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3COL record {
-    SFOData\.PaymentInformationDetailV3COL d?;
+    PaymentInformationDetailV3COL d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3NZLs
@@ -54,7 +54,7 @@ public type ListPaymentInformationDetailV3NZLsQueries record {
 };
 
 public type PaymentInformationDetailV3MWI record {
-    SFOData\.PaymentInformationDetailV3MWI d?;
+    PaymentInformationDetailV3MWI d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3NGAs
@@ -76,7 +76,7 @@ public type ListPaymentInformationDetailV3NGAsQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3USA record {
-    SFOData\.PaymentInformationDetailV3USA d?;
+    PaymentInformationDetailV3USA d?;
 };
 
 # Represents the Headers record for the operation: deleteCustomPayType
@@ -86,24 +86,24 @@ public type DeleteCustomPayTypeHeaders record {
 };
 
 public type CreatedPaymentInformationDetailV3ECU record {
-    SFOData\.PaymentInformationDetailV3ECU d?;
+    PaymentInformationDetailV3ECU d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3COL record {
+public type PaymentInformationDetailV3COL record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
     string externalCode?;
 };
 
-public type SFOData\.PaymentInformationDetailV3USA record {
+public type PaymentInformationDetailV3USA record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
     string externalCode?;
 };
 
-public type SFOData\.PaymentInformationDetailV3ESP record {
+public type PaymentInformationDetailV3ESP record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -111,11 +111,11 @@ public type SFOData\.PaymentInformationDetailV3ESP record {
 };
 
 public type RelatedCollectionSFOData_PaymentInformationDetailV3 record {
-    SFOData\.PaymentInformationDetailV3[] results?;
+    PaymentInformationDetailV3[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3VEN record {
-    SFOData\.PaymentInformationDetailV3VEN d?;
+    PaymentInformationDetailV3VEN d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3MKD
@@ -125,7 +125,7 @@ public type DeletePaymentInformationDetailV3MKDHeaders record {
 };
 
 public type CollectionofPaymentInformationDetailV3ESP record {
-    SFOData\.PaymentInformationDetailV3ESP[] results?;
+    PaymentInformationDetailV3ESP[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3PER
@@ -147,11 +147,11 @@ public type DeletePaymentInformationDetailV3NZLHeaders record {
 };
 
 public type CollectionofPaymentInformationDetailV3USA record {
-    SFOData\.PaymentInformationDetailV3USA[] results?;
+    PaymentInformationDetailV3USA[] results?;
 };
 
 public type PaymentInformationDetailV3TUN record {
-    SFOData\.PaymentInformationDetailV3TUN d?;
+    PaymentInformationDetailV3TUN d?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -199,10 +199,10 @@ public type ConnectionConfig record {|
 |};
 
 public type PaymentInformationDetailV3BRA record {
-    SFOData\.PaymentInformationDetailV3BRA d?;
+    PaymentInformationDetailV3BRA d?;
 };
 
-public type SFOData\.PaymentMethodV3 record {
+public type PaymentMethodV3 record {
     string externalCode?;
     RelatedCollectionSFOData_PaymentMethodAssignmentV3 toPaymentMethodAssignmentV3?;
 };
@@ -218,15 +218,15 @@ public type GetPaymentInformationDetailV3SVKQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3MOZ record {
-    SFOData\.PaymentInformationDetailV3MOZ d?;
+    PaymentInformationDetailV3MOZ d?;
 };
 
 public type ModifiedPaymentInformationDetailV3FRA record {
-    SFOData\.PaymentInformationDetailV3FRA d?;
+    PaymentInformationDetailV3FRA d?;
 };
 
 public type CollectionofBank record {
-    SFOData\.Bank[] results?;
+    Bank[] results?;
 };
 
 public type Wrapper_19 record {
@@ -252,7 +252,7 @@ public type ListPaymentInformationDetailV3GHAsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3NAM record {
-    SFOData\.PaymentInformationDetailV3NAM d?;
+    PaymentInformationDetailV3NAM d?;
 };
 
 public type Wrapper_17 record {
@@ -264,7 +264,7 @@ public type Wrapper_18 record {
 };
 
 public type RelatedCollectionSFOData_PaymentMethodAssignmentV3 record {
-    SFOData\.PaymentMethodAssignmentV3[] results?;
+    PaymentMethodAssignmentV3[] results?;
 };
 
 public type Wrapper_15 record {
@@ -272,7 +272,7 @@ public type Wrapper_15 record {
 };
 
 public type PaymentInformationDetailV3MEX record {
-    SFOData\.PaymentInformationDetailV3MEX d?;
+    PaymentInformationDetailV3MEX d?;
 };
 
 public type Wrapper_16 record {
@@ -280,11 +280,11 @@ public type Wrapper_16 record {
 };
 
 public type CreatedPaymentInformationDetailV3BLR record {
-    SFOData\.PaymentInformationDetailV3BLR d?;
+    PaymentInformationDetailV3BLR d?;
 };
 
 public type ModifiedPaymentInformationDetailV3PER record {
-    SFOData\.PaymentInformationDetailV3PER d?;
+    PaymentInformationDetailV3PER d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ARG
@@ -320,10 +320,10 @@ public type Wrapper_10 record {
 };
 
 public type PaymentInformationDetailV3JPN record {
-    SFOData\.PaymentInformationDetailV3JPN d?;
+    PaymentInformationDetailV3JPN d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3BLR record {
+public type PaymentInformationDetailV3BLR record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -337,15 +337,15 @@ public type GetPaymentInformationDetailV3CZEQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3BLR record {
-    SFOData\.PaymentInformationDetailV3BLR[] results?;
+    PaymentInformationDetailV3BLR[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3NGA record {
-    SFOData\.PaymentInformationDetailV3NGA d?;
+    PaymentInformationDetailV3NGA d?;
 };
 
 public type Bank record {
-    SFOData\.Bank d?;
+    Bank d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3
@@ -357,7 +357,7 @@ public type GetPaymentInformationDetailV3Queries record {
 };
 
 public type ModifiedPaymentInformationDetailV3PRY record {
-    SFOData\.PaymentInformationDetailV3PRY d?;
+    PaymentInformationDetailV3PRY d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3GBR
@@ -385,7 +385,7 @@ public type ListPaymentInformationDetailV3IRQsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3CHL record {
-    SFOData\.PaymentInformationDetailV3CHL d?;
+    PaymentInformationDetailV3CHL d?;
 };
 
 # Represents the Queries record for the operation: getCustomPayTypeAssignment
@@ -394,7 +394,7 @@ public type GetCustomPayTypeAssignmentQueries record {
     ("CustomPayType_externalCode"|"country"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.PaymentInformationDetailV3BOL record {
+public type PaymentInformationDetailV3BOL record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -449,7 +449,7 @@ public type ListPaymentInformationDetailV3MKDsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.PaymentInformationDetailV3NGA record {
+public type PaymentInformationDetailV3NGA record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -463,11 +463,11 @@ public type GetPaymentInformationDetailV3BOLQueries record {
 };
 
 public type PaymentInformationDetailV3SUR record {
-    SFOData\.PaymentInformationDetailV3SUR d?;
+    PaymentInformationDetailV3SUR d?;
 };
 
 public type CollectionofPaymentInformationDetailV3NAM record {
-    SFOData\.PaymentInformationDetailV3NAM[] results?;
+    PaymentInformationDetailV3NAM[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3GHA
@@ -489,7 +489,7 @@ public type GetPaymentInformationDetailV3ITAQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3MMR record {
-    SFOData\.PaymentInformationDetailV3MMR d?;
+    PaymentInformationDetailV3MMR d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3NAMs
@@ -511,7 +511,7 @@ public type ListPaymentInformationDetailV3NAMsQueries record {
 };
 
 public type CustomPayType record {
-    SFOData\.CustomPayType d?;
+    CustomPayType d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3MWI
@@ -521,19 +521,19 @@ public type DeletePaymentInformationDetailV3MWIHeaders record {
 };
 
 public type CollectionofPaymentInformationDetailV3PER record {
-    SFOData\.PaymentInformationDetailV3PER[] results?;
+    PaymentInformationDetailV3PER[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3GHA record {
-    SFOData\.PaymentInformationDetailV3GHA d?;
+    PaymentInformationDetailV3GHA d?;
 };
 
 public type PaymentInformationDetailV3ZAF record {
-    SFOData\.PaymentInformationDetailV3ZAF d?;
+    PaymentInformationDetailV3ZAF d?;
 };
 
 public type CollectionofPaymentInformationDetailV3FRA record {
-    SFOData\.PaymentInformationDetailV3FRA[] results?;
+    PaymentInformationDetailV3FRA[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3KENs
@@ -554,7 +554,7 @@ public type ListPaymentInformationDetailV3KENsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type SFOData\.PaymentInformationDetailV3ECU record {
+public type PaymentInformationDetailV3ECU record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -562,14 +562,14 @@ public type SFOData\.PaymentInformationDetailV3ECU record {
 };
 
 public type PaymentInformationDetailV3NZL record {
-    SFOData\.PaymentInformationDetailV3NZL d?;
+    PaymentInformationDetailV3NZL d?;
 };
 
 public type CollectionofPaymentInformationDetailV3MOZ record {
-    SFOData\.PaymentInformationDetailV3MOZ[] results?;
+    PaymentInformationDetailV3MOZ[] results?;
 };
 
-public type SFOData\.PaymentInformationDetailV3GHA record {
+public type PaymentInformationDetailV3GHA record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -583,10 +583,10 @@ public type DeletePaymentInformationDetailV3PERHeaders record {
 };
 
 public type ModifiedPaymentInformationDetailV3ZWE record {
-    SFOData\.PaymentInformationDetailV3ZWE d?;
+    PaymentInformationDetailV3ZWE d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3VEN record {
+public type PaymentInformationDetailV3VEN record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -606,11 +606,11 @@ public type GetPaymentInformationDetailV3NAMQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3BOL record {
-    SFOData\.PaymentInformationDetailV3BOL d?;
+    PaymentInformationDetailV3BOL d?;
 };
 
 public type ModifiedBank record {
-    SFOData\.Bank d?;
+    Bank d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3CZEs
@@ -638,7 +638,7 @@ public type GetPaymentInformationDetailV3NZLQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3CZE record {
-    SFOData\.PaymentInformationDetailV3CZE d?;
+    PaymentInformationDetailV3CZE d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3ZAF
@@ -654,18 +654,18 @@ public type DeletePaymentInformationDetailV3MEXHeaders record {
 };
 
 public type CreatedPaymentInformationDetailV3TUN record {
-    SFOData\.PaymentInformationDetailV3TUN d?;
+    PaymentInformationDetailV3TUN d?;
 };
 
 public type ModifiedPaymentInformationDetailV3COL record {
-    SFOData\.PaymentInformationDetailV3COL d?;
+    PaymentInformationDetailV3COL d?;
 };
 
 public type CreatedPaymentMethodAssignmentV3 record {
-    SFOData\.PaymentMethodAssignmentV3 d?;
+    PaymentMethodAssignmentV3 d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3GBR record {
+public type PaymentInformationDetailV3GBR record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -679,11 +679,11 @@ public type GetPaymentInformationDetailV3BLRQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3GBR record {
-    SFOData\.PaymentInformationDetailV3GBR[] results?;
+    PaymentInformationDetailV3GBR[] results?;
 };
 
 public type PaymentInformationDetailV3MKD record {
-    SFOData\.PaymentInformationDetailV3MKD d?;
+    PaymentInformationDetailV3MKD d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3ITAs
@@ -723,15 +723,15 @@ public type ListPaymentInformationDetailV3TUNsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3BLR record {
-    SFOData\.PaymentInformationDetailV3BLR d?;
+    PaymentInformationDetailV3BLR d?;
 };
 
 public type PaymentInformationDetailV3ISR record {
-    SFOData\.PaymentInformationDetailV3ISR d?;
+    PaymentInformationDetailV3ISR d?;
 };
 
 public type CreatedPaymentInformationDetailV3BRA record {
-    SFOData\.PaymentInformationDetailV3BRA d?;
+    PaymentInformationDetailV3BRA d?;
 };
 
 public type Wrapper_40 record {
@@ -739,7 +739,7 @@ public type Wrapper_40 record {
 };
 
 public type CreatedPaymentInformationDetailV3ZAF record {
-    SFOData\.PaymentInformationDetailV3ZAF d?;
+    PaymentInformationDetailV3ZAF d?;
 };
 
 public type Wrapper_41 record {
@@ -771,7 +771,7 @@ public type DeletePaymentInformationDetailV3NAMHeaders record {
 };
 
 public type CollectionofCustomPayTypeAssignment record {
-    SFOData\.CustomPayTypeAssignment[] results?;
+    CustomPayTypeAssignment[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3CHL
@@ -781,18 +781,18 @@ public type GetPaymentInformationDetailV3CHLQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3 record {
-    SFOData\.PaymentInformationDetailV3 d?;
+    PaymentInformationDetailV3 d?;
 };
 
 public type PaymentInformationDetailV3ARG record {
-    SFOData\.PaymentInformationDetailV3ARG d?;
+    PaymentInformationDetailV3ARG d?;
 };
 
 public type CreatedPaymentInformationDetailV3JPN record {
-    SFOData\.PaymentInformationDetailV3JPN d?;
+    PaymentInformationDetailV3JPN d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3MMR record {
+public type PaymentInformationDetailV3MMR record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -800,11 +800,11 @@ public type SFOData\.PaymentInformationDetailV3MMR record {
 };
 
 public type RelatedCollectionSFOData_CustomPayTypeAssignment record {
-    SFOData\.CustomPayTypeAssignment[] results?;
+    CustomPayTypeAssignment[] results?;
 };
 
 public type PaymentInformationDetailV3KEN record {
-    SFOData\.PaymentInformationDetailV3KEN d?;
+    PaymentInformationDetailV3KEN d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3ECU
@@ -814,10 +814,10 @@ public type DeletePaymentInformationDetailV3ECUHeaders record {
 };
 
 public type ModifiedPaymentInformationDetailV3ECU record {
-    SFOData\.PaymentInformationDetailV3ECU d?;
+    PaymentInformationDetailV3ECU d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3CZE record {
+public type PaymentInformationDetailV3CZE record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -825,15 +825,15 @@ public type SFOData\.PaymentInformationDetailV3CZE record {
 };
 
 public type CreatedPaymentInformationDetailV3MEX record {
-    SFOData\.PaymentInformationDetailV3MEX d?;
+    PaymentInformationDetailV3MEX d?;
 };
 
 public type CollectionofPaymentInformationDetailV3MMR record {
-    SFOData\.PaymentInformationDetailV3MMR[] results?;
+    PaymentInformationDetailV3MMR[] results?;
 };
 
 public type ModifiedPaymentInformationDetailV3VEN record {
-    SFOData\.PaymentInformationDetailV3VEN d?;
+    PaymentInformationDetailV3VEN d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3SVNs
@@ -855,7 +855,7 @@ public type ListPaymentInformationDetailV3SVNsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3GHA record {
-    SFOData\.PaymentInformationDetailV3GHA d?;
+    PaymentInformationDetailV3GHA d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3SUR
@@ -865,7 +865,7 @@ public type GetPaymentInformationDetailV3SURQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3USA record {
-    SFOData\.PaymentInformationDetailV3USA d?;
+    PaymentInformationDetailV3USA d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3MMRs
@@ -887,7 +887,7 @@ public type ListPaymentInformationDetailV3MMRsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3ESP record {
-    SFOData\.PaymentInformationDetailV3ESP d?;
+    PaymentInformationDetailV3ESP d?;
 };
 
 # Represents the Queries record for the operation: getPaymentMethodAssignmentV3
@@ -897,31 +897,31 @@ public type GetPaymentMethodAssignmentV3Queries record {
 };
 
 public type PaymentInformationDetailV3SVN record {
-    SFOData\.PaymentInformationDetailV3SVN d?;
+    PaymentInformationDetailV3SVN d?;
 };
 
 public type PaymentInformationDetailV3IRQ record {
-    SFOData\.PaymentInformationDetailV3IRQ d?;
+    PaymentInformationDetailV3IRQ d?;
 };
 
 public type PaymentInformationDetailV3SVK record {
-    SFOData\.PaymentInformationDetailV3SVK d?;
+    PaymentInformationDetailV3SVK d?;
 };
 
 public type CreatedPaymentInformationDetailV3MWI record {
-    SFOData\.PaymentInformationDetailV3MWI d?;
+    PaymentInformationDetailV3MWI d?;
 };
 
 public type PaymentInformationDetailV3 record {
-    SFOData\.PaymentInformationDetailV3 d?;
+    PaymentInformationDetailV3 d?;
 };
 
 public type PaymentInformationDetailV3PRY record {
-    SFOData\.PaymentInformationDetailV3PRY d?;
+    PaymentInformationDetailV3PRY d?;
 };
 
 public type CreatedPaymentInformationV3 record {
-    SFOData\.PaymentInformationV3 d?;
+    PaymentInformationV3 d?;
 };
 
 # Represents the Headers record for the operation: deleteCustomPayTypeAssignment
@@ -965,7 +965,7 @@ public type Wrapper_27 record {
 };
 
 public type CollectionofPaymentInformationDetailV3PRY record {
-    SFOData\.PaymentInformationDetailV3PRY[] results?;
+    PaymentInformationDetailV3PRY[] results?;
 };
 
 public type Wrapper_24 record {
@@ -979,7 +979,7 @@ public type GetPaymentInformationDetailV3TUNQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3ARG record {
-    SFOData\.PaymentInformationDetailV3ARG d?;
+    PaymentInformationDetailV3ARG d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ESP
@@ -1019,7 +1019,7 @@ public type Wrapper_23 record {
 };
 
 public type CollectionofPaymentInformationDetailV3CZE record {
-    SFOData\.PaymentInformationDetailV3CZE[] results?;
+    PaymentInformationDetailV3CZE[] results?;
 };
 
 public type Wrapper_20 record {
@@ -1031,11 +1031,11 @@ public type Wrapper_21 record {
 };
 
 public type CreatedPaymentMethodV3 record {
-    SFOData\.PaymentMethodV3 d?;
+    PaymentMethodV3 d?;
 };
 
 public type PaymentInformationDetailV3ZWE record {
-    SFOData\.PaymentInformationDetailV3ZWE d?;
+    PaymentInformationDetailV3ZWE d?;
 };
 
 # Represents the Queries record for the operation: listBanks
@@ -1056,12 +1056,8 @@ public type ListBanksQueries record {
     ("bankBranch"|"bankCountry"|"bankName"|"businessIdentifierCode"|"city"|"createdBy"|"createdDateTime"|"effectiveStatus"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"postalCode"|"routingNumber"|"street")[] \$select?;
 };
 
-public type PaymentInformationDetailV3CZE record {
-    SFOData\.PaymentInformationDetailV3CZE d?;
-};
-
 public type CreatedPaymentInformationDetailV3SUR record {
-    SFOData\.PaymentInformationDetailV3SUR d?;
+    PaymentInformationDetailV3SUR d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3CZE
@@ -1071,11 +1067,7 @@ public type DeletePaymentInformationDetailV3CZEHeaders record {
 };
 
 public type CreatedPaymentInformationDetailV3KEN record {
-    SFOData\.PaymentInformationDetailV3KEN d?;
-};
-
-public type PaymentInformationDetailV3MMR record {
-    SFOData\.PaymentInformationDetailV3MMR d?;
+    PaymentInformationDetailV3KEN d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3
@@ -1103,16 +1095,16 @@ public type ListPaymentInformationDetailV3SVKsQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3ZWE record {
-    SFOData\.PaymentInformationDetailV3ZWE[] results?;
+    PaymentInformationDetailV3ZWE[] results?;
 };
 
-public type SFOData\.PaymentMethodAssignmentV3 record {
+public type PaymentMethodAssignmentV3 record {
     string PaymentMethodV3_externalCode?;
     string externalCode?;
 };
 
 public type PaymentInformationDetailV3ITA record {
-    SFOData\.PaymentInformationDetailV3ITA d?;
+    PaymentInformationDetailV3ITA d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3SVK
@@ -1122,7 +1114,7 @@ public type DeletePaymentInformationDetailV3SVKHeaders record {
 };
 
 public type CreatedPaymentInformationDetailV3NZL record {
-    SFOData\.PaymentInformationDetailV3NZL d?;
+    PaymentInformationDetailV3NZL d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3ITA
@@ -1131,14 +1123,14 @@ public type DeletePaymentInformationDetailV3ITAHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.PaymentInformationDetailV3NAM record {
+public type PaymentInformationDetailV3NAM record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
     string externalCode?;
 };
 
-public type SFOData\.PaymentInformationDetailV3MOZ record {
+public type PaymentInformationDetailV3MOZ record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -1157,7 +1149,7 @@ public type DeletePaymentInformationDetailV3SURHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.PaymentInformationDetailV3FRA record {
+public type PaymentInformationDetailV3FRA record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -1165,7 +1157,7 @@ public type SFOData\.PaymentInformationDetailV3FRA record {
 };
 
 public type CollectionofPaymentInformationDetailV3ITA record {
-    SFOData\.PaymentInformationDetailV3ITA[] results?;
+    PaymentInformationDetailV3ITA[] results?;
 };
 
 public type Wrapper_39 record {
@@ -1185,7 +1177,7 @@ public type Wrapper_35 record {
 };
 
 public type PaymentInformationDetailV3CHL record {
-    SFOData\.PaymentInformationDetailV3CHL d?;
+    PaymentInformationDetailV3CHL d?;
 };
 
 public type Wrapper_36 record {
@@ -1224,7 +1216,7 @@ public type Wrapper_30 record {
     CollectionofPaymentInformationDetailV3NAM d?;
 };
 
-public type SFOData\.PaymentInformationDetailV3PER record {
+public type PaymentInformationDetailV3PER record {
     string PaymentInformationDetailV3_externalCode?;
     string PaymentInformationV3_effectiveStartDate?;
     string PaymentInformationV3_worker?;
@@ -1232,7 +1224,7 @@ public type SFOData\.PaymentInformationDetailV3PER record {
 };
 
 public type CreatedCustomPayTypeAssignment record {
-    SFOData\.CustomPayTypeAssignment d?;
+    CustomPayTypeAssignment d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3MOZ
@@ -1248,25 +1240,21 @@ public type DeletePaymentInformationDetailV3BOLHeaders record {
 };
 
 public type CollectionofPaymentInformationDetailV3CHL record {
-    SFOData\.PaymentInformationDetailV3CHL[] results?;
+    PaymentInformationDetailV3CHL[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3ISR record {
-    SFOData\.PaymentInformationDetailV3ISR d?;
+    PaymentInformationDetailV3ISR d?;
 };
 
 public type ModifiedPaymentMethodAssignmentV3 record {
-    SFOData\.PaymentMethodAssignmentV3 d?;
+    PaymentMethodAssignmentV3 d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3NGA
 public type DeletePaymentInformationDetailV3NGAHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type PaymentInformationDetailV3GBR record {
-    SFOData\.PaymentInformationDetailV3GBR d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3NGA
@@ -1276,11 +1264,11 @@ public type GetPaymentInformationDetailV3NGAQueries record {
 };
 
 public type ModifiedPaymentInformationV3 record {
-    SFOData\.PaymentInformationV3 d?;
+    PaymentInformationV3 d?;
 };
 
 public type CustomPayTypeAssignment record {
-    SFOData\.CustomPayTypeAssignment d?;
+    CustomPayTypeAssignment d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationV3
@@ -1290,7 +1278,7 @@ public type DeletePaymentInformationV3Headers record {
 };
 
 public type ModifiedPaymentInformationDetailV3MWI record {
-    SFOData\.PaymentInformationDetailV3MWI d?;
+    PaymentInformationDetailV3MWI d?;
 };
 
 # Represents the Queries record for the operation: listCustomPayTypeAssignments
@@ -1312,7 +1300,7 @@ public type ListCustomPayTypeAssignmentsQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3MKD record {
-    SFOData\.PaymentInformationDetailV3MKD d?;
+    PaymentInformationDetailV3MKD d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3BRA
@@ -1322,41 +1310,27 @@ public type GetPaymentInformationDetailV3BRAQueries record {
 };
 
 public type ModifiedPaymentMethodV3 record {
-    SFOData\.PaymentMethodV3 d?;
+    PaymentMethodV3 d?;
 };
 
 public type ModifiedPaymentInformationDetailV3JPN record {
-    SFOData\.PaymentInformationDetailV3JPN d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3ISR record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
-public type SFOData\.PaymentInformationDetailV3MKD record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3JPN d?;
 };
 
 public type CollectionofPaymentInformationDetailV3MKD record {
-    SFOData\.PaymentInformationDetailV3MKD[] results?;
+    PaymentInformationDetailV3MKD[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3ISR record {
-    SFOData\.PaymentInformationDetailV3ISR[] results?;
+    PaymentInformationDetailV3ISR[] results?;
 };
 
 public type CollectionofCustomPayType record {
-    SFOData\.CustomPayType[] results?;
+    CustomPayType[] results?;
 };
 
 public type CreatedPaymentInformationDetailV3ITA record {
-    SFOData\.PaymentInformationDetailV3ITA d?;
+    PaymentInformationDetailV3ITA d?;
 };
 
 # Represents the Queries record for the operation: listCustomPayTypes
@@ -1380,34 +1354,23 @@ public type ListCustomPayTypesQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3IRQ record {
-    SFOData\.PaymentInformationDetailV3IRQ d?;
+    PaymentInformationDetailV3IRQ d?;
 };
 
 public type CreatedPaymentInformationDetailV3SVK record {
-    SFOData\.PaymentInformationDetailV3SVK d?;
+    PaymentInformationDetailV3SVK d?;
 };
 
 public type CreatedCustomPayType record {
-    SFOData\.CustomPayType d?;
+    CustomPayType d?;
 };
 
 public type ModifiedPaymentInformationDetailV3BRA record {
-    SFOData\.PaymentInformationDetailV3BRA d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3SUR record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
-public type PaymentMethodV3 record {
-    SFOData\.PaymentMethodV3 d?;
+    PaymentInformationDetailV3BRA d?;
 };
 
 public type CreatedPaymentInformationDetailV3SVN record {
-    SFOData\.PaymentInformationDetailV3SVN d?;
+    PaymentInformationDetailV3SVN d?;
 };
 
 # Represents the Queries record for the operation: listPaymentMethodV3s
@@ -1437,26 +1400,19 @@ public type DeletePaymentInformationDetailV3SVNHeaders record {
 };
 
 public type CollectionofPaymentInformationDetailV3KEN record {
-    SFOData\.PaymentInformationDetailV3KEN[] results?;
+    PaymentInformationDetailV3KEN[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3ARG record {
-    SFOData\.PaymentInformationDetailV3ARG[] results?;
+    PaymentInformationDetailV3ARG[] results?;
 };
 
 public type ModifiedPaymentInformationDetailV3NZL record {
-    SFOData\.PaymentInformationDetailV3NZL d?;
+    PaymentInformationDetailV3NZL d?;
 };
 
 public type ModifiedPaymentInformationDetailV3ZAF record {
-    SFOData\.PaymentInformationDetailV3ZAF d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3KEN record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3ZAF d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3VENs
@@ -1475,13 +1431,6 @@ public type ListPaymentInformationDetailV3VENsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"paymentReference")[] \$select?;
-};
-
-public type SFOData\.PaymentInformationDetailV3ARG record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationV3
@@ -1511,48 +1460,27 @@ public type ListPaymentInformationDetailV3USAsQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3SVN record {
-    SFOData\.PaymentInformationDetailV3SVN[] results?;
+    PaymentInformationDetailV3SVN[] results?;
 };
 
 public type ModifiedCustomPayTypeAssignment record {
-    SFOData\.CustomPayTypeAssignment d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3IRQ record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
-public type SFOData\.PaymentInformationDetailV3SVN record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
-public type SFOData\.PaymentInformationDetailV3SVK record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    CustomPayTypeAssignment d?;
 };
 
 public type CollectionofPaymentInformationDetailV3IRQ record {
-    SFOData\.PaymentInformationDetailV3IRQ[] results?;
+    PaymentInformationDetailV3IRQ[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3SVK record {
-    SFOData\.PaymentInformationDetailV3SVK[] results?;
+    PaymentInformationDetailV3SVK[] results?;
 };
 
 public type ModifiedPaymentInformationDetailV3TUN record {
-    SFOData\.PaymentInformationDetailV3TUN d?;
+    PaymentInformationDetailV3TUN d?;
 };
 
 public type CreatedPaymentInformationDetailV3ZWE record {
-    SFOData\.PaymentInformationDetailV3ZWE d?;
+    PaymentInformationDetailV3ZWE d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ZWE
@@ -1568,7 +1496,7 @@ public type DeletePaymentInformationDetailV3ZWEHeaders record {
 };
 
 public type CreatedPaymentInformationDetailV3CZE record {
-    SFOData\.PaymentInformationDetailV3CZE d?;
+    PaymentInformationDetailV3CZE d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3IRQ
@@ -1578,14 +1506,7 @@ public type DeletePaymentInformationDetailV3IRQHeaders record {
 };
 
 public type ModifiedPaymentInformationDetailV3BOL record {
-    SFOData\.PaymentInformationDetailV3BOL d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3PRY record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3BOL d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3ESP
@@ -1607,7 +1528,7 @@ public type Wrapper_4 record {
 };
 
 public type CollectionofPaymentMethodAssignmentV3 record {
-    SFOData\.PaymentMethodAssignmentV3[] results?;
+    PaymentMethodAssignmentV3[] results?;
 };
 
 public type Wrapper_5 record {
@@ -1619,7 +1540,7 @@ public type Wrapper_6 record {
 };
 
 public type CollectionofPaymentInformationDetailV3SUR record {
-    SFOData\.PaymentInformationDetailV3SUR[] results?;
+    PaymentInformationDetailV3SUR[] results?;
 };
 
 public type Wrapper_7 record {
@@ -1637,7 +1558,7 @@ public type Wrapper_1 record {
 };
 
 public type ModifiedPaymentInformationDetailV3 record {
-    SFOData\.PaymentInformationDetailV3 d?;
+    PaymentInformationDetailV3 d?;
 };
 
 public type Wrapper_2 record {
@@ -1645,14 +1566,7 @@ public type Wrapper_2 record {
 };
 
 public type CreatedPaymentInformationDetailV3MMR record {
-    SFOData\.PaymentInformationDetailV3MMR d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3ZWE record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3MMR d?;
 };
 
 public type Wrapper_3 record {
@@ -1690,64 +1604,15 @@ public type ListPaymentInformationDetailV3BRAsQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3CHL record {
-    SFOData\.PaymentInformationDetailV3CHL d?;
-};
-
-public type PaymentInformationDetailV3FRA record {
-    SFOData\.PaymentInformationDetailV3FRA d?;
-};
-
-public type PaymentInformationDetailV3NAM record {
-    SFOData\.PaymentInformationDetailV3NAM d?;
+    PaymentInformationDetailV3CHL d?;
 };
 
 public type CollectionofPaymentInformationDetailV3NZL record {
-    SFOData\.PaymentInformationDetailV3NZL[] results?;
-};
-
-public type PaymentInformationDetailV3MOZ record {
-    SFOData\.PaymentInformationDetailV3MOZ d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3 record {
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-    SFOData\.Bank bankNav?;
-    SFOData\.CustomPayType customPayTypeNav?;
-    SFOData\.PaymentMethodV3 paymentMethodNav?;
-    SFOData\.PaymentInformationDetailV3ARG toPaymentInformationDetailV3ARG?;
-    SFOData\.PaymentInformationDetailV3BOL toPaymentInformationDetailV3BOL?;
-    SFOData\.PaymentInformationDetailV3PRY toPaymentInformationDetailV3PRY?;
-    SFOData\.PaymentInformationDetailV3BRA toPaymentInformationDetailV3BRA?;
-    SFOData\.PaymentInformationDetailV3CHL toPaymentInformationDetailV3CHL?;
-    SFOData\.PaymentInformationDetailV3COL toPaymentInformationDetailV3COL?;
-    SFOData\.PaymentInformationDetailV3CZE toPaymentInformationDetailV3CZE?;
-    SFOData\.PaymentInformationDetailV3ECU toPaymentInformationDetailV3ECU?;
-    SFOData\.PaymentInformationDetailV3ESP toPaymentInformationDetailV3ESP?;
-    SFOData\.PaymentInformationDetailV3FRA toPaymentInformationDetailV3FRA?;
-    SFOData\.PaymentInformationDetailV3GBR toPaymentInformationDetailV3GBR?;
-    SFOData\.PaymentInformationDetailV3ISR toPaymentInformationDetailV3ISR?;
-    SFOData\.PaymentInformationDetailV3ITA toPaymentInformationDetailV3ITA?;
-    SFOData\.PaymentInformationDetailV3JPN toPaymentInformationDetailV3JPN?;
-    SFOData\.PaymentInformationDetailV3KEN toPaymentInformationDetailV3KEN?;
-    SFOData\.PaymentInformationDetailV3MEX toPaymentInformationDetailV3MEX?;
-    SFOData\.PaymentInformationDetailV3NGA toPaymentInformationDetailV3NGA?;
-    SFOData\.PaymentInformationDetailV3NZL toPaymentInformationDetailV3NZL?;
-    SFOData\.PaymentInformationDetailV3USA toPaymentInformationDetailV3USA?;
-    SFOData\.PaymentInformationDetailV3VEN toPaymentInformationDetailV3VEN?;
-    SFOData\.PaymentInformationDetailV3SVK toPaymentInformationDetailV3SVK?;
-    SFOData\.PaymentInformationDetailV3TUN toPaymentInformationDetailV3TUN?;
-    SFOData\.PaymentInformationDetailV3ZAF toPaymentInformationDetailV3ZAF?;
+    PaymentInformationDetailV3NZL[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3ZAF record {
-    SFOData\.PaymentInformationDetailV3ZAF[] results?;
-};
-
-public type SFOData\.CustomPayTypeAssignment record {
-    string CustomPayType_externalCode?;
-    string externalCode?;
+    PaymentInformationDetailV3ZAF[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationV3s
@@ -1777,32 +1642,21 @@ public type DeletePaymentInformationDetailV3BRAHeaders record {
 };
 
 public type PaymentInformationV3 record {
-    SFOData\.PaymentInformationV3 d?;
+    PaymentInformationV3 d?;
 };
 
 public type CollectionofPaymentInformationDetailV3BRA record {
-    SFOData\.PaymentInformationDetailV3BRA[] results?;
-};
-
-public type PaymentInformationDetailV3PER record {
-    SFOData\.PaymentInformationDetailV3PER d?;
+    PaymentInformationDetailV3BRA[] results?;
 };
 
 public type ModifiedPaymentInformationDetailV3MEX record {
-    SFOData\.PaymentInformationDetailV3MEX d?;
+    PaymentInformationDetailV3MEX d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3VEN
 public type GetPaymentInformationDetailV3VENQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"paymentReference")[] \$select?;
-};
-
-public type SFOData\.PaymentInformationDetailV3ITA record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3ARGs
@@ -1830,17 +1684,11 @@ public type DeletePaymentInformationDetailV3MMRHeaders record {
 };
 
 public type ModifiedPaymentInformationDetailV3NGA record {
-    SFOData\.PaymentInformationDetailV3NGA d?;
-};
-
-public type SFOData\.PaymentInformationV3 record {
-    string effectiveStartDate?;
-    string 'worker?;
-    RelatedCollectionSFOData_PaymentInformationDetailV3 toPaymentInformationDetailV3?;
+    PaymentInformationDetailV3NGA d?;
 };
 
 public type CreatedBank record {
-    SFOData\.Bank d?;
+    Bank d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3ZAFs
@@ -1873,15 +1721,8 @@ public type DeletePaymentInformationDetailV3TUNHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.PaymentInformationDetailV3CHL record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
 public type CreatedPaymentInformationDetailV3PRY record {
-    SFOData\.PaymentInformationDetailV3PRY d?;
+    PaymentInformationDetailV3PRY d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3CHLs
@@ -1927,7 +1768,7 @@ public type ListPaymentInformationDetailV3BOLsQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3MWI record {
-    SFOData\.PaymentInformationDetailV3MWI[] results?;
+    PaymentInformationDetailV3MWI[] results?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3BLR
@@ -1942,22 +1783,10 @@ public type DeletePaymentInformationDetailV3ISRHeaders record {
     string If\-Match?;
 };
 
-public type PaymentInformationDetailV3ESP record {
-    SFOData\.PaymentInformationDetailV3ESP d?;
-};
-
-public type PaymentInformationDetailV3USA record {
-    SFOData\.PaymentInformationDetailV3USA d?;
-};
-
 # Represents the Headers record for the operation: deletePaymentMethodAssignmentV3
 public type DeletePaymentMethodAssignmentV3Headers record {
     # ETag
     string If\-Match?;
-};
-
-public type PaymentInformationDetailV3COL record {
-    SFOData\.PaymentInformationDetailV3COL d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ISR
@@ -1967,7 +1796,7 @@ public type GetPaymentInformationDetailV3ISRQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3MOZ record {
-    SFOData\.PaymentInformationDetailV3MOZ d?;
+    PaymentInformationDetailV3MOZ d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3MEXs
@@ -1989,15 +1818,15 @@ public type ListPaymentInformationDetailV3MEXsQueries record {
 };
 
 public type CreatedPaymentInformationDetailV3FRA record {
-    SFOData\.PaymentInformationDetailV3FRA d?;
+    PaymentInformationDetailV3FRA d?;
 };
 
 public type CreatedPaymentInformationDetailV3NAM record {
-    SFOData\.PaymentInformationDetailV3NAM d?;
+    PaymentInformationDetailV3NAM d?;
 };
 
 public type ModifiedPaymentInformationDetailV3SVK record {
-    SFOData\.PaymentInformationDetailV3SVK d?;
+    PaymentInformationDetailV3SVK d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3PRY
@@ -2007,22 +1836,15 @@ public type GetPaymentInformationDetailV3PRYQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3IRQ record {
-    SFOData\.PaymentInformationDetailV3IRQ d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3MWI record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3IRQ d?;
 };
 
 public type CreatedPaymentInformationDetailV3PER record {
-    SFOData\.PaymentInformationDetailV3PER d?;
+    PaymentInformationDetailV3PER d?;
 };
 
 public type CollectionofPaymentInformationDetailV3TUN record {
-    SFOData\.PaymentInformationDetailV3TUN[] results?;
+    PaymentInformationDetailV3TUN[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3MWIs
@@ -2062,7 +1884,7 @@ public type ListPaymentInformationDetailV3SURsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3SVN record {
-    SFOData\.PaymentInformationDetailV3SVN d?;
+    PaymentInformationDetailV3SVN d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ZAF
@@ -2090,7 +1912,7 @@ public type ListPaymentInformationDetailV3GBRsQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3MEX record {
-    SFOData\.PaymentInformationDetailV3MEX[] results?;
+    PaymentInformationDetailV3MEX[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3ECU
@@ -2100,7 +1922,7 @@ public type GetPaymentInformationDetailV3ECUQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3ITA record {
-    SFOData\.PaymentInformationDetailV3ITA d?;
+    PaymentInformationDetailV3ITA d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3USA
@@ -2151,19 +1973,8 @@ public type ListPaymentInformationDetailV3BLRsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.Bank record {
-    string externalCode?;
-};
-
 public type CreatedPaymentInformationDetailV3GBR record {
-    SFOData\.PaymentInformationDetailV3GBR d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3MEX record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3GBR d?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3FRA
@@ -2197,30 +2008,19 @@ public type ListPaymentInformationDetailV3ECUsQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3ISR record {
-    SFOData\.PaymentInformationDetailV3ISR d?;
-};
-
-public type PaymentInformationDetailV3BLR record {
-    SFOData\.PaymentInformationDetailV3BLR d?;
+    PaymentInformationDetailV3ISR d?;
 };
 
 public type ModifiedPaymentInformationDetailV3MKD record {
-    SFOData\.PaymentInformationDetailV3MKD d?;
-};
-
-public type SFOData\.PaymentInformationDetailV3JPN record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3MKD d?;
 };
 
 public type CollectionofPaymentInformationDetailV3 record {
-    SFOData\.PaymentInformationDetailV3[] results?;
+    PaymentInformationDetailV3[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3JPN record {
-    SFOData\.PaymentInformationDetailV3JPN[] results?;
+    PaymentInformationDetailV3JPN[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3MOZs
@@ -2242,19 +2042,15 @@ public type ListPaymentInformationDetailV3MOZsQueries record {
 };
 
 public type ModifiedCustomPayType record {
-    SFOData\.CustomPayType d?;
+    CustomPayType d?;
 };
 
 public type CollectionofPaymentInformationV3 record {
-    SFOData\.PaymentInformationV3[] results?;
+    PaymentInformationV3[] results?;
 };
 
 public type CollectionofPaymentInformationDetailV3BOL record {
-    SFOData\.PaymentInformationDetailV3BOL[] results?;
-};
-
-public type PaymentInformationDetailV3BOL record {
-    SFOData\.PaymentInformationDetailV3BOL d?;
+    PaymentInformationDetailV3BOL[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3IRQ
@@ -2264,7 +2060,7 @@ public type GetPaymentInformationDetailV3IRQQueries record {
 };
 
 public type CollectionofPaymentMethodV3 record {
-    SFOData\.PaymentMethodV3[] results?;
+    PaymentMethodV3[] results?;
 };
 
 # Represents the Queries record for the operation: getPaymentMethodV3
@@ -2293,15 +2089,6 @@ public type ListPaymentMethodAssignmentV3sQueries record {
     ("PaymentMethodV3_externalCode"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type SFOData\.CustomPayType record {
-    string externalCode?;
-    RelatedCollectionSFOData_CustomPayTypeAssignment toCustomPayTypeAssignment?;
-};
-
-public type PaymentInformationDetailV3NGA record {
-    SFOData\.PaymentInformationDetailV3NGA d?;
-};
-
 # Represents the Queries record for the operation: getCustomPayType
 public type GetCustomPayTypeQueries record {
     # Expand related entities, see [OData Expand](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -2311,26 +2098,11 @@ public type GetCustomPayTypeQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3NGA record {
-    SFOData\.PaymentInformationDetailV3NGA[] results?;
-};
-
-public type SFOData\.PaymentInformationDetailV3BRA record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
+    PaymentInformationDetailV3NGA[] results?;
 };
 
 public type ModifiedPaymentInformationDetailV3KEN record {
-    SFOData\.PaymentInformationDetailV3KEN d?;
-};
-
-public type PaymentInformationDetailV3ECU record {
-    SFOData\.PaymentInformationDetailV3ECU d?;
-};
-
-public type PaymentMethodAssignmentV3 record {
-    SFOData\.PaymentMethodAssignmentV3 d?;
+    PaymentInformationDetailV3KEN d?;
 };
 
 # Represents the Queries record for the operation: getPaymentInformationDetailV3MWI
@@ -2346,7 +2118,7 @@ public type GetPaymentInformationDetailV3COLQueries record {
 };
 
 public type CollectionofPaymentInformationDetailV3GHA record {
-    SFOData\.PaymentInformationDetailV3GHA[] results?;
+    PaymentInformationDetailV3GHA[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3PRYs
@@ -2367,29 +2139,18 @@ public type ListPaymentInformationDetailV3PRYsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.PaymentInformationDetailV3TUN record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
 public type ModifiedPaymentInformationDetailV3ARG record {
-    SFOData\.PaymentInformationDetailV3ARG d?;
+    PaymentInformationDetailV3ARG d?;
 };
 
 public type CollectionofPaymentInformationDetailV3VEN record {
-    SFOData\.PaymentInformationDetailV3VEN[] results?;
+    PaymentInformationDetailV3VEN[] results?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3VEN
 public type DeletePaymentInformationDetailV3VENHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type PaymentInformationDetailV3VEN record {
-    SFOData\.PaymentInformationDetailV3VEN d?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3COLs
@@ -2422,12 +2183,8 @@ public type GetPaymentInformationDetailV3MMRQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type PaymentInformationDetailV3GHA record {
-    SFOData\.PaymentInformationDetailV3GHA d?;
-};
-
 public type CollectionofPaymentInformationDetailV3ECU record {
-    SFOData\.PaymentInformationDetailV3ECU[] results?;
+    PaymentInformationDetailV3ECU[] results?;
 };
 
 # Represents the Queries record for the operation: listPaymentInformationDetailV3ESPs
@@ -2446,20 +2203,6 @@ public type ListPaymentInformationDetailV3ESPsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"checkDigit"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
-};
-
-public type SFOData\.PaymentInformationDetailV3NZL record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
-};
-
-public type SFOData\.PaymentInformationDetailV3ZAF record {
-    string PaymentInformationDetailV3_externalCode?;
-    string PaymentInformationV3_effectiveStartDate?;
-    string PaymentInformationV3_worker?;
-    string externalCode?;
 };
 
 # Represents the Headers record for the operation: deletePaymentInformationDetailV3GBR
@@ -2489,7 +2232,7 @@ public type ListPaymentInformationDetailV3sQueries record {
 };
 
 public type ModifiedPaymentInformationDetailV3SUR record {
-    SFOData\.PaymentInformationDetailV3SUR d?;
+    PaymentInformationDetailV3SUR d?;
 };
 
 # Represents the Headers record for the operation: deleteBank

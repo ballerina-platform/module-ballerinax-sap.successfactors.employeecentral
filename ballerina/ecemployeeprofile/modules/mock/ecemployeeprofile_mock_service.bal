@@ -33,10 +33,10 @@ listener http:Listener ep0 = new (9090,
 );
 
 service /successfactors/odata/v2 on ep0 {
-    # Get entities from BackgroundCommunity
+    # Get entities from Background_Community
     #
     # + return - Retrieved entities
-    resource function get BackgroundCommunity() returns json {
+    resource function get Background_Community() returns json {
         return {
             "d": {
                 "results": []

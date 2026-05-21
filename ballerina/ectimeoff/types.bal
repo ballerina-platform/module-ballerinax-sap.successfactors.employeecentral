@@ -20,7 +20,7 @@
 import ballerina/http;
 
 public type ModifiedEmployee\ Time\ AUS record {
-    SFOData\.EmployeeTimeAUS d?;
+    EmployeeTimeAUS d?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountDetail
@@ -37,18 +37,18 @@ public type DeleteEmployeeTimeAUSHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.TimeManagementTerminationEndHandlingLegalEntityConfiguration record {
+public type TimeManagementTerminationEndHandlingLegalEntityConfiguration record {
     string TimeManagementTerminationEndHandlingConfiguration_externalCode?;
     string externalCode?;
-    SFOData\.TimeManagementTerminationEndHandlingExclusion excludesNav?;
+    TimeManagementTerminationEndHandlingExclusion excludesNav?;
 };
 
 public type RelatedCollectionSFOData_TimeManagementTerminationEndHandlingExcludedTimeAccountType record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
+    TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
 };
 
 public type Work\ Schedule\ Day\ Model\ Variant\ Identifier record {
-    SFOData\.WorkScheduleDayModelVariantIdentifier d?;
+    WorkScheduleDayModelVariantIdentifier d?;
 };
 
 # Represents the Queries record for the operation: getPeriodicTimeAccountUpdateProfile
@@ -58,20 +58,20 @@ public type GetPeriodicTimeAccountUpdateProfileQueries record {
 };
 
 public type CreatedEmployee\ Time\ SWE record {
-    SFOData\.EmployeeTimeSWE d?;
+    EmployeeTimeSWE d?;
 };
 
-public type SFOData\.TimeTypeITA record {
+public type TimeTypeITA record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
-public type SFOData\.AbsenceCountingMethod record {
+public type AbsenceCountingMethod record {
     string externalCode?;
 };
 
 public type CollectionofTime\ Management\ Termination\ End\ Handling\ Exclusion record {
-    SFOData\.TimeManagementTerminationEndHandlingExclusion[] results?;
+    TimeManagementTerminationEndHandlingExclusion[] results?;
 };
 
 public type Wrapper_19 record {
@@ -85,7 +85,7 @@ public type GetWorkScheduleDayModelAssignmentSegmentQueries record {
 };
 
 public type CollectionofHoliday\ Assignment record {
-    SFOData\.HolidayAssignment[] results?;
+    HolidayAssignment[] results?;
 };
 
 public type Wrapper_17 record {
@@ -96,7 +96,7 @@ public type Wrapper_18 record {
     CollectionofHoliday\ Calendar d?;
 };
 
-public type SFOData\.ElectronicSicknessCertificateExclusionReasonDEU record {
+public type ElectronicSicknessCertificateExclusionReasonDEU record {
     string externalCode?;
 };
 
@@ -143,11 +143,11 @@ public type Wrapper_12 record {
 };
 
 public type CreatedEmployee\ Time\ NLD record {
-    SFOData\.EmployeeTimeNLD d?;
+    EmployeeTimeNLD d?;
 };
 
 public type CollectionofTime\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment record {
-    SFOData\.TimeAccountPurchaseProfilePayComponentAssignment[] results?;
+    TimeAccountPurchaseProfilePayComponentAssignment[] results?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimeGroups
@@ -170,17 +170,17 @@ public type ListEmployeeTimeGroupsQueries record {
     ("createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"externalCode"|"itemsCategory"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"userId")[] \$select?;
 };
 
-public type SFOData\.WorkScheduleDayModelAssignmentSegment record {
+public type WorkScheduleDayModelAssignmentSegment record {
     string WorkScheduleDayModelAssignment_day?;
     string WorkSchedule_externalCode?;
     string externalCode?;
 };
 
 public type ModifiedWork\ Schedule\ Day record {
-    SFOData\.WorkScheduleDay d?;
+    WorkScheduleDay d?;
 };
 
-public type SFOData\.TimeAccountPurchaseProfile record {
+public type TimeAccountPurchaseProfile record {
     string externalCode?;
     RelatedCollectionSFOData_TimeAccountPurchaseProfilePayComponentAssignment deductionPayComponents?;
 };
@@ -194,7 +194,7 @@ public type GetAvailableTimeTypeQueries record {
 };
 
 public type CollectionofTime\ Account\ Type\ AUS record {
-    SFOData\.TimeAccountTypeAUS[] results?;
+    TimeAccountTypeAUS[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeManagementAlerts
@@ -224,15 +224,15 @@ public type DeleteWorkScheduleDayHeaders record {
 };
 
 public type CollectionofEmployee\ Time\ USA record {
-    SFOData\.EmployeeTimeUSA[] results?;
+    EmployeeTimeUSA[] results?;
 };
 
 public type CreatedWork\ Schedule\ Day\ Model\ Assignment record {
-    SFOData\.WorkScheduleDayModelAssignment d?;
+    WorkScheduleDayModelAssignment d?;
 };
 
 public type CreatedEmployee\ Time\ POL record {
-    SFOData\.EmployeeTimePOL d?;
+    EmployeeTimePOL d?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimeUSAs
@@ -260,7 +260,7 @@ public type GetWorkScheduleDayModelSegmentQueries record {
 };
 
 public type RelatedCollectionSFOData_TimeAccountPostingRule record {
-    SFOData\.TimeAccountPostingRule[] results?;
+    TimeAccountPostingRule[] results?;
 };
 
 # Represents the Headers record for the operation: deleteWorkScheduleDayModelAssignment
@@ -269,22 +269,22 @@ public type DeleteWorkScheduleDayModelAssignmentHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.TemporaryTimeInformation record {
+public type TemporaryTimeInformation record {
     string externalCode?;
-    SFOData\.WorkScheduleDayModel dayModelNav?;
-    SFOData\.WorkSchedule workScheduleNav?;
+    WorkScheduleDayModel dayModelNav?;
+    WorkSchedule workScheduleNav?;
 };
 
 public type ModifiedEmployee\ Time\ NOR record {
-    SFOData\.EmployeeTimeNOR d?;
+    EmployeeTimeNOR d?;
 };
 
 public type CollectionofTime\ Type\ Profile record {
-    SFOData\.TimeTypeProfile[] results?;
+    TimeTypeProfile[] results?;
 };
 
 public type Holiday record {
-    SFOData\.Holiday d?;
+    Holiday d?;
 };
 
 # Represents the Queries record for the operation: getTimeManagementAlertMessage
@@ -307,11 +307,11 @@ public type GetTimeTypeAUSQueries record {
     ("TimeType_externalCode"|"advanceLeavePaymentAllowed"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"splitPaymentAcrossFinancialYearAllowed")[] \$select?;
 };
 
-public type SFOData\.WorkScheduleDayModelVariantAssignment record {
+public type WorkScheduleDayModelVariantAssignment record {
     string WorkScheduleDayModel_externalCode?;
     string externalCode?;
-    SFOData\.WorkScheduleDayModel variantDayModelNav?;
-    SFOData\.WorkScheduleDayModelVariantIdentifier variantIdentifierNav?;
+    WorkScheduleDayModel variantDayModelNav?;
+    WorkScheduleDayModelVariantIdentifier variantIdentifierNav?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountSnapshot
@@ -337,7 +337,7 @@ public type GetEmployeeTimeAUSQueries record {
 };
 
 public type CreatedWork\ Schedule\ Day\ Model record {
-    SFOData\.WorkScheduleDayModel d?;
+    WorkScheduleDayModel d?;
 };
 
 # Represents the Queries record for the operation: listPeriodicTimeAccountUpdateProfiles
@@ -359,7 +359,7 @@ public type ListPeriodicTimeAccountUpdateProfilesQueries record {
 };
 
 public type Holiday\ Calendar record {
-    SFOData\.HolidayCalendar d?;
+    HolidayCalendar d?;
 };
 
 # Represents the Headers record for the operation: deleteWorkScheduleDayModel
@@ -381,7 +381,7 @@ public type Wrapper_46 record {
 };
 
 public type ModifiedEmployee\ Time\ POL record {
-    SFOData\.EmployeeTimePOL d?;
+    EmployeeTimePOL d?;
 };
 
 public type Wrapper_47 record {
@@ -405,7 +405,7 @@ public type Wrapper_40 record {
 };
 
 public type Shift\ Classification record {
-    SFOData\.ShiftClassification d?;
+    ShiftClassification d?;
 };
 
 public type Wrapper_41 record {
@@ -413,19 +413,19 @@ public type Wrapper_41 record {
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDayModelAssignment record {
-    SFOData\.WorkScheduleDayModelAssignment[] results?;
+    WorkScheduleDayModelAssignment[] results?;
 };
 
 public type CollectionofAccrual\ Calculation\ Base record {
-    SFOData\.AccrualCalculationBase[] results?;
+    AccrualCalculationBase[] results?;
 };
 
 public type Employee\ Time\ CAN record {
-    SFOData\.EmployeeTimeCAN d?;
+    EmployeeTimeCAN d?;
 };
 
 public type Temporary\ Time\ Information record {
-    SFOData\.TemporaryTimeInformation d?;
+    TemporaryTimeInformation d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeMEX
@@ -436,7 +436,7 @@ public type GetEmployeeTimeMEXQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"cust_MEX"|"cust_test"|"daysAlreadyCumulatedForSameSickness"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"referenceNumber")[] \$select?;
 };
 
-public type SFOData\.EmployeeTimeUSA record {
+public type EmployeeTimeUSA record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
@@ -450,7 +450,7 @@ public type GetEmployeeTimeESPQueries record {
 };
 
 public type Time\ Account\ Posting\ Rule record {
-    SFOData\.TimeAccountPostingRule d?;
+    TimeAccountPostingRule d?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountPayouts
@@ -492,17 +492,17 @@ public type Wrapper_56 record {
 };
 
 public type Employee\ Time\ Account\ Balance record {
-    SFOData\.EmpTimeAccountBalance d?;
+    EmpTimeAccountBalance d?;
 };
 
 public type Wrapper_53 record {
     CollectionofPeriodic\ Time\ Account\ Update\ Profile d?;
 };
 
-public type SFOData\.EmployeeTimeESP record {
+public type EmployeeTimeESP record {
     string EmployeeTime_externalCode?;
     string externalCode?;
-    SFOData\.EmployeeTimeGroup identicalSicknessGroupNav?;
+    EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
 public type Wrapper_54 record {
@@ -513,10 +513,10 @@ public type Wrapper_51 record {
     CollectionofTime\ Account\ Payout\ Profile d?;
 };
 
-public type SFOData\.EmployeeTimeCOL record {
+public type EmployeeTimeCOL record {
     string EmployeeTime_externalCode?;
     string externalCode?;
-    SFOData\.EmployeeTimeGroup identicalSicknessGroupNav?;
+    EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
 public type Wrapper_52 record {
@@ -544,7 +544,7 @@ public type ListWorkScheduleDayModelAssignmentsQueries record {
 };
 
 public type RelatedCollectionSFOData_TimeManagementTerminationEndHandlingLegalEntityConfiguration record {
-    SFOData\.TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
+    TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
 };
 
 public type Wrapper_50 record {
@@ -559,7 +559,7 @@ public type GetTimeManagementTerminationEndHandlingLegalEntityConfigurationQueri
     ("TimeManagementTerminationEndHandlingConfiguration_externalCode"|"activationStatus"|"automationLevelOfEmployeeTimeProcessing"|"automationLevelOfTimeAccountClosing"|"createdBy"|"createdDateTime"|"entityUUID"|"excludes"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"legalEntity"|"mdfSystemRecordStatus"|"offsetInDays")[] \$select?;
 };
 
-public type SFOData\.RecalculationBasedField record {
+public type RecalculationBasedField record {
     string TimeAccountType_externalCode?;
     string recalcField?;
 };
@@ -570,13 +570,13 @@ public type GetWorkScheduleDayQueries record {
     ("WorkSchedule_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"cust_testdata"|"day"|"entityUUID"|"hoursAndMinutes"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"workingHours")[] \$select?;
 };
 
-public type SFOData\.TimeManagementTerminationEndHandlingExcludedEventReason record {
+public type TimeManagementTerminationEndHandlingExcludedEventReason record {
     string TimeManagementTerminationEndHandlingExclusion_externalCode?;
     string externalCode?;
 };
 
 public type ModifiedAccrual\ Calculation\ Base record {
-    SFOData\.AccrualCalculationBase d?;
+    AccrualCalculationBase d?;
 };
 
 public type Wrapper_29 record {
@@ -588,7 +588,7 @@ public type Wrapper_26 record {
 };
 
 public type CollectionofTime\ Type\ USA record {
-    SFOData\.TimeTypeUSA[] results?;
+    TimeTypeUSA[] results?;
 };
 
 public type Wrapper_27 record {
@@ -624,11 +624,11 @@ public type DeleteEmployeeTimeMEXHeaders record {
 };
 
 public type CollectionofTime\ Management\ Termination\ End\ Handling\ Configuration record {
-    SFOData\.TimeManagementTerminationEndHandlingConfiguration[] results?;
+    TimeManagementTerminationEndHandlingConfiguration[] results?;
 };
 
 public type Work\ Schedule\ Day\ Model\ Segment record {
-    SFOData\.WorkScheduleDayModelSegment d?;
+    WorkScheduleDayModelSegment d?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeDEU
@@ -638,32 +638,32 @@ public type GetTimeTypeDEUQueries record {
 };
 
 public type ModifiedEmployee\ Time\ SWE record {
-    SFOData\.EmployeeTimeSWE d?;
+    EmployeeTimeSWE d?;
 };
 
 public type CollectionofHoliday record {
-    SFOData\.Holiday[] results?;
+    Holiday[] results?;
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model\ Assignment record {
-    SFOData\.WorkScheduleDayModelAssignment[] results?;
+    WorkScheduleDayModelAssignment[] results?;
 };
 
 public type Work\ Schedule\ Day\ Model record {
-    SFOData\.WorkScheduleDayModel d?;
+    WorkScheduleDayModel d?;
 };
 
-public type SFOData\.TimeAccountTypeAUS record {
+public type TimeAccountTypeAUS record {
     string TimeAccountType_externalCode?;
     string externalCode?;
 };
 
 public type Work\ Schedule\ Day record {
-    SFOData\.WorkScheduleDay d?;
+    WorkScheduleDay d?;
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDayModelSegment record {
-    SFOData\.WorkScheduleDayModelSegment[] results?;
+    WorkScheduleDayModelSegment[] results?;
 };
 
 public type Wrapper_37 record {
@@ -675,7 +675,7 @@ public type Wrapper_38 record {
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDay record {
-    SFOData\.WorkScheduleDay[] results?;
+    WorkScheduleDay[] results?;
 };
 
 public type Wrapper_36 record {
@@ -695,7 +695,7 @@ public type Wrapper_31 record {
 };
 
 public type Recalculation\ Based\ Field record {
-    SFOData\.RecalculationBasedField d?;
+    RecalculationBasedField d?;
 };
 
 public type Wrapper_32 record {
@@ -703,7 +703,7 @@ public type Wrapper_32 record {
 };
 
 public type CreatedWork\ Schedule\ Day record {
-    SFOData\.WorkScheduleDay d?;
+    WorkScheduleDay d?;
 };
 
 public type Wrapper_30 record {
@@ -725,17 +725,17 @@ public type GetEmployeeTimeGroupItemQueries record {
 };
 
 public type Work\ Schedule record {
-    SFOData\.WorkSchedule d?;
+    WorkSchedule d?;
 };
 
 public type ModifiedEmployee\ Time\ NLD record {
-    SFOData\.EmployeeTimeNLD d?;
+    EmployeeTimeNLD d?;
 };
 
-public type SFOData\.WorkSchedule record {
+public type WorkSchedule record {
     string externalCode?;
-    SFOData\.WorkSchedule periodModelNav?;
-    SFOData\.ShiftClassification shiftClassificationNav?;
+    WorkSchedule periodModelNav?;
+    ShiftClassification shiftClassificationNav?;
     RelatedCollectionSFOData_WorkScheduleDayModelAssignment workScheduleDayModels?;
     RelatedCollectionSFOData_WorkScheduleDay workScheduleDays?;
 };
@@ -759,15 +759,15 @@ public type ListTimeManagementTerminationEndHandlingExcludedEventReasonsQueries 
 };
 
 public type Time\ Type\ USA record {
-    SFOData\.TimeTypeUSA d?;
+    TimeTypeUSA d?;
 };
 
 public type CollectionofEmployee\ Time\ NOR record {
-    SFOData\.EmployeeTimeNOR[] results?;
+    EmployeeTimeNOR[] results?;
 };
 
 public type Time\ Type record {
-    SFOData\.TimeType d?;
+    TimeType d?;
 };
 
 # Represents the Queries record for the operation: listWorkScheduleDayModelSegments
@@ -801,15 +801,15 @@ public type GetEmpTimeAccountBalanceQueries record {
 };
 
 public type CreatedEmployee\ Time\ USA record {
-    SFOData\.EmployeeTimeUSA d?;
+    EmployeeTimeUSA d?;
 };
 
-public type SFOData\.EmployeeTimeDEU record {
+public type EmployeeTimeDEU record {
     string EmployeeTime_externalCode?;
     string externalCode?;
-    SFOData\.ElectronicSicknessCertificateExclusionReasonDEU electronicSicknessCertificateExclusionReasonNav?;
-    SFOData\.EmployeeTimeGroup identicalSicknessGroupNav?;
-    SFOData\.EmployeeTimeGroup overlappingSicknessGroupNav?;
+    ElectronicSicknessCertificateExclusionReasonDEU electronicSicknessCertificateExclusionReasonNav?;
+    EmployeeTimeGroup identicalSicknessGroupNav?;
+    EmployeeTimeGroup overlappingSicknessGroupNav?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeUSA
@@ -883,7 +883,7 @@ public type ListEmployeeTimesQueries record {
 };
 
 public type CollectionofAvailable\ Time\ Type record {
-    SFOData\.AvailableTimeType[] results?;
+    AvailableTimeType[] results?;
 };
 
 # Represents the Queries record for the operation: getTimeManagementAlert
@@ -895,7 +895,7 @@ public type GetTimeManagementAlertQueries record {
 };
 
 public type CollectionofTime\ Account\ Payout\ Profile record {
-    SFOData\.TimeAccountPayoutProfile[] results?;
+    TimeAccountPayoutProfile[] results?;
 };
 
 # Represents the Queries record for the operation: getHolidayCategory
@@ -905,16 +905,16 @@ public type GetHolidayCategoryQueries record {
 };
 
 public type Periodic\ Time\ Account\ Update\ Profile record {
-    SFOData\.PeriodicTimeAccountUpdateProfile d?;
+    PeriodicTimeAccountUpdateProfile d?;
 };
 
-public type SFOData\.TimeTypeUSA record {
+public type TimeTypeUSA record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
 public type CollectionofPeriodic\ Time\ Account\ Update\ Profile record {
-    SFOData\.PeriodicTimeAccountUpdateProfile[] results?;
+    PeriodicTimeAccountUpdateProfile[] results?;
 };
 
 # Represents the Queries record for the operation: getElectronicSicknessCertificateExclusionReasonDEU
@@ -924,14 +924,14 @@ public type GetElectronicSicknessCertificateExclusionReasonDEUQueries record {
 };
 
 public type CollectionofTime\ Account\ Snapshot record {
-    SFOData\.TimeAccountSnapshot[] results?;
+    TimeAccountSnapshot[] results?;
 };
 
-public type SFOData\.TimeAccountPayoutProfile record {
+public type TimeAccountPayoutProfile record {
     string externalCode?;
 };
 
-public type SFOData\.AccrualCalculationBase record {
+public type AccrualCalculationBase record {
     string externalCode?;
 };
 
@@ -940,7 +940,7 @@ public type Wrapper_9 record {
 };
 
 public type CollectionofEmployee\ Time\ SWE record {
-    SFOData\.EmployeeTimeSWE[] results?;
+    EmployeeTimeSWE[] results?;
 };
 
 public type Wrapper_4 record {
@@ -952,7 +952,7 @@ public type Wrapper_5 record {
 };
 
 public type CreatedWork\ Schedule\ Day\ Model\ Segment record {
-    SFOData\.WorkScheduleDayModelSegment d?;
+    WorkScheduleDayModelSegment d?;
 };
 
 public type Wrapper_6 record {
@@ -1021,22 +1021,22 @@ public type ListAvailableTimeTypesQueries record {
     ("TimeTypeProfile_externalCode"|"TimeTypeProfile_mdfSystemEffectiveStartDate"|"copyableInTimesheet"|"createdBy"|"createdDate"|"createdDateTime"|"enabledInEssScenario"|"entityUUID"|"externalCode"|"favoriteTimeType"|"hideAccountBalance"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"timeType"|"timeTypeFilterRule")[] \$select?;
 };
 
-public type SFOData\.WorkScheduleDayModelSegment record {
+public type WorkScheduleDayModelSegment record {
     string WorkScheduleDayModel_externalCode?;
     string externalCode?;
 };
 
-public type SFOData\.EmployeeTimeCAN record {
+public type EmployeeTimeCAN record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
 
 public type Time\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration record {
-    SFOData\.TimeManagementTerminationEndHandlingLegalEntityConfiguration d?;
+    TimeManagementTerminationEndHandlingLegalEntityConfiguration d?;
 };
 
 public type CollectionofWork\ Schedule\ Day record {
-    SFOData\.WorkScheduleDay[] results?;
+    WorkScheduleDay[] results?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeeTimeNLD
@@ -1046,15 +1046,15 @@ public type DeleteEmployeeTimeNLDHeaders record {
 };
 
 public type ModifiedEmployee\ Time\ CAN record {
-    SFOData\.EmployeeTimeCAN d?;
+    EmployeeTimeCAN d?;
 };
 
 public type CollectionofEmployee\ Time\ AUS record {
-    SFOData\.EmployeeTimeAUS[] results?;
+    EmployeeTimeAUS[] results?;
 };
 
 public type ModifiedWork\ Schedule\ Day\ Model\ Assignment record {
-    SFOData\.WorkScheduleDayModelAssignment d?;
+    WorkScheduleDayModelAssignment d?;
 };
 
 # Represents the Queries record for the operation: getRecalculationBasedField
@@ -1084,7 +1084,7 @@ public type ListEmployeeTimeCalendarsQueries record {
 };
 
 public type CollectionofTime\ Type\ NOR record {
-    SFOData\.TimeTypeNOR[] results?;
+    TimeTypeNOR[] results?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountDetailNavOfTimeAccountPayout
@@ -1116,7 +1116,7 @@ public type ListWorkScheduleDayModelVariantAssignmentsQueries record {
 };
 
 public type CollectionofTime\ Type\ AUS record {
-    SFOData\.TimeTypeAUS[] results?;
+    TimeTypeAUS[] results?;
 };
 
 # Represents the Queries record for the operation: getHoliday
@@ -1132,20 +1132,20 @@ public type GetTimeAccountPurchaseProfilePayComponentAssignmentQueries record {
 };
 
 public type Electronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU record {
-    SFOData\.ElectronicSicknessCertificateExclusionReasonDEU d?;
+    ElectronicSicknessCertificateExclusionReasonDEU d?;
 };
 
-public type SFOData\.EmployeeTimeITA record {
+public type EmployeeTimeITA record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
 
 public type Time\ Account\ Snapshot record {
-    SFOData\.TimeAccountSnapshot d?;
+    TimeAccountSnapshot d?;
 };
 
 public type CollectionofEmployee\ Time\ POL record {
-    SFOData\.EmployeeTimePOL[] results?;
+    EmployeeTimePOL[] results?;
 };
 
 # Represents the Queries record for the operation: getWorkScheduleDayModelVariantIdentifier
@@ -1154,10 +1154,10 @@ public type GetWorkScheduleDayModelVariantIdentifierQueries record {
     ("createdBy"|"createdDateTime"|"description"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.TimeManagementTerminationEndHandlingConfiguration record {
+public type TimeManagementTerminationEndHandlingConfiguration record {
     string externalCode?;
     RelatedCollectionSFOData_TimeManagementTerminationEndHandlingLegalEntityConfiguration countryConfiguration?;
-    SFOData\.TimeManagementTerminationEndHandlingExclusion excludesNav?;
+    TimeManagementTerminationEndHandlingExclusion excludesNav?;
 };
 
 # Represents the Queries record for the operation: getTimeType
@@ -1187,10 +1187,10 @@ public type ListAccrualCalculationBasesQueries record {
 };
 
 public type CollectionofTemporary\ Time\ Information record {
-    SFOData\.TemporaryTimeInformation[] results?;
+    TemporaryTimeInformation[] results?;
 };
 
-public type SFOData\.EmpTimeAccountBalance record {
+public type EmpTimeAccountBalance record {
     string timeAccount?;
 };
 
@@ -1201,22 +1201,22 @@ public type DeleteEmployeeTimeSWEHeaders record {
 };
 
 public type CollectionofTime\ Account\ Purchase\ Profile record {
-    SFOData\.TimeAccountPurchaseProfile[] results?;
+    TimeAccountPurchaseProfile[] results?;
 };
 
 public type Time\ Management\ Termination\ End\ Handling\ Configuration record {
-    SFOData\.TimeManagementTerminationEndHandlingConfiguration d?;
+    TimeManagementTerminationEndHandlingConfiguration d?;
 };
 
 public type CollectionofEmployee\ Time\ NLD record {
-    SFOData\.EmployeeTimeNLD[] results?;
+    EmployeeTimeNLD[] results?;
 };
 
 public type CollectionofShift\ Classification record {
-    SFOData\.ShiftClassification[] results?;
+    ShiftClassification[] results?;
 };
 
-public type SFOData\.WorkScheduleDayModelVariantIdentifier record {
+public type WorkScheduleDayModelVariantIdentifier record {
     string externalCode?;
 };
 
@@ -1227,13 +1227,13 @@ public type DeleteEmployeeTimeDEUHeaders record {
 };
 
 public type Time\ Type\ AUS record {
-    SFOData\.TimeTypeAUS d?;
+    TimeTypeAUS d?;
 };
 
-public type SFOData\.WorkScheduleDayModelAssignment record {
+public type WorkScheduleDayModelAssignment record {
     string WorkSchedule_externalCode?;
     string day?;
-    SFOData\.WorkScheduleDayModel dayModelNav?;
+    WorkScheduleDayModel dayModelNav?;
     RelatedCollectionSFOData_WorkScheduleDayModelAssignmentSegment segments?;
 };
 
@@ -1246,7 +1246,7 @@ public type GetTimeManagementTerminationEndHandlingExclusionQueries record {
 };
 
 public type Employee\ Time\ ITA record {
-    SFOData\.EmployeeTimeITA d?;
+    EmployeeTimeITA d?;
 };
 
 # Represents the Queries record for the operation: listEmpTimeAccountBalances
@@ -1288,26 +1288,26 @@ public type ListEmployeeTimeMEXsQueries record {
 };
 
 public type Time\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedEventReason d?;
+    TimeManagementTerminationEndHandlingExcludedEventReason d?;
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
-    SFOData\.WorkScheduleDayModelAssignmentSegment[] results?;
+    WorkScheduleDayModelAssignmentSegment[] results?;
 };
 
 public type CreatedWork\ Schedule record {
-    SFOData\.WorkSchedule d?;
+    WorkSchedule d?;
 };
 
 public type CollectionofHolidayCategory record {
-    SFOData\.HolidayCategory[] results?;
+    HolidayCategory[] results?;
 };
 
-public type SFOData\.AvailableTimeType record {
+public type AvailableTimeType record {
     string TimeTypeProfile_externalCode?;
     string TimeTypeProfile_mdfSystemEffectiveStartDate?;
     string externalCode?;
-    SFOData\.TimeType timeTypeNav?;
+    TimeType timeTypeNav?;
 };
 
 # Represents the Queries record for the operation: getWorkSchedule
@@ -1319,7 +1319,7 @@ public type GetWorkScheduleQueries record {
 };
 
 public type CollectionofTime\ Type\ SWE record {
-    SFOData\.TimeTypeSWE[] results?;
+    TimeTypeSWE[] results?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimeNLDs
@@ -1359,7 +1359,7 @@ public type ListTimeTypeITAsQueries record {
 };
 
 public type Time\ Type\ NLD record {
-    SFOData\.TimeTypeNLD d?;
+    TimeTypeNLD d?;
 };
 
 # Represents the Queries record for the operation: getAccountTypeNavOfTimeAccountPayout
@@ -1371,19 +1371,19 @@ public type GetAccountTypeNavOfTimeAccountPayoutQueries record {
 };
 
 public type CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedEventReason[] results?;
+    TimeManagementTerminationEndHandlingExcludedEventReason[] results?;
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model\ Variant\ Identifier record {
-    SFOData\.WorkScheduleDayModelVariantIdentifier[] results?;
+    WorkScheduleDayModelVariantIdentifier[] results?;
 };
 
 public type CollectionofTime\ Type\ NLD record {
-    SFOData\.TimeTypeNLD[] results?;
+    TimeTypeNLD[] results?;
 };
 
 public type CreatedEmployee\ Time\ ITA record {
-    SFOData\.EmployeeTimeITA d?;
+    EmployeeTimeITA d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTime
@@ -1395,7 +1395,7 @@ public type GetEmployeeTimeQueries record {
 };
 
 public type Time\ Type\ Profile record {
-    SFOData\.TimeTypeProfile d?;
+    TimeTypeProfile d?;
 };
 
 # Represents the Queries record for the operation: listHolidays
@@ -1417,27 +1417,27 @@ public type ListHolidaysQueries record {
 };
 
 public type CollectionofHoliday\ Calendar record {
-    SFOData\.HolidayCalendar[] results?;
+    HolidayCalendar[] results?;
 };
 
 public type Time\ Type\ SWE record {
-    SFOData\.TimeTypeSWE d?;
+    TimeTypeSWE d?;
 };
 
 public type Time\ Account\ Type\ AUS record {
-    SFOData\.TimeAccountTypeAUS d?;
+    TimeAccountTypeAUS d?;
 };
 
 public type ModifiedWork\ Schedule\ Day\ Model\ Segment record {
-    SFOData\.WorkScheduleDayModelSegment d?;
+    WorkScheduleDayModelSegment d?;
 };
 
 public type CollectionofEmployee\ Time\ CAN record {
-    SFOData\.EmployeeTimeCAN[] results?;
+    EmployeeTimeCAN[] results?;
 };
 
 public type CollectionofTime\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration record {
-    SFOData\.TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
+    TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeeTimeCAN
@@ -1447,7 +1447,7 @@ public type DeleteEmployeeTimeCANHeaders record {
 };
 
 public type Available\ Time\ Type record {
-    SFOData\.AvailableTimeType d?;
+    AvailableTimeType d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeCalendar
@@ -1476,33 +1476,33 @@ public type ListEmployeeTimeNORsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workCapacityPercentage"|"workIncapacityPercentage")[] \$select?;
 };
 
-public type SFOData\.EmployeeTimeGroupItem record {
+public type EmployeeTimeGroupItem record {
     string EmployeeTimeGroup_externalCode?;
     string externalCode?;
-    SFOData\.EmployeeTime employeeTimeNav?;
+    EmployeeTime employeeTimeNav?;
 };
 
 public type CollectionofTime\ Account\ Posting\ Rule record {
-    SFOData\.TimeAccountPostingRule[] results?;
+    TimeAccountPostingRule[] results?;
 };
 
 public type RelatedCollectionSFOData_RecalculationBasedField record {
-    SFOData\.RecalculationBasedField[] results?;
+    RecalculationBasedField[] results?;
 };
 
 public type Work\ Schedule\ Day\ Model\ Assignment record {
-    SFOData\.WorkScheduleDayModelAssignment d?;
+    WorkScheduleDayModelAssignment d?;
 };
 
 public type ModifiedWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
-    SFOData\.WorkScheduleDayModelAssignmentSegment d?;
+    WorkScheduleDayModelAssignmentSegment d?;
 };
 
-public type SFOData\.HolidayAssignment record {
+public type HolidayAssignment record {
     string HolidayCalendar_externalCode?;
     string date?;
-    SFOData\.HolidayCategory holidayCategoryNav?;
-    SFOData\.Holiday holidayNav?;
+    HolidayCategory holidayCategoryNav?;
+    Holiday holidayNav?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -1559,15 +1559,15 @@ public type DeleteWorkScheduleDayModelSegmentHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.WorkScheduleDayModel record {
+public type WorkScheduleDayModel record {
     string externalCode?;
     RelatedCollectionSFOData_WorkScheduleDayModelSegment segments?;
-    SFOData\.ShiftClassification shiftClassificationNav?;
+    ShiftClassification shiftClassificationNav?;
     RelatedCollectionSFOData_WorkScheduleDayModelVariantAssignment variants?;
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model\ Variant\ Assignment record {
-    SFOData\.WorkScheduleDayModelVariantAssignment[] results?;
+    WorkScheduleDayModelVariantAssignment[] results?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeeTimeITA
@@ -1577,11 +1577,11 @@ public type DeleteEmployeeTimeITAHeaders record {
 };
 
 public type Work\ Schedule\ Day\ Model\ Assignment\ Segment record {
-    SFOData\.WorkScheduleDayModelAssignmentSegment d?;
+    WorkScheduleDayModelAssignmentSegment d?;
 };
 
 public type ModifiedEmployee\ Time\ ITA record {
-    SFOData\.EmployeeTimeITA d?;
+    EmployeeTimeITA d?;
 };
 
 # Represents the Headers record for the operation: deleteTemporaryTimeInformation
@@ -1591,16 +1591,16 @@ public type DeleteTemporaryTimeInformationHeaders record {
 };
 
 public type Time\ Account\ Type record {
-    SFOData\.TimeAccountType d?;
+    TimeAccountType d?;
 };
 
-public type SFOData\.TimeTypeSWE record {
+public type TimeTypeSWE record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
 public type CollectionofTime\ Type\ DEU record {
-    SFOData\.TimeTypeDEU[] results?;
+    TimeTypeDEU[] results?;
 };
 
 # Represents the Queries record for the operation: listWorkScheduleDayModelAssignmentSegments
@@ -1622,29 +1622,29 @@ public type ListWorkScheduleDayModelAssignmentSegmentsQueries record {
 };
 
 public type CollectionofTime\ Account\ Summary record {
-    SFOData\.TimeAccountSummary[] value?;
+    TimeAccountSummary[] value?;
 };
 
-public type SFOData\.HolidayCategory record {
+public type HolidayCategory record {
     string externalCode?;
 };
 
-public type SFOData\.TimeAccountSnapshot record {
+public type TimeAccountSnapshot record {
     string externalCode?;
-    SFOData\.TimeAccountType accountTypeNav?;
+    TimeAccountType accountTypeNav?;
 };
 
 public type ModifiedWork\ Schedule record {
-    SFOData\.WorkSchedule d?;
+    WorkSchedule d?;
 };
 
-public type SFOData\.EmployeeTimeGroup record {
+public type EmployeeTimeGroup record {
     string externalCode?;
     RelatedCollectionSFOData_EmployeeTimeGroupItem items?;
 };
 
 public type CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
+    TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeTypeProfiles
@@ -1668,14 +1668,14 @@ public type ListTimeTypeProfilesQueries record {
 };
 
 public type Time\ Type\ NOR record {
-    SFOData\.TimeTypeNOR d?;
+    TimeTypeNOR d?;
 };
 
 public type RelatedCollectionSFOData_TimeAccountPurchaseProfilePayComponentAssignment record {
-    SFOData\.TimeAccountPurchaseProfilePayComponentAssignment[] results?;
+    TimeAccountPurchaseProfilePayComponentAssignment[] results?;
 };
 
-public type SFOData\.TimeAccountSummary record {
+public type TimeAccountSummary record {
     string createdBy?;
     string createdDateTime?;
     string entityUUID?;
@@ -1692,15 +1692,15 @@ public type GetEmployeeTimeUSAQueries record {
 };
 
 public type CollectionofRecalculation\ Based\ Field record {
-    SFOData\.RecalculationBasedField[] results?;
+    RecalculationBasedField[] results?;
 };
 
-public type SFOData\.TimeTypeNLD record {
+public type TimeTypeNLD record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
-public type SFOData\.TimeManagementTerminationEndHandlingExclusion record {
+public type TimeManagementTerminationEndHandlingExclusion record {
     string externalCode?;
     RelatedCollectionSFOData_TimeManagementTerminationEndHandlingExcludedEventReason excludedEventReasons?;
     RelatedCollectionSFOData_TimeManagementTerminationEndHandlingExcludedTimeAccountType excludedTimeAccountTypes?;
@@ -1725,14 +1725,14 @@ public type ListTimeTypeNORsQueries record {
 };
 
 public type Time\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment record {
-    SFOData\.TimeAccountPurchaseProfilePayComponentAssignment d?;
+    TimeAccountPurchaseProfilePayComponentAssignment d?;
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model\ Segment record {
-    SFOData\.WorkScheduleDayModelSegment[] results?;
+    WorkScheduleDayModelSegment[] results?;
 };
 
-public type SFOData\.HolidayCalendar record {
+public type HolidayCalendar record {
     string externalCode?;
     RelatedCollectionSFOData_HolidayAssignment holidayAssignments?;
 };
@@ -1758,7 +1758,7 @@ public type ListWorkScheduleDayModelsQueries record {
 };
 
 public type Time\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedTimeAccountType d?;
+    TimeManagementTerminationEndHandlingExcludedTimeAccountType d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeNOR
@@ -1785,7 +1785,7 @@ public type ListTimeAccountPayoutProfilesQueries record {
     ("country"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payComponent"|"payComponentAccrualSeparated"|"payComponentGroup"|"payComponentTermination"|"payComponentTerminationAccrualSeparated"|"payoutMessageText_ar_SA"|"payoutMessageText_cy_GB"|"payoutMessageText_de_DE"|"payoutMessageText_defaultValue"|"payoutMessageText_en_DEBUG"|"payoutMessageText_en_DEBUG_APOS"|"payoutMessageText_en_DEBUG_APOS_RTL"|"payoutMessageText_en_GB"|"payoutMessageText_en_RTL"|"payoutMessageText_en_US"|"payoutMessageText_es_ES"|"payoutMessageText_es_MX"|"payoutMessageText_fr_CA"|"payoutMessageText_fr_FR"|"payoutMessageText_hi_IN"|"payoutMessageText_iw_IL"|"payoutMessageText_ja_JP"|"payoutMessageText_ko_KR"|"payoutMessageText_localized"|"payoutMessageText_nl_NL"|"payoutMessageText_pt_BR"|"payoutMessageText_th_TH"|"payoutMessageText_zh_CN"|"workflowConfiguration")[] \$select?;
 };
 
-public type SFOData\.EmployeeTimeNOR record {
+public type EmployeeTimeNOR record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
@@ -1810,13 +1810,13 @@ public type ListTimeManagementTerminationEndHandlingConfigurationsQueries record
     ("activationStatus"|"automationLevelOfEmployeeTimeProcessing"|"automationLevelOfTimeAccountClosing"|"createdBy"|"createdDateTime"|"entityUUID"|"excludes"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"offsetInDays")[] \$select?;
 };
 
-public type SFOData\.EmployeeTimeAUS record {
+public type EmployeeTimeAUS record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
 
 public type CollectionofTime\ Type\ CAN record {
-    SFOData\.TimeTypeCAN[] results?;
+    TimeTypeCAN[] results?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeCAN
@@ -1833,12 +1833,12 @@ public type GetHolidayAssignmentQueries record {
     ("HolidayCalendar_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"cust_testHolidayAssignment"|"date"|"entityUUID"|"holiday"|"holidayCategory"|"holidayClass"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type SFOData\.PeriodicTimeAccountUpdateProfile record {
+public type PeriodicTimeAccountUpdateProfile record {
     string externalCode?;
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDayModelVariantAssignment record {
-    SFOData\.WorkScheduleDayModelVariantAssignment[] results?;
+    WorkScheduleDayModelVariantAssignment[] results?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeGroup
@@ -1850,7 +1850,7 @@ public type GetEmployeeTimeGroupQueries record {
 };
 
 public type CollectionofWork\ Schedule\ Day\ Model record {
-    SFOData\.WorkScheduleDayModel[] results?;
+    WorkScheduleDayModel[] results?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountType
@@ -1862,7 +1862,7 @@ public type GetTimeAccountTypeQueries record {
 };
 
 public type Time\ Management\ Termination\ End\ Handling\ Exclusion record {
-    SFOData\.TimeManagementTerminationEndHandlingExclusion d?;
+    TimeManagementTerminationEndHandlingExclusion d?;
 };
 
 # Represents the Queries record for the operation: listTimeTypeNLDs
@@ -1884,11 +1884,11 @@ public type ListTimeTypeNLDsQueries record {
 };
 
 public type CollectionofAbsence\ Counting\ Method record {
-    SFOData\.AbsenceCountingMethod[] results?;
+    AbsenceCountingMethod[] results?;
 };
 
 public type CreatedEmployee\ Time\ CAN record {
-    SFOData\.EmployeeTimeCAN d?;
+    EmployeeTimeCAN d?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimeITAs
@@ -1930,7 +1930,7 @@ public type ListHolidayAssignmentsQueries record {
 };
 
 public type Time\ Account\ Purchase\ Profile record {
-    SFOData\.TimeAccountPurchaseProfile d?;
+    TimeAccountPurchaseProfile d?;
 };
 
 # Represents the Queries record for the operation: getTimeAccount
@@ -1953,10 +1953,10 @@ public type DeleteEmployeeTimeCOLHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.TimeAccountPostingRule record {
+public type TimeAccountPostingRule record {
     string TimeType_externalCode?;
     string externalCode?;
-    SFOData\.TimeAccountType timeAccountTypeNav?;
+    TimeAccountType timeAccountTypeNav?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimePOL
@@ -1984,7 +1984,7 @@ public type ListWorkScheduleDaysQueries record {
 };
 
 public type CollectionofWork\ Schedule record {
-    SFOData\.WorkSchedule[] results?;
+    WorkSchedule[] results?;
 };
 
 # Represents the Queries record for the operation: listShiftClassifications
@@ -2032,7 +2032,7 @@ public type GetTimeAccountPayoutProfileQueries record {
 };
 
 public type Employee\ Time\ USA record {
-    SFOData\.EmployeeTimeUSA d?;
+    EmployeeTimeUSA d?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountSummarys
@@ -2060,7 +2060,7 @@ public type GetTimeAccountNavOfTimeAccountPayoutQueries record {
 };
 
 public type Accrual\ Calculation\ Base record {
-    SFOData\.AccrualCalculationBase d?;
+    AccrualCalculationBase d?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeSWE
@@ -2069,7 +2069,7 @@ public type GetTimeTypeSWEQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workIncapacityPercentageESSView"|"workIncapacityPercentageMSSEnabled")[] \$select?;
 };
 
-public type SFOData\.WorkScheduleDay record {
+public type WorkScheduleDay record {
     string WorkSchedule_externalCode?;
     string day?;
 };
@@ -2106,7 +2106,7 @@ public type GetTimeTypeNLDQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"illnessRecoveryTracking"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.TimeTypeNOR record {
+public type TimeTypeNOR record {
     string TimeType_externalCode?;
     string externalCode?;
 };
@@ -2144,11 +2144,11 @@ public type ListTimeTypeAUSsQueries record {
 };
 
 public type CreatedWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
-    SFOData\.WorkScheduleDayModelAssignmentSegment d?;
+    WorkScheduleDayModelAssignmentSegment d?;
 };
 
 public type Time\ Account\ Payout\ Profile record {
-    SFOData\.TimeAccountPayoutProfile d?;
+    TimeAccountPayoutProfile d?;
 };
 
 # Represents the Queries record for the operation: listTemporaryTimeInformations
@@ -2169,10 +2169,6 @@ public type ListTemporaryTimeInformationsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("comment"|"createdBy"|"createdDate"|"createdDateTime"|"cust_trghtry"|"cust_trhtrh"|"dayModel"|"endDate"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"recordId"|"startDate"|"userId"|"workSchedule")[] \$select?;
-};
-
-public type SFOData\.Holiday record {
-    string holidayCode?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeeTimePOL
@@ -2200,16 +2196,16 @@ public type ListEmployeeTimeSWEsQueries record {
 };
 
 public type ModifiedTemporary\ Time\ Information record {
-    SFOData\.TemporaryTimeInformation d?;
+    TemporaryTimeInformation d?;
 };
 
-public type SFOData\.TimeTypeAUS record {
+public type TimeTypeAUS record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
 public type ModifiedWork\ Schedule\ Day\ Model record {
-    SFOData\.WorkScheduleDayModel d?;
+    WorkScheduleDayModel d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeITA
@@ -2238,7 +2234,7 @@ public type ListTimeAccountTypesQueries record {
     ("accountBookingOffsetInMonths"|"accountCreationAutomationLevel"|"accountCreationDay"|"accountCreationMonth"|"accountCreationOffsetInMonths"|"accountCreationReferenceDate"|"accountDetailRetentionGroup"|"accountRetentionGroup"|"accrualAutomationLevel"|"accrualCalculationMethod"|"accrualCreationOffset"|"accrualFrequency"|"accrualFrequencyStartDate"|"accrualPeriodStartDay"|"accrualPeriodStartMonth"|"accrualRecalculationPostingMethod"|"accrualRule"|"accrualTransferDateRule"|"accrualTransferRule"|"accrualWaitingPeriod"|"accrualWaitingPeriodUnit"|"advancesAllowed"|"allowPayoutWithSimulation"|"calculateSnapshotApprovedAbsenceBalance"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"creation"|"effectOnTransferDateRule"|"entitlementMethod"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"hireRule"|"initialAccrualTransferDateRule"|"initialFlexibleAccountStartDateRule"|"interimRule"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"levelOfSimulationPrecision"|"maximumSimulationHorizonInMonths"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"minimumBalanceAllowed"|"payComponent"|"payComponentAccrualSeparated"|"payComponentGroup"|"payComponentTermination"|"payComponentTerminationAccrualSeparated"|"payoutEligibility"|"pepCalendarAutomationLevel"|"periodEndProcessingRule"|"periodicTimeAccountUpdateProfile"|"postingOrder"|"purchaseEligibility"|"secondAccrualCreationOffset"|"simulateAccruals"|"simulationRule"|"snapshotsAllowed"|"terminationRule"|"terminationRuleDataEffectiveDate"|"timeAccountConfigurationRule"|"timeAccountPayoutProfile"|"timeAccountPurchaseProfile"|"unit")[] \$select?;
 };
 
-public type SFOData\.TimeAccountPurchaseProfilePayComponentAssignment record {
+public type TimeAccountPurchaseProfilePayComponentAssignment record {
     string TimeAccountPurchaseProfile_externalCode?;
     string payComponent?;
 };
@@ -2263,13 +2259,13 @@ public type ListHolidayCalendarsQueries record {
     ("country"|"createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"name_ar_SA"|"name_cy_GB"|"name_de_DE"|"name_defaultValue"|"name_en_DEBUG"|"name_en_DEBUG_APOS"|"name_en_DEBUG_APOS_RTL"|"name_en_GB"|"name_en_RTL"|"name_en_US"|"name_es_ES"|"name_es_MX"|"name_fr_CA"|"name_fr_FR"|"name_hi_IN"|"name_iw_IL"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_th_TH"|"name_zh_CN"|"oldName")[] \$select?;
 };
 
-public type SFOData\.TimeAccountType record {
+public type TimeAccountType record {
     string externalCode?;
-    SFOData\.TimeAccountTypeAUS countryExtensionAUS?;
-    SFOData\.PeriodicTimeAccountUpdateProfile periodicTimeAccountUpdateProfileNav?;
+    TimeAccountTypeAUS countryExtensionAUS?;
+    PeriodicTimeAccountUpdateProfile periodicTimeAccountUpdateProfileNav?;
     RelatedCollectionSFOData_RecalculationBasedField recalculationBasedFieldList?;
-    SFOData\.TimeAccountPayoutProfile timeAccountPayoutProfileNav?;
-    SFOData\.TimeAccountPurchaseProfile timeAccountPurchaseProfileNav?;
+    TimeAccountPayoutProfile timeAccountPayoutProfileNav?;
+    TimeAccountPurchaseProfile timeAccountPurchaseProfileNav?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeNOR
@@ -2285,7 +2281,7 @@ public type DeleteTimeAccountHeaders record {
 };
 
 public type Time\ Type\ DEU record {
-    SFOData\.TimeTypeDEU d?;
+    TimeTypeDEU d?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimeCANs
@@ -2307,7 +2303,7 @@ public type ListEmployeeTimeCANsQueries record {
 };
 
 public type Employee\ Time\ POL record {
-    SFOData\.EmployeeTimePOL d?;
+    EmployeeTimePOL d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeSWE
@@ -2316,10 +2312,10 @@ public type GetEmployeeTimeSWEQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workIncapacityPercentageDuringIllness")[] \$select?;
 };
 
-public type SFOData\.TimeManagementTerminationEndHandlingExcludedTimeAccountType record {
+public type TimeManagementTerminationEndHandlingExcludedTimeAccountType record {
     string TimeManagementTerminationEndHandlingExclusion_externalCode?;
     string externalCode?;
-    SFOData\.TimeAccountType timeAccountTypeNav?;
+    TimeAccountType timeAccountTypeNav?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountPurchaseProfilePayComponentAssignments
@@ -2361,11 +2357,11 @@ public type ListEmployeeTimeCOLsQueries record {
 };
 
 public type Employee\ Time\ SWE record {
-    SFOData\.EmployeeTimeSWE d?;
+    EmployeeTimeSWE d?;
 };
 
 public type Employee\ Time\ NLD record {
-    SFOData\.EmployeeTimeNLD d?;
+    EmployeeTimeNLD d?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountPostingRules
@@ -2449,7 +2445,7 @@ public type GetTimeAccountPostingRuleQueries record {
 };
 
 public type CollectionofEmployee\ Time\ ITA record {
-    SFOData\.EmployeeTimeITA[] results?;
+    EmployeeTimeITA[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountDetails
@@ -2493,11 +2489,11 @@ public type ListEmployeeTimeDEUsQueries record {
 };
 
 public type Time\ Type\ CAN record {
-    SFOData\.TimeTypeCAN d?;
+    TimeTypeCAN d?;
 };
 
 public type CollectionofElectronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU record {
-    SFOData\.ElectronicSicknessCertificateExclusionReasonDEU[] results?;
+    ElectronicSicknessCertificateExclusionReasonDEU[] results?;
 };
 
 # Represents the Queries record for the operation: listWorkSchedules
@@ -2520,14 +2516,14 @@ public type ListWorkSchedulesQueries record {
     ("averageHoursPerDay"|"averageHoursPerMonth"|"averageHoursPerWeek"|"averageHoursPerYear"|"averageWorkingDaysPerWeek"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"crossMidnightAllowed"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"flexibleRequestingAllowed"|"individualWorkSchedule"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"modelCategory"|"periodModel"|"recordId"|"searchString"|"shiftClassification"|"simulatedWorkSchedule"|"startingDate"|"timeRecordingVariant"|"userId")[] \$select?;
 };
 
-public type SFOData\.EmployeeTimeMEX record {
+public type EmployeeTimeMEX record {
     string EmployeeTime_externalCode?;
     string externalCode?;
-    SFOData\.EmployeeTimeGroup identicalSicknessGroupNav?;
+    EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
 public type CreatedTemporary\ Time\ Information record {
-    SFOData\.TemporaryTimeInformation d?;
+    TemporaryTimeInformation d?;
 };
 
 public type Wrapper_61 record {
@@ -2535,7 +2531,7 @@ public type Wrapper_61 record {
 };
 
 public type CollectionofTime\ Type record {
-    SFOData\.TimeType[] results?;
+    TimeType[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeTypeSWEs
@@ -2575,15 +2571,15 @@ public type ListHolidayCategorysQueries record {
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDayModelAssignmentSegment record {
-    SFOData\.WorkScheduleDayModelAssignmentSegment[] results?;
+    WorkScheduleDayModelAssignmentSegment[] results?;
 };
 
 public type Holiday\ Category record {
-    SFOData\.HolidayCategory d?;
+    HolidayCategory d?;
 };
 
 public type CreatedAccrual\ Calculation\ Base record {
-    SFOData\.AccrualCalculationBase d?;
+    AccrualCalculationBase d?;
 };
 
 # Represents the Queries record for the operation: getTimeTypeProfile
@@ -2603,11 +2599,11 @@ public type GetTimeAccountPurchaseProfileQueries record {
 };
 
 public type Work\ Schedule\ Day\ Model\ Variant\ Assignment record {
-    SFOData\.WorkScheduleDayModelVariantAssignment d?;
+    WorkScheduleDayModelVariantAssignment d?;
 };
 
 public type Time\ Type\ ITA record {
-    SFOData\.TimeTypeITA d?;
+    TimeTypeITA d?;
 };
 
 # Represents the Queries record for the operation: getTimeManagementTerminationEndHandlingExcludedEventReason
@@ -2617,7 +2613,7 @@ public type GetTimeManagementTerminationEndHandlingExcludedEventReasonQueries re
 };
 
 public type RelatedCollectionSFOData_TimeManagementTerminationEndHandlingExcludedEventReason record {
-    SFOData\.TimeManagementTerminationEndHandlingExcludedEventReason[] results?;
+    TimeManagementTerminationEndHandlingExcludedEventReason[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeManagementTerminationEndHandlingExclusions
@@ -2661,7 +2657,7 @@ public type ListEmployeeTimeGroupItemsQueries record {
 };
 
 public type RelatedCollectionSFOData_AvailableTimeType record {
-    SFOData\.AvailableTimeType[] results?;
+    AvailableTimeType[] results?;
 };
 
 # Represents the Queries record for the operation: listTimeAccountTypeAUSs
@@ -2682,12 +2678,12 @@ public type ListTimeAccountTypeAUSsQueries record {
     ("TimeAccountType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"includeInLeaveLoadingCalculations"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"priorServiceAccountDistinction"|"priorServiceUseCase")[] \$select?;
 };
 
-public type SFOData\.ShiftClassification record {
+public type ShiftClassification record {
     string externalCode?;
 };
 
 public type RelatedCollectionSFOData_EmployeeTimeGroupItem record {
-    SFOData\.EmployeeTimeGroupItem[] results?;
+    EmployeeTimeGroupItem[] results?;
 };
 
 # Represents the Queries record for the operation: getAbsenceCountingMethod
@@ -2697,7 +2693,7 @@ public type GetAbsenceCountingMethodQueries record {
 };
 
 public type Employee\ Time\ NOR record {
-    SFOData\.EmployeeTimeNOR d?;
+    EmployeeTimeNOR d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeCAN
@@ -2745,7 +2741,7 @@ public type ListEmployeeTimeAUSsQueries record {
 };
 
 public type CreatedEmployee\ Time\ NOR record {
-    SFOData\.EmployeeTimeNOR d?;
+    EmployeeTimeNOR d?;
 };
 
 # Represents the Queries record for the operation: listTimeTypes
@@ -2768,27 +2764,27 @@ public type ListTimeTypesQueries record {
     ("absenceClass"|"absenceCountingConfiguration"|"absenceRequestingWithinFlextimeBandwidthAllowed"|"absenceRetentionGroup"|"accrualRecalculationRelevance"|"activateCancellationWorkflow"|"adminWorkflow"|"allocationStrategy"|"allowedFractionsUnitDay"|"allowedFractionsUnitHour"|"allowedRequestingIncrement"|"balanceCalculationSetting"|"calculationMethod"|"category"|"collisionGrouping"|"countingMethod"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"enableEmployeeTimeCalendarCreation"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"flexibleRequestingAllowed"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"loaEndEventReason"|"loaStartEventReason"|"maximumDurationInMonths"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"notToCountAsTimeInService"|"postingOrder"|"postingPriority"|"requestingOnNonWorkingDaysAllowed"|"undeterminedEndDateAllowed"|"unit"|"workflowConfiguration")[] \$select?;
 };
 
-public type SFOData\.TimeType record {
+public type TimeType record {
     string externalCode?;
-    SFOData\.AbsenceCountingMethod countingMethodNav?;
-    SFOData\.TimeTypeAUS countryExtensionAUS?;
-    SFOData\.TimeTypeCAN countryExtensionCAN?;
-    SFOData\.TimeTypeDEU countryExtensionDEU?;
-    SFOData\.TimeTypeNLD countryExtensionNLD?;
-    SFOData\.TimeTypeSWE countryExtensionSWE?;
-    SFOData\.TimeTypeNOR countryExtensionNOR?;
-    SFOData\.TimeTypeITA countryExtensionITA?;
-    SFOData\.TimeTypeUSA countryExtensionUSA?;
+    AbsenceCountingMethod countingMethodNav?;
+    TimeTypeAUS countryExtensionAUS?;
+    TimeTypeCAN countryExtensionCAN?;
+    TimeTypeDEU countryExtensionDEU?;
+    TimeTypeNLD countryExtensionNLD?;
+    TimeTypeSWE countryExtensionSWE?;
+    TimeTypeNOR countryExtensionNOR?;
+    TimeTypeITA countryExtensionITA?;
+    TimeTypeUSA countryExtensionUSA?;
     RelatedCollectionSFOData_TimeAccountPostingRule timeAccountPostingRules?;
 };
 
-public type SFOData\.TimeTypeDEU record {
+public type TimeTypeDEU record {
     string TimeType_externalCode?;
     string externalCode?;
 };
 
 public type Absence\ Counting\ Method record {
-    SFOData\.AbsenceCountingMethod d?;
+    AbsenceCountingMethod d?;
 };
 
 # Represents the Headers record for the operation: deleteAccrualCalculationBase
@@ -2798,7 +2794,7 @@ public type DeleteAccrualCalculationBaseHeaders record {
 };
 
 public type Holiday\ Assignment record {
-    SFOData\.HolidayAssignment d?;
+    HolidayAssignment d?;
 };
 
 # Represents the Queries record for the operation: getWorkScheduleDayModel
@@ -2810,11 +2806,11 @@ public type GetWorkScheduleDayModelQueries record {
 };
 
 public type RelatedCollectionSFOData_HolidayAssignment record {
-    SFOData\.HolidayAssignment[] results?;
+    HolidayAssignment[] results?;
 };
 
 public type CollectionofTime\ Account\ Type record {
-    SFOData\.TimeAccountType[] results?;
+    TimeAccountType[] results?;
 };
 
 # Represents the Queries record for the operation: listEmployeeTimePOLs
@@ -2836,10 +2832,10 @@ public type ListEmployeeTimePOLsQueries record {
 };
 
 public type CollectionofTime\ Type\ ITA record {
-    SFOData\.TimeTypeITA[] results?;
+    TimeTypeITA[] results?;
 };
 
-public type SFOData\.EmployeeTimeSWE record {
+public type EmployeeTimeSWE record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
@@ -2873,28 +2869,28 @@ public type GetHolidayCalendarQueries record {
 };
 
 public type CollectionofEmployee\ Time\ Account\ Balance record {
-    SFOData\.EmpTimeAccountBalance[] results?;
+    EmpTimeAccountBalance[] results?;
 };
 
-public type SFOData\.TimeTypeProfile record {
+public type TimeTypeProfile record {
     string externalCode?;
     string mdfSystemEffectiveStartDate?;
     RelatedCollectionSFOData_AvailableTimeType availableTimeTypes?;
-    SFOData\.TimeType defaultImportAttendanceTimeTypeNav?;
-    SFOData\.TimeType mainAttendanceTimeTypeNav?;
-    SFOData\.TimeType mainBreakTimeTypeNav?;
-    SFOData\.TimeType mainESSTimeTypeNav?;
-    SFOData\.TimeAccountType timeAccountTypeForTimeOffInLieuNav?;
-    SFOData\.TimeAccountType timeAccountTypeForWorkingTimeAccountNav?;
+    TimeType defaultImportAttendanceTimeTypeNav?;
+    TimeType mainAttendanceTimeTypeNav?;
+    TimeType mainBreakTimeTypeNav?;
+    TimeType mainESSTimeTypeNav?;
+    TimeAccountType timeAccountTypeForTimeOffInLieuNav?;
+    TimeAccountType timeAccountTypeForWorkingTimeAccountNav?;
 };
 
-public type SFOData\.EmployeeTimeNLD record {
+public type EmployeeTimeNLD record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
 
 public type CreatedEmployee\ Time\ AUS record {
-    SFOData\.EmployeeTimeAUS d?;
+    EmployeeTimeAUS d?;
 };
 
 # Represents the Queries record for the operation: getEmployeeTimeNLD
@@ -2912,10 +2908,10 @@ public type GetEmployeeTimeDEUQueries record {
 };
 
 public type ModifiedEmployee\ Time\ USA record {
-    SFOData\.EmployeeTimeUSA d?;
+    EmployeeTimeUSA d?;
 };
 
-public type SFOData\.EmployeeTimePOL record {
+public type EmployeeTimePOL record {
     string EmployeeTime_externalCode?;
     string externalCode?;
 };
@@ -2926,7 +2922,7 @@ public type DeleteTimeAccountDetailHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.TimeTypeCAN record {
+public type TimeTypeCAN record {
     string TimeType_externalCode?;
     string externalCode?;
 };
@@ -2990,7 +2986,7 @@ public type GetTimeAccountSummaryQueries record {
 };
 
 public type Employee\ Time\ AUS record {
-    SFOData\.EmployeeTimeAUS d?;
+    EmployeeTimeAUS d?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountPayout
@@ -3036,3 +3032,5 @@ public type ListElectronicSicknessCertificateExclusionReasonDEUsQueries record {
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
+# Stub type for OData navigation property reference
+public type EmployeeTime record {|anydata...;|};

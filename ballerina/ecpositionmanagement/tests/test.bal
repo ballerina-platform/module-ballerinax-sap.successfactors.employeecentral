@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testPositionRequisitionStatuses() returns error? {
     Wrapper listPositionRequisitionStatusesResult = check sfClient->listPositionRequisitionStatuses();
-    test:assertTrue(listPositionRequisitionStatusesResult !is (), "Result should not be null");
+    test:assertTrue(listPositionRequisitionStatusesResult.d !is (), "Result should not be null");
 }

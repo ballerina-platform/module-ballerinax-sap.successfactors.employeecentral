@@ -20,7 +20,7 @@
 import ballerina/http;
 
 public type CollectionofEmployeePayrollRunResultsItems record {
-    SFOData\.EmployeePayrollRunResultsItems[] results?;
+    EmployeePayrollRunResultsItems[] results?;
 };
 
 public type Wrapper record {
@@ -28,16 +28,10 @@ public type Wrapper record {
 };
 
 public type EmployeePayrollRunResults record {
-    SFOData\.EmployeePayrollRunResults d?;
+    EmployeePayrollRunResults d?;
 };
 
-public type SFOData\.EmployeePayrollRunResults record {
-    string externalCode?;
-    string mdfSystemEffectiveStartDate?;
-    RelatedCollectionSFOData_EmployeePayrollRunResultsItems employeePayrollRunResultsItems?;
-};
-
-public type SFOData\.EmployeePayrollRunResultsItems record {
+public type EmployeePayrollRunResultsItems record {
     string EmployeePayrollRunResults_externalCode?;
     string EmployeePayrollRunResults_mdfSystemEffectiveStartDate?;
     string externalCode?;
@@ -62,11 +56,11 @@ public type ListEmployeePayrollRunResultsItemssQueries record {
 };
 
 public type ModifiedEmployeePayrollRunResultsItems record {
-    SFOData\.EmployeePayrollRunResultsItems d?;
+    EmployeePayrollRunResultsItems d?;
 };
 
 public type RelatedCollectionSFOData_EmployeePayrollRunResultsItems record {
-    SFOData\.EmployeePayrollRunResultsItems[] results?;
+    EmployeePayrollRunResultsItems[] results?;
 };
 
 # Represents the Queries record for the operation: getEmployeePayrollRunResultsItems
@@ -76,11 +70,11 @@ public type GetEmployeePayrollRunResultsItemsQueries record {
 };
 
 public type CreatedEmployeePayrollRunResults record {
-    SFOData\.EmployeePayrollRunResults d?;
+    EmployeePayrollRunResults d?;
 };
 
 public type ModifiedEmployeePayrollRunResults record {
-    SFOData\.EmployeePayrollRunResults d?;
+    EmployeePayrollRunResults d?;
 };
 
 # Represents the Queries record for the operation: getEmployeePayrollRunResults
@@ -118,7 +112,7 @@ public type ListEmployeePayrollRunResultssQueries record {
 };
 
 public type CollectionofEmployeePayrollRunResults record {
-    SFOData\.EmployeePayrollRunResults[] results?;
+    EmployeePayrollRunResults[] results?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeePayrollRunResults
@@ -127,16 +121,12 @@ public type DeleteEmployeePayrollRunResultsHeaders record {
     string If\-Match?;
 };
 
-public type EmployeePayrollRunResultsItems record {
-    SFOData\.EmployeePayrollRunResultsItems d?;
-};
-
 public type Wrapper_1 record {
     CollectionofEmployeePayrollRunResults d?;
 };
 
 public type CreatedEmployeePayrollRunResultsItems record {
-    SFOData\.EmployeePayrollRunResultsItems d?;
+    EmployeePayrollRunResultsItems d?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.

@@ -54,7 +54,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3KEN(SFOData\.PaymentInformationDetailV3KEN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3KEN|error {
+    remote isolated function createPaymentInformationDetailV3KEN(PaymentInformationDetailV3KEN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3KEN|error {
         string resourcePath = string `/PaymentInformationDetailV3KEN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -126,7 +126,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ISR(SFOData\.PaymentInformationDetailV3ISR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ISR|error {
+    remote isolated function createPaymentInformationDetailV3ISR(PaymentInformationDetailV3ISR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ISR|error {
         string resourcePath = string `/PaymentInformationDetailV3ISR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -198,7 +198,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3(SFOData\.PaymentInformationDetailV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3|error {
+    remote isolated function createPaymentInformationDetailV3(PaymentInformationDetailV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3|error {
         string resourcePath = string `/PaymentInformationDetailV3`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -267,7 +267,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ARG(SFOData\.PaymentInformationDetailV3ARG payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ARG|error {
+    remote isolated function createPaymentInformationDetailV3ARG(PaymentInformationDetailV3ARG payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ARG|error {
         string resourcePath = string `/PaymentInformationDetailV3ARG`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -339,7 +339,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentMethodV3(SFOData\.PaymentMethodV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentMethodV3|error {
+    remote isolated function createPaymentMethodV3(PaymentMethodV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentMethodV3|error {
         string resourcePath = string `/PaymentMethodV3`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -402,7 +402,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createBank(SFOData\.Bank payload, map<string|string[]> headers = {}) returns CreatedBank|error {
+    remote isolated function createBank(Bank payload, map<string|string[]> headers = {}) returns CreatedBank|error {
         string resourcePath = string `/Bank`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -465,7 +465,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createCustomPayTypeAssignment(SFOData\.CustomPayTypeAssignment payload, map<string|string[]> headers = {}) returns CreatedCustomPayTypeAssignment|error {
+    remote isolated function createCustomPayTypeAssignment(CustomPayTypeAssignment payload, map<string|string[]> headers = {}) returns CreatedCustomPayTypeAssignment|error {
         string resourcePath = string `/CustomPayTypeAssignment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -531,7 +531,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createCustomPayType(SFOData\.CustomPayType payload, map<string|string[]> headers = {}) returns CreatedCustomPayType|error {
+    remote isolated function createCustomPayType(CustomPayType payload, map<string|string[]> headers = {}) returns CreatedCustomPayType|error {
         string resourcePath = string `/CustomPayType`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -594,7 +594,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3NGA(SFOData\.PaymentInformationDetailV3NGA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NGA|error {
+    remote isolated function createPaymentInformationDetailV3NGA(PaymentInformationDetailV3NGA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NGA|error {
         string resourcePath = string `/PaymentInformationDetailV3NGA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -666,7 +666,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3CZE(SFOData\.PaymentInformationDetailV3CZE payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3CZE|error {
+    remote isolated function createPaymentInformationDetailV3CZE(PaymentInformationDetailV3CZE payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3CZE|error {
         string resourcePath = string `/PaymentInformationDetailV3CZE`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -738,7 +738,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationV3(SFOData\.PaymentInformationV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationV3|error {
+    remote isolated function createPaymentInformationV3(PaymentInformationV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationV3|error {
         string resourcePath = string `/PaymentInformationV3`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -804,7 +804,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3COL(SFOData\.PaymentInformationDetailV3COL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3COL|error {
+    remote isolated function createPaymentInformationDetailV3COL(PaymentInformationDetailV3COL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3COL|error {
         string resourcePath = string `/PaymentInformationDetailV3COL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -876,7 +876,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3VEN(SFOData\.PaymentInformationDetailV3VEN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3VEN|error {
+    remote isolated function createPaymentInformationDetailV3VEN(PaymentInformationDetailV3VEN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3VEN|error {
         string resourcePath = string `/PaymentInformationDetailV3VEN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -948,7 +948,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3NZL(SFOData\.PaymentInformationDetailV3NZL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NZL|error {
+    remote isolated function createPaymentInformationDetailV3NZL(PaymentInformationDetailV3NZL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NZL|error {
         string resourcePath = string `/PaymentInformationDetailV3NZL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1020,7 +1020,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3USA(SFOData\.PaymentInformationDetailV3USA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3USA|error {
+    remote isolated function createPaymentInformationDetailV3USA(PaymentInformationDetailV3USA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3USA|error {
         string resourcePath = string `/PaymentInformationDetailV3USA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1092,7 +1092,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ECU(SFOData\.PaymentInformationDetailV3ECU payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ECU|error {
+    remote isolated function createPaymentInformationDetailV3ECU(PaymentInformationDetailV3ECU payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ECU|error {
         string resourcePath = string `/PaymentInformationDetailV3ECU`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1164,7 +1164,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3GBR(SFOData\.PaymentInformationDetailV3GBR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3GBR|error {
+    remote isolated function createPaymentInformationDetailV3GBR(PaymentInformationDetailV3GBR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3GBR|error {
         string resourcePath = string `/PaymentInformationDetailV3GBR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1236,7 +1236,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3FRA(SFOData\.PaymentInformationDetailV3FRA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3FRA|error {
+    remote isolated function createPaymentInformationDetailV3FRA(PaymentInformationDetailV3FRA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3FRA|error {
         string resourcePath = string `/PaymentInformationDetailV3FRA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1308,7 +1308,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentMethodAssignmentV3(SFOData\.PaymentMethodAssignmentV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentMethodAssignmentV3|error {
+    remote isolated function createPaymentMethodAssignmentV3(PaymentMethodAssignmentV3 payload, map<string|string[]> headers = {}) returns CreatedPaymentMethodAssignmentV3|error {
         string resourcePath = string `/PaymentMethodAssignmentV3`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1374,7 +1374,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3JPN(SFOData\.PaymentInformationDetailV3JPN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3JPN|error {
+    remote isolated function createPaymentInformationDetailV3JPN(PaymentInformationDetailV3JPN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3JPN|error {
         string resourcePath = string `/PaymentInformationDetailV3JPN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1446,7 +1446,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ZAF(SFOData\.PaymentInformationDetailV3ZAF payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ZAF|error {
+    remote isolated function createPaymentInformationDetailV3ZAF(PaymentInformationDetailV3ZAF payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ZAF|error {
         string resourcePath = string `/PaymentInformationDetailV3ZAF`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1518,7 +1518,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ITA(SFOData\.PaymentInformationDetailV3ITA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ITA|error {
+    remote isolated function createPaymentInformationDetailV3ITA(PaymentInformationDetailV3ITA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ITA|error {
         string resourcePath = string `/PaymentInformationDetailV3ITA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1590,7 +1590,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3MEX(SFOData\.PaymentInformationDetailV3MEX payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MEX|error {
+    remote isolated function createPaymentInformationDetailV3MEX(PaymentInformationDetailV3MEX payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MEX|error {
         string resourcePath = string `/PaymentInformationDetailV3MEX`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1662,7 +1662,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ESP(SFOData\.PaymentInformationDetailV3ESP payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ESP|error {
+    remote isolated function createPaymentInformationDetailV3ESP(PaymentInformationDetailV3ESP payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ESP|error {
         string resourcePath = string `/PaymentInformationDetailV3ESP`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1734,7 +1734,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3BRA(SFOData\.PaymentInformationDetailV3BRA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BRA|error {
+    remote isolated function createPaymentInformationDetailV3BRA(PaymentInformationDetailV3BRA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BRA|error {
         string resourcePath = string `/PaymentInformationDetailV3BRA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1806,7 +1806,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3CHL(SFOData\.PaymentInformationDetailV3CHL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3CHL|error {
+    remote isolated function createPaymentInformationDetailV3CHL(PaymentInformationDetailV3CHL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3CHL|error {
         string resourcePath = string `/PaymentInformationDetailV3CHL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1878,7 +1878,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3BLR(SFOData\.PaymentInformationDetailV3BLR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BLR|error {
+    remote isolated function createPaymentInformationDetailV3BLR(PaymentInformationDetailV3BLR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BLR|error {
         string resourcePath = string `/PaymentInformationDetailV3BLR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1950,7 +1950,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3IRQ(SFOData\.PaymentInformationDetailV3IRQ payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3IRQ|error {
+    remote isolated function createPaymentInformationDetailV3IRQ(PaymentInformationDetailV3IRQ payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3IRQ|error {
         string resourcePath = string `/PaymentInformationDetailV3IRQ`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2022,7 +2022,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3MMR(SFOData\.PaymentInformationDetailV3MMR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MMR|error {
+    remote isolated function createPaymentInformationDetailV3MMR(PaymentInformationDetailV3MMR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MMR|error {
         string resourcePath = string `/PaymentInformationDetailV3MMR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2094,7 +2094,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3MWI(SFOData\.PaymentInformationDetailV3MWI payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MWI|error {
+    remote isolated function createPaymentInformationDetailV3MWI(PaymentInformationDetailV3MWI payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MWI|error {
         string resourcePath = string `/PaymentInformationDetailV3MWI`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2166,7 +2166,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3NAM(SFOData\.PaymentInformationDetailV3NAM payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NAM|error {
+    remote isolated function createPaymentInformationDetailV3NAM(PaymentInformationDetailV3NAM payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3NAM|error {
         string resourcePath = string `/PaymentInformationDetailV3NAM`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2238,7 +2238,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3PER(SFOData\.PaymentInformationDetailV3PER payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3PER|error {
+    remote isolated function createPaymentInformationDetailV3PER(PaymentInformationDetailV3PER payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3PER|error {
         string resourcePath = string `/PaymentInformationDetailV3PER`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2310,7 +2310,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3ZWE(SFOData\.PaymentInformationDetailV3ZWE payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ZWE|error {
+    remote isolated function createPaymentInformationDetailV3ZWE(PaymentInformationDetailV3ZWE payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3ZWE|error {
         string resourcePath = string `/PaymentInformationDetailV3ZWE`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2382,7 +2382,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3SVN(SFOData\.PaymentInformationDetailV3SVN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SVN|error {
+    remote isolated function createPaymentInformationDetailV3SVN(PaymentInformationDetailV3SVN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SVN|error {
         string resourcePath = string `/PaymentInformationDetailV3SVN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2454,7 +2454,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3MKD(SFOData\.PaymentInformationDetailV3MKD payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MKD|error {
+    remote isolated function createPaymentInformationDetailV3MKD(PaymentInformationDetailV3MKD payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MKD|error {
         string resourcePath = string `/PaymentInformationDetailV3MKD`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2526,7 +2526,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3MOZ(SFOData\.PaymentInformationDetailV3MOZ payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MOZ|error {
+    remote isolated function createPaymentInformationDetailV3MOZ(PaymentInformationDetailV3MOZ payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3MOZ|error {
         string resourcePath = string `/PaymentInformationDetailV3MOZ`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2598,7 +2598,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3GHA(SFOData\.PaymentInformationDetailV3GHA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3GHA|error {
+    remote isolated function createPaymentInformationDetailV3GHA(PaymentInformationDetailV3GHA payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3GHA|error {
         string resourcePath = string `/PaymentInformationDetailV3GHA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2670,7 +2670,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3SVK(SFOData\.PaymentInformationDetailV3SVK payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SVK|error {
+    remote isolated function createPaymentInformationDetailV3SVK(PaymentInformationDetailV3SVK payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SVK|error {
         string resourcePath = string `/PaymentInformationDetailV3SVK`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2742,7 +2742,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3TUN(SFOData\.PaymentInformationDetailV3TUN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3TUN|error {
+    remote isolated function createPaymentInformationDetailV3TUN(PaymentInformationDetailV3TUN payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3TUN|error {
         string resourcePath = string `/PaymentInformationDetailV3TUN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2814,7 +2814,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3SUR(SFOData\.PaymentInformationDetailV3SUR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SUR|error {
+    remote isolated function createPaymentInformationDetailV3SUR(PaymentInformationDetailV3SUR payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3SUR|error {
         string resourcePath = string `/PaymentInformationDetailV3SUR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2886,7 +2886,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3PRY(SFOData\.PaymentInformationDetailV3PRY payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3PRY|error {
+    remote isolated function createPaymentInformationDetailV3PRY(PaymentInformationDetailV3PRY payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3PRY|error {
         string resourcePath = string `/PaymentInformationDetailV3PRY`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2958,7 +2958,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPaymentInformationDetailV3BOL(SFOData\.PaymentInformationDetailV3BOL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BOL|error {
+    remote isolated function createPaymentInformationDetailV3BOL(PaymentInformationDetailV3BOL payload, map<string|string[]> headers = {}) returns CreatedPaymentInformationDetailV3BOL|error {
         string resourcePath = string `/PaymentInformationDetailV3BOL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testAdvancesInstallmentss() returns error? {
     Wrapper listAdvancesInstallmentssResult = check sfClient->listAdvancesInstallmentss();
-    test:assertTrue(listAdvancesInstallmentssResult !is (), "Result should not be null");
+    test:assertTrue(listAdvancesInstallmentssResult.d !is (), "Result should not be null");
 }

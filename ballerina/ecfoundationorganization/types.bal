@@ -48,18 +48,18 @@ public type ListFOFrequencysQueries record {
 };
 
 public type RelatedCollectionSFOData_FOBusinessUnit record {
-    SFOData\.FOBusinessUnit[] results?;
+    FOBusinessUnit[] results?;
 };
 
 public type CreatedJobClassificationFRA record {
-    SFOData\.JobClassificationFRA d?;
+    JobClassificationFRA d?;
 };
 
-public type SFOData\.FOJobClassLocalBRA record {
+public type FOJobClassLocalBRA record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 # Represents the Queries record for the operation: listJobClassificationITAs
@@ -97,7 +97,7 @@ public type GetFOJobClassLocalCANQueries record {
 };
 
 public type CollectionofFOFrequency record {
-    SFOData\.FOFrequency[] results?;
+    FOFrequency[] results?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntitySVN
@@ -107,10 +107,10 @@ public type DeleteLegalEntitySVNHeaders record {
 };
 
 public type LegalEntitySVN record {
-    SFOData\.LegalEntitySVN d?;
+    LegalEntitySVN d?;
 };
 
-public type SFOData\.JobClassificationCAN record {
+public type JobClassificationCAN record {
     string JobClassificationCountry_country?;
     string JobClassification_effectiveStartDate?;
     string JobClassification_externalCode?;
@@ -118,11 +118,11 @@ public type SFOData\.JobClassificationCAN record {
 };
 
 public type CreatedPayScaleArea record {
-    SFOData\.PayScaleArea d?;
+    PayScaleArea d?;
 };
 
 public type ModifiedLegalEntityBLR record {
-    SFOData\.LegalEntityBLR d?;
+    LegalEntityBLR d?;
 };
 
 # Represents the Queries record for the operation: getLegalEntityUSA
@@ -132,7 +132,7 @@ public type GetLegalEntityUSAQueries record {
 };
 
 public type LegalEntityARG record {
-    SFOData\.LegalEntityARG d?;
+    LegalEntityARG d?;
 };
 
 public type Wrapper_19 record {
@@ -204,7 +204,7 @@ public type Wrapper_14 record {
 };
 
 public type ModifiedLegalEntityUSA record {
-    SFOData\.LegalEntityUSA d?;
+    LegalEntityUSA d?;
 };
 
 public type Wrapper_12 record {
@@ -212,7 +212,7 @@ public type Wrapper_12 record {
 };
 
 public type CollectionofFOCorporateAddressDEFLT record {
-    SFOData\.FOCorporateAddressDEFLT[] results?;
+    FOCorporateAddressDEFLT[] results?;
 };
 
 # Represents the Headers record for the operation: deletePayScaleLevel
@@ -226,7 +226,7 @@ public type Wrapper_10 record {
 };
 
 public type ModifiedLegalEntityESP record {
-    SFOData\.LegalEntityESP d?;
+    LegalEntityESP d?;
 };
 
 # Represents the Headers record for the operation: deleteFOJobCode
@@ -236,19 +236,19 @@ public type DeleteFOJobCodeHeaders record {
 };
 
 public type CollectionofLegalEntityTUN record {
-    SFOData\.LegalEntityTUN[] results?;
+    LegalEntityTUN[] results?;
 };
 
 public type JobClassificationBGR record {
-    SFOData\.JobClassificationBGR d?;
+    JobClassificationBGR d?;
 };
 
 public type CollectionofFOJobClassLocalGBR record {
-    SFOData\.FOJobClassLocalGBR[] results?;
+    FOJobClassLocalGBR[] results?;
 };
 
 public type ModifiedJobClassificationBRA record {
-    SFOData\.JobClassificationBRA d?;
+    JobClassificationBRA d?;
 };
 
 # Represents the Queries record for the operation: getFOPayComponent
@@ -260,15 +260,15 @@ public type GetFOPayComponentQueries record {
 };
 
 public type ModifiedJobClassificationZAF record {
-    SFOData\.JobClassificationZAF d?;
+    JobClassificationZAF d?;
 };
 
 public type ModifiedPayPeriod record {
-    SFOData\.PayPeriod d?;
+    PayPeriod d?;
 };
 
 public type CollectionofFOLocationGroup record {
-    SFOData\.FOLocationGroup[] results?;
+    FOLocationGroup[] results?;
 };
 
 # Represents the Queries record for the operation: getFOCompany
@@ -308,7 +308,7 @@ public type GetFOWfConfigStepApproverQueries record {
 };
 
 public type FOJobClassLocalCAN record {
-    SFOData\.FOJobClassLocalCAN d?;
+    FOJobClassLocalCAN d?;
 };
 
 # Represents the Queries record for the operation: listTerritorys
@@ -330,27 +330,27 @@ public type ListTerritorysQueries record {
 };
 
 public type JobClassificationITA record {
-    SFOData\.JobClassificationITA d?;
+    JobClassificationITA d?;
 };
 
 public type CollectionofLegalEntityARG record {
-    SFOData\.LegalEntityARG[] results?;
+    LegalEntityARG[] results?;
 };
 
 public type CollectionofPayPeriod record {
-    SFOData\.PayPeriod[] results?;
+    PayPeriod[] results?;
 };
 
 public type CollectionofFOJobClassLocalAUS record {
-    SFOData\.FOJobClassLocalAUS[] results?;
+    FOJobClassLocalAUS[] results?;
 };
 
 public type LegalEntityTUN record {
-    SFOData\.LegalEntityTUN d?;
+    LegalEntityTUN d?;
 };
 
 public type CreatedLegalEntitySAU record {
-    SFOData\.LegalEntitySAU d?;
+    LegalEntitySAU d?;
 };
 
 # Represents the Queries record for the operation: getFOLegalEntityLocalDEFLT
@@ -362,7 +362,7 @@ public type GetFOLegalEntityLocalDEFLTQueries record {
 };
 
 public type Periods record {
-    SFOData\.Periods d?;
+    Periods d?;
 };
 
 # Represents the Queries record for the operation: getLegalEntitySVN
@@ -371,18 +371,18 @@ public type GetLegalEntitySVNQueries record {
     ("LegalEntity_effectiveStartDate"|"LegalEntity_externalCode"|"companyMasterNumber"|"companyRegistrationNumber"|"createdBy"|"createdDateTime"|"employerTaxNumber"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.FOLegalEntityLocalESP record {
+public type FOLegalEntityLocalESP record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
-public type SFOData\.FOLegalEntityLocalUSA record {
+public type FOLegalEntityLocalUSA record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 # Represents the Queries record for the operation: getFOCorporateAddressDEFLT
@@ -394,7 +394,7 @@ public type GetFOCorporateAddressDEFLTQueries record {
 };
 
 public type ModifiedLegalEntityBOL record {
-    SFOData\.LegalEntityBOL d?;
+    LegalEntityBOL d?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationCountry
@@ -406,10 +406,10 @@ public type GetJobClassificationCountryQueries record {
 };
 
 public type CreatedLegalEntityCAN record {
-    SFOData\.LegalEntityCAN d?;
+    LegalEntityCAN d?;
 };
 
-public type SFOData\.Territory record {
+public type Territory record {
     string territoryCode?;
 };
 
@@ -421,11 +421,11 @@ public type GetBudgetGroupQueries record {
     ("createdBy"|"createdDateTime"|"description"|"effectiveEndDate"|"effectiveStartDate"|"effectiveStatus"|"externalCode"|"externalName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"userId")[] \$select?;
 };
 
-public type SFOData\.FOEventReason record {
+public type FOEventReason record {
     string externalCode?;
     string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
 };
 
 # Represents the Queries record for the operation: listFOLocationGroups
@@ -454,15 +454,15 @@ public type GetLegalEntitySGPQueries record {
     ("LegalEntity_effectiveStartDate"|"LegalEntity_externalCode"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"uniqueEntityNumber")[] \$select?;
 };
 
-public type SFOData\.FOLegalEntityLocalFRA record {
+public type FOLegalEntityLocalFRA record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 public type FOLegalEntityLocalDEFLT record {
-    SFOData\.FOLegalEntityLocalDEFLT d?;
+    FOLegalEntityLocalDEFLT d?;
 };
 
 # Represents the Queries record for the operation: listLegalEntityFRAs
@@ -484,7 +484,7 @@ public type ListLegalEntityFRAsQueries record {
 };
 
 public type CollectionofJobClassificationBRA record {
-    SFOData\.JobClassificationBRA[] results?;
+    JobClassificationBRA[] results?;
 };
 
 # Represents the Queries record for the operation: getFOLegalEntityLocalUSA
@@ -528,7 +528,7 @@ public type Wrapper_40 record {
 };
 
 public type CollectionofJobClassificationZAF record {
-    SFOData\.JobClassificationZAF[] results?;
+    JobClassificationZAF[] results?;
 };
 
 public type Wrapper_41 record {
@@ -536,7 +536,7 @@ public type Wrapper_41 record {
 };
 
 public type CollectionofPayScaleArea record {
-    SFOData\.PayScaleArea[] results?;
+    PayScaleArea[] results?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityUSA
@@ -545,21 +545,21 @@ public type DeleteLegalEntityUSAHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.LegalEntityPRY record {
+public type LegalEntityPRY record {
     string LegalEntity_effectiveStartDate?;
     string LegalEntity_externalCode?;
     string externalCode?;
 };
 
 public type CollectionofFOLegalEntityLocalARG record {
-    SFOData\.FOLegalEntityLocalARG[] results?;
+    FOLegalEntityLocalARG[] results?;
 };
 
-public type SFOData\.FOJobClassLocalDEFLT record {
+public type FOJobClassLocalDEFLT record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 # Represents the Headers record for the operation: deleteFOJobFunction
@@ -569,25 +569,25 @@ public type DeleteFOJobFunctionHeaders record {
 };
 
 public type CreatedJobClassificationUSA record {
-    SFOData\.JobClassificationUSA d?;
+    JobClassificationUSA d?;
 };
 
 public type CollectionofLegalEntityBLR record {
-    SFOData\.LegalEntityBLR[] results?;
+    LegalEntityBLR[] results?;
 };
 
 public type FOJobClassLocalITA record {
-    SFOData\.FOJobClassLocalITA d?;
+    FOJobClassLocalITA d?;
 };
 
-public type SFOData\.LegalEntityRUS record {
+public type LegalEntityRUS record {
     string LegalEntity_effectiveStartDate?;
     string LegalEntity_externalCode?;
     string externalCode?;
 };
 
 public type PayPeriod record {
-    SFOData\.PayPeriod d?;
+    PayPeriod d?;
 };
 
 public type Wrapper_59 record {
@@ -615,11 +615,11 @@ public type ListFOPayComponentsQueries record {
 };
 
 public type LegalEntityBOL record {
-    SFOData\.LegalEntityBOL d?;
+    LegalEntityBOL d?;
 };
 
 public type RelatedCollectionSFOData_LocalizedData record {
-    SFOData\.LocalizedData[] results?;
+    LocalizedData[] results?;
 };
 
 public type Wrapper_58 record {
@@ -627,7 +627,7 @@ public type Wrapper_58 record {
 };
 
 public type CollectionofLegalEntityUSA record {
-    SFOData\.LegalEntityUSA[] results?;
+    LegalEntityUSA[] results?;
 };
 
 public type Wrapper_55 record {
@@ -643,7 +643,7 @@ public type Wrapper_53 record {
 };
 
 public type CollectionofLegalEntityESP record {
-    SFOData\.LegalEntityESP[] results?;
+    LegalEntityESP[] results?;
 };
 
 public type Wrapper_54 record {
@@ -675,11 +675,11 @@ public type Wrapper_52 record {
 };
 
 public type ModifiedLegalEntityTUN record {
-    SFOData\.LegalEntityTUN d?;
+    LegalEntityTUN d?;
 };
 
 public type CreatedLegalEntityDEU record {
-    SFOData\.LegalEntityDEU d?;
+    LegalEntityDEU d?;
 };
 
 # Represents the Headers record for the operation: deleteFODepartment
@@ -689,7 +689,7 @@ public type DeleteFODepartmentHeaders record {
 };
 
 public type LocalizedData record {
-    SFOData\.LocalizedData d?;
+    LocalizedData d?;
 };
 
 # Represents the Queries record for the operation: listPeriodss
@@ -729,7 +729,7 @@ public type ListLegalEntityCANsQueries record {
 };
 
 public type CollectionofFOEventReason record {
-    SFOData\.FOEventReason[] results?;
+    FOEventReason[] results?;
 };
 
 # Represents the Queries record for the operation: getLegalEntityCAN
@@ -797,7 +797,7 @@ public type Wrapper_27 record {
 };
 
 public type CreatedPayScaleGroup record {
-    SFOData\.PayScaleGroup d?;
+    PayScaleGroup d?;
 };
 
 public type Wrapper_24 record {
@@ -805,7 +805,7 @@ public type Wrapper_24 record {
 };
 
 public type FOCorporateAddressDEFLT record {
-    SFOData\.FOCorporateAddressDEFLT d?;
+    FOCorporateAddressDEFLT d?;
 };
 
 public type Wrapper_25 record {
@@ -851,7 +851,7 @@ public type GetFOWfConfigQueries record {
 };
 
 public type CollectionofFOJobClassLocalBRA record {
-    SFOData\.FOJobClassLocalBRA[] results?;
+    FOJobClassLocalBRA[] results?;
 };
 
 # Represents the Headers record for the operation: deleteFOCompany
@@ -861,11 +861,11 @@ public type DeleteFOCompanyHeaders record {
 };
 
 public type CreatedLegalEntityTHA record {
-    SFOData\.LegalEntityTHA d?;
+    LegalEntityTHA d?;
 };
 
 public type CollectionofPayScaleGroup record {
-    SFOData\.PayScaleGroup[] results?;
+    PayScaleGroup[] results?;
 };
 
 # Represents the Queries record for the operation: listFODivisions
@@ -907,7 +907,7 @@ public type ListLegalEntityTUNsQueries record {
 };
 
 public type CollectionofFoTranslation record {
-    SFOData\.FoTranslation[] results?;
+    FoTranslation[] results?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationZAF
@@ -945,7 +945,7 @@ public type ListLegalEntityDEUsQueries record {
 };
 
 public type ModifiedJobClassificationUSA record {
-    SFOData\.JobClassificationUSA d?;
+    JobClassificationUSA d?;
 };
 
 # Represents the Queries record for the operation: listFOPayGroups
@@ -1001,7 +1001,7 @@ public type Wrapper_36 record {
 };
 
 public type LegalEntityESP record {
-    SFOData\.LegalEntityESP d?;
+    LegalEntityESP d?;
 };
 
 public type Wrapper_33 record {
@@ -1013,10 +1013,10 @@ public type Wrapper_34 record {
 };
 
 public type LegalEntityUSA record {
-    SFOData\.LegalEntityUSA d?;
+    LegalEntityUSA d?;
 };
 
-public type SFOData\.JobClassificationGBR record {
+public type JobClassificationGBR record {
     string JobClassificationCountry_country?;
     string JobClassification_effectiveStartDate?;
     string JobClassification_externalCode?;
@@ -1048,7 +1048,7 @@ public type ListFOJobClassLocalBRAsQueries record {
 };
 
 public type CollectionofLegalEntityBOL record {
-    SFOData\.LegalEntityBOL[] results?;
+    LegalEntityBOL[] results?;
 };
 
 # Represents the Queries record for the operation: getPeriods
@@ -1084,7 +1084,7 @@ public type GetFOLegalEntityLocalESPQueries record {
 };
 
 public type FOLegalEntityLocalDEU record {
-    SFOData\.FOLegalEntityLocalDEU d?;
+    FOLegalEntityLocalDEU d?;
 };
 
 # Represents the Queries record for the operation: getFOPayComponentGroup
@@ -1116,20 +1116,15 @@ public type ListFOCompanysQueries record {
 };
 
 public type PayScaleArea record {
-    SFOData\.PayScaleArea d?;
-};
-
-public type SFOData\.LocalizedData record {
-    string localizedDataCode?;
-    string localizedDataLocale?;
+    PayScaleArea d?;
 };
 
 public type CollectionofFOJobClassLocalCAN record {
-    SFOData\.FOJobClassLocalCAN[] results?;
+    FOJobClassLocalCAN[] results?;
 };
 
 public type ModifiedLegalEntityTHA record {
-    SFOData\.LegalEntityTHA d?;
+    LegalEntityTHA d?;
 };
 
 # Represents the Headers record for the operation: deleteBudgetGroup
@@ -1138,20 +1133,10 @@ public type DeleteBudgetGroupHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.PayScaleGroup record {
+public type PayScaleGroup record {
     string code?;
-    SFOData\.PayScaleArea payScaleAreaNav?;
-    SFOData\.PayScaleType payScaleTypeNav?;
-};
-
-public type SFOData\.LegalEntityTUN record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
-};
-
-public type SFOData\.PayScaleArea record {
-    string code?;
+    PayScaleArea payScaleAreaNav?;
+    PayScaleType payScaleTypeNav?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityCAN
@@ -1161,25 +1146,25 @@ public type DeleteLegalEntityCANHeaders record {
 };
 
 public type FOJobClassLocalFRA record {
-    SFOData\.FOJobClassLocalFRA d?;
+    FOJobClassLocalFRA d?;
 };
 
-public type SFOData\.FOJobClassLocalGBR record {
+public type FOJobClassLocalGBR record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 public type FOLocationGroup record {
-    SFOData\.FOLocationGroup d?;
+    FOLocationGroup d?;
 };
 
 public type CreatedFOBusinessUnit record {
-    SFOData\.FOBusinessUnit d?;
+    FOBusinessUnit d?;
 };
 
-public type SFOData\.JobClassificationAUS record {
+public type JobClassificationAUS record {
     string JobClassificationCountry_country?;
     string JobClassification_effectiveStartDate?;
     string JobClassification_externalCode?;
@@ -1313,19 +1298,19 @@ public type ListFOLocationsQueries record {
 };
 
 public type CollectionofJobClassificationAUS record {
-    SFOData\.JobClassificationAUS[] results?;
+    JobClassificationAUS[] results?;
 };
 
-public type SFOData\.FoTranslation record {
+public type FoTranslation record {
     string externalCode?;
 };
 
 public type CreatedLegalEntityRUS record {
-    SFOData\.LegalEntityRUS d?;
+    LegalEntityRUS d?;
 };
 
 public type ModifiedJobClassificationFRA record {
-    SFOData\.JobClassificationFRA d?;
+    JobClassificationFRA d?;
 };
 
 # Represents the Queries record for the operation: getFOJobClassLocalBRA
@@ -1337,11 +1322,11 @@ public type GetFOJobClassLocalBRAQueries record {
 };
 
 public type CollectionofFOPayGrade record {
-    SFOData\.FOPayGrade[] results?;
+    FOPayGrade[] results?;
 };
 
 public type CreatedPayScaleType record {
-    SFOData\.PayScaleType d?;
+    PayScaleType d?;
 };
 
 # Represents the Queries record for the operation: getFOPayRange
@@ -1377,19 +1362,13 @@ public type DeleteJobClassificationGBRHeaders record {
 };
 
 public type ModifiedLegalEntitySGP record {
-    SFOData\.LegalEntitySGP d?;
+    LegalEntitySGP d?;
 };
 
 # Represents the Headers record for the operation: deleteFOCostCenter
 public type DeleteFOCostCenterHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type SFOData\.LegalEntitySVN record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
 };
 
 public type Wrapper_8 record {
@@ -1435,7 +1414,7 @@ public type GetPayScaleAreaQueries record {
 };
 
 public type CreatedLegalEntityPRY record {
-    SFOData\.LegalEntityPRY d?;
+    LegalEntityPRY d?;
 };
 
 public type Wrapper_3 record {
@@ -1487,7 +1466,7 @@ public type ListFOCorporateAddressDEFLTsQueries record {
 };
 
 public type JobClassificationUSA record {
-    SFOData\.JobClassificationUSA d?;
+    JobClassificationUSA d?;
 };
 
 # Represents the Headers record for the operation: deleteJobClassificationITA
@@ -1534,12 +1513,6 @@ public type ListFOLegalEntityLocalFRAsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"genericNumber1"|"genericNumber2"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"nafCodePost2008"|"startDate"|"status")[] \$select?;
 };
 
-public type SFOData\.LegalEntityARG record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: listFOJobClassLocalAUSs
 public type ListFOJobClassLocalAUSsQueries record {
     # Skip the first n items, see [OData Paging - Skip](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -1560,49 +1533,27 @@ public type ListFOJobClassLocalAUSsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"genericString1"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type SFOData\.FOJobClassLocalAUS record {
+public type FOJobClassLocalAUS record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
+    Territory countryNav?;
 };
 
 public type CollectionofJobClassificationGBR record {
-    SFOData\.JobClassificationGBR[] results?;
-};
-
-public type SFOData\.FOLegalEntityLocalDEU record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
-};
-
-public type SFOData\.PayPeriod record {
-    string PayCalendar_payGroup?;
-    string externalCode?;
-};
-
-public type FoTranslation record {
-    SFOData\.FoTranslation d?;
+    JobClassificationGBR[] results?;
 };
 
 public type CreatedFOJobFunction record {
-    SFOData\.FOJobFunction d?;
+    FOJobFunction d?;
 };
 
 public type ModifiedJobClassificationBGR record {
-    SFOData\.JobClassificationBGR d?;
+    JobClassificationBGR d?;
 };
 
 public type CreatedJobClassificationITA record {
-    SFOData\.JobClassificationITA d?;
-};
-
-public type SFOData\.LegalEntityBOL record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
+    JobClassificationITA d?;
 };
 
 # Represents the Queries record for the operation: listLegalEntityBLRs
@@ -1624,7 +1575,7 @@ public type ListLegalEntityBLRsQueries record {
 };
 
 public type FOJobClassLocalUSA record {
-    SFOData\.FOJobClassLocalUSA d?;
+    FOJobClassLocalUSA d?;
 };
 
 # Represents the Queries record for the operation: getTerritory
@@ -1652,22 +1603,22 @@ public type ListLegalEntitySGPsQueries record {
 };
 
 public type CreatedPayPeriod record {
-    SFOData\.PayPeriod d?;
+    PayPeriod d?;
 };
 
 public type CollectionofLegalEntitySVN record {
-    SFOData\.LegalEntitySVN[] results?;
+    LegalEntitySVN[] results?;
 };
 
 public type ModifiedFOPayGroup record {
-    SFOData\.FOPayGroup d?;
+    FOPayGroup d?;
 };
 
-public type SFOData\.FOGeozone record {
+public type FOGeozone record {
     string externalCode?;
     string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
 };
 
 # Represents the Queries record for the operation: listFOJobClassLocalFRAs
@@ -1696,11 +1647,6 @@ public type DeleteJobClassificationBRAHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.Periods record {
-    string FiscalYearVariant_externalCode?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: listLegalEntityBOLs
 public type ListLegalEntityBOLsQueries record {
     # Skip the first n items, see [OData Paging - Skip](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -1720,7 +1666,7 @@ public type ListLegalEntityBOLsQueries record {
 };
 
 public type CollectionofLegalEntityRUS record {
-    SFOData\.LegalEntityRUS[] results?;
+    LegalEntityRUS[] results?;
 };
 
 # Represents the Queries record for the operation: listFOJobClassLocalUSAs
@@ -1744,7 +1690,7 @@ public type ListFOJobClassLocalUSAsQueries record {
 };
 
 public type ModifiedLegalEntityFRA record {
-    SFOData\.LegalEntityFRA d?;
+    LegalEntityFRA d?;
 };
 
 # Represents the Queries record for the operation: getFODivision
@@ -1756,11 +1702,11 @@ public type GetFODivisionQueries record {
 };
 
 public type CollectionofBudgetGroup record {
-    SFOData\.BudgetGroup[] results?;
+    BudgetGroup[] results?;
 };
 
 public type CreatedJobClassificationBGR record {
-    SFOData\.JobClassificationBGR d?;
+    JobClassificationBGR d?;
 };
 
 # Represents the Queries record for the operation: getFOJobCode
@@ -1771,7 +1717,7 @@ public type GetFOJobCodeQueries record {
     ("createdBy"|"createdDateTime"|"createdOn"|"cust_string10"|"cust_string1_de_DE"|"cust_string1_defaultValue"|"cust_string1_en_GB"|"cust_string1_en_US"|"cust_string1_es_ES"|"cust_string1_fr_FR"|"cust_string1_ja_JP"|"cust_string1_ko_KR"|"cust_string1_localized"|"cust_string1_nl_NL"|"cust_string1_pt_BR"|"cust_string1_pt_PT"|"cust_string1_ru_RU"|"cust_string1_zh_CN"|"cust_string1_zh_TW"|"cust_string2_de_DE"|"cust_string2_defaultValue"|"cust_string2_en_GB"|"cust_string2_en_US"|"cust_string2_es_ES"|"cust_string2_fr_FR"|"cust_string2_ja_JP"|"cust_string2_ko_KR"|"cust_string2_localized"|"cust_string2_nl_NL"|"cust_string2_pt_BR"|"cust_string2_pt_PT"|"cust_string2_ru_RU"|"cust_string2_zh_CN"|"cust_string2_zh_TW"|"cust_string3"|"cust_string4"|"cust_string5"|"cust_string6_de_DE"|"cust_string6_defaultValue"|"cust_string6_en_GB"|"cust_string6_en_US"|"cust_string6_es_ES"|"cust_string6_fr_FR"|"cust_string6_ja_JP"|"cust_string6_ko_KR"|"cust_string6_localized"|"cust_string6_nl_NL"|"cust_string6_pt_BR"|"cust_string6_pt_PT"|"cust_string6_ru_RU"|"cust_string6_zh_CN"|"cust_string6_zh_TW"|"cust_string7_de_DE"|"cust_string7_defaultValue"|"cust_string7_en_GB"|"cust_string7_en_US"|"cust_string7_es_ES"|"cust_string7_fr_FR"|"cust_string7_ja_JP"|"cust_string7_ko_KR"|"cust_string7_localized"|"cust_string7_nl_NL"|"cust_string7_pt_BR"|"cust_string7_pt_PT"|"cust_string7_ru_RU"|"cust_string7_zh_CN"|"cust_string7_zh_TW"|"cust_string8_de_DE"|"cust_string8_defaultValue"|"cust_string8_en_GB"|"cust_string8_en_US"|"cust_string8_es_ES"|"cust_string8_fr_FR"|"cust_string8_ja_JP"|"cust_string8_ko_KR"|"cust_string8_localized"|"cust_string8_nl_NL"|"cust_string8_pt_BR"|"cust_string8_pt_PT"|"cust_string8_ru_RU"|"cust_string8_zh_CN"|"cust_string8_zh_TW"|"cust_string9_de_DE"|"cust_string9_defaultValue"|"cust_string9_en_GB"|"cust_string9_en_US"|"cust_string9_es_ES"|"cust_string9_fr_FR"|"cust_string9_ja_JP"|"cust_string9_ko_KR"|"cust_string9_localized"|"cust_string9_nl_NL"|"cust_string9_pt_BR"|"cust_string9_pt_PT"|"cust_string9_ru_RU"|"cust_string9_zh_CN"|"cust_string9_zh_TW"|"customString1"|"customString2"|"customString3"|"customString4"|"customString5"|"customString6"|"customString7"|"customString8"|"customString9"|"defaultEmployeeClass"|"defaultJobLevel"|"defaultSupervisorLevel"|"description"|"description_de_DE"|"description_defaultValue"|"description_en_GB"|"description_en_US"|"description_es_ES"|"description_fr_FR"|"description_ja_JP"|"description_ko_KR"|"description_localized"|"description_nl_NL"|"description_pt_BR"|"description_pt_PT"|"description_ru_RU"|"description_zh_CN"|"description_zh_TW"|"employeeClass"|"endDate"|"externalCode"|"grade"|"isFulltimeEmployee"|"isRegular"|"jobFunction"|"jobLevel"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"name_de_DE"|"name_defaultValue"|"name_en_GB"|"name_en_US"|"name_es_ES"|"name_fr_FR"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_pt_PT"|"name_ru_RU"|"name_zh_CN"|"name_zh_TW"|"parentJobCode"|"regularTemporary"|"standardHours"|"startDate"|"status"|"supervisorLevel"|"workerCompCode")[] \$select?;
 };
 
-public type SFOData\.JobClassificationZAF record {
+public type JobClassificationZAF record {
     string JobClassificationCountry_country?;
     string JobClassification_effectiveStartDate?;
     string JobClassification_externalCode?;
@@ -1779,7 +1725,7 @@ public type SFOData\.JobClassificationZAF record {
 };
 
 public type CollectionofLegalEntityPRY record {
-    SFOData\.LegalEntityPRY[] results?;
+    LegalEntityPRY[] results?;
 };
 
 # Represents the Queries record for the operation: getFOJobFunction
@@ -1788,10 +1734,6 @@ public type GetFOJobFunctionQueries record {
     ("*"|"descriptionTranslationNav"|"nameTranslationNav"|"parentFunctionCodeNav")[] \$expand?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("createdBy"|"createdDateTime"|"createdOn"|"description"|"description_de_DE"|"description_defaultValue"|"description_en_GB"|"description_en_US"|"description_es_ES"|"description_fr_FR"|"description_ja_JP"|"description_ko_KR"|"description_localized"|"description_nl_NL"|"description_pt_BR"|"description_pt_PT"|"description_ru_RU"|"description_zh_CN"|"description_zh_TW"|"endDate"|"externalCode"|"jobFunctionType"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"name_de_DE"|"name_defaultValue"|"name_en_GB"|"name_en_US"|"name_es_ES"|"name_fr_FR"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_pt_PT"|"name_ru_RU"|"name_zh_CN"|"name_zh_TW"|"parentFunctionCode"|"startDate"|"status"|"type")[] \$select?;
-};
-
-public type LegalEntityPRY record {
-    SFOData\.LegalEntityPRY d?;
 };
 
 # Represents the Headers record for the operation: deletePayScaleArea
@@ -1819,14 +1761,14 @@ public type ListLegalEntityTHAsQueries record {
 };
 
 public type BudgetGroup record {
-    SFOData\.BudgetGroup d?;
+    BudgetGroup d?;
 };
 
 public type CollectionofLocalizedData record {
-    SFOData\.LocalizedData[] results?;
+    LocalizedData[] results?;
 };
 
-public type SFOData\.JobClassificationBRA record {
+public type JobClassificationBRA record {
     string JobClassificationCountry_country?;
     string JobClassification_effectiveStartDate?;
     string JobClassification_externalCode?;
@@ -1853,12 +1795,8 @@ public type ListFODynamicRolesQueries record {
     ("businessUnit"|"company"|"costCenter"|"createdBy"|"createdDateTime"|"createdOn"|"department"|"description"|"division"|"dynamicGroup"|"dynamicRoleAssignmentId"|"eventReason"|"externalCode"|"jobCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"location"|"name"|"payGrade"|"payGroup"|"person"|"position"|"resolverType")[] \$select?;
 };
 
-public type LegalEntityRUS record {
-    SFOData\.LegalEntityRUS d?;
-};
-
 public type JobClassificationFRA record {
-    SFOData\.JobClassificationFRA d?;
+    JobClassificationFRA d?;
 };
 
 # Represents the Headers record for the operation: deletePayPeriod
@@ -1882,7 +1820,7 @@ public type DeleteLegalEntityDEUHeaders record {
 };
 
 public type CollectionofPeriods record {
-    SFOData\.Periods[] results?;
+    Periods[] results?;
 };
 
 # Represents the Queries record for the operation: listPayScaleAreas
@@ -1909,10 +1847,10 @@ public type DeleteLegalEntitySAUHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.FOFrequency record {
+public type FOFrequency record {
     string externalCode?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
 };
 
 # Represents the Queries record for the operation: getFOJobClassLocalITA
@@ -1943,10 +1881,6 @@ public type ListPayScaleLevelsQueries record {
     ("code"|"createdBy"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_GB"|"externalName_en_US"|"externalName_es_ES"|"externalName_fr_FR"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_pt_PT"|"externalName_ru_RU"|"externalName_zh_CN"|"externalName_zh_TW"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"nextPayScaleLevel"|"payScaleLevel")[] \$select?;
 };
 
-public type FOJobClassLocalDEFLT record {
-    SFOData\.FOJobClassLocalDEFLT d?;
-};
-
 # Represents the Queries record for the operation: listLegalEntitySAUs
 public type ListLegalEntitySAUsQueries record {
     # Skip the first n items, see [OData Paging - Skip](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -1966,7 +1900,7 @@ public type ListLegalEntitySAUsQueries record {
 };
 
 public type ModifiedJobClassificationITA record {
-    SFOData\.JobClassificationITA d?;
+    JobClassificationITA d?;
 };
 
 # Represents the Queries record for the operation: getFOLegalEntityLocalARG
@@ -1978,7 +1912,7 @@ public type GetFOLegalEntityLocalARGQueries record {
 };
 
 public type CreatedJobClassificationCountry record {
-    SFOData\.JobClassificationCountry d?;
+    JobClassificationCountry d?;
 };
 
 # Represents the Queries record for the operation: getFOJobClassLocalGBR
@@ -2010,7 +1944,7 @@ public type ListFOCostCentersQueries record {
 };
 
 public type LegalEntityTHA record {
-    SFOData\.LegalEntityTHA d?;
+    LegalEntityTHA d?;
 };
 
 # Represents the Headers record for the operation: deletePayCalendar
@@ -2019,16 +1953,12 @@ public type DeletePayCalendarHeaders record {
     string If\-Match?;
 };
 
-public type FOLegalEntityLocalFRA record {
-    SFOData\.FOLegalEntityLocalFRA d?;
-};
-
 public type FOBusinessUnit record {
-    SFOData\.FOBusinessUnit d?;
+    FOBusinessUnit d?;
 };
 
 public type CollectionofFOGeozone record {
-    SFOData\.FOGeozone[] results?;
+    FOGeozone[] results?;
 };
 
 # Represents the Queries record for the operation: getLegalEntityBLR
@@ -2038,15 +1968,11 @@ public type GetLegalEntityBLRQueries record {
 };
 
 public type CreatedLegalEntityUSA record {
-    SFOData\.LegalEntityUSA d?;
-};
-
-public type JobClassificationAUS record {
-    SFOData\.JobClassificationAUS d?;
+    LegalEntityUSA d?;
 };
 
 public type CreatedLegalEntityESP record {
-    SFOData\.LegalEntityESP d?;
+    LegalEntityESP d?;
 };
 
 # Represents the Headers record for the operation: deleteJobClassificationUSA
@@ -2056,7 +1982,7 @@ public type DeleteJobClassificationUSAHeaders record {
 };
 
 public type CreatedJobClassificationGBR record {
-    SFOData\.JobClassificationGBR d?;
+    JobClassificationGBR d?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityESP
@@ -2065,23 +1991,19 @@ public type DeleteLegalEntityESPHeaders record {
     string If\-Match?;
 };
 
-public type FOEventReason record {
-    SFOData\.FOEventReason d?;
-};
-
-public type SFOData\.FOPayGrade record {
+public type FOPayGrade record {
     string externalCode?;
     string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
 };
 
 public type CollectionofFOJobClassLocalDEFLT record {
-    SFOData\.FOJobClassLocalDEFLT[] results?;
+    FOJobClassLocalDEFLT[] results?;
 };
 
 public type CollectionofLegalEntitySAU record {
-    SFOData\.LegalEntitySAU[] results?;
+    LegalEntitySAU[] results?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -2148,32 +2070,16 @@ public type ListFOLegalEntityLocalARGsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"cuit"|"endDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type SFOData\.FOCorporateAddressDEFLT record {
-    string addressId?;
-    SFOData\.Territory countryNav?;
-};
-
 public type Wrapper record {
     CollectionofFOLegalEntityLocalUSA d?;
 };
 
 public type CollectionofLegalEntityDEU record {
-    SFOData\.LegalEntityDEU[] results?;
-};
-
-public type FOJobClassLocalBRA record {
-    SFOData\.FOJobClassLocalBRA d?;
-};
-
-public type SFOData\.FOLocationGroup record {
-    string externalCode?;
-    string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    LegalEntityDEU[] results?;
 };
 
 public type CollectionofFOLegalEntityLocalDEU record {
-    SFOData\.FOLegalEntityLocalDEU[] results?;
+    FOLegalEntityLocalDEU[] results?;
 };
 
 # Represents the Queries record for the operation: listFOEventReasons
@@ -2197,10 +2103,10 @@ public type ListFOEventReasonsQueries record {
 };
 
 public type CollectionofJobClassificationCountry record {
-    SFOData\.JobClassificationCountry[] results?;
+    JobClassificationCountry[] results?;
 };
 
-public type SFOData\.LegalEntityFRA record {
+public type LegalEntityFRA record {
     string LegalEntity_effectiveStartDate?;
     string LegalEntity_externalCode?;
     string externalCode?;
@@ -2239,36 +2145,17 @@ public type GetPayScalePayComponentQueries record {
 };
 
 public type CollectionofJobClassificationCAN record {
-    SFOData\.JobClassificationCAN[] results?;
+    JobClassificationCAN[] results?;
 };
 
-public type SFOData\.LegalEntityBLR record {
+public type LegalEntityBLR record {
     string LegalEntity_effectiveStartDate?;
     string LegalEntity_externalCode?;
     string externalCode?;
-};
-
-public type SFOData\.FOJobClassLocalCAN record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
 };
 
 public type CreatedLegalEntityBOL record {
-    SFOData\.LegalEntityBOL d?;
-};
-
-public type SFOData\.LegalEntityUSA record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
-};
-
-public type SFOData\.LegalEntityESP record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
+    LegalEntityBOL d?;
 };
 
 # Represents the Queries record for the operation: listFOJobClassLocalGBRs
@@ -2292,7 +2179,7 @@ public type ListFOJobClassLocalGBRsQueries record {
 };
 
 public type CollectionofFOJobClassLocalITA record {
-    SFOData\.FOJobClassLocalITA[] results?;
+    FOJobClassLocalITA[] results?;
 };
 
 # Represents the Queries record for the operation: getFOCostCenter
@@ -2307,13 +2194,6 @@ public type GetFOCostCenterQueries record {
 public type DeletePayScaleGroupHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type SFOData\.JobClassificationUSA record {
-    string JobClassificationCountry_country?;
-    string JobClassification_effectiveStartDate?;
-    string JobClassification_externalCode?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: listFOJobClassLocalITAs
@@ -2349,17 +2229,13 @@ public type GetLegalEntityESPQueries record {
 };
 
 public type LegalEntityDEU record {
-    SFOData\.LegalEntityDEU d?;
+    LegalEntityDEU d?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityTUN
 public type DeleteLegalEntityTUNHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type PayScaleGroup record {
-    SFOData\.PayScaleGroup d?;
 };
 
 # Represents the Queries record for the operation: getFOJobClassLocalAUS
@@ -2371,7 +2247,7 @@ public type GetFOJobClassLocalAUSQueries record {
 };
 
 public type CreatedLegalEntityTUN record {
-    SFOData\.LegalEntityTUN d?;
+    LegalEntityTUN d?;
 };
 
 # Represents the Queries record for the operation: listFOWfConfigs
@@ -2395,26 +2271,15 @@ public type ListFOWfConfigsQueries record {
 };
 
 public type CollectionofFOBusinessUnit record {
-    SFOData\.FOBusinessUnit[] results?;
+    FOBusinessUnit[] results?;
 };
 
 public type ModifiedJobClassificationCAN record {
-    SFOData\.JobClassificationCAN d?;
+    JobClassificationCAN d?;
 };
 
 public type ModifiedLegalEntityCAN record {
-    SFOData\.LegalEntityCAN d?;
-};
-
-public type SFOData\.FOJobClassLocalITA record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
-};
-
-public type FOLegalEntityLocalUSA record {
-    SFOData\.FOLegalEntityLocalUSA d?;
+    LegalEntityCAN d?;
 };
 
 # Represents the Queries record for the operation: listJobClassificationZAFs
@@ -2433,16 +2298,6 @@ public type ListJobClassificationZAFsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("JobClassificationCountry_country"|"JobClassification_effectiveStartDate"|"JobClassification_externalCode"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"occupationalLevel")[] \$select?;
-};
-
-public type FOLegalEntityLocalESP record {
-    SFOData\.FOLegalEntityLocalESP d?;
-};
-
-public type SFOData\.BudgetGroup record {
-    string effectiveStartDate?;
-    string externalCode?;
-    SFOData\.BudgetGroup parentBudgetGroup?;
 };
 
 # Represents the Queries record for the operation: listFODepartments
@@ -2466,23 +2321,15 @@ public type ListFODepartmentsQueries record {
 };
 
 public type ModifiedPayScaleArea record {
-    SFOData\.PayScaleArea d?;
-};
-
-public type FOPayGrade record {
-    SFOData\.FOPayGrade d?;
+    PayScaleArea d?;
 };
 
 public type ModifiedLegalEntitySAU record {
-    SFOData\.LegalEntitySAU d?;
+    LegalEntitySAU d?;
 };
 
 public type LegalEntitySAU record {
-    SFOData\.LegalEntitySAU d?;
-};
-
-public type Territory record {
-    SFOData\.Territory d?;
+    LegalEntitySAU d?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationBRA
@@ -2492,7 +2339,7 @@ public type GetJobClassificationBRAQueries record {
 };
 
 public type LegalEntityCAN record {
-    SFOData\.LegalEntityCAN d?;
+    LegalEntityCAN d?;
 };
 
 # Represents the Headers record for the operation: deleteFOBusinessUnit
@@ -2539,7 +2386,7 @@ public type ListLegalEntitySVNsQueries record {
     ("LegalEntity_effectiveStartDate"|"LegalEntity_externalCode"|"companyMasterNumber"|"companyRegistrationNumber"|"createdBy"|"createdDateTime"|"employerTaxNumber"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.LegalEntitySGP record {
+public type LegalEntitySGP record {
     string LegalEntity_effectiveStartDate?;
     string LegalEntity_externalCode?;
     string externalCode?;
@@ -2616,7 +2463,7 @@ public type ListPayCalendarsQueries record {
 };
 
 public type ModifiedLegalEntityDEU record {
-    SFOData\.LegalEntityDEU d?;
+    LegalEntityDEU d?;
 };
 
 # Represents the Headers record for the operation: deleteJobClassificationBGR
@@ -2625,12 +2472,8 @@ public type DeleteJobClassificationBGRHeaders record {
     string If\-Match?;
 };
 
-public type FOGeozone record {
-    SFOData\.FOGeozone d?;
-};
-
 public type CreatedJobClassificationCAN record {
-    SFOData\.JobClassificationCAN d?;
+    JobClassificationCAN d?;
 };
 
 # Represents the Queries record for the operation: listLocalizedDatas
@@ -2651,13 +2494,6 @@ public type ListLocalizedDatasQueries record {
     ("localizedDataCode"|"localizedDataLocale"|"localizedDataTranslation")[] \$select?;
 };
 
-public type SFOData\.JobClassificationFRA record {
-    string JobClassificationCountry_country?;
-    string JobClassification_effectiveStartDate?;
-    string JobClassification_externalCode?;
-    string externalCode?;
-};
-
 # Represents the Queries record for the operation: listBudgetGroups
 public type ListBudgetGroupsQueries record {
     # Skip the first n items, see [OData Paging - Skip](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -2676,13 +2512,6 @@ public type ListBudgetGroupsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("createdBy"|"createdDateTime"|"description"|"effectiveEndDate"|"effectiveStartDate"|"effectiveStatus"|"externalCode"|"externalName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"userId")[] \$select?;
-};
-
-public type SFOData\.FOLegalEntityLocalDEFLT record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
 };
 
 # Represents the Queries record for the operation: listFOJobFunctions
@@ -2706,15 +2535,11 @@ public type ListFOJobFunctionsQueries record {
 };
 
 public type CreatedLegalEntitySVN record {
-    SFOData\.LegalEntitySVN d?;
+    LegalEntitySVN d?;
 };
 
 public type CollectionofLegalEntityCAN record {
-    SFOData\.LegalEntityCAN[] results?;
-};
-
-public type FOFrequency record {
-    SFOData\.FOFrequency d?;
+    LegalEntityCAN[] results?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationAUS
@@ -2724,23 +2549,19 @@ public type GetJobClassificationAUSQueries record {
 };
 
 public type ModifiedJobClassificationCountry record {
-    SFOData\.JobClassificationCountry d?;
+    JobClassificationCountry d?;
 };
 
 public type ModifiedPayScaleGroup record {
-    SFOData\.PayScaleGroup d?;
-};
-
-public type JobClassificationZAF record {
-    SFOData\.JobClassificationZAF d?;
+    PayScaleGroup d?;
 };
 
 public type CollectionofFOPayGroup record {
-    SFOData\.FOPayGroup[] results?;
+    FOPayGroup[] results?;
 };
 
 public type CreatedBudgetGroup record {
-    SFOData\.BudgetGroup d?;
+    BudgetGroup d?;
 };
 
 # Represents the Queries record for the operation: getLegalEntitySAU
@@ -2750,11 +2571,7 @@ public type GetLegalEntitySAUQueries record {
 };
 
 public type CreatedLegalEntityARG record {
-    SFOData\.LegalEntityARG d?;
-};
-
-public type JobClassificationBRA record {
-    SFOData\.JobClassificationBRA d?;
+    LegalEntityARG d?;
 };
 
 # Represents the Queries record for the operation: listFoTranslations
@@ -2776,7 +2593,7 @@ public type ListFoTranslationsQueries record {
 };
 
 public type ModifiedLegalEntityARG record {
-    SFOData\.LegalEntityARG d?;
+    LegalEntityARG d?;
 };
 
 # Represents the Queries record for the operation: getLegalEntityPRY
@@ -2794,14 +2611,7 @@ public type GetFOBusinessUnitQueries record {
 };
 
 public type CreatedJobClassificationBRA record {
-    SFOData\.JobClassificationBRA d?;
-};
-
-public type SFOData\.FOJobClassLocalFRA record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
+    JobClassificationBRA d?;
 };
 
 # Represents the Queries record for the operation: getFODepartment
@@ -2821,7 +2631,7 @@ public type GetFOLocationQueries record {
 };
 
 public type ModifiedFOJobFunction record {
-    SFOData\.FOJobFunction d?;
+    FOJobFunction d?;
 };
 
 # Represents the Queries record for the operation: getFOEventReason
@@ -2832,31 +2642,16 @@ public type GetFOEventReasonQueries record {
     ("createdBy"|"createdDateTime"|"createdOn"|"description"|"emplStatus"|"endDate"|"event"|"externalCode"|"implicitPositionAction"|"includeInWorkExperience"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"payrollEvent"|"startDate"|"status")[] \$select?;
 };
 
-public type FOJobClassLocalGBR record {
-    SFOData\.FOJobClassLocalGBR d?;
-};
-
 public type ModifiedLegalEntitySVN record {
-    SFOData\.LegalEntitySVN d?;
-};
-
-public type SFOData\.JobClassificationBGR record {
-    string JobClassificationCountry_country?;
-    string JobClassification_effectiveStartDate?;
-    string JobClassification_externalCode?;
-    string externalCode?;
+    LegalEntitySVN d?;
 };
 
 public type CollectionofJobClassificationITA record {
-    SFOData\.JobClassificationITA[] results?;
-};
-
-public type LegalEntityBLR record {
-    SFOData\.LegalEntityBLR d?;
+    JobClassificationITA[] results?;
 };
 
 public type CollectionofLegalEntityFRA record {
-    SFOData\.LegalEntityFRA[] results?;
+    LegalEntityFRA[] results?;
 };
 
 # Represents the Queries record for the operation: getLegalEntityFRA
@@ -2874,7 +2669,7 @@ public type GetFOPayGradeQueries record {
 };
 
 public type ModifiedFOBusinessUnit record {
-    SFOData\.FOBusinessUnit d?;
+    FOBusinessUnit d?;
 };
 
 # Represents the Headers record for the operation: deleteJobClassificationFRA
@@ -2884,19 +2679,13 @@ public type DeleteJobClassificationFRAHeaders record {
 };
 
 public type CreatedLegalEntitySGP record {
-    SFOData\.LegalEntitySGP d?;
+    LegalEntitySGP d?;
 };
 
 # Represents the Headers record for the operation: deleteJobClassificationCountry
 public type DeleteJobClassificationCountryHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type SFOData\.LegalEntityDEU record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationFRA
@@ -2925,21 +2714,11 @@ public type ListFOJobClassLocalDEFLTsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type JobClassificationCAN record {
-    SFOData\.JobClassificationCAN d?;
-};
-
-public type SFOData\.FOLegalEntityLocalARG record {
+public type FOLegalEntityLocalARG record {
     string country?;
     string externalCode?;
     string startDate?;
-    SFOData\.Territory countryNav?;
-};
-
-public type SFOData\.LegalEntityTHA record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
+    Territory countryNav?;
 };
 
 # Represents the Queries record for the operation: getFODynamicRole
@@ -2950,31 +2729,16 @@ public type GetFODynamicRoleQueries record {
     ("businessUnit"|"company"|"costCenter"|"createdBy"|"createdDateTime"|"createdOn"|"department"|"description"|"division"|"dynamicGroup"|"dynamicRoleAssignmentId"|"eventReason"|"externalCode"|"jobCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"location"|"name"|"payGrade"|"payGroup"|"person"|"position"|"resolverType")[] \$select?;
 };
 
-public type FOLegalEntityLocalARG record {
-    SFOData\.FOLegalEntityLocalARG d?;
-};
-
 public type ModifiedPayScaleType record {
-    SFOData\.PayScaleType d?;
+    PayScaleType d?;
 };
 
 public type ModifiedLegalEntityRUS record {
-    SFOData\.LegalEntityRUS d?;
+    LegalEntityRUS d?;
 };
 
 public type CollectionofJobClassificationBGR record {
-    SFOData\.JobClassificationBGR[] results?;
-};
-
-public type FOJobClassLocalAUS record {
-    SFOData\.FOJobClassLocalAUS d?;
-};
-
-public type SFOData\.JobClassificationITA record {
-    string JobClassificationCountry_country?;
-    string JobClassification_effectiveStartDate?;
-    string JobClassification_externalCode?;
-    string externalCode?;
+    JobClassificationBGR[] results?;
 };
 
 public type Wrapper_66 record {
@@ -3002,23 +2766,23 @@ public type Wrapper_61 record {
 };
 
 public type ModifiedJobClassificationGBR record {
-    SFOData\.JobClassificationGBR d?;
+    JobClassificationGBR d?;
 };
 
 public type ModifiedBudgetGroup record {
-    SFOData\.BudgetGroup d?;
+    BudgetGroup d?;
 };
 
 public type CollectionofFOJobFunction record {
-    SFOData\.FOJobFunction[] results?;
+    FOJobFunction[] results?;
 };
 
 public type CollectionofPayScaleType record {
-    SFOData\.PayScaleType[] results?;
+    PayScaleType[] results?;
 };
 
 public type CollectionofTerritory record {
-    SFOData\.Territory[] results?;
+    Territory[] results?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityRUS
@@ -3036,7 +2800,7 @@ public type GetFOJobClassLocalUSAQueries record {
 };
 
 public type CreatedFOPayGroup record {
-    SFOData\.FOPayGroup d?;
+    FOPayGroup d?;
 };
 
 # Represents the Queries record for the operation: listFOWfConfigStepApprovers
@@ -3059,19 +2823,15 @@ public type ListFOWfConfigStepApproversQueries record {
     ("actionType"|"approverPositionRelationship"|"approverRole"|"approverType"|"context"|"createdBy"|"createdDateTime"|"emailConfiguration"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"relationshipToApprover"|"relationshipToPosition"|"respectRBP"|"skipType"|"stepNum")[] \$select?;
 };
 
-public type LegalEntityFRA record {
-    SFOData\.LegalEntityFRA d?;
-};
-
 public type ModifiedLegalEntityPRY record {
-    SFOData\.LegalEntityPRY d?;
+    LegalEntityPRY d?;
 };
 
-public type SFOData\.FOPayGroup record {
+public type FOPayGroup record {
     string externalCode?;
     string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationITA
@@ -3099,7 +2859,7 @@ public type GetFOGeozoneQueries record {
 };
 
 public type CreatedJobClassificationZAF record {
-    SFOData\.JobClassificationZAF d?;
+    JobClassificationZAF d?;
 };
 
 # Represents the Queries record for the operation: listLegalEntityESPs
@@ -3121,7 +2881,7 @@ public type ListLegalEntityESPsQueries record {
 };
 
 public type CollectionofJobClassificationFRA record {
-    SFOData\.JobClassificationFRA[] results?;
+    JobClassificationFRA[] results?;
 };
 
 # Represents the Queries record for the operation: listJobClassificationUSAs
@@ -3167,19 +2927,15 @@ public type DeleteLegalEntityPRYHeaders record {
 };
 
 public type ModifiedJobClassificationAUS record {
-    SFOData\.JobClassificationAUS d?;
+    JobClassificationAUS d?;
 };
 
 public type CollectionofLegalEntityTHA record {
-    SFOData\.LegalEntityTHA[] results?;
+    LegalEntityTHA[] results?;
 };
 
 public type PayScaleType record {
-    SFOData\.PayScaleType d?;
-};
-
-public type SFOData\.PayScaleType record {
-    string code?;
+    PayScaleType d?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityBLR
@@ -3188,20 +2944,20 @@ public type DeleteLegalEntityBLRHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.FOJobFunction record {
+public type FOJobFunction record {
     string externalCode?;
     string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
-    SFOData\.FOJobFunction parentFunctionCodeNav?;
+    FoTranslation descriptionTranslationNav?;
+    FoTranslation nameTranslationNav?;
+    FOJobFunction parentFunctionCodeNav?;
 };
 
 public type CollectionofFOJobClassLocalUSA record {
-    SFOData\.FOJobClassLocalUSA[] results?;
+    FOJobClassLocalUSA[] results?;
 };
 
 public type CollectionofLegalEntitySGP record {
-    SFOData\.LegalEntitySGP[] results?;
+    LegalEntitySGP[] results?;
 };
 
 # Represents the Queries record for the operation: listFOPayComponentGroups
@@ -3225,15 +2981,15 @@ public type ListFOPayComponentGroupsQueries record {
 };
 
 public type CollectionofFOLegalEntityLocalESP record {
-    SFOData\.FOLegalEntityLocalESP[] results?;
+    FOLegalEntityLocalESP[] results?;
 };
 
 public type CollectionofFOLegalEntityLocalUSA record {
-    SFOData\.FOLegalEntityLocalUSA[] results?;
+    FOLegalEntityLocalUSA[] results?;
 };
 
 public type CreatedLegalEntityFRA record {
-    SFOData\.LegalEntityFRA d?;
+    LegalEntityFRA d?;
 };
 
 # Represents the Headers record for the operation: deleteLegalEntityFRA
@@ -3242,22 +2998,8 @@ public type DeleteLegalEntityFRAHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.FOBusinessUnit record {
-    string externalCode?;
-    string startDate?;
-    SFOData\.FoTranslation descriptionTranslationNav?;
-    SFOData\.FoTranslation nameTranslationNav?;
-};
-
-public type SFOData\.FOJobClassLocalUSA record {
-    string country?;
-    string externalCode?;
-    string startDate?;
-    SFOData\.Territory countryNav?;
-};
-
 public type JobClassificationCountry record {
-    SFOData\.JobClassificationCountry d?;
+    JobClassificationCountry d?;
 };
 
 # Represents the Queries record for the operation: listFOPayGrades
@@ -3296,20 +3038,6 @@ public type ListLegalEntityPRYsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("LegalEntity_effectiveStartDate"|"LegalEntity_externalCode"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"socialSecurity"|"taxNumber")[] \$select?;
-};
-
-public type FOPayGroup record {
-    SFOData\.FOPayGroup d?;
-};
-
-public type JobClassificationGBR record {
-    SFOData\.JobClassificationGBR d?;
-};
-
-public type SFOData\.LegalEntitySAU record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
 };
 
 # Represents the Queries record for the operation: getPayPeriod
@@ -3364,20 +3092,12 @@ public type GetFOFrequencyQueries record {
     ("annualizationFactor"|"createdBy"|"createdDateTime"|"createdOn"|"description"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name")[] \$select?;
 };
 
-public type LegalEntitySGP record {
-    SFOData\.LegalEntitySGP d?;
-};
-
 public type CollectionofFOLegalEntityLocalFRA record {
-    SFOData\.FOLegalEntityLocalFRA[] results?;
-};
-
-public type FOJobFunction record {
-    SFOData\.FOJobFunction d?;
+    FOLegalEntityLocalFRA[] results?;
 };
 
 public type CollectionofFOJobClassLocalFRA record {
-    SFOData\.FOJobClassLocalFRA[] results?;
+    FOJobClassLocalFRA[] results?;
 };
 
 # Represents the Queries record for the operation: getFoTranslation
@@ -3387,7 +3107,7 @@ public type GetFoTranslationQueries record {
 };
 
 public type CreatedJobClassificationAUS record {
-    SFOData\.JobClassificationAUS d?;
+    JobClassificationAUS d?;
 };
 
 # Represents the Queries record for the operation: getFOLocationGroup
@@ -3425,17 +3145,11 @@ public type ListFOBusinessUnitsQueries record {
 };
 
 public type CollectionofFOLegalEntityLocalDEFLT record {
-    SFOData\.FOLegalEntityLocalDEFLT[] results?;
-};
-
-public type SFOData\.LegalEntityCAN record {
-    string LegalEntity_effectiveStartDate?;
-    string LegalEntity_externalCode?;
-    string externalCode?;
+    FOLegalEntityLocalDEFLT[] results?;
 };
 
 public type CreatedLegalEntityBLR record {
-    SFOData\.LegalEntityBLR d?;
+    LegalEntityBLR d?;
 };
 
 # Represents the Queries record for the operation: getJobClassificationBGR
@@ -3489,7 +3203,7 @@ public type ListLegalEntityRUSsQueries record {
 };
 
 public type CollectionofJobClassificationUSA record {
-    SFOData\.JobClassificationUSA[] results?;
+    JobClassificationUSA[] results?;
 };
 
 # Represents the Headers record for the operation: deletePayScaleType
@@ -3502,21 +3216,6 @@ public type DeletePayScaleTypeHeaders record {
 public type DeleteJobClassificationAUSHeaders record {
     # ETag
     string If\-Match?;
-};
-
-public type SFOData\.JobClassificationCountry record {
-    string JobClassification_effectiveStartDate?;
-    string JobClassification_externalCode?;
-    string country?;
-    SFOData\.JobClassificationAUS toJobClassificationAUS?;
-    SFOData\.JobClassificationBRA toJobClassificationBRA?;
-    SFOData\.JobClassificationCAN toJobClassificationCAN?;
-    SFOData\.JobClassificationFRA toJobClassificationFRA?;
-    SFOData\.JobClassificationGBR toJobClassificationGBR?;
-    SFOData\.JobClassificationITA toJobClassificationITA?;
-    SFOData\.JobClassificationUSA toJobClassificationUSA?;
-    SFOData\.JobClassificationBGR toJobClassificationBGR?;
-    SFOData\.JobClassificationZAF toJobClassificationZAF?;
 };
 
 # Represents the Queries record for the operation: getPayCalendar

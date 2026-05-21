@@ -55,7 +55,7 @@ public type ListAdvancesInstallmentssQueries record {
     ("Advance_externalCode"|"NonRecurringPayment_externalCode"|"amortization"|"amortizationTotal"|"balanceRemaining"|"createdBy"|"createdDateTime"|"currency"|"currencyGO"|"effectiveStatus"|"externalCode"|"installmentAmount"|"installmentStatus"|"interestAmount"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"paymentDate")[] \$select?;
 };
 
-public type SFOData\.Advance record {
+public type Advance record {
     string NonRecurringPayment_externalCode?;
     string externalCode?;
     RelatedCollectionSFOData_AdvancesEligibility advanceEligibilityCodeNav?;
@@ -63,7 +63,7 @@ public type SFOData\.Advance record {
 };
 
 public type RelatedCollectionSFOData_AdvancesEligibility record {
-    SFOData\.AdvancesEligibility[] results?;
+    AdvancesEligibility[] results?;
 };
 
 # Represents the Queries record for the operation: getAdvancesEligibility
@@ -73,7 +73,7 @@ public type GetAdvancesEligibilityQueries record {
 };
 
 public type CollectionofAdvancesInstallments record {
-    SFOData\.AdvancesInstallments[] results?;
+    AdvancesInstallments[] results?;
 };
 
 # Represents the Queries record for the operation: listAdvancesAccumulations
@@ -99,14 +99,14 @@ public type Wrapper_1 record {
 };
 
 public type CollectionofAdvancesAccumulation record {
-    SFOData\.AdvancesAccumulation[] results?;
+    AdvancesAccumulation[] results?;
 };
 
 public type Wrapper_2 record {
     CollectionofAdvancesAccumulation d?;
 };
 
-public type SFOData\.AdvancesAccumulation record {
+public type AdvancesAccumulation record {
     string externalCode?;
 };
 
@@ -190,18 +190,10 @@ public type GetAdvanceQueries record {
     ("NonRecurringPayment_externalCode"|"advanceEligibilityCode"|"advanceType"|"approvalStatus"|"approver"|"createdBy"|"createdDate"|"createdDateTime"|"currencyCode"|"currencyGO"|"eligibileAmount"|"eligibilityAmount"|"eligibleAdvanceType"|"externalCode"|"installmentAmount"|"installmentFrequency"|"interestRate"|"interestType"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"notesForApprover"|"numberOfInstallments"|"paymentMode"|"pendingAmount"|"periodEndDate"|"periodStartDate"|"recoveryMode"|"recoveryStatus"|"remainingRequests"|"requestDate"|"requestedAmount"|"totalRepaymentAmount")[] \$select?;
 };
 
-public type Advance record {
-    SFOData\.Advance d?;
-};
-
-public type SFOData\.AdvancesInstallments record {
+public type AdvancesInstallments record {
     string Advance_externalCode?;
     string NonRecurringPayment_externalCode?;
     string externalCode?;
-};
-
-public type AdvancesAccumulation record {
-    SFOData\.AdvancesAccumulation d?;
 };
 
 # Represents the Queries record for the operation: getAdvancesInstallments
@@ -210,25 +202,17 @@ public type GetAdvancesInstallmentsQueries record {
     ("Advance_externalCode"|"NonRecurringPayment_externalCode"|"amortization"|"amortizationTotal"|"balanceRemaining"|"createdBy"|"createdDateTime"|"currency"|"currencyGO"|"effectiveStatus"|"externalCode"|"installmentAmount"|"installmentStatus"|"interestAmount"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"paymentDate")[] \$select?;
 };
 
-public type SFOData\.AdvancesEligibility record {
+public type AdvancesEligibility record {
     string effectiveStartDate?;
     string externalCode?;
 };
 
-public type AdvancesInstallments record {
-    SFOData\.AdvancesInstallments d?;
-};
-
 public type RelatedCollectionSFOData_AdvancesInstallments record {
-    SFOData\.AdvancesInstallments[] results?;
-};
-
-public type AdvancesEligibility record {
-    SFOData\.AdvancesEligibility d?;
+    AdvancesInstallments[] results?;
 };
 
 public type CollectionofAdvancesEligibility record {
-    SFOData\.AdvancesEligibility[] results?;
+    AdvancesEligibility[] results?;
 };
 
 # Represents the Queries record for the operation: getAdvancesAccumulation
@@ -238,5 +222,5 @@ public type GetAdvancesAccumulationQueries record {
 };
 
 public type CollectionofAdvance record {
-    SFOData\.Advance[] results?;
+    Advance[] results?;
 };

@@ -171,7 +171,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationCountry(SFOData\.JobClassificationCountry payload, map<string|string[]> headers = {}) returns CreatedJobClassificationCountry|error {
+    remote isolated function createJobClassificationCountry(JobClassificationCountry payload, map<string|string[]> headers = {}) returns CreatedJobClassificationCountry|error {
         string resourcePath = string `/JobClassificationCountry`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -240,7 +240,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createFOJobFunction(SFOData\.FOJobFunction payload, map<string|string[]> headers = {}) returns CreatedFOJobFunction|error {
+    remote isolated function createFOJobFunction(FOJobFunction payload, map<string|string[]> headers = {}) returns CreatedFOJobFunction|error {
         string resourcePath = string `/FOJobFunction`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -356,7 +356,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityFRA(SFOData\.LegalEntityFRA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityFRA|error {
+    remote isolated function createLegalEntityFRA(LegalEntityFRA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityFRA|error {
         string resourcePath = string `/LegalEntityFRA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -531,7 +531,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationBRA(SFOData\.JobClassificationBRA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationBRA|error {
+    remote isolated function createJobClassificationBRA(JobClassificationBRA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationBRA|error {
         string resourcePath = string `/JobClassificationBRA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -603,7 +603,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationZAF(SFOData\.JobClassificationZAF payload, map<string|string[]> headers = {}) returns CreatedJobClassificationZAF|error {
+    remote isolated function createJobClassificationZAF(JobClassificationZAF payload, map<string|string[]> headers = {}) returns CreatedJobClassificationZAF|error {
         string resourcePath = string `/JobClassificationZAF`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -675,7 +675,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityDEU(SFOData\.LegalEntityDEU payload, map<string|string[]> headers = {}) returns CreatedLegalEntityDEU|error {
+    remote isolated function createLegalEntityDEU(LegalEntityDEU payload, map<string|string[]> headers = {}) returns CreatedLegalEntityDEU|error {
         string resourcePath = string `/LegalEntityDEU`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -744,7 +744,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationGBR(SFOData\.JobClassificationGBR payload, map<string|string[]> headers = {}) returns CreatedJobClassificationGBR|error {
+    remote isolated function createJobClassificationGBR(JobClassificationGBR payload, map<string|string[]> headers = {}) returns CreatedJobClassificationGBR|error {
         string resourcePath = string `/JobClassificationGBR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -816,7 +816,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationFRA(SFOData\.JobClassificationFRA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationFRA|error {
+    remote isolated function createJobClassificationFRA(JobClassificationFRA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationFRA|error {
         string resourcePath = string `/JobClassificationFRA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -914,7 +914,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createBudgetGroup(SFOData\.BudgetGroup payload, map<string|string[]> headers = {}) returns CreatedBudgetGroup|error {
+    remote isolated function createBudgetGroup(BudgetGroup payload, map<string|string[]> headers = {}) returns CreatedBudgetGroup|error {
         string resourcePath = string `/BudgetGroup`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1006,7 +1006,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationAUS(SFOData\.JobClassificationAUS payload, map<string|string[]> headers = {}) returns CreatedJobClassificationAUS|error {
+    remote isolated function createJobClassificationAUS(JobClassificationAUS payload, map<string|string[]> headers = {}) returns CreatedJobClassificationAUS|error {
         string resourcePath = string `/JobClassificationAUS`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1078,7 +1078,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPayScaleArea(SFOData\.PayScaleArea payload, map<string|string[]> headers = {}) returns CreatedPayScaleArea|error {
+    remote isolated function createPayScaleArea(PayScaleArea payload, map<string|string[]> headers = {}) returns CreatedPayScaleArea|error {
         string resourcePath = string `/PayScaleArea`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1249,7 +1249,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationITA(SFOData\.JobClassificationITA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationITA|error {
+    remote isolated function createJobClassificationITA(JobClassificationITA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationITA|error {
         string resourcePath = string `/JobClassificationITA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1321,7 +1321,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityESP(SFOData\.LegalEntityESP payload, map<string|string[]> headers = {}) returns CreatedLegalEntityESP|error {
+    remote isolated function createLegalEntityESP(LegalEntityESP payload, map<string|string[]> headers = {}) returns CreatedLegalEntityESP|error {
         string resourcePath = string `/LegalEntityESP`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1480,7 +1480,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationUSA(SFOData\.JobClassificationUSA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationUSA|error {
+    remote isolated function createJobClassificationUSA(JobClassificationUSA payload, map<string|string[]> headers = {}) returns CreatedJobClassificationUSA|error {
         string resourcePath = string `/JobClassificationUSA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1723,7 +1723,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPayScaleType(SFOData\.PayScaleType payload, map<string|string[]> headers = {}) returns CreatedPayScaleType|error {
+    remote isolated function createPayScaleType(PayScaleType payload, map<string|string[]> headers = {}) returns CreatedPayScaleType|error {
         string resourcePath = string `/PayScaleType`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1813,7 +1813,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityRUS(SFOData\.LegalEntityRUS payload, map<string|string[]> headers = {}) returns CreatedLegalEntityRUS|error {
+    remote isolated function createLegalEntityRUS(LegalEntityRUS payload, map<string|string[]> headers = {}) returns CreatedLegalEntityRUS|error {
         string resourcePath = string `/LegalEntityRUS`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1882,7 +1882,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationCAN(SFOData\.JobClassificationCAN payload, map<string|string[]> headers = {}) returns CreatedJobClassificationCAN|error {
+    remote isolated function createJobClassificationCAN(JobClassificationCAN payload, map<string|string[]> headers = {}) returns CreatedJobClassificationCAN|error {
         string resourcePath = string `/JobClassificationCAN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1994,7 +1994,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntitySVN(SFOData\.LegalEntitySVN payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySVN|error {
+    remote isolated function createLegalEntitySVN(LegalEntitySVN payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySVN|error {
         string resourcePath = string `/LegalEntitySVN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2063,7 +2063,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntitySAU(SFOData\.LegalEntitySAU payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySAU|error {
+    remote isolated function createLegalEntitySAU(LegalEntitySAU payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySAU|error {
         string resourcePath = string `/LegalEntitySAU`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2132,7 +2132,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityPRY(SFOData\.LegalEntityPRY payload, map<string|string[]> headers = {}) returns CreatedLegalEntityPRY|error {
+    remote isolated function createLegalEntityPRY(LegalEntityPRY payload, map<string|string[]> headers = {}) returns CreatedLegalEntityPRY|error {
         string resourcePath = string `/LegalEntityPRY`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2201,7 +2201,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityCAN(SFOData\.LegalEntityCAN payload, map<string|string[]> headers = {}) returns CreatedLegalEntityCAN|error {
+    remote isolated function createLegalEntityCAN(LegalEntityCAN payload, map<string|string[]> headers = {}) returns CreatedLegalEntityCAN|error {
         string resourcePath = string `/LegalEntityCAN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2270,7 +2270,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityBOL(SFOData\.LegalEntityBOL payload, map<string|string[]> headers = {}) returns CreatedLegalEntityBOL|error {
+    remote isolated function createLegalEntityBOL(LegalEntityBOL payload, map<string|string[]> headers = {}) returns CreatedLegalEntityBOL|error {
         string resourcePath = string `/LegalEntityBOL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2339,7 +2339,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityTHA(SFOData\.LegalEntityTHA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityTHA|error {
+    remote isolated function createLegalEntityTHA(LegalEntityTHA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityTHA|error {
         string resourcePath = string `/LegalEntityTHA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2446,7 +2446,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityBLR(SFOData\.LegalEntityBLR payload, map<string|string[]> headers = {}) returns CreatedLegalEntityBLR|error {
+    remote isolated function createLegalEntityBLR(LegalEntityBLR payload, map<string|string[]> headers = {}) returns CreatedLegalEntityBLR|error {
         string resourcePath = string `/LegalEntityBLR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2529,7 +2529,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityTUN(SFOData\.LegalEntityTUN payload, map<string|string[]> headers = {}) returns CreatedLegalEntityTUN|error {
+    remote isolated function createLegalEntityTUN(LegalEntityTUN payload, map<string|string[]> headers = {}) returns CreatedLegalEntityTUN|error {
         string resourcePath = string `/LegalEntityTUN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2554,7 +2554,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntitySGP(SFOData\.LegalEntitySGP payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySGP|error {
+    remote isolated function createLegalEntitySGP(LegalEntitySGP payload, map<string|string[]> headers = {}) returns CreatedLegalEntitySGP|error {
         string resourcePath = string `/LegalEntitySGP`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2667,7 +2667,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityUSA(SFOData\.LegalEntityUSA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityUSA|error {
+    remote isolated function createLegalEntityUSA(LegalEntityUSA payload, map<string|string[]> headers = {}) returns CreatedLegalEntityUSA|error {
         string resourcePath = string `/LegalEntityUSA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2736,7 +2736,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPayPeriod(SFOData\.PayPeriod payload, map<string|string[]> headers = {}) returns CreatedPayPeriod|error {
+    remote isolated function createPayPeriod(PayPeriod payload, map<string|string[]> headers = {}) returns CreatedPayPeriod|error {
         string resourcePath = string `/PayPeriod`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2881,7 +2881,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createLegalEntityARG(SFOData\.LegalEntityARG payload, map<string|string[]> headers = {}) returns CreatedLegalEntityARG|error {
+    remote isolated function createLegalEntityARG(LegalEntityARG payload, map<string|string[]> headers = {}) returns CreatedLegalEntityARG|error {
         string resourcePath = string `/LegalEntityARG`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2950,7 +2950,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createFOBusinessUnit(SFOData\.FOBusinessUnit payload, map<string|string[]> headers = {}) returns CreatedFOBusinessUnit|error {
+    remote isolated function createFOBusinessUnit(FOBusinessUnit payload, map<string|string[]> headers = {}) returns CreatedFOBusinessUnit|error {
         string resourcePath = string `/FOBusinessUnit`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -3054,7 +3054,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createFOPayGroup(SFOData\.FOPayGroup payload, map<string|string[]> headers = {}) returns CreatedFOPayGroup|error {
+    remote isolated function createFOPayGroup(FOPayGroup payload, map<string|string[]> headers = {}) returns CreatedFOPayGroup|error {
         string resourcePath = string `/FOPayGroup`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -3171,7 +3171,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createPayScaleGroup(SFOData\.PayScaleGroup payload, map<string|string[]> headers = {}) returns CreatedPayScaleGroup|error {
+    remote isolated function createPayScaleGroup(PayScaleGroup payload, map<string|string[]> headers = {}) returns CreatedPayScaleGroup|error {
         string resourcePath = string `/PayScaleGroup`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -3371,7 +3371,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createJobClassificationBGR(SFOData\.JobClassificationBGR payload, map<string|string[]> headers = {}) returns CreatedJobClassificationBGR|error {
+    remote isolated function createJobClassificationBGR(JobClassificationBGR payload, map<string|string[]> headers = {}) returns CreatedJobClassificationBGR|error {
         string resourcePath = string `/JobClassificationBGR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

@@ -54,7 +54,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createSecondaryAssignmentsItem(SFOData\.SecondaryAssignmentsItem payload, map<string|string[]> headers = {}) returns CreatedSecondaryAssignmentsItem|error {
+    remote isolated function createSecondaryAssignmentsItem(SecondaryAssignmentsItem payload, map<string|string[]> headers = {}) returns CreatedSecondaryAssignmentsItem|error {
         string resourcePath = string `/SecondaryAssignmentsItem`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -123,7 +123,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createSecondaryAssignments(SFOData\.SecondaryAssignments payload, map<string|string[]> headers = {}) returns CreatedSecondaryAssignments|error {
+    remote isolated function createSecondaryAssignments(SecondaryAssignments payload, map<string|string[]> headers = {}) returns CreatedSecondaryAssignments|error {
         string resourcePath = string `/SecondaryAssignments`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -189,7 +189,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createRightToReturn(SFOData\.RightToReturn payload, map<string|string[]> headers = {}) returns CreatedRightToReturn|error {
+    remote isolated function createRightToReturn(RightToReturn payload, map<string|string[]> headers = {}) returns CreatedRightToReturn|error {
         string resourcePath = string `/RightToReturn`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

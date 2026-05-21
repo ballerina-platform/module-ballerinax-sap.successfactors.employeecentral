@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testApprenticeEventTypes() returns error? {
     Wrapper listApprenticeEventTypesResult = check sfClient->listApprenticeEventTypes();
-    test:assertTrue(listApprenticeEventTypesResult !is (), "Result should not be null");
+    test:assertTrue(listApprenticeEventTypesResult.d !is (), "Result should not be null");
 }

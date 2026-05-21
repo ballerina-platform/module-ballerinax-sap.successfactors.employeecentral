@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testSecondaryAssignmentsItems() returns error? {
     Wrapper listSecondaryAssignmentsItemsResult = check sfClient->listSecondaryAssignmentsItems();
-    test:assertTrue(listSecondaryAssignmentsItemsResult !is (), "Result should not be null");
+    test:assertTrue(listSecondaryAssignmentsItemsResult.d !is (), "Result should not be null");
 }

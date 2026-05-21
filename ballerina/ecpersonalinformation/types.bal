@@ -20,47 +20,42 @@
 import ballerina/http;
 
 public type PerNationalId record {
-    SFOData\.PerNationalId d?;
+    PerNationalId d?;
 };
 
-public type SFOData\.PerBiographicalInfoLocITA record {
+public type PerBiographicalInfoLocITA record {
     string country?;
     string personIdExternal?;
 };
 
 public type RelatedCollectionSFOData_NameElementGO record {
-    SFOData\.NameElementGO[] results?;
+    NameElementGO[] results?;
 };
 
 public type PerBiographicalInfoLocVEN record {
-    SFOData\.PerBiographicalInfoLocVEN d?;
+    PerBiographicalInfoLocVEN d?;
 };
 
 public type CollectionofPerBiographicalInfoLocVEN record {
-    SFOData\.PerBiographicalInfoLocVEN[] results?;
+    PerBiographicalInfoLocVEN[] results?;
 };
 
 public type CollectionofNameElementGO record {
-    SFOData\.NameElementGO[] results?;
+    NameElementGO[] results?;
 };
 
-public type SFOData\.PerBiographicalInfoLocVEN record {
-    string country?;
-    string personIdExternal?;
-};
-
-public type SFOData\.PerPhone record {
+public type PerPhone record {
     string personIdExternal?;
     string phoneType?;
-    SFOData\.PerPerson personNav?;
+    PerPerson personNav?;
 };
 
 public type PerBiographicalInfoLocCHL record {
-    SFOData\.PerBiographicalInfoLocCHL d?;
+    PerBiographicalInfoLocCHL d?;
 };
 
 public type CollectionofPerBiographicalInfoLocITA record {
-    SFOData\.PerBiographicalInfoLocITA[] results?;
+    PerBiographicalInfoLocITA[] results?;
 };
 
 # Represents the Queries record for the operation: listPerBiographicalInfoLocFRAs
@@ -82,7 +77,7 @@ public type ListPerBiographicalInfoLocFRAsQueries record {
 };
 
 public type HrisEmergencyContactAddressDEFLT record {
-    SFOData\.HrisEmergencyContactAddressDEFLT d?;
+    HrisEmergencyContactAddressDEFLT d?;
 };
 
 # Represents the Queries record for the operation: getPerNationalIdWithValidityPeriod
@@ -94,7 +89,7 @@ public type GetPerNationalIdWithValidityPeriodQueries record {
 };
 
 public type RelatedCollectionSFOData_PerEmail record {
-    SFOData\.PerEmail[] results?;
+    PerEmail[] results?;
 };
 
 # Represents the Queries record for the operation: listPerNationalIds
@@ -115,10 +110,6 @@ public type ListPerNationalIdsQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("cardType"|"country"|"createdBy"|"createdDateTime"|"createdOn"|"isPrimary"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"nationalId"|"notes"|"operation"|"personIdExternal")[] \$select?;
-};
-
-public type PerBiographicalInfoLocITA record {
-    SFOData\.PerBiographicalInfoLocITA d?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -170,23 +161,19 @@ public type Wrapper record {
 };
 
 public type PerEmail record {
-    SFOData\.PerEmail d?;
+    PerEmail d?;
 };
 
 public type RelatedCollectionSFOData_PerEmergencyContacts record {
-    SFOData\.PerEmergencyContacts[] results?;
-};
-
-public type PerPhone record {
-    SFOData\.PerPhone d?;
+    PerEmergencyContacts[] results?;
 };
 
 public type CollectionofPerPhone record {
-    SFOData\.PerPhone[] results?;
+    PerPhone[] results?;
 };
 
 public type CollectionofPerPersonal record {
-    SFOData\.PerPersonal[] results?;
+    PerPersonal[] results?;
 };
 
 # Represents the Queries record for the operation: getPerSocialAccount
@@ -198,7 +185,7 @@ public type GetPerSocialAccountQueries record {
 };
 
 public type CollectionofPerPersonRelationship record {
-    SFOData\.PerPersonRelationship[] results?;
+    PerPersonRelationship[] results?;
 };
 
 # Represents the Queries record for the operation: getPerBiographicalInfoLocITA
@@ -231,18 +218,18 @@ public type ListHrisEmergencyContactAddressDEFLTsQueries record {
     ("address1"|"address2"|"address3"|"address4"|"address5"|"addressId"|"addressType"|"city"|"country"|"county"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"notes"|"province"|"startDate"|"state"|"zipCode")[] \$select?;
 };
 
-public type SFOData\.PerNationalIdWithValidityPeriod record {
+public type PerNationalIdWithValidityPeriod record {
     string recordId?;
     string validFrom?;
     string validTo?;
     string cardType?;
     string country?;
     string personIdExternal?;
-    SFOData\.PerPerson personNav?;
+    PerPerson personNav?;
 };
 
 public type RelatedCollectionSFOData_PerPhone record {
-    SFOData\.PerPhone[] results?;
+    PerPhone[] results?;
 };
 
 public type Wrapper_17 record {
@@ -292,23 +279,11 @@ public type Wrapper_11 record {
 };
 
 public type PerAddressDEFLT record {
-    SFOData\.PerAddressDEFLT d?;
-};
-
-public type SFOData\.PerBiographicalInfoLocCHL record {
-    string country?;
-    string personIdExternal?;
+    PerAddressDEFLT d?;
 };
 
 public type Wrapper_12 record {
     CollectionofNameFormatGO d?;
-};
-
-public type SFOData\.PerAddressDEFLT record {
-    string addressType?;
-    string personIdExternal?;
-    string startDate?;
-    SFOData\.PerPerson personNav?;
 };
 
 public type Wrapper_10 record {
@@ -342,7 +317,7 @@ public type ListPerPhonesQueries record {
 };
 
 public type CollectionofPerBiographicalInfoLocCHL record {
-    SFOData\.PerBiographicalInfoLocCHL[] results?;
+    PerBiographicalInfoLocCHL[] results?;
 };
 
 # Represents the Queries record for the operation: getHrisEmergencyContactAddressDEFLT
@@ -352,11 +327,11 @@ public type GetHrisEmergencyContactAddressDEFLTQueries record {
 };
 
 public type PerPersonRelationship record {
-    SFOData\.PerPersonRelationship d?;
+    PerPersonRelationship d?;
 };
 
 public type CollectionofNameFormatGO record {
-    SFOData\.NameFormatGO[] results?;
+    NameFormatGO[] results?;
 };
 
 # Represents the Queries record for the operation: getPerAddressDEFLT
@@ -395,10 +370,10 @@ public type GetPerEmergencyContactsQueries record {
     ("addressAddress1"|"addressAddress2"|"addressAddress3"|"addressCity"|"addressCountry"|"addressCounty"|"addressProvince"|"addressState"|"addressZipCode"|"createdBy"|"createdDateTime"|"createdOn"|"email"|"isAddSameAsEmployee"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"operation"|"personIdExternal"|"phone"|"primaryFlag"|"relationship"|"secondPhone")[] \$select?;
 };
 
-public type SFOData\.PerSocialAccount record {
+public type PerSocialAccount record {
     string domain?;
     string personIdExternal?;
-    SFOData\.PerPerson personNav?;
+    PerPerson personNav?;
 };
 
 public type Wrapper_8 record {
@@ -410,7 +385,7 @@ public type Wrapper_9 record {
 };
 
 public type PerEmergencyContacts record {
-    SFOData\.PerEmergencyContacts d?;
+    PerEmergencyContacts d?;
 };
 
 public type Wrapper_4 record {
@@ -494,13 +469,7 @@ public type Wrapper_2 record {
 };
 
 public type CollectionofHrisEmergencyContactAddressDEFLT record {
-    SFOData\.HrisEmergencyContactAddressDEFLT[] results?;
-};
-
-public type SFOData\.PerEmail record {
-    string emailType?;
-    string personIdExternal?;
-    SFOData\.PerPerson personNav?;
+    HrisEmergencyContactAddressDEFLT[] results?;
 };
 
 public type Wrapper_3 record {
@@ -513,7 +482,7 @@ public type GetPerBiographicalInfoLocFRAQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"customString1"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal"|"placeOfBirth"|"regionOfBirth")[] \$select?;
 };
 
-public type SFOData\.GenerateNextPersonIDResponse record {
+public type GenerateNextPersonIDResponse record {
 };
 
 # Represents the Queries record for the operation: listPerBiographicalInfoLocCHLs
@@ -575,7 +544,7 @@ public type ListPerPersonsQueries record {
 };
 
 public type PerPersonal record {
-    SFOData\.PerPersonal d?;
+    PerPersonal d?;
 };
 
 # Represents the Queries record for the operation: getPerNationalId
@@ -606,12 +575,6 @@ public type ListPerNationalIdWithValidityPeriodsQueries record {
     ("cardType"|"country"|"createdBy"|"createdDateTime"|"createdOn"|"isPrimary"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"nationalId"|"notes"|"personIdExternal")[] \$select?;
 };
 
-public type SFOData\.PerPersonal record {
-    string personIdExternal?;
-    string startDate?;
-    SFOData\.PerPerson personNav?;
-};
-
 # Represents the Queries record for the operation: getPerPhone
 public type GetPerPhoneQueries record {
     # Expand related entities, see [OData Expand](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
@@ -628,17 +591,9 @@ public type GetNameFormatGOQueries record {
     ("createdBy"|"createdDateTime"|"externalCode"|"externalName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"sample")[] \$select?;
 };
 
-public type SFOData\.PerBiographicalInfoLocFRA record {
+public type PerBiographicalInfoLocFRA record {
     string country?;
     string personIdExternal?;
-};
-
-public type SFOData\.PerEmergencyContacts record {
-    string name?;
-    string personIdExternal?;
-    string relationship?;
-    SFOData\.HrisEmergencyContactAddressDEFLT addressNavDEFLT?;
-    SFOData\.PerPerson personNav?;
 };
 
 # Represents the Queries record for the operation: getPerPersonRelationship
@@ -690,15 +645,15 @@ public type ListPerEmailsQueries record {
 };
 
 public type Result record {
-    SFOData\.GenerateNextPersonIDResponse d?;
+    GenerateNextPersonIDResponse d?;
 };
 
 public type CollectionofPerBiographicalInfoLocFRA record {
-    SFOData\.PerBiographicalInfoLocFRA[] results?;
+    PerBiographicalInfoLocFRA[] results?;
 };
 
 public type CollectionofPerBiographicalInfoLocBRA record {
-    SFOData\.PerBiographicalInfoLocBRA[] results?;
+    PerBiographicalInfoLocBRA[] results?;
 };
 
 # Represents the Queries record for the operation: listPerBiographicalInfoLocVENs
@@ -720,10 +675,10 @@ public type ListPerBiographicalInfoLocVENsQueries record {
 };
 
 public type PerBiographicalInfoLocBRA record {
-    SFOData\.PerBiographicalInfoLocBRA d?;
+    PerBiographicalInfoLocBRA d?;
 };
 
-public type SFOData\.PerPerson record {
+public type PerPerson record {
     string personIdExternal?;
     RelatedCollectionSFOData_PerEmail emailNav?;
     RelatedCollectionSFOData_PerEmergencyContacts emergencyContactNav?;
@@ -735,17 +690,8 @@ public type SFOData\.PerPerson record {
     RelatedCollectionSFOData_PerSocialAccount socialAccountNav?;
 };
 
-public type SFOData\.PerBiographicalInfoLocBRA record {
-    string country?;
-    string personIdExternal?;
-};
-
-public type PerBiographicalInfoLocFRA record {
-    SFOData\.PerBiographicalInfoLocFRA d?;
-};
-
 public type RelatedCollectionSFOData_PerPersonRelationship record {
-    SFOData\.PerPersonRelationship[] results?;
+    PerPersonRelationship[] results?;
 };
 
 # Represents the Queries record for the operation: getPersonKey
@@ -755,11 +701,11 @@ public type GetPersonKeyQueries record {
 };
 
 public type CollectionofPersonKey record {
-    SFOData\.PersonKey[] results?;
+    PersonKey[] results?;
 };
 
 public type CollectionofPerNationalIdWithValidityPeriod record {
-    SFOData\.PerNationalIdWithValidityPeriod[] results?;
+    PerNationalIdWithValidityPeriod[] results?;
 };
 
 # Represents the Queries record for the operation: listPerAddressDEFLTs
@@ -782,12 +728,8 @@ public type ListPerAddressDEFLTsQueries record {
     ("address1"|"address2"|"address3"|"address4"|"address5"|"addressType"|"city"|"country"|"county"|"createdBy"|"createdDateTime"|"createdOn"|"empUsersSysId"|"endDate"|"includeAllRecords"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"notes"|"operation"|"personIdExternal"|"province"|"startDate"|"state"|"zipCode")[] \$select?;
 };
 
-public type PerNationalIdWithValidityPeriod record {
-    SFOData\.PerNationalIdWithValidityPeriod d?;
-};
-
 public type CollectionofPerEmail record {
-    SFOData\.PerEmail[] results?;
+    PerEmail[] results?;
 };
 
 # Represents the Queries record for the operation: getPerEmail
@@ -798,20 +740,9 @@ public type GetPerEmailQueries record {
     ("createdBy"|"createdDateTime"|"createdOn"|"emailAddress"|"emailType"|"includeAllRecords"|"isPrimary"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal")[] \$select?;
 };
 
-public type SFOData\.PerNationalId record {
-    string cardType?;
-    string country?;
-    string personIdExternal?;
-    SFOData\.PerPerson personNav?;
-};
-
-public type SFOData\.NameElementGO record {
+public type NameElementGO record {
     string NameFormatGO_externalCode?;
     string externalCode?;
-};
-
-public type PerPerson record {
-    SFOData\.PerPerson d?;
 };
 
 # Represents the Queries record for the operation: getNameElementGO
@@ -820,22 +751,12 @@ public type GetNameElementGOQueries record {
     ("NameFormatGO_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"nameArtifactEnum"|"sampleData"|"separator")[] \$select?;
 };
 
-public type SFOData\.PersonKey record {
+public type PersonKey record {
     string personIdExternal?;
 };
 
 public type NameFormatGO record {
-    SFOData\.NameFormatGO d?;
-};
-
-public type SFOData\.PerPersonRelationship record {
-    string personIdExternal?;
-    string relatedPersonIdExternal?;
-    string startDate?;
-    SFOData\.PerPerson personNav?;
-    SFOData\.PerNationalId relNationalIdNav?;
-    SFOData\.PerPerson relPersonNav?;
-    SFOData\.PerPersonal relPersonalNav?;
+    NameFormatGO d?;
 };
 
 # Represents the Queries record for the operation: getPerPerson
@@ -847,16 +768,11 @@ public type GetPerPersonQueries record {
 };
 
 public type CollectionofPerAddressDEFLT record {
-    SFOData\.PerAddressDEFLT[] results?;
-};
-
-public type SFOData\.NameFormatGO record {
-    string externalCode?;
-    RelatedCollectionSFOData_NameElementGO nameElements?;
+    PerAddressDEFLT[] results?;
 };
 
 public type RelatedCollectionSFOData_PerPersonal record {
-    SFOData\.PerPersonal[] results?;
+    PerPersonal[] results?;
 };
 
 # Represents the Queries record for the operation: getPerPersonal
@@ -873,40 +789,28 @@ public type GetPerBiographicalInfoLocBRAQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"customString1"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal"|"placeOfBirth"|"regionOfBirth")[] \$select?;
 };
 
-public type SFOData\.HrisEmergencyContactAddressDEFLT record {
-    string addressId?;
-};
-
-public type PersonKey record {
-    SFOData\.PersonKey d?;
-};
-
-public type NameElementGO record {
-    SFOData\.NameElementGO d?;
-};
-
 public type RelatedCollectionSFOData_PerNationalId record {
-    SFOData\.PerNationalId[] results?;
+    PerNationalId[] results?;
 };
 
 public type RelatedCollectionSFOData_PerAddressDEFLT record {
-    SFOData\.PerAddressDEFLT[] results?;
+    PerAddressDEFLT[] results?;
 };
 
 public type CollectionofPerEmergencyContacts record {
-    SFOData\.PerEmergencyContacts[] results?;
+    PerEmergencyContacts[] results?;
 };
 
 public type CollectionofPerNationalId record {
-    SFOData\.PerNationalId[] results?;
+    PerNationalId[] results?;
 };
 
 public type CollectionofPerSocialAccount record {
-    SFOData\.PerSocialAccount[] results?;
+    PerSocialAccount[] results?;
 };
 
 public type CollectionofPerPerson record {
-    SFOData\.PerPerson[] results?;
+    PerPerson[] results?;
 };
 
 # Represents the Queries record for the operation: listPerPersonRelationships
@@ -930,11 +834,7 @@ public type ListPerPersonRelationshipsQueries record {
 };
 
 public type RelatedCollectionSFOData_PerSocialAccount record {
-    SFOData\.PerSocialAccount[] results?;
-};
-
-public type PerSocialAccount record {
-    SFOData\.PerSocialAccount d?;
+    PerSocialAccount[] results?;
 };
 
 # Represents the Queries record for the operation: listPerBiographicalInfoLocBRAs

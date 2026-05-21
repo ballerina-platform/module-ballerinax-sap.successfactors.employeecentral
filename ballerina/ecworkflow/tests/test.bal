@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testMyPendingWorkflows() returns error? {
     Wrapper listMyPendingWorkflowsResult = check sfClient->listMyPendingWorkflows();
-    test:assertTrue(listMyPendingWorkflowsResult !is (), "Result should not be null");
+    test:assertTrue(listMyPendingWorkflowsResult.d !is (), "Result should not be null");
 }

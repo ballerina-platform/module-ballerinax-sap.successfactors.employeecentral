@@ -54,7 +54,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeePayrollRunResultsItems(SFOData\.EmployeePayrollRunResultsItems payload, map<string|string[]> headers = {}) returns CreatedEmployeePayrollRunResultsItems|error {
+    remote isolated function createEmployeePayrollRunResultsItems(EmployeePayrollRunResultsItems payload, map<string|string[]> headers = {}) returns CreatedEmployeePayrollRunResultsItems|error {
         string resourcePath = string `/EmployeePayrollRunResultsItems`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -123,7 +123,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeePayrollRunResults(SFOData\.EmployeePayrollRunResults payload, map<string|string[]> headers = {}) returns CreatedEmployeePayrollRunResults|error {
+    remote isolated function createEmployeePayrollRunResults(EmployeePayrollRunResults payload, map<string|string[]> headers = {}) returns CreatedEmployeePayrollRunResults|error {
         string resourcePath = string `/EmployeePayrollRunResults`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

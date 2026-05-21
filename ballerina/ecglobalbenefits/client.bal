@@ -339,7 +339,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createBenefitEmployeeLifeEventDeclarationForm(SFOData\.BenefitEmployeeLifeEventDeclarationForm payload, map<string|string[]> headers = {}) returns CreatedBenefitEmployeeLifeEventDeclarationForm|error {
+    remote isolated function createBenefitEmployeeLifeEventDeclarationForm(BenefitEmployeeLifeEventDeclarationForm payload, map<string|string[]> headers = {}) returns CreatedBenefitEmployeeLifeEventDeclarationForm|error {
         string resourcePath = string `/BenefitEmployeeLifeEventDeclarationForm`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

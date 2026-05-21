@@ -286,7 +286,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelAssignment(SFOData\.WorkScheduleDayModelAssignment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment|error {
+    remote isolated function createWorkScheduleDayModelAssignment(WorkScheduleDayModelAssignment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment|error {
         string resourcePath = string `/WorkScheduleDayModelAssignment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -544,7 +544,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDay(SFOData\.WorkScheduleDay payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day|error {
+    remote isolated function createWorkScheduleDay(WorkScheduleDay payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day|error {
         string resourcePath = string `/WorkScheduleDay`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -735,7 +735,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelAssignmentSegment(SFOData\.WorkScheduleDayModelAssignmentSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment\ Segment|error {
+    remote isolated function createWorkScheduleDayModelAssignmentSegment(WorkScheduleDayModelAssignmentSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment\ Segment|error {
         string resourcePath = string `/WorkScheduleDayModelAssignmentSegment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1005,7 +1005,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createAccrualCalculationBase(SFOData\.AccrualCalculationBase payload, map<string|string[]> headers = {}) returns CreatedAccrual\ Calculation\ Base|error {
+    remote isolated function createAccrualCalculationBase(AccrualCalculationBase payload, map<string|string[]> headers = {}) returns CreatedAccrual\ Calculation\ Base|error {
         string resourcePath = string `/AccrualCalculationBase`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1068,7 +1068,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeUSA(SFOData\.EmployeeTimeUSA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ USA|error {
+    remote isolated function createEmployeeTimeUSA(EmployeeTimeUSA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ USA|error {
         string resourcePath = string `/EmployeeTimeUSA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1160,7 +1160,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createTemporaryTimeInformation(SFOData\.TemporaryTimeInformation payload, map<string|string[]> headers = {}) returns CreatedTemporary\ Time\ Information|error {
+    remote isolated function createTemporaryTimeInformation(TemporaryTimeInformation payload, map<string|string[]> headers = {}) returns CreatedTemporary\ Time\ Information|error {
         string resourcePath = string `/TemporaryTimeInformation`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1388,7 +1388,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModel(SFOData\.WorkScheduleDayModel payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model|error {
+    remote isolated function createWorkScheduleDayModel(WorkScheduleDayModel payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model|error {
         string resourcePath = string `/WorkScheduleDayModel`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1527,7 +1527,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeNLD(SFOData\.EmployeeTimeNLD payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NLD|error {
+    remote isolated function createEmployeeTimeNLD(EmployeeTimeNLD payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NLD|error {
         string resourcePath = string `/EmployeeTimeNLD`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1593,7 +1593,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeSWE(SFOData\.EmployeeTimeSWE payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ SWE|error {
+    remote isolated function createEmployeeTimeSWE(EmployeeTimeSWE payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ SWE|error {
         string resourcePath = string `/EmployeeTimeSWE`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1659,7 +1659,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeNOR(SFOData\.EmployeeTimeNOR payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NOR|error {
+    remote isolated function createEmployeeTimeNOR(EmployeeTimeNOR payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NOR|error {
         string resourcePath = string `/EmployeeTimeNOR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1725,7 +1725,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeITA(SFOData\.EmployeeTimeITA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ ITA|error {
+    remote isolated function createEmployeeTimeITA(EmployeeTimeITA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ ITA|error {
         string resourcePath = string `/EmployeeTimeITA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1791,7 +1791,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeCAN(SFOData\.EmployeeTimeCAN payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ CAN|error {
+    remote isolated function createEmployeeTimeCAN(EmployeeTimeCAN payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ CAN|error {
         string resourcePath = string `/EmployeeTimeCAN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1883,7 +1883,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimePOL(SFOData\.EmployeeTimePOL payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ POL|error {
+    remote isolated function createEmployeeTimePOL(EmployeeTimePOL payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ POL|error {
         string resourcePath = string `/EmployeeTimePOL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1963,7 +1963,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getAccountTypeNavOfTimeAccountPayout(string externalCode, map<string|string[]> headers = {}, *GetAccountTypeNavOfTimeAccountPayoutQueries queries) returns SFOData\.TimeAccountType|error {
+    remote isolated function getAccountTypeNavOfTimeAccountPayout(string externalCode, map<string|string[]> headers = {}, *GetAccountTypeNavOfTimeAccountPayoutQueries queries) returns TimeAccountType|error {
         string resourcePath = string `/TimeAccountPayout('${getEncodedUri(externalCode)}')/accountTypeNav`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2039,7 +2039,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountSummary(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountSummaryQueries queries) returns SFOData\.TimeAccountSummary|error {
+    remote isolated function getTimeAccountSummary(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountSummaryQueries queries) returns TimeAccountSummary|error {
         string resourcePath = string `/TimeAccountSummary('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2141,7 +2141,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkSchedule(SFOData\.WorkSchedule payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule|error {
+    remote isolated function createWorkSchedule(WorkSchedule payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule|error {
         string resourcePath = string `/WorkSchedule`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2204,7 +2204,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeAUS(SFOData\.EmployeeTimeAUS payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ AUS|error {
+    remote isolated function createEmployeeTimeAUS(EmployeeTimeAUS payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ AUS|error {
         string resourcePath = string `/EmployeeTimeAUS`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2270,7 +2270,7 @@ string serviceUrl = string `https://${hostname}:${port}/successfactors/odata/v2`
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelSegment(SFOData\.WorkScheduleDayModelSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Segment|error {
+    remote isolated function createWorkScheduleDayModelSegment(WorkScheduleDayModelSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Segment|error {
         string resourcePath = string `/WorkScheduleDayModelSegment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

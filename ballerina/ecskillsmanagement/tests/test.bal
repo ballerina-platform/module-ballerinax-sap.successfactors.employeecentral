@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testCertificationContents() returns error? {
     Wrapper listCertificationContentsResult = check sfClient->listCertificationContents();
-    test:assertTrue(listCertificationContentsResult !is (), "Result should not be null");
+    test:assertTrue(listCertificationContentsResult.d !is (), "Result should not be null");
 }

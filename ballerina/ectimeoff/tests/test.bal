@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testTimeAccountPostingRules() returns error? {
     Wrapper listTimeAccountPostingRulesResult = check sfClient->listTimeAccountPostingRules();
-    test:assertTrue(listTimeAccountPostingRulesResult !is (), "Result should not be null");
+    test:assertTrue(listTimeAccountPostingRulesResult.d !is (), "Result should not be null");
 }

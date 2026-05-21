@@ -27,52 +27,48 @@ public type GetItDeclInvestmentTypeQueries record {
     ("category"|"country"|"createdBy"|"createdDateTime"|"declarationType"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"externalName"|"investmentType"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"status"|"useOnlyForActuals"|"wfProposal")[] \$select?;
 };
 
-public type SFOData\.ItDeclaration record {
+public type ItDeclaration record {
     string effectiveStartDate?;
     string externalCode?;
-    SFOData\.ItDeclInvestmentType itDeclInvestmentTypeNav?;
-    SFOData\.DeclarationType typeNav?;
+    ItDeclInvestmentType itDeclInvestmentTypeNav?;
+    DeclarationType typeNav?;
 };
 
 public type CollectionofItDeclaration record {
-    SFOData\.ItDeclaration[] results?;
+    ItDeclaration[] results?;
 };
 
-public type SFOData\.ItDeclInvestmentType record {
+public type ItDeclInvestmentType record {
     string effectiveStartDate?;
     string externalCode?;
-    SFOData\.DeclarationType declarationTypeNav?;
+    DeclarationType declarationTypeNav?;
 };
 
 public type CollectionofDeclarationType record {
-    SFOData\.DeclarationType[] results?;
+    DeclarationType[] results?;
 };
 
 public type FiscalYearToCountryMap record {
-    SFOData\.FiscalYearToCountryMap d?;
+    FiscalYearToCountryMap d?;
 };
 
 public type CollectionofFiscalYearVariant record {
-    SFOData\.FiscalYearVariant[] results?;
+    FiscalYearVariant[] results?;
 };
 
 public type CollectionofItDeclInvestmentType record {
-    SFOData\.ItDeclInvestmentType[] results?;
+    ItDeclInvestmentType[] results?;
 };
 
 public type Wrapper_4 record {
     CollectionofItDeclInvestmentType d?;
 };
 
-public type ItDeclInvestmentType record {
-    SFOData\.ItDeclInvestmentType d?;
-};
-
 public type Wrapper_5 record {
     CollectionofItDeclaration d?;
 };
 
-public type SFOData\.FiscalYearVariant record {
+public type FiscalYearVariant record {
     string externalCode?;
 };
 
@@ -161,16 +157,11 @@ public type Wrapper record {
 };
 
 public type CollectionofFiscalYearToCountryMap record {
-    SFOData\.FiscalYearToCountryMap[] results?;
-};
-
-public type SFOData\.FiscalYearToCountryMap record {
-    string externalCode?;
-    SFOData\.FiscalYearVariant fiscalYearVariantNav?;
+    FiscalYearToCountryMap[] results?;
 };
 
 public type CollectionofItDeclarationTimeBound record {
-    SFOData\.ItDeclarationTimeBound[] results?;
+    ItDeclarationTimeBound[] results?;
 };
 
 # Represents the Queries record for the operation: getFiscalYearVariant
@@ -179,7 +170,7 @@ public type GetFiscalYearVariantQueries record {
     ("createdBy"|"createdDateTime"|"description"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type SFOData\.DeclarationType record {
+public type DeclarationType record {
     string externalCode?;
 };
 
@@ -201,19 +192,7 @@ public type ListDeclarationTypesQueries record {
     ("createdBy"|"createdDateTime"|"externalCode"|"externalName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"remarks")[] \$select?;
 };
 
-public type DeclarationType record {
-    SFOData\.DeclarationType d?;
-};
-
-public type FiscalYearVariant record {
-    SFOData\.FiscalYearVariant d?;
-};
-
-public type ItDeclaration record {
-    SFOData\.ItDeclaration d?;
-};
-
-public type SFOData\.ItDeclarationTimeBound record {
+public type ItDeclarationTimeBound record {
     string externalCode?;
 };
 
@@ -269,10 +248,6 @@ public type GetFiscalYearToCountryMapQueries record {
     ("*"|"fiscalYearVariantNav")[] \$expand?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("country"|"createdBy"|"createdDateTime"|"externalCode"|"fiscalYearVariant"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
-};
-
-public type ItDeclarationTimeBound record {
-    SFOData\.ItDeclarationTimeBound d?;
 };
 
 # Represents the Queries record for the operation: listItDeclarationTimeBounds

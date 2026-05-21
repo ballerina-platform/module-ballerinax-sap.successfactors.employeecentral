@@ -20,19 +20,19 @@
 import ballerina/http;
 
 public type CollectionofSecondaryAssignmentsItem record {
-    SFOData\.SecondaryAssignmentsItem[] results?;
+    SecondaryAssignmentsItem[] results?;
 };
 
 public type SecondaryAssignmentsItem record {
-    SFOData\.SecondaryAssignmentsItem d?;
+    SecondaryAssignmentsItem d?;
 };
 
 public type ModifiedSecondaryAssignments record {
-    SFOData\.SecondaryAssignments d?;
+    SecondaryAssignments d?;
 };
 
 public type CollectionofSecondaryAssignments record {
-    SFOData\.SecondaryAssignments[] results?;
+    SecondaryAssignments[] results?;
 };
 
 # Represents the Queries record for the operation: listSecondaryAssignmentsItems
@@ -54,11 +54,11 @@ public type ListSecondaryAssignmentsItemsQueries record {
 };
 
 public type RelatedCollectionSFOData_SecondaryAssignmentsItem record {
-    SFOData\.SecondaryAssignmentsItem[] results?;
+    SecondaryAssignmentsItem[] results?;
 };
 
 public type CreatedSecondaryAssignments record {
-    SFOData\.SecondaryAssignments d?;
+    SecondaryAssignments d?;
 };
 
 # Represents the Queries record for the operation: listRightToReturns
@@ -80,7 +80,7 @@ public type ListRightToReturnsQueries record {
 };
 
 public type CreatedRightToReturn record {
-    SFOData\.RightToReturn d?;
+    RightToReturn d?;
 };
 
 # Represents the Headers record for the operation: deleteRightToReturn
@@ -89,7 +89,7 @@ public type DeleteRightToReturnHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.SecondaryAssignments record {
+public type SecondaryAssignments record {
     string effectiveStartDate?;
     string externalCode?;
     RelatedCollectionSFOData_SecondaryAssignmentsItem allSfProcesses?;
@@ -105,14 +105,14 @@ public type DeleteSecondaryAssignmentsHeaders record {
     string If\-Match?;
 };
 
-public type SFOData\.RightToReturn record {
+public type RightToReturn record {
     string Position_code?;
     string Position_effectiveStartDate?;
     string code?;
 };
 
 public type CollectionofRightToReturn record {
-    SFOData\.RightToReturn[] results?;
+    RightToReturn[] results?;
 };
 
 public type Wrapper_2 record {
@@ -186,7 +186,7 @@ public type GetSecondaryAssignmentsItemQueries record {
 };
 
 public type CollectionofEmpGlobalAssignment record {
-    SFOData\.EmpGlobalAssignment[] results?;
+    EmpGlobalAssignment[] results?;
 };
 
 # Represents the Queries record for the operation: getEmpGlobalAssignment
@@ -196,17 +196,11 @@ public type GetEmpGlobalAssignmentQueries record {
 };
 
 public type EmpGlobalAssignment record {
-    SFOData\.EmpGlobalAssignment d?;
-};
-
-public type SFOData\.SecondaryAssignmentsItem record {
-    string SecondaryAssignments_effectiveStartDate?;
-    string SecondaryAssignments_externalCode?;
-    string externalCode?;
+    EmpGlobalAssignment d?;
 };
 
 public type CreatedSecondaryAssignmentsItem record {
-    SFOData\.SecondaryAssignmentsItem d?;
+    SecondaryAssignmentsItem d?;
 };
 
 # Represents the Queries record for the operation: listEmpGlobalAssignments
@@ -240,16 +234,11 @@ public type GetRightToReturnQueries record {
 };
 
 public type ModifiedRightToReturn record {
-    SFOData\.RightToReturn d?;
-};
-
-public type SFOData\.EmpGlobalAssignment record {
-    string personIdExternal?;
-    string userId?;
+    RightToReturn d?;
 };
 
 public type ModifiedSecondaryAssignmentsItem record {
-    SFOData\.SecondaryAssignmentsItem d?;
+    SecondaryAssignmentsItem d?;
 };
 
 # Represents the Queries record for the operation: listSecondaryAssignmentss
@@ -270,12 +259,4 @@ public type ListSecondaryAssignmentssQueries record {
     boolean \$count?;
     # Select properties to be returned, see [OData Select](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
     ("createdBy"|"createdDate"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
-};
-
-public type SecondaryAssignments record {
-    SFOData\.SecondaryAssignments d?;
-};
-
-public type RightToReturn record {
-    SFOData\.RightToReturn d?;
 };

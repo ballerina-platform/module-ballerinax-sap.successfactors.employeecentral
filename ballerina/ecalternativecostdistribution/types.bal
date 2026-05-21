@@ -20,7 +20,7 @@
 import ballerina/http;
 
 public type CollectionofEmpCostDistribution record {
-    SFOData\.EmpCostDistribution[] results?;
+    EmpCostDistribution[] results?;
 };
 
 public type Wrapper record {
@@ -48,7 +48,7 @@ public type ListEmpCostDistributionsQueries record {
 };
 
 public type CreatedEmpCostDistribution record {
-    SFOData\.EmpCostDistribution d?;
+    EmpCostDistribution d?;
 };
 
 # Represents the Headers record for the operation: deleteEmpCostDistributionItem
@@ -58,11 +58,11 @@ public type DeleteEmpCostDistributionItemHeaders record {
 };
 
 public type EmpCostDistribution record {
-    SFOData\.EmpCostDistribution d?;
+    EmpCostDistribution d?;
 };
 
 public type CreatedEmpCostDistributionItem record {
-    SFOData\.EmpCostDistributionItem d?;
+    EmpCostDistributionItem d?;
 };
 
 # Represents the Queries record for the operation: getEmpCostDistributionItem
@@ -80,7 +80,7 @@ public type GetEmpCostDistributionQueries record {
 };
 
 public type RelatedCollectionSFOData_EmpCostDistributionItem record {
-    SFOData\.EmpCostDistributionItem[] results?;
+    EmpCostDistributionItem[] results?;
 };
 
 # Represents the Queries record for the operation: listEmpCostDistributionItems
@@ -102,11 +102,11 @@ public type ListEmpCostDistributionItemsQueries record {
 };
 
 public type ModifiedEmpCostDistribution record {
-    SFOData\.EmpCostDistribution d?;
+    EmpCostDistribution d?;
 };
 
 public type CollectionofEmpCostDistributionItem record {
-    SFOData\.EmpCostDistributionItem[] results?;
+    EmpCostDistributionItem[] results?;
 };
 
 # Represents the Headers record for the operation: deleteEmpCostDistribution
@@ -119,14 +119,8 @@ public type Wrapper_1 record {
     CollectionofEmpCostDistributionItem d?;
 };
 
-public type SFOData\.EmpCostDistribution record {
-    string effectiveStartDate?;
-    string usersSysId?;
-    RelatedCollectionSFOData_EmpCostDistributionItem items?;
-};
-
 public type ModifiedEmpCostDistributionItem record {
-    SFOData\.EmpCostDistributionItem d?;
+    EmpCostDistributionItem d?;
 };
 
 # Provides a set of configurations for controlling the behaviours when communicating with a remote HTTP endpoint.
@@ -173,12 +167,8 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type SFOData\.EmpCostDistributionItem record {
+public type EmpCostDistributionItem record {
     string EmpCostDistribution_effectiveStartDate?;
     string EmpCostDistribution_usersSysId?;
     string externalCode?;
-};
-
-public type EmpCostDistributionItem record {
-    SFOData\.EmpCostDistributionItem d?;
 };

@@ -55,7 +55,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmpCostDistribution(SFOData\.EmpCostDistribution payload, map<string|string[]> headers = {}) returns CreatedEmpCostDistribution|error {
+    remote isolated function createEmpCostDistribution(EmpCostDistribution payload, map<string|string[]> headers = {}) returns CreatedEmpCostDistribution|error {
         string resourcePath = string `/EmpCostDistribution`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -121,7 +121,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmpCostDistributionItem(SFOData\.EmpCostDistributionItem payload, map<string|string[]> headers = {}) returns CreatedEmpCostDistributionItem|error {
+    remote isolated function createEmpCostDistributionItem(EmpCostDistributionItem payload, map<string|string[]> headers = {}) returns CreatedEmpCostDistributionItem|error {
         string resourcePath = string `/EmpCostDistributionItem`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);

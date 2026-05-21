@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testEmployeeTimeSheets() returns error? {
     Wrapper listEmployeeTimeSheetsResult = check sfClient->listEmployeeTimeSheets();
-    test:assertTrue(listEmployeeTimeSheetsResult !is (), "Result should not be null");
+    test:assertTrue(listEmployeeTimeSheetsResult.d !is (), "Result should not be null");
 }

@@ -66,5 +66,5 @@ function initializeClientsForSFServer() returns error? {
 }
 function testEmpCostDistributions() returns error? {
     Wrapper listEmpCostDistributionsResult = check sfClient->listEmpCostDistributions();
-    test:assertTrue(listEmpCostDistributionsResult !is (), "Result should not be null");
+    test:assertTrue(listEmpCostDistributionsResult.d !is (), "Result should not be null");
 }

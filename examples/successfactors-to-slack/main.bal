@@ -21,7 +21,7 @@ import ballerinax/sap.successfactors.ecemploymentinformation as empinfo;
 
 configurable SFClientConfig sfClientConfig = ?;
 configurable string slackWebhookUrl = ?;
-configurable string lookbackDays = "7";
+configurable int lookbackDays = 7;
 
 final empinfo:Client sfClient = check new (
     config = {

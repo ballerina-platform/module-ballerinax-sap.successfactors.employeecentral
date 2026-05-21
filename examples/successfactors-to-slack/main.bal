@@ -14,17 +14,14 @@
 // specific language governing permissions and limitations
 // under the License.
 
+import ballerina/http;
 import ballerina/log;
-import ballerina/runtime;
-import ballerina/task;
 import ballerina/time;
-import ballerinax/slack;
 import ballerinax/sap.successfactors.ecemploymentinformation as empinfo;
 
 configurable SFClientConfig sfClientConfig = ?;
-configurable SlackClientConfig slackClientConfig = ?;
-configurable string slackChannel = "#hr-announcements";
-configurable int pollIntervalSeconds = 3600;
+configurable string slackWebhookUrl = ?;
+configurable string lookbackDays = "7";
 
 final empinfo:Client sfClient = check new (
     config = {
@@ -36,81 +33,42 @@ final empinfo:Client sfClient = check new (
     hostname = sfClientConfig.hostname
 );
 
-final slack:Client slackClient = check new ({
-    auth: {
-        token: slackClientConfig.token
-    }
-});
-
-string lastChecked = "";
+final http:Client slackClient = check new (slackWebhookUrl);
 
 public function main() returns error? {
-    lastChecked = formatDate(time:utcNow());
-    log:printInfo(string `Starting SuccessFactors → Slack notifier. Polling every ${pollIntervalSeconds}s.`);
+    time:Civil since = time:utcToCivil(time:utcAddSeconds(time:utcNow(), -(<decimal>lookbackDays * 86400)));
+    string sinceDate = string `${since.year}-${since.month < 10 ? "0" : ""}${since.month}-${since.day < 10 ? "0" : ""}${since.day}`;
 
-    task:JobId _ = check task:scheduleOneTimeJob(new PollJob(), time:utcAddSeconds(time:utcNow(), pollIntervalSeconds));
+    log:printInfo(string `Fetching new hires since ${sinceDate}...`);
 
-    check pollAndNotify();
-
-    runtime:sleep(float:MAX_VALUE);
-}
-
-class PollJob {
-    *task:Job;
-
-    public function execute() {
-        error? result = pollAndNotify();
-        if result is error {
-            log:printError("Poll failed: " + result.message());
-        }
-    }
-}
-
-function pollAndNotify() returns error? {
-    string today = formatDate(time:utcNow());
-    log:printInfo(string `Checking for new hires with startDate >= ${lastChecked}`);
-
-    empinfo:Wrapper_1|error response = sfClient->listEmpEmployments(
+    empinfo:Wrapper_1 response = check sfClient->listEmpEmployments(
         queries = {
-            \$filter: string `startDate ge datetime'${lastChecked}T00:00:00'`,
+            \$filter: string `startDate ge datetime'${sinceDate}T00:00:00'`,
             \$top: 50
         }
     );
 
-    if response is error {
-        log:printError("Failed to fetch employment records: " + response.message());
-        return response;
-    }
-
     empinfo:EmpEmployment[] employees = response.d?.results ?: [];
     if employees.length() == 0 {
         log:printInfo("No new hires found.");
-        lastChecked = today;
         return;
     }
+
+    log:printInfo(string `Found ${employees.length()} new hire(s). Sending Slack notifications...`);
 
     foreach empinfo:EmpEmployment emp in employees {
         string userId = emp.userId ?: "Unknown";
         string startDate = (emp["startDate"] ?: "Unknown").toString();
-        string message = string `:wave: *New Employee Onboarded!*\n• *Employee ID:* ${userId}\n• *Start Date:* ${startDate}\nWelcome to the team!`;
 
-        slack:Message slackMsg = {
-            channelName: slackChannel,
-            text: message
+        json payload = {
+            "text": string `:wave: *New Employee Onboarded!*\n• *Employee ID:* ${userId}\n• *Start Date:* ${startDate}\nWelcome to the team!`
         };
 
-        string|error msgResult = slackClient->postMessage(slackMsg);
-        if msgResult is error {
-            log:printError(string `Failed to send Slack notification for ${userId}: ${msgResult.message()}`);
+        http:Response|error result = slackClient->post("", payload);
+        if result is error {
+            log:printError(string `Failed to notify Slack for ${userId}: ${result.message()}`);
         } else {
-            log:printInfo(string `Sent welcome notification for employee: ${userId}`);
+            log:printInfo(string `Slack notification sent for employee: ${userId}`);
         }
     }
-
-    lastChecked = today;
-}
-
-isolated function formatDate(time:Utc utc) returns string {
-    time:Civil civil = time:utcToCivil(utc);
-    return string `${civil.year}-${civil.month < 10 ? "0" : ""}${civil.month}-${civil.day < 10 ? "0" : ""}${civil.day}`;
 }

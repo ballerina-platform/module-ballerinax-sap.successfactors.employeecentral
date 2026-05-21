@@ -20,6 +20,3 @@ type SFClientConfig record {|
     string password;
 |};
 
-type SlackClientConfig record {|
-    string token;
-|};

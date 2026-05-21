@@ -26,13 +26,3 @@ type SFClientConfig record {|
     string username;
     string password;
 |};
-
-type EmployeeRow record {
-    string personIdExternal;
-    string firstName;
-    string lastName;
-    string gender;
-    string dateOfBirth;
-    string countryOfBirth;
-    string nationality;
-};

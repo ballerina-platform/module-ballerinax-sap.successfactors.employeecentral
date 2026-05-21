@@ -15,6 +15,7 @@
 // under the License.
 
 import ballerina/log;
+import ballerina/runtime;
 import ballerina/task;
 import ballerina/time;
 import ballerinax/slack;
@@ -69,7 +70,7 @@ function pollAndNotify() returns error? {
     string today = formatDate(time:utcNow());
     log:printInfo(string `Checking for new hires with startDate >= ${lastChecked}`);
 
-    empinfo:CollectionOfEmpEmploymentWrapper|error response = sfClient->listEmpEmployments(
+    empinfo:Wrapper_1|error response = sfClient->listEmpEmployments(
         queries = {
             \$filter: string `startDate ge datetime'${lastChecked}T00:00:00'`,
             \$top: 50
@@ -90,7 +91,7 @@ function pollAndNotify() returns error? {
 
     foreach empinfo:EmpEmployment emp in employees {
         string userId = emp.userId ?: "Unknown";
-        string startDate = emp.startDate ?: "Unknown";
+        string startDate = (emp["startDate"] ?: "Unknown").toString();
         string message = string `:wave: *New Employee Onboarded!*\n• *Employee ID:* ${userId}\n• *Start Date:* ${startDate}\nWelcome to the team!`;
 
         slack:Message slackMsg = {

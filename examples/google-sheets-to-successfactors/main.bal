@@ -45,59 +45,52 @@ final personalinfo:Client sfClient = check new (
 const int HEADER_ROW = 1;
 
 public function main() returns error? {
-    sheets:Range range = check sheetsClient->getRange(spreadsheetId, sheetName, "A1:G100");
+    sheets:Range range = check sheetsClient->getRange(spreadsheetId, sheetName, "A1:A100");
     (int|string|decimal)[][] rows = range.values;
 
     if rows.length() <= HEADER_ROW {
-        log:printInfo("No employee data found in the sheet.");
+        log:printInfo("No employee IDs found in the sheet.");
         return;
     }
 
-    int successCount = 0;
-    int failCount = 0;
+    int found = 0;
+    int notFound = 0;
 
     foreach int i in HEADER_ROW ..< rows.length() {
-        EmployeeRow|error employee = parseRow(rows[i]);
-        if employee is error {
-            log:printWarn(string `Skipping row ${i + 1}: ${employee.message()}`);
-            failCount += 1;
+        if rows[i].length() == 0 {
+            continue;
+        }
+        string personId = rows[i][0].toString().trim();
+        if personId == "" {
             continue;
         }
 
-        personalinfo:CreatePerPersonal payload = {
-            personIdExternal: employee.personIdExternal,
-            firstName: employee.firstName,
-            lastName: employee.lastName,
-            gender: employee.gender,
-            dateOfBirth: employee.dateOfBirth,
-            countryOfBirth: employee.countryOfBirth,
-            nationality: employee.nationality
-        };
+        personalinfo:Wrapper_3|error result = sfClient->listPerPersonals(
+            queries = {
+                \$filter: string `personIdExternal eq '${personId}'`,
+                \$top: 1
+            }
+        );
 
-        personalinfo:CreatedPerPersonal|error result = sfClient->createPerPersonal(payload);
         if result is error {
-            log:printError(string `Failed to create record for ${employee.personIdExternal}: ${result.message()}`);
-            failCount += 1;
+            log:printError(string `Failed to fetch record for ${personId}: ${result.message()}`);
+            notFound += 1;
+            continue;
+        }
+
+        personalinfo:PerPersonal[] employees = result.d?.results ?: [];
+        if employees.length() == 0 {
+            log:printWarn(string `No personal information found for employee: ${personId}`);
+            notFound += 1;
         } else {
-            log:printInfo(string `Created personal information for employee: ${employee.personIdExternal}`);
-            successCount += 1;
+            personalinfo:PerPersonal emp = employees[0];
+            string firstName = (emp["firstName"] ?: "").toString();
+            string lastName = (emp["lastName"] ?: "").toString();
+            string gender = (emp["gender"] ?: "").toString();
+            log:printInfo(string `Employee ${personId}: ${firstName} ${lastName} (${gender})`);
+            found += 1;
         }
     }
 
-    log:printInfo(string `Sync complete. Success: ${successCount}, Failed: ${failCount}`);
-}
-
-isolated function parseRow((int|string|decimal)[] row) returns EmployeeRow|error {
-    if row.length() < 7 {
-        return error("Row has fewer than 7 columns");
-    }
-    return {
-        personIdExternal: row[0].toString(),
-        firstName: row[1].toString(),
-        lastName: row[2].toString(),
-        gender: row[3].toString(),
-        dateOfBirth: row[4].toString(),
-        countryOfBirth: row[5].toString(),
-        nationality: row[6].toString()
-    };
+    log:printInfo(string `Lookup complete. Found: ${found}, Not found: ${notFound}`);
 }

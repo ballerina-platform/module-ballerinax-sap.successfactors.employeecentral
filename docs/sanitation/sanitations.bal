@@ -197,7 +197,7 @@ function sanitizeResponseSchemaNames(string specPath) returns error? {
     foreach var [_, value] in paths.entries() {
         if value.get != () {
             Get getPath = value.get ?: {};
-            json? responses = getPath.responses;
+            json? responses = getPath?.responses;
             if responses is () {
                 continue;
             }

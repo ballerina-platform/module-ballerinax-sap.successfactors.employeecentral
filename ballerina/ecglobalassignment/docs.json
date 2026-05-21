@@ -3,5 +3,11 @@
   "communication-scenario": "Global Assignment Management",
   "import-statement": "import ballerinax/sap.successfactors.ecglobalassignment as globalassignment;",
   "client-init": "globalassignment:Client globalassignmentClient = check new (",
-  "api-invocation": "globalassignment:EmpGlobalAssignmentWrapper result = check globalassignmentClient->listEmpGlobalAssignments();"
+  "api-invocation": "globalassignment:EmpGlobalAssignmentWrapper result = check globalassignmentClient->listEmpGlobalAssignments();",
+  "key-features": [
+    "Manage global assignment data for internationally mobile employees",
+    "Track assignment details and right-to-return records",
+    "Query secondary assignment items and global assignment history",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

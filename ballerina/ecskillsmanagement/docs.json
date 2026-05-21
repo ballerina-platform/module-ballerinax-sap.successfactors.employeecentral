@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Skills and Competency Management",
   "import-statement": "import ballerinax/sap.successfactors.ecskillsmanagement as ecskills;",
   "client-init": "ecskills:Client ecskillsClient = check new (",
-  "api-invocation": "ecskills:SkillEntityWrapper skillEntity = check ecskillsClient->getSkillEntity();"
+  "api-invocation": "ecskills:SkillEntityWrapper skillEntity = check ecskillsClient->getSkillEntity();",
+  "key-features": [
+    "Manage employee skills profiles and competency frameworks",
+    "Access certification content and skill assessments",
+    "Query talent tracking and development records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

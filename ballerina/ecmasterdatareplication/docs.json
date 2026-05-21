@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Master Data Replication",
   "import-statement": "import ballerinax/sap.successfactors.ecmasterdatareplication as ecmdr;",
   "client-init": "ecmdr:Client ecmdrClient = check new (",
-  "api-invocation": "ecmdr:EmployeeDataReplicationNotificationWrapper dataReplication = check ecmdrClient->getEmployeeDataReplicationNotification();"
+  "api-invocation": "ecmdr:EmployeeDataReplicationNotificationWrapper dataReplication = check ecmdrClient->getEmployeeDataReplicationNotification();",
+  "key-features": [
+    "Manage master data replication across Employee Central systems",
+    "Monitor replication status and confirmation error messages",
+    "Query replication configurations and audit logs",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

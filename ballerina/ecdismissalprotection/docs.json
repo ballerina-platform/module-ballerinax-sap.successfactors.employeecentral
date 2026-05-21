@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Dismissal Protection Management",
   "import-statement": "import ballerinax/sap.successfactors.ecdismissalprotection as ecdismiss;",
   "client-init": "ecdismiss:Client ecdismissClient = check new (",
-  "api-invocation": "ecdismiss:EmployeeDismissalProtectionWrapper dismissalProtection = check ecdismissClient->getEmployeeDismissalProtection();"
+  "api-invocation": "ecdismiss:EmployeeDismissalProtectionWrapper dismissalProtection = check ecdismissClient->getEmployeeDismissalProtection();",
+  "key-features": [
+    "Manage dismissal protection records and legal compliance",
+    "Track termination documentation and regulatory requirements",
+    "Query protection details and compliance status",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

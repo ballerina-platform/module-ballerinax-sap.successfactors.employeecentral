@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Profile Management",
   "import-statement": "import ballerinax/sap.successfactors.ecemployeeprofile as ecprofile;",
   "client-init": "ecprofile:Client ecprofileClient = check new (",
-  "api-invocation": "ecprofile:BackgroundEducationWrapper backgroundEducation = check ecprofileClient->getBackgroundEducation();"
+  "api-invocation": "ecprofile:BackgroundEducationWrapper backgroundEducation = check ecprofileClient->getBackgroundEducation();",
+  "key-features": [
+    "Manage employee profile information including personal details",
+    "Access education background and work experience records",
+    "Query background information across multiple categories",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

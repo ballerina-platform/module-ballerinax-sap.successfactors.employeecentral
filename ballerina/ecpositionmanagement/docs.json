@@ -3,5 +3,11 @@
   "communication-scenario": "Organizational Position Management",
   "import-statement": "import ballerinax/sap.successfactors.ecpositionmanagement as ecpos;",
   "client-init": "ecpos:Client ecposClient = check new (",
-  "api-invocation": "ecpos:PositionWrapper position = check ecposClient->getPosition();"
+  "api-invocation": "ecpos:PositionWrapper position = check ecposClient->getPosition();",
+  "key-features": [
+    "Manage position creation and hierarchy in organizational structures",
+    "Configure position requisition workflows and approval status",
+    "Query position relationships and organizational reporting lines",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

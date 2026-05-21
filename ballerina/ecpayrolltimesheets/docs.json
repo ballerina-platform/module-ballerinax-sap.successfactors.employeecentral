@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Payroll Time Management",
   "import-statement": "import ballerinax/sap.successfactors.ecpayrolltimesheets as ecpayroll;",
   "client-init": "ecpayroll:Client ecpayrollClient = check new (",
-  "api-invocation": "ecpayroll:EmployeeTimeSheetWrapper timeSheet = check ecpayrollClient->getEmployeeTimeSheet();"
+  "api-invocation": "ecpayroll:EmployeeTimeSheetWrapper timeSheet = check ecpayrollClient->getEmployeeTimeSheet();",
+  "key-features": [
+    "Access payroll timesheet data and time tracking records",
+    "Manage employee time sheets and attendance data",
+    "Query payroll processing information and time entries",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

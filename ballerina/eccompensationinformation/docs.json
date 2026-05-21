@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Compensation Management",
   "import-statement": "import ballerinax/sap.successfactors.eccompensationinformation as eccomp;",
   "client-init": "eccomp:Client eccompClient = check new (",
-  "api-invocation": "eccomp:EmpCompensationWrapper empCompensation = check eccompClient->getEmpCompensation();"
+  "api-invocation": "eccomp:EmpCompensationWrapper empCompensation = check eccompClient->getEmpCompensation();",
+  "key-features": [
+    "Access employee salary and compensation data",
+    "Manage pay scales, grades, and compensation planning",
+    "Query one-time deductions and recurring pay components",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

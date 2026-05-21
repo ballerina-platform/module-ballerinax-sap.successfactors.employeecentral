@@ -3,5 +3,11 @@
   "communication-scenario": "Payroll Run Results",
   "import-statement": "import ballerinax/sap.successfactors.ecemployeecentralpayroll as employeentralpayroll;",
   "client-init": "employeentralpayroll:Client employeentralpayrollClient = check new (",
-  "api-invocation": "employeentralpayroll:EmployeePayrollRunResultsItemsWrapper result = check employeentralpayrollClient->listEmployeePayrollRunResultsItemss();"
+  "api-invocation": "employeentralpayroll:EmployeePayrollRunResultsItemsWrapper result = check employeentralpayrollClient->listEmployeePayrollRunResultsItemss();",
+  "key-features": [
+    "Access Employee Central Payroll run results and data",
+    "Query payroll processing records and pay slip information",
+    "Retrieve payroll simulation and calculation results",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

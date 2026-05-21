@@ -3,5 +3,11 @@
   "communication-scenario": "Employment Information Management",
   "import-statement": "import ballerinax/sap.successfactors.ecemploymentinformation as ecemployment;",
   "client-init": "ecemployment:Client ecemploymentClient = check new (",
-  "api-invocation": "ecemployment:EmpEmploymentWrapper empEmployment = check ecemploymentClient->getEmpEmployment();"
+  "api-invocation": "ecemployment:EmpEmploymentWrapper empEmployment = check ecemploymentClient->getEmpEmployment();",
+  "key-features": [
+    "Access employment-related information including job details",
+    "Manage employment status, termination data, and work permits",
+    "Query job information history and employment records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

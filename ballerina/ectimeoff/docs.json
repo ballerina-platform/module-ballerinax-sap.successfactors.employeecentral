@@ -3,5 +3,11 @@
   "communication-scenario": "Time Off Management",
   "import-statement": "import ballerinax/sap.successfactors.ectimeoff as timeoff;",
   "client-init": "timeoff:Client timeoffClient = check new (",
-  "api-invocation": "timeoff:EmployeeTimeWrapper result = check timeoffClient->listEmployeeTimes();"
+  "api-invocation": "timeoff:EmployeeTimeWrapper result = check timeoffClient->listEmployeeTimes();",
+  "key-features": [
+    "Manage time off and leave requests for employees",
+    "Access time accounts, holiday calendars, and work schedules",
+    "Query time account posting rules and employee time records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

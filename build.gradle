@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
+ * Copyright (c) 2026, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
  *
  * WSO2 LLC. licenses this file to you under the Apache License,
  * Version 2.0 (the "License"); you may not use this file except
@@ -59,26 +59,27 @@ task clean {
 }
 
 task build {
-    dependsOn(':ballerina:ecalternativecostdistribution:build')
-    dependsOn(':ballerina:ecapprenticemanagement:build')
-    dependsOn(':ballerina:eccompensationinformation:build')
-    dependsOn(':ballerina:ecdismissalprotection:build')
-    dependsOn(':ballerina:ecemployeeprofile:build')
-    dependsOn(':ballerina:ecemploymentinformation:build')
-    dependsOn(':ballerina:ecmasterdatareplication:build')
-    dependsOn(':ballerina:ecpayrolltimesheets:build')
-    dependsOn(':ballerina:ecpositionmanagement:build')
-    dependsOn(':ballerina:ecskillsmanagement:build')
-    dependsOn(':ballerina:ecworkflow:build')
-    dependsOn(':ballerina:employeecentralec:build')
-    dependsOn(':ballerina:ecadvances:build')
-    dependsOn(':ballerina:ecemployeecentralpayroll:build')
-    dependsOn(':ballerina:ecfoundationorganization:build')
-    dependsOn(':ballerina:ecglobalassignment:build')
-    dependsOn(':ballerina:ecglobalbenefits:build')
-    dependsOn(':ballerina:ecincometaxdeclaration:build')
-    dependsOn(':ballerina:ecpaymentinformation:build')
-    dependsOn(':ballerina:ecpersonalinformation:build')
-    dependsOn(':ballerina:ectimeoff:build')
-    dependsOn(':examples:build')
+    dependsOn(':employeecentral-sanitation:build')
+    dependsOn(':employeecentral-ballerina:ecalternativecostdistribution:build')
+    dependsOn(':employeecentral-ballerina:ecapprenticemanagement:build')
+    dependsOn(':employeecentral-ballerina:eccompensationinformation:build')
+    dependsOn(':employeecentral-ballerina:ecdismissalprotection:build')
+    dependsOn(':employeecentral-ballerina:ecemployeeprofile:build')
+    dependsOn(':employeecentral-ballerina:ecemploymentinformation:build')
+    dependsOn(':employeecentral-ballerina:ecmasterdatareplication:build')
+    dependsOn(':employeecentral-ballerina:ecpayrolltimesheets:build')
+    dependsOn(':employeecentral-ballerina:ecpositionmanagement:build')
+    dependsOn(':employeecentral-ballerina:ecskillsmanagement:build')
+    dependsOn(':employeecentral-ballerina:ecworkflow:build')
+    dependsOn(':employeecentral-ballerina:employeecentralec:build')
+    dependsOn(':employeecentral-ballerina:ecadvances:build')
+    dependsOn(':employeecentral-ballerina:ecemployeecentralpayroll:build')
+    dependsOn(':employeecentral-ballerina:ecfoundationorganization:build')
+    dependsOn(':employeecentral-ballerina:ecglobalassignment:build')
+    dependsOn(':employeecentral-ballerina:ecglobalbenefits:build')
+    dependsOn(':employeecentral-ballerina:ecincometaxdeclaration:build')
+    dependsOn(':employeecentral-ballerina:ecpaymentinformation:build')
+    dependsOn(':employeecentral-ballerina:ecpersonalinformation:build')
+    dependsOn(':employeecentral-ballerina:ectimeoff:build')
+    dependsOn(':employeecentral-examples:build')
 }

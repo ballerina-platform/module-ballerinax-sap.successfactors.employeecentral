@@ -3,5 +3,11 @@
   "communication-scenario": "Income Tax Declaration",
   "import-statement": "import ballerinax/sap.successfactors.ecincometaxdeclaration as incometaxdlaration;",
   "client-init": "incometaxdlaration:Client incometaxdlarationClient = check new (",
-  "api-invocation": "incometaxdlaration:ItDeclarationWrapper result = check incometaxdlarationClient->listItDeclarations();"
+  "api-invocation": "incometaxdlaration:ItDeclarationWrapper result = check incometaxdlarationClient->listItDeclarations();",
+  "key-features": [
+    "Manage income tax declaration and investment declarations",
+    "Configure fiscal year tax settings and exemption categories",
+    "Query declaration types and tax configuration data",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

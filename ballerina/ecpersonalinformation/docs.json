@@ -3,5 +3,11 @@
   "communication-scenario": "Personal Information",
   "import-statement": "import ballerinax/sap.successfactors.ecpersonalinformation as personalinformation;",
   "client-init": "personalinformation:Client personalinformationClient = check new (",
-  "api-invocation": "personalinformation:PerPersonWrapper result = check personalinformationClient->listPerPersons();"
+  "api-invocation": "personalinformation:PerPersonWrapper result = check personalinformationClient->listPerPersons();",
+  "key-features": [
+    "Manage employee personal information including biographical data",
+    "Access addresses, contacts, national IDs, and social accounts",
+    "Query emergency contacts and personal details",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

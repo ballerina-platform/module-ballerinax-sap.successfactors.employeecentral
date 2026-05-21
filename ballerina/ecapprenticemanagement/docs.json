@@ -3,5 +3,11 @@
   "communication-scenario": "Apprentice Program Management",
   "import-statement": "import ballerinax/sap.successfactors.ecapprenticemanagement as ecappr;",
   "client-init": "ecappr:Client ecapprClient = check new (",
-  "api-invocation": "ecappr:ApprenticeWrapper apprentice = check ecapprClient->getApprentice();"
+  "api-invocation": "ecappr:ApprenticeWrapper apprentice = check ecapprClient->getApprentice();",
+  "key-features": [
+    "Manage apprentice program registrations and tracking",
+    "Configure apprentice event types and program definitions",
+    "Query apprentice progress and training records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

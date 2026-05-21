@@ -30,54 +30,55 @@ plugins {
 
 rootProject.name = "module-ballerinax-sap.successfactors.employeecentral"
 
-include ':ballerina'
-include ':ballerina:ecalternativecostdistribution'
-include ':ballerina:ecapprenticemanagement'
-include ':ballerina:eccompensationinformation'
-include ':ballerina:ecdismissalprotection'
-include ':ballerina:ecemployeeprofile'
-include ':ballerina:ecemploymentinformation'
-include ':ballerina:ecmasterdatareplication'
-include ':ballerina:ecpayrolltimesheets'
-include ':ballerina:ecpositionmanagement'
-include ':ballerina:ecskillsmanagement'
-include ':ballerina:ecworkflow'
-include ':ballerina:employeecentralec'
-include ':ballerina:ecadvances'
-include ':ballerina:ecemployeecentralpayroll'
-include ':ballerina:ecfoundationorganization'
-include ':ballerina:ecglobalassignment'
-include ':ballerina:ecglobalbenefits'
-include ':ballerina:ecincometaxdeclaration'
-include ':ballerina:ecpaymentinformation'
-include ':ballerina:ecpersonalinformation'
-include ':ballerina:ectimeoff'
+include ':employeecentral-sanitation'
+include ':employeecentral-ballerina'
+include ':employeecentral-ballerina:ecalternativecostdistribution'
+include ':employeecentral-ballerina:ecapprenticemanagement'
+include ':employeecentral-ballerina:eccompensationinformation'
+include ':employeecentral-ballerina:ecdismissalprotection'
+include ':employeecentral-ballerina:ecemployeeprofile'
+include ':employeecentral-ballerina:ecemploymentinformation'
+include ':employeecentral-ballerina:ecmasterdatareplication'
+include ':employeecentral-ballerina:ecpayrolltimesheets'
+include ':employeecentral-ballerina:ecpositionmanagement'
+include ':employeecentral-ballerina:ecskillsmanagement'
+include ':employeecentral-ballerina:ecworkflow'
+include ':employeecentral-ballerina:employeecentralec'
+include ':employeecentral-ballerina:ecadvances'
+include ':employeecentral-ballerina:ecemployeecentralpayroll'
+include ':employeecentral-ballerina:ecfoundationorganization'
+include ':employeecentral-ballerina:ecglobalassignment'
+include ':employeecentral-ballerina:ecglobalbenefits'
+include ':employeecentral-ballerina:ecincometaxdeclaration'
+include ':employeecentral-ballerina:ecpaymentinformation'
+include ':employeecentral-ballerina:ecpersonalinformation'
+include ':employeecentral-ballerina:ectimeoff'
+include ':employeecentral-examples'
 
-project(':ballerina').projectDir = file("ballerina")
-project(':ballerina:ecalternativecostdistribution').projectDir = file("ballerina/ecalternativecostdistribution")
-project(':ballerina:ecapprenticemanagement').projectDir = file("ballerina/ecapprenticemanagement")
-project(':ballerina:eccompensationinformation').projectDir = file("ballerina/eccompensationinformation")
-project(':ballerina:ecdismissalprotection').projectDir = file("ballerina/ecdismissalprotection")
-project(':ballerina:ecemployeeprofile').projectDir = file("ballerina/ecemployeeprofile")
-project(':ballerina:ecemploymentinformation').projectDir = file("ballerina/ecemploymentinformation")
-project(':ballerina:ecmasterdatareplication').projectDir = file("ballerina/ecmasterdatareplication")
-project(':ballerina:ecpayrolltimesheets').projectDir = file("ballerina/ecpayrolltimesheets")
-project(':ballerina:ecpositionmanagement').projectDir = file("ballerina/ecpositionmanagement")
-project(':ballerina:ecskillsmanagement').projectDir = file("ballerina/ecskillsmanagement")
-project(':ballerina:ecworkflow').projectDir = file("ballerina/ecworkflow")
-project(':ballerina:employeecentralec').projectDir = file("ballerina/employeecentralec")
-project(':ballerina:ecadvances').projectDir = file("ballerina/ecadvances")
-project(':ballerina:ecemployeecentralpayroll').projectDir = file("ballerina/ecemployeecentralpayroll")
-project(':ballerina:ecfoundationorganization').projectDir = file("ballerina/ecfoundationorganization")
-project(':ballerina:ecglobalassignment').projectDir = file("ballerina/ecglobalassignment")
-project(':ballerina:ecglobalbenefits').projectDir = file("ballerina/ecglobalbenefits")
-project(':ballerina:ecincometaxdeclaration').projectDir = file("ballerina/ecincometaxdeclaration")
-project(':ballerina:ecpaymentinformation').projectDir = file("ballerina/ecpaymentinformation")
-project(':ballerina:ecpersonalinformation').projectDir = file("ballerina/ecpersonalinformation")
-project(':ballerina:ectimeoff').projectDir = file("ballerina/ectimeoff")
-
-include ':examples'
-project(':examples').projectDir = file("examples")
+project(':employeecentral-sanitation').projectDir = file("docs/sanitation")
+project(':employeecentral-ballerina').projectDir = file("ballerina")
+project(':employeecentral-ballerina:ecalternativecostdistribution').projectDir = file("ballerina/ecalternativecostdistribution")
+project(':employeecentral-ballerina:ecapprenticemanagement').projectDir = file("ballerina/ecapprenticemanagement")
+project(':employeecentral-ballerina:eccompensationinformation').projectDir = file("ballerina/eccompensationinformation")
+project(':employeecentral-ballerina:ecdismissalprotection').projectDir = file("ballerina/ecdismissalprotection")
+project(':employeecentral-ballerina:ecemployeeprofile').projectDir = file("ballerina/ecemployeeprofile")
+project(':employeecentral-ballerina:ecemploymentinformation').projectDir = file("ballerina/ecemploymentinformation")
+project(':employeecentral-ballerina:ecmasterdatareplication').projectDir = file("ballerina/ecmasterdatareplication")
+project(':employeecentral-ballerina:ecpayrolltimesheets').projectDir = file("ballerina/ecpayrolltimesheets")
+project(':employeecentral-ballerina:ecpositionmanagement').projectDir = file("ballerina/ecpositionmanagement")
+project(':employeecentral-ballerina:ecskillsmanagement').projectDir = file("ballerina/ecskillsmanagement")
+project(':employeecentral-ballerina:ecworkflow').projectDir = file("ballerina/ecworkflow")
+project(':employeecentral-ballerina:employeecentralec').projectDir = file("ballerina/employeecentralec")
+project(':employeecentral-ballerina:ecadvances').projectDir = file("ballerina/ecadvances")
+project(':employeecentral-ballerina:ecemployeecentralpayroll').projectDir = file("ballerina/ecemployeecentralpayroll")
+project(':employeecentral-ballerina:ecfoundationorganization').projectDir = file("ballerina/ecfoundationorganization")
+project(':employeecentral-ballerina:ecglobalassignment').projectDir = file("ballerina/ecglobalassignment")
+project(':employeecentral-ballerina:ecglobalbenefits').projectDir = file("ballerina/ecglobalbenefits")
+project(':employeecentral-ballerina:ecincometaxdeclaration').projectDir = file("ballerina/ecincometaxdeclaration")
+project(':employeecentral-ballerina:ecpaymentinformation').projectDir = file("ballerina/ecpaymentinformation")
+project(':employeecentral-ballerina:ecpersonalinformation').projectDir = file("ballerina/ecpersonalinformation")
+project(':employeecentral-ballerina:ectimeoff').projectDir = file("ballerina/ectimeoff")
+project(':employeecentral-examples').projectDir = file("examples")
 
 gradleEnterprise {
     buildScan {

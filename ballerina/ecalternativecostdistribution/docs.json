@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Cost Distribution Management",
   "import-statement": "import ballerinax/sap.successfactors.ecalternativecostdistribution as ecaltcost;",
   "client-init": "ecaltcost:Client ecaltcostClient = check new (",
-  "api-invocation": "ecaltcost:EmpCostDistributionWrapper empCostDistribution = check ecaltcostClient->getEmpCostDistribution();"
+  "api-invocation": "ecaltcost:EmpCostDistributionWrapper empCostDistribution = check ecaltcostClient->getEmpCostDistribution();",
+  "key-features": [
+    "Manage alternative cost distribution scenarios for employee expenses",
+    "Configure cost center allocations and distribution percentages",
+    "Query and update cost distribution records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

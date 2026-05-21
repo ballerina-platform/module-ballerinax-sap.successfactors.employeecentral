@@ -1,71 +1,88 @@
-# Ballerina SAP SuccessFactors Employee Central Connectors
+## Overview
 
-[SAP SuccessFactors Employee Central](https://www.sap.com/products/hcm/core-hr-payroll.html) is a comprehensive human capital management solution that helps organizations manage their workforce effectively. It provides a unified platform for HR processes including employee data management, organizational structures, and employment lifecycle management.
+[SAP SuccessFactors Employee Central](https://www.sap.com/products/hcm/core-hr-payroll.html) is a comprehensive human
+capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
+for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-This repository encompasses all Ballerina packages pertaining to the SAP SuccessFactors Employee Central module. Each package provides seamless integration with specific Employee Central APIs:
+@description@
 
-## Available Packages
+### Key Features
 
-### Core Employee Management
+@key-features@
 
-1. **`ballerinax/sap.successfactors.ecemployeeprofile`** - Provides APIs for managing employee profile information including personal details, education background, and work experience data.
+## Setup guide
 
-2. **`ballerinax/sap.successfactors.ecemploymentinformation`** - Enables management of employment-related information including job details, employment status, termination data, and work permits.
+1. Sign in to your SAP SuccessFactors instance as an administrator.
 
-3. **`ballerinax/sap.successfactors.employeecentralec`** - Core Employee Central APIs for comprehensive employee data management and organizational structure operations.
+2. Navigate to **Admin Center** > **Manage OAuth2 Client Applications** and register a new OAuth2 client application
+   for your integration.
 
-### Compensation and Benefits
+   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap/main/docs/setup/sf-1-register-oauth.png)
 
-4. **`ballerinax/sap.successfactors.eccompensationinformation`** - Handles employee compensation data including salary information, pay scales, and compensation planning.
+3. Note down the **API Key** (client ID) and configure the appropriate scopes for the Employee Central APIs you intend
+   to use.
 
-5. **`ballerinax/sap.successfactors.ecalternativecostdistribution`** - Manages alternative cost distribution scenarios for employee expenses and cost center allocations.
+4. Locate your **Company ID** and the API server hostname for your SuccessFactors region. You can find the list of API
+   servers in the
+   [SAP SuccessFactors API documentation](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/LATEST/en-US/af2b8d5437494b12be88fe374eba75b6.html).
 
-### Position and Organizational Management
+5. Use **Basic Authentication** (username + password) or **OAuth 2.0 SAML Bearer** to authenticate with the API.
 
-6. **`ballerinax/sap.successfactors.ecpositionmanagement`** - Provides position management capabilities including position creation, hierarchy management, and organizational structure maintenance.
+## Quickstart
 
-7. **`ballerinax/sap.successfactors.ecmasterdatareplication`** - Enables master data replication across Employee Central systems for data consistency and synchronization.
+To use the `@package-name@` connector in your Ballerina application, modify the `.bal` file as follows:
 
-### Time and Payroll
+### Step 1: Import the module
 
-8. **`ballerinax/sap.successfactors.ecpayrolltimesheets`** - Manages payroll timesheet data including time tracking, attendance records, and payroll processing information.
+Import the `@package-name@` module.
 
-### Learning and Development
+```ballerina
+@import-statement@
+```
 
-9. **`ballerinax/sap.successfactors.ecskillsmanagement`** - Handles skills and competency management including skill profiles, competency frameworks, and talent development tracking.
+### Step 2: Instantiate a new connector
 
-10. **`ballerinax/sap.successfactors.ecapprenticemanagement`** - Provides apprentice program management capabilities including apprentice registration, progress tracking, and program administration.
+Use the hostname and credentials to initiate a client.
 
-### Workflow and Legal
+```ballerina
+configurable string hostname = ?;
+configurable string username = ?;
+configurable string password = ?;
 
-11. **`ballerinax/sap.successfactors.ecworkflow`** - Manages workflow processes within Employee Central including approval workflows, notifications, and process automation.
+@client-init@
+    {
+      auth: {
+        username,
+        password
+      }
+    },
+    hostname
+);
+```
 
-12. **`ballerinax/sap.successfactors.ecdismissalprotection`** - Handles dismissal protection and termination compliance features including legal requirements and documentation.
+### Step 3: Invoke the connector operation
 
-### Financial and Payroll
+Now, utilize the available connector operations.
 
-13. **`ballerinax/sap.successfactors.ecadvances`** - Provides APIs for managing employee salary advances, advance eligibility, accumulation, and installment schedules.
+```ballerina
+@api-invocation@
+```
 
-14. **`ballerinax/sap.successfactors.ecemployeecentralpayroll`** - Enables access to Employee Central Payroll run results and payroll processing data.
+### Step 4: Run the Ballerina application
 
-15. **`ballerinax/sap.successfactors.ecpaymentinformation`** - Manages employee payment information including bank accounts, payment methods, and direct deposit details.
+```bash
+bal run
+```
 
-16. **`ballerinax/sap.successfactors.ecincometaxdeclaration`** - Handles income tax declaration management including investment declarations and fiscal year configurations.
+## Examples
 
-### Organization and Foundation
+The SAP SuccessFactors Employee Central Ballerina connectors provide practical examples illustrating usage in various
+scenarios. Explore
+these [examples](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples),
+covering use cases like syncing employee data and sending notifications.
 
-17. **`ballerinax/sap.successfactors.ecfoundationorganization`** - Provides access to foundation organization objects including legal entities, departments, divisions, job classifications, cost centers, and pay structures.
+1. [Google Sheets to SuccessFactors](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/google-sheets-to-successfactors) -
+   Read employee records from a Google Sheets roster and create Personal Information records in SuccessFactors.
 
-18. **`ballerinax/sap.successfactors.ecglobalassignment`** - Manages global assignment data for internationally mobile employees including assignment details and right-to-return records.
-
-### Personal Information
-
-19. **`ballerinax/sap.successfactors.ecpersonalinformation`** - Manages employee personal information including biographical data, addresses, contacts, national IDs, and social accounts.
-
-### Benefits
-
-20. **`ballerinax/sap.successfactors.ecglobalbenefits`** - Provides comprehensive benefits management APIs including insurance plans, savings plans, pension funds, company cars, and benefit enrollments.
-
-### Time Management
-
-21. **`ballerinax/sap.successfactors.ectimeoff`** - Manages time off and leave management including time accounts, holiday calendars, work schedules, and employee time records.
+2. [SuccessFactors to Slack](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/successfactors-to-slack) -
+   Poll SuccessFactors for newly onboarded employees and send welcome notifications to a Slack channel.

@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Central Core Management",
   "import-statement": "import ballerinax/sap.successfactors.employeecentralec as eccore;",
   "client-init": "eccore:Client eccoreClient = check new (",
-  "api-invocation": "eccore:PerGlobalInfoUSAWrapper globalInfo = check eccoreClient->getPerGlobalInfoUSA();"
+  "api-invocation": "eccore:PerGlobalInfoUSAWrapper globalInfo = check eccoreClient->getPerGlobalInfoUSA();",
+  "key-features": [
+    "Comprehensive Employee Central APIs for employee data management",
+    "Access organizational structure and position information",
+    "Query global employee information across multiple regions",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

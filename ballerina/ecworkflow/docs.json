@@ -3,5 +3,11 @@
   "communication-scenario": "Employee Workflow Management",
   "import-statement": "import ballerinax/sap.successfactors.ecworkflow as ecwf;",
   "client-init": "ecwf:Client ecwfClient = check new (",
-  "api-invocation": "ecwf:WfRequestWrapper wfRequest = check ecwfClient->getWfRequest();"
+  "api-invocation": "ecwf:WfRequestWrapper wfRequest = check ecwfClient->getWfRequest();",
+  "key-features": [
+    "Manage workflow processes including approval workflows",
+    "Access pending workflow items and workflow notifications",
+    "Query workflow history and process automation records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
 }

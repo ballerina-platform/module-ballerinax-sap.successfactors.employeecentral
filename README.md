@@ -1,86 +1,104 @@
 # Ballerina SAP SuccessFactors Employee Central Connectors
 
-[![Build](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml/badge.svg)](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/RDPerera/module-ballerinax-sap.successfactors.employeecentral/branch/main/graph/badge.svg)](https://codecov.io/gh/RDPerera/module-ballerinax-sap.successfactors.employeecentral)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/RDPerera/module-ballerinax-sap.successfactors.employeecentral.svg)](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/commits/main)
+[![Build](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/branch/main/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral.svg)](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/commits/main)
 [![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/successfactors.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%2Fsuccessfactors)
 
 [SAP SuccessFactors Employee Central](https://www.sap.com/products/hcm/core-hr-payroll.html) is a comprehensive human
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-This repository encompasses all Ballerina packages pertaining to the SAP SuccessFactors Employee Central module. Each
-package provides seamless integration with specific Employee Central APIs.
+This repository encompasses all Ballerina packages pertaining to the SAP SuccessFactors Employee Central module. Notably:
 
-## Available Packages
+1. The `ballerinax/sap.successfactors.ecadvances` package provides APIs to interact with the SAP SuccessFactors
+   Employee Central Advances API.
 
-### Core Employee Management
+2. The `ballerinax/sap.successfactors.ecalternativecostdistribution` package provides APIs that enable seamless
+   integration with the [SAP SuccessFactors Alternative Cost Distribution API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+   The service allows to manage employee cost distribution across multiple cost centers and organizational units.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `ecemployeeprofile` | `ballerinax/sap.successfactors.ecemployeeprofile` | Employee profile information including personal details, education background, and work experience. |
-| `ecemploymentinformation` | `ballerinax/sap.successfactors.ecemploymentinformation` | Employment-related information including job details, employment status, termination data, and work permits. |
-| `ecpersonalinformation` | `ballerinax/sap.successfactors.ecpersonalinformation` | Personal information including biographical data, addresses, contacts, national IDs, and social accounts. |
-| `employeecentralec` | `ballerinax/sap.successfactors.employeecentralec` | Core Employee Central APIs for comprehensive employee data management and organizational structure operations. |
+3. The `ballerinax/sap.successfactors.ecapprenticemanagement` package provides APIs that enable seamless integration
+   with the [SAP SuccessFactors Apprentice Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+   The service allows to manage apprenticeship programs, track apprentice progress, and maintain apprentice-related
+   information.
 
-### Compensation and Benefits
+4. The `ballerinax/sap.successfactors.eccompensationinformation` package provides APIs that enable seamless integration
+   with the [SAP SuccessFactors Compensation Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+   The service allows to manage employee compensation data, salary information, and pay components.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `eccompensationinformation` | `ballerinax/sap.successfactors.eccompensationinformation` | Compensation data including salary information, pay scales, and compensation planning. |
-| `ecalternativecostdistribution` | `ballerinax/sap.successfactors.ecalternativecostdistribution` | Alternative cost distribution scenarios for employee expenses and cost center allocations. |
-| `ecglobalbenefits` | `ballerinax/sap.successfactors.ecglobalbenefits` | Comprehensive benefits management including insurance plans, savings plans, pension funds, and company cars. |
-| `ecadvances` | `ballerinax/sap.successfactors.ecadvances` | Employee salary advances, advance eligibility, accumulation, and installment schedules. |
+5. The `ballerinax/sap.successfactors.ecdismissalprotection` package provides APIs that enable seamless integration
+   with the [SAP SuccessFactors Dismissal Protection API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+   The service allows to manage dismissal protection information for employees, ensuring compliance with labor laws and
+   regulations.
 
-### Position and Organizational Management
+6. The `ballerinax/sap.successfactors.ecemployeecentralpayroll` package provides APIs to interact with the SAP
+   SuccessFactors Employee Central Payroll API.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `ecpositionmanagement` | `ballerinax/sap.successfactors.ecpositionmanagement` | Position management including position creation, hierarchy management, and organizational structure. |
-| `ecfoundationorganization` | `ballerinax/sap.successfactors.ecfoundationorganization` | Foundation objects including legal entities, departments, divisions, job classifications, and cost centers. |
-| `ecglobalassignment` | `ballerinax/sap.successfactors.ecglobalassignment` | Global assignment data for internationally mobile employees. |
-| `ecmasterdatareplication` | `ballerinax/sap.successfactors.ecmasterdatareplication` | Master data replication across Employee Central systems for data consistency. |
+7. The `ballerinax/sap.successfactors.ecemployeeprofile` package provides APIs that enable seamless integration with
+   the [SAP SuccessFactors Employee Profile API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+   The service allows to maintain the general background information of an employee, including education and outside
+   work experiences.
 
-### Time and Payroll
+8. The `ballerinax/sap.successfactors.ecemploymentinformation` package provides APIs that enable seamless integration
+   with the [SAP SuccessFactors Employment Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/d91ecc323849441cb2773fc86f0eff0f.html).
+   The service allows to access employment related information, including job information, employment termination, and
+   work permit.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `ecpayrolltimesheets` | `ballerinax/sap.successfactors.ecpayrolltimesheets` | Payroll timesheet data including time tracking, attendance records, and payroll processing. |
-| `ectimeoff` | `ballerinax/sap.successfactors.ectimeoff` | Time off and leave management including time accounts, holiday calendars, and work schedules. |
-| `ecemployeecentralpayroll` | `ballerinax/sap.successfactors.ecemployeecentralpayroll` | Employee Central Payroll run results and payroll processing data. |
-| `ecpaymentinformation` | `ballerinax/sap.successfactors.ecpaymentinformation` | Payment information including bank accounts, payment methods, and direct deposit details. |
-| `ecincometaxdeclaration` | `ballerinax/sap.successfactors.ecincometaxdeclaration` | Income tax declaration management including investment declarations and fiscal year configurations. |
+9. The `ballerinax/sap.successfactors.ecfoundationorganization` package provides APIs to interact with the SAP
+   SuccessFactors Employee Central Foundation Organization API.
 
-### Learning and Development
+10. The `ballerinax/sap.successfactors.ecglobalassignment` package provides APIs to interact with the SAP
+    SuccessFactors Employee Central Global Assignment API.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `ecskillsmanagement` | `ballerinax/sap.successfactors.ecskillsmanagement` | Skills and competency management including skill profiles, competency frameworks, and talent tracking. |
-| `ecapprenticemanagement` | `ballerinax/sap.successfactors.ecapprenticemanagement` | Apprentice program management including registration, progress tracking, and program administration. |
+11. The `ballerinax/sap.successfactors.ecglobalbenefits` package provides APIs to interact with the SAP SuccessFactors
+    Employee Central Global Benefits API.
 
-### Workflow and Legal
+12. The `ballerinax/sap.successfactors.ecincometaxdeclaration` package provides APIs to interact with the SAP
+    SuccessFactors Employee Central Income Tax Declaration API.
 
-| Module | Package | Description |
-|--------|---------|-------------|
-| `ecworkflow` | `ballerinax/sap.successfactors.ecworkflow` | Workflow processes including approval workflows, notifications, and process automation. |
-| `ecdismissalprotection` | `ballerinax/sap.successfactors.ecdismissalprotection` | Dismissal protection and termination compliance features including legal requirements and documentation. |
+13. The `ballerinax/sap.successfactors.ecmasterdatareplication` package provides APIs that enable seamless integration
+    with the [SAP SuccessFactors Master Data Replication API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service allows to replicate and synchronize employee master data across different systems and maintain data
+    consistency.
 
-## Examples
+14. The `ballerinax/sap.successfactors.ecpaymentinformation` package provides APIs to interact with the SAP
+    SuccessFactors Employee Central Payment Information API.
 
-The [`examples`](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples)
-directory contains practical integration examples:
+15. The `ballerinax/sap.successfactors.ecpayrolltimesheets` package provides APIs that enable seamless integration
+    with the [SAP SuccessFactors Payroll Time Sheets API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service allows to manage employee time sheet data, working hours, and payroll-related time information.
 
-1. [Google Sheets to SuccessFactors](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/google-sheets-to-successfactors) —
-   Read employee records from a Google Sheets roster and create Personal Information records in SuccessFactors.
+16. The `ballerinax/sap.successfactors.ecpersonalinformation` package provides APIs to interact with the SAP
+    SuccessFactors Employee Central Personal Information API.
 
-2. [SuccessFactors to Slack](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/successfactors-to-slack) —
-   Poll SuccessFactors for newly onboarded employees and send welcome notifications to a Slack channel.
+17. The `ballerinax/sap.successfactors.ecpositionmanagement` package provides APIs that enable seamless integration
+    with the [SAP SuccessFactors Position Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service allows to manage organizational positions, position hierarchies, and position-related information.
+
+18. The `ballerinax/sap.successfactors.ecskillsmanagement` package provides APIs that enable seamless integration with
+    the [SAP SuccessFactors Skills Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service allows to manage employee skills, competencies, job profiles, and skills-related assessments.
+
+19. The `ballerinax/sap.successfactors.ectimeoff` package provides APIs to interact with the SAP SuccessFactors
+    Employee Central Time Off API.
+
+20. The `ballerinax/sap.successfactors.ecworkflow` package provides APIs that enable seamless integration with the
+    [SAP SuccessFactors Workflow API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service allows to manage workflow processes, approvals, and workflow-related operations for employee
+    transactions.
+
+21. The `ballerinax/sap.successfactors.employeecentralec` package provides APIs that enable seamless integration with
+    the [SAP SuccessFactors Employee Central Core API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+    The service provides comprehensive access to core employee central functionalities and global employee information.
 
 ## Issues and projects
 
 The **Issues** and **Projects** tabs are disabled for this repository as this is part of the Ballerina library. To
 report bugs, request new features, start new discussions, view project boards, etc., visit the Ballerina
 library [parent repository](https://github.com/ballerina-platform/ballerina-library).
+
+This repository only contains the source code for the package.
 
 ## Build from the source
 
@@ -122,32 +140,32 @@ Execute the commands below to build from the source.
 4. To build only one specific package:
 
    ```bash
-   ./gradlew clean :ballerina:<module_name>:build
+   ./gradlew clean :employeecentral-ballerina:<module_name>:build
    ```
 
    | Module Name                    | Connector                                                   |
    |--------------------------------|-------------------------------------------------------------|
+   | ecadvances                     | ballerinax/sap.successfactors.ecadvances                    |
+   | ecalternativecostdistribution  | ballerinax/sap.successfactors.ecalternativecostdistribution |
+   | ecapprenticemanagement         | ballerinax/sap.successfactors.ecapprenticemanagement        |
+   | eccompensationinformation      | ballerinax/sap.successfactors.eccompensationinformation     |
+   | ecdismissalprotection          | ballerinax/sap.successfactors.ecdismissalprotection         |
+   | ecemployeecentralpayroll       | ballerinax/sap.successfactors.ecemployeecentralpayroll      |
    | ecemployeeprofile              | ballerinax/sap.successfactors.ecemployeeprofile             |
    | ecemploymentinformation        | ballerinax/sap.successfactors.ecemploymentinformation       |
-   | ecpersonalinformation          | ballerinax/sap.successfactors.ecpersonalinformation         |
-   | employeecentralec              | ballerinax/sap.successfactors.employeecentralec             |
-   | eccompensationinformation      | ballerinax/sap.successfactors.eccompensationinformation     |
-   | ecalternativecostdistribution  | ballerinax/sap.successfactors.ecalternativecostdistribution |
-   | ecglobalbenefits               | ballerinax/sap.successfactors.ecglobalbenefits              |
-   | ecadvances                     | ballerinax/sap.successfactors.ecadvances                    |
-   | ecpositionmanagement           | ballerinax/sap.successfactors.ecpositionmanagement          |
    | ecfoundationorganization       | ballerinax/sap.successfactors.ecfoundationorganization      |
    | ecglobalassignment             | ballerinax/sap.successfactors.ecglobalassignment            |
-   | ecmasterdatareplication        | ballerinax/sap.successfactors.ecmasterdatareplication       |
-   | ecpayrolltimesheets            | ballerinax/sap.successfactors.ecpayrolltimesheets           |
-   | ectimeoff                      | ballerinax/sap.successfactors.ectimeoff                     |
-   | ecemployeecentralpayroll       | ballerinax/sap.successfactors.ecemployeecentralpayroll      |
-   | ecpaymentinformation           | ballerinax/sap.successfactors.ecpaymentinformation          |
+   | ecglobalbenefits               | ballerinax/sap.successfactors.ecglobalbenefits              |
    | ecincometaxdeclaration         | ballerinax/sap.successfactors.ecincometaxdeclaration        |
+   | ecmasterdatareplication        | ballerinax/sap.successfactors.ecmasterdatareplication       |
+   | ecpaymentinformation           | ballerinax/sap.successfactors.ecpaymentinformation          |
+   | ecpayrolltimesheets            | ballerinax/sap.successfactors.ecpayrolltimesheets           |
+   | ecpersonalinformation          | ballerinax/sap.successfactors.ecpersonalinformation         |
+   | ecpositionmanagement           | ballerinax/sap.successfactors.ecpositionmanagement          |
    | ecskillsmanagement             | ballerinax/sap.successfactors.ecskillsmanagement            |
-   | ecapprenticemanagement         | ballerinax/sap.successfactors.ecapprenticemanagement        |
+   | ectimeoff                      | ballerinax/sap.successfactors.ectimeoff                     |
    | ecworkflow                     | ballerinax/sap.successfactors.ecworkflow                    |
-   | ecdismissalprotection          | ballerinax/sap.successfactors.ecdismissalprotection         |
+   | employeecentralec              | ballerinax/sap.successfactors.employeecentralec             |
 
 5. To run tests against a live server:
 
@@ -155,19 +173,27 @@ Execute the commands below to build from the source.
    IS_TEST_ON_SUCCESSFACTORS_SERVER=true ./gradlew clean test
    ```
 
-6. To debug with a remote debugger:
+   **Note**: `IS_TEST_ON_SUCCESSFACTORS_SERVER` is false by default, tests are run against the mock server.
+
+6. To debug packages with a remote debugger:
 
    ```bash
    ./gradlew clean build -Pdebug=<port>
    ```
 
-7. Publish the generated artifacts to the local Ballerina Central repository:
+7. To debug with the Ballerina language:
+
+   ```bash
+   ./gradlew clean build -PbalJavaDebug=<port>
+   ```
+
+8. Publish the generated artifacts to the local Ballerina Central repository:
 
    ```bash
    ./gradlew clean build -PpublishToLocalCentral=true
    ```
 
-8. Publish the generated artifacts to the Ballerina Central repository:
+9. Publish the generated artifacts to the Ballerina Central repository:
 
    ```bash
    ./gradlew clean build -PpublishToCentral=true
@@ -185,7 +211,7 @@ All the contributors are encouraged to read the [Ballerina Code of Conduct](http
 
 ## Useful links
 
-* For more information go to the [`sap.successfactors` package](https://lib.ballerina.io/ballerinax/sap.successfactors/latest).
+* For more information go to the [`sap` package](https://lib.ballerina.io/ballerinax/sap/latest).
 * For example demonstrations of the usage, go to [Ballerina By Examples](https://ballerina.io/learn/by-example/).
 * Chat live with us via our [Discord server](https://discord.gg/ballerinalang).
 * Post all technical questions on Stack Overflow with the [#ballerina](https://stackoverflow.com/questions/tagged/ballerina) tag.

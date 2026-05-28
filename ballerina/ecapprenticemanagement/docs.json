@@ -1,0 +1,13 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecapprenticemanagement` package provides APIs that enable seamless integration with the [SAP SuccessFactors Apprentice Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html). The service allows to manage apprenticeship programs, track apprentice progress, and maintain apprentice-related information.",
+  "communication-scenario": "Apprentice Program Management",
+  "import-statement": "import ballerinax/sap.successfactors.ecapprenticemanagement as ecappr;",
+  "client-init": "ecappr:Client ecapprClient = check new (",
+  "api-invocation": "ecappr:ApprenticeWrapper apprentice = check ecapprClient->getApprentice();",
+  "key-features": [
+    "Manage apprentice program registrations and tracking",
+    "Configure apprentice event types and program definitions",
+    "Query apprentice progress and training records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
+}

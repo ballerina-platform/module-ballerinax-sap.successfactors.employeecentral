@@ -1,0 +1,9 @@
+[package]
+org = "integration_samples"
+name = "google_sheets_to_successfactors"
+version = "0.1.0"
+distribution = "2201.13.0"
+
+[dependencies]
+"ballerinax/googleapis.sheets" = "3.4.0"
+"ballerinax/sap.successfactors.ecpersonalinformation" = "0.9.0"

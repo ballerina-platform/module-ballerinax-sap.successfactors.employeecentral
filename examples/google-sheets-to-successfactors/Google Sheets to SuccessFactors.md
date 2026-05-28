@@ -1,17 +1,14 @@
 # Google Sheets to SAP SuccessFactors Employee Central
 
-This example demonstrates how to read employee records from a Google Sheets HR roster and create corresponding
+This example demonstrates how to read employee IDs from a Google Sheets roster and look up the corresponding
 Personal Information records in SAP SuccessFactors Employee Central using the
 `sap.successfactors.ecpersonalinformation` connector.
 
 ## Overview
 
-Many HR teams maintain employee rosters in Google Sheets before formal onboarding is complete. This integration
-bridges the gap by automatically syncing employee biographical data from a spreadsheet into SuccessFactors, reducing
-manual data entry and the risk of errors.
-
-The program reads rows from a specified Google Sheet, maps each row to a SuccessFactors `PerPersonal` payload, and
-calls the `createPerPersonal` API for each employee.
+HR teams often maintain an employee roster in Google Sheets. This integration reads person IDs from column A of the
+sheet, queries SuccessFactors for each employee's personal information, and logs the results — making it easy to
+verify which employees are already onboarded in the system.
 
 ## Prerequisites
 
@@ -31,11 +28,13 @@ detailed setup instructions.
 
 ### 3. Prepare the Google Sheet
 
-Create a sheet named `Employees` with the following columns in order:
+Create a sheet named `Employees` with `personIdExternal` values in column A (row 1 is the header):
 
-| A               | B         | C        | D      | E           | F             | G           |
-|-----------------|-----------|----------|--------|-------------|---------------|-------------|
-| personIdExternal | firstName | lastName | gender | dateOfBirth | countryOfBirth | nationality |
+| A                |
+|------------------|
+| personIdExternal |
+| EMP001           |
+| EMP002           |
 
 ### 4. Configuration
 
@@ -67,6 +66,6 @@ bal run
 
 ## Testing
 
-1. Add one or more employee rows to your Google Sheet.
+1. Add one or more `personIdExternal` values to column A of your Google Sheet.
 2. Run the example.
-3. Log into SAP SuccessFactors and verify that Personal Information records were created for each employee.
+3. Check the logs — matched employees show their name and gender; unmatched IDs are logged as warnings.

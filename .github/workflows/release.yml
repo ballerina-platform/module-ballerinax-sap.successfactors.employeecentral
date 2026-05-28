@@ -37,5 +37,5 @@ jobs:
     uses: ballerina-platform/ballerina-library/.github/workflows/s4hana-release-template.yml@main
     secrets: inherit
     with:
-      hana-connector-group: successfactors.employeecentral
+      hana-connector-group: employeecentral
       hana-connector-name: ${{ inputs.connector }}

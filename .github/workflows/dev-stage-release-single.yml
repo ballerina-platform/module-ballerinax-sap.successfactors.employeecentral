@@ -45,5 +45,5 @@ jobs:
     secrets: inherit
     with:
       environment: ${{ inputs.environment }}
-      hana-connector-group: successfactors.employeecentral
+      hana-connector-group: employeecentral
       hana-connector-name: ${{ inputs.connector }}

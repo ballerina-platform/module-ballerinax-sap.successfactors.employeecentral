@@ -17,4 +17,4 @@ jobs:
     uses: ballerina-platform/ballerina-library/.github/workflows/s4hana-build-connector-template.yml@main
     secrets: inherit
     with:
-      hana-connector-group: successfactors.employeecentral
+      hana-connector-group: employeecentral

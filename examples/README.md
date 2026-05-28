@@ -1,16 +1,16 @@
 # Examples
 
 The SAP SuccessFactors Employee Central Ballerina connectors provide practical examples illustrating usage in various
-scenarios. Explore these [examples](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples),
+scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples),
 covering use cases like syncing employee data and sending notifications.
 
-1. [Google Sheets to SuccessFactors](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/google-sheets-to-successfactors) -
-   Demonstrates how to read employee records from a Google Sheets roster and create corresponding Personal Information
+1. [Google Sheets to SuccessFactors](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/google-sheets-to-successfactors) -
+   Demonstrates how to read employee IDs from a Google Sheets roster and look up the corresponding Personal Information
    records in SAP SuccessFactors Employee Central.
 
-2. [SuccessFactors to Slack](https://github.com/RDPerera/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/successfactors-to-slack) -
-   Demonstrates how to monitor SAP SuccessFactors Employee Central for newly onboarded employees and send a welcome
-   notification to a Slack channel automatically.
+2. [SuccessFactors to Slack](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/tree/main/examples/successfactors-to-slack) -
+   Demonstrates how to fetch recently onboarded employees from SAP SuccessFactors Employee Central and send a welcome
+   notification to a Slack channel via an incoming webhook.
 
 ## Prerequisites
 

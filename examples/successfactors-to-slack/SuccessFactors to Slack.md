@@ -1,14 +1,14 @@
 # SAP SuccessFactors Employee Central to Slack
 
-This example demonstrates how to monitor SAP SuccessFactors Employee Central for newly onboarded employees and
-automatically send a welcome notification to a Slack channel using the
+This example demonstrates how to fetch recently onboarded employees from SAP SuccessFactors Employee Central and
+send a welcome notification to a Slack channel via an incoming webhook using the
 `sap.successfactors.ecemploymentinformation` connector.
 
 ## Overview
 
-When new employees start at an organization, HR and team leads often need to be notified quickly. This integration
-polls SAP SuccessFactors Employee Central on a configurable schedule, detects employees with a start date on or after
-the last poll, and posts a welcome message to a designated Slack channel.
+When new employees start at an organization, HR and team leads often need to be notified quickly. This program
+queries SAP SuccessFactors for employees whose start date falls within the last `lookbackDays` days and posts a
+welcome message to a Slack channel for each one. It runs as a one-shot script and exits after sending notifications.
 
 ## Prerequisites
 
@@ -17,31 +17,24 @@ the last poll, and posts a welcome message to a designated Slack channel.
 Refer to the [Setup Guide](https://central.ballerina.io/ballerinax/sap/latest#setup-guide) for necessary credentials
 (hostname, username, password).
 
-### 2. Setup Slack
+### 2. Setup Slack Incoming Webhook
 
-1. Create a Slack app at https://api.slack.com/apps.
-2. Add the `chat:write` and `channels:read` OAuth scopes.
-3. Install the app to your workspace and copy the **Bot User OAuth Token**.
-4. Invite the bot to the target channel (e.g., `#hr-announcements`).
-
-Refer to the [Slack connector guide](https://central.ballerina.io/ballerinax/slack/latest) for detailed setup
-instructions.
+1. Go to https://api.slack.com/apps and create a Slack app.
+2. Under **Incoming Webhooks**, enable webhooks and add one to your target channel (e.g. `#hr-announcements`).
+3. Copy the webhook URL.
 
 ### 3. Configuration
 
 Configure credentials in `Config.toml` in the example directory:
 
 ```toml
-slackChannel = "#hr-announcements"
-pollIntervalSeconds = 3600
+slackWebhookUrl = "https://hooks.slack.com/services/<your-webhook-path>"
+lookbackDays = 7
 
 [sfClientConfig]
 hostname = "<SuccessFactors_Hostname>"
 username = "<SF_Username>"
 password = "<SF_Password>"
-
-[slackClientConfig]
-token = "<Slack_Bot_Token>"
 ```
 
 ## Run the Example
@@ -52,10 +45,11 @@ Execute the following command to run the example:
 bal run
 ```
 
-The program polls SuccessFactors immediately on startup and then again every `pollIntervalSeconds` (default: 1 hour).
+The program fetches employees with a start date within the last `lookbackDays` days, sends a Slack message for each,
+and exits.
 
 ## Testing
 
-1. Add a new employee record in SAP SuccessFactors with today's start date.
-2. Run the example (or wait for the next poll cycle).
+1. Add a new employee record in SAP SuccessFactors with a start date within the last `lookbackDays` days.
+2. Run the example.
 3. Verify that a welcome message appears in your configured Slack channel.

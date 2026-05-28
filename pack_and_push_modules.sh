@@ -3,23 +3,20 @@
 # Script to run bal pack and bal push for each module in ballerina folder
 set -e
 
-# Base directory
-BASE_DIR="/Users/dilanperera/Projects/module-ballerinax-sap.successfactors.employeecentral/ballerina"
+# Base directory derived relative to this script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR="$SCRIPT_DIR/ballerina"
 
 # List of modules
 MODULES=(
-    "ecalternativecostdistribution"
-    "ecapprenticemanagement"
+    "ecadvances"
     "eccompensationinformation"
-    "ecdismissalprotection"
-    "ecemployeeprofile"
     "ecemploymentinformation"
-    "ecmasterdatareplication"
-    "ecpayrolltimesheets"
-    "ecpositionmanagement"
-    "ecskillsmanagement"
-    "ecworkflow"
-    "employeecentralec"
+    "ecfoundationorganization"
+    "ecglobalassignment"
+    "ecpaymentinformation"
+    "ecpersonalinformation"
+    "ectimeoff"
 )
 
 echo "Starting bal pack and bal push for all modules..."
@@ -29,9 +26,9 @@ for module in "${MODULES[@]}"; do
     echo ""
     echo "Processing module: $module"
     echo "----------------------------"
-    
+
     cd "$BASE_DIR/$module"
-    
+
     echo "Running bal pack for $module..."
     if bal pack; then
         echo "✅ bal pack successful for $module"
@@ -39,14 +36,14 @@ for module in "${MODULES[@]}"; do
         echo "❌ bal pack failed for $module"
         continue
     fi
-    
+
     echo "Running bal push for $module..."
     if bal push; then
         echo "✅ bal push successful for $module"
     else
         echo "❌ bal push failed for $module"
     fi
-    
+
     echo "Completed processing $module"
 done
 

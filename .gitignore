@@ -44,6 +44,7 @@ Ballerina.lock
 
 # generated files
 target
+generated/
 .ballerina
 /compiler-plugin-tests/bin/
 

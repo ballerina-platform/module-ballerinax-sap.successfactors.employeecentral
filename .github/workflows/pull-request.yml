@@ -12,4 +12,4 @@ jobs:
     uses: ballerina-platform/ballerina-library/.github/workflows/s4hana-pr-template.yml@main
     secrets: inherit
     with:
-      hana-connector-group: successfactors.employeecentral
+      hana-connector-group: employeecentral

@@ -1,4 +1,4 @@
-// Copyright (c) 2026, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
+// Copyright (c) 2026, WSO2 LLC. (http://www.wso2.com).
 //
 // WSO2 LLC. licenses this file to you under the Apache License,
 // Version 2.0 (the "License"); you may not use this file except
@@ -197,18 +197,24 @@ function sanitizeResponseSchemaNames(string specPath) returns error? {
     foreach var [_, value] in paths.entries() {
         if value.get != () {
             Get getPath = value.get ?: {};
-            json responses = getPath.responses;
+            json? responses = getPath?.responses;
             if responses is () {
                 continue;
             }
-            json response200 = responses.'200 ?: {};
-            string desc = (response200.description ?: "").toString();
+            json|error r200 = responses.'200;
+            json response200 = r200 is json ? r200 : {};
+            json|error descField = response200.description;
+            string desc = descField is string ? descField : "";
             if desc == "Retrieved entities" {
                 // Swagger 2.0 inline schema - update title via properties
-                json schema = response200.schema ?: {};
-                json props = schema.properties ?: {};
-                json dProp = props.d ?: {};
-                string title = (dProp.title ?: "").toString().trim();
+                json|error schemaField = response200.schema;
+                json schema = schemaField is json ? schemaField : {};
+                json|error propsField = schema.properties;
+                json props = propsField is json ? propsField : {};
+                json|error dField = props.d;
+                json dProp = dField is json ? dField : {};
+                json|error titleField = dProp.title;
+                string title = (titleField is string ? titleField : "").trim();
                 if title.startsWith("Collection of") {
                     title = "CollectionOf" + title.substring(14);
                 }

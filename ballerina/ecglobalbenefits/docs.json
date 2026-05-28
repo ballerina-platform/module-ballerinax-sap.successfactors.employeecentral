@@ -1,0 +1,13 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecglobalbenefits` package provides APIs to interact with the SAP SuccessFactors Employee Central Global Benefits API.",
+  "communication-scenario": "Benefits Management",
+  "import-statement": "import ballerinax/sap.successfactors.ecglobalbenefits as globalbenefits;",
+  "client-init": "globalbenefits:Client globalbenefitsClient = check new (",
+  "api-invocation": "globalbenefits:BenefitEmployeeClaimWrapper result = check globalbenefitsClient->listBenefitEmployeeClaims();",
+  "key-features": [
+    "Manage comprehensive employee benefits including insurance and savings plans",
+    "Access pension funds, company cars, and benefit enrollments",
+    "Query benefit employee claims and eligibility records",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
+}

@@ -1,0 +1,41 @@
+name: Publish Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      connector:
+        type: choice
+        description: Select Connector
+        required: true
+        options:
+          - ecemployeeprofile
+          - ecemploymentinformation
+          - ecpersonalinformation
+          - employeecentralec
+          - eccompensationinformation
+          - ecalternativecostdistribution
+          - ecglobalbenefits
+          - ecadvances
+          - ecpositionmanagement
+          - ecfoundationorganization
+          - ecglobalassignment
+          - ecmasterdatareplication
+          - ecpayrolltimesheets
+          - ectimeoff
+          - ecemployeecentralpayroll
+          - ecpaymentinformation
+          - ecincometaxdeclaration
+          - ecskillsmanagement
+          - ecapprenticemanagement
+          - ecworkflow
+          - ecdismissalprotection
+
+jobs:
+  call_workflow:
+    name: Run Release Workflow
+    if: ${{ github.repository_owner == 'ballerina-platform' }}
+    uses: ballerina-platform/ballerina-library/.github/workflows/s4hana-release-template.yml@main
+    secrets: inherit
+    with:
+      hana-connector-group: employeecentral
+      hana-connector-name: ${{ inputs.connector }}

@@ -1,0 +1,13 @@
+{
+  "description": "The `ballerinax/sap.successfactors.ecadvances` package provides APIs to interact with the SAP SuccessFactors Employee Central Advances API.",
+  "communication-scenario": "Advances Management",
+  "import-statement": "import ballerinax/sap.successfactors.ecadvances as advances;",
+  "client-init": "advances:Client advancesClient = check new (",
+  "api-invocation": "advances:AdvancesInstallmentsWrapper result = check advancesClient->listAdvancesInstallmentss();",
+  "key-features": [
+    "Manage employee salary advance requests and eligibility",
+    "Track advance accumulation and repayment schedules",
+    "Query installment plans and advance history",
+    "Support for basic and OAuth 2.0 authentication"
+  ]
+}

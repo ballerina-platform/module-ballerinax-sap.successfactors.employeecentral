@@ -58,6 +58,9 @@ dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.object"}
 ]
+modules = [
+	{org = "ballerina", packageName = "data.jsondata", moduleName = "data.jsondata"}
+]
 
 [[package]]
 org = "ballerina"
@@ -106,7 +109,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "io"
-version = "1.8.0"
+version = "1.8.1"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
@@ -232,7 +235,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "mime"
-version = "2.12.1"
+version = "2.12.2"
 dependencies = [
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "jballerina.java"},
@@ -276,7 +279,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "task"
-version = "2.11.1"
+version = "2.11.2"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "time"},
@@ -361,6 +364,7 @@ name = "sap.successfactors.ecskillsmanagement"
 version = "0.9.0"
 dependencies = [
 	{org = "ballerina", name = "constraint"},
+	{org = "ballerina", name = "data.jsondata"},
 	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "log"},
 	{org = "ballerina", name = "os"},
@@ -373,3 +377,4 @@ modules = [
 	{org = "ballerinax", packageName = "sap.successfactors.ecskillsmanagement", moduleName = "sap.successfactors.ecskillsmanagement"},
 	{org = "ballerinax", packageName = "sap.successfactors.ecskillsmanagement", moduleName = "sap.successfactors.ecskillsmanagement.mock"}
 ]
+

@@ -25,8 +25,22 @@ plugins {
 description = 'Ballerina - SAP SuccessFactors Employee Central Employee Profile API'
 
 def packageName = "sap.successfactors.ecemployeeprofile"
-def moduleVersion = project.ecemployeeprofileVersion.replace("-SNAPSHOT", "")
+def moduleVersion = stripBallerinaExtensionVersion("${project.ecemployeeprofileVersion}")
 def ballerinaTomlFile = file("${project.projectDir}/Ballerina.toml")
+
+def stripBallerinaExtensionVersion(String extVersion) {
+    if (extVersion.matches(project.ext.timestampedVersionRegex)) {
+        def splitVersion = extVersion.split('-')
+        if (splitVersion.length > 3) {
+            def strippedValues = splitVersion[0..-4]
+            return strippedValues.join('-')
+        } else {
+            return extVersion
+        }
+    } else {
+        return extVersion.replace("${project.ext.snapshotVersion}", "")
+    }
+}
 
 ballerina {
     packageOrganization = project.ext.packageOrg

@@ -25,8 +25,22 @@ plugins {
 description = 'Ballerina - SAP SuccessFactors Employee Central Master Data Replication API'
 
 def packageName = "sap.successfactors.ecmasterdatareplication"
-def moduleVersion = project.ecmasterdatareplicationVersion.replace("-SNAPSHOT", "")
+def moduleVersion = stripBallerinaExtensionVersion("${project.ecmasterdatareplicationVersion}")
 def ballerinaTomlFile = file("${project.projectDir}/Ballerina.toml")
+
+def stripBallerinaExtensionVersion(String extVersion) {
+    if (extVersion.matches(project.ext.timestampedVersionRegex)) {
+        def splitVersion = extVersion.split('-')
+        if (splitVersion.length > 3) {
+            def strippedValues = splitVersion[0..-4]
+            return strippedValues.join('-')
+        } else {
+            return extVersion
+        }
+    } else {
+        return extVersion.replace("${project.ext.snapshotVersion}", "")
+    }
+}
 
 ballerina {
     packageOrganization = project.ext.packageOrg

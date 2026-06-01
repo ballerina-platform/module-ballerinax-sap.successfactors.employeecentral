@@ -25,11 +25,27 @@ plugins {
 description = 'Ballerina - SAP SuccessFactors Employee Central Time Off API'
 
 def packageName = "sap.successfactors.ectimeoff"
-def moduleVersion = project.ectimeoffVersion.replace("-SNAPSHOT", "")
-def ballerinaTomlFile = file("${project.projectDir}/Ballerina.toml")
+def packageOrg = "ballerinax"
+def tomlVersion = stripBallerinaExtensionVersion("${project.ectimeoffVersion}")
+def ballerinaTomlFilePlaceHolder = new File("${project.rootDir}/build-config/resources/Ballerina.toml")
+def ballerinaTomlFile = new File("$project.projectDir/Ballerina.toml")
+
+def stripBallerinaExtensionVersion(String extVersion) {
+    if (extVersion.matches(project.ext.timestampedVersionRegex)) {
+        def splitVersion = extVersion.split('-')
+        if (splitVersion.length > 3) {
+            def strippedValues = splitVersion[0..-4]
+            return strippedValues.join('-')
+        } else {
+            return extVersion
+        }
+    } else {
+        return extVersion.replace("${project.ext.snapshotVersion}", "")
+    }
+}
 
 ballerina {
-    packageOrganization = project.ext.packageOrg
+    packageOrganization = packageOrg
     module = packageName
     isConnector = true
     platform = "any"
@@ -38,8 +54,9 @@ ballerina {
 
 task updateTomlFiles {
     doLast {
-        def newBallerinaToml = ballerinaTomlFilePlaceHolder.text.replace("@package.name@", packageName)
-        newBallerinaToml = newBallerinaToml.replace("@toml.version@", moduleVersion)
+        def newBallerinaToml = ballerinaTomlFilePlaceHolder.text.replace("@project.version@", "${project.ectimeoffVersion}")
+        newBallerinaToml = newBallerinaToml.replace("@package.name@", packageName)
+        newBallerinaToml = newBallerinaToml.replace("@toml.version@", tomlVersion)
         ballerinaTomlFile.text = newBallerinaToml
     }
 }
@@ -57,6 +74,28 @@ task commitTomlFiles {
     }
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact source: createArtifactZip, extension: 'zip'
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral")
+            credentials {
+                username = System.getenv("publishUser")
+                password = System.getenv("publishPAT")
+            }
+        }
+    }
+}
+
+clean {
+    delete 'build'
+}
+
 release {
     buildTasks = ['build']
     failOnSnapshotDependencies = true
@@ -64,10 +103,11 @@ release {
     versionProperties = ['ectimeoffVersion']
     tagTemplate = 'ectimeoff-v${version}'
     git {
-        requireBranch = "release-ectimeoff-${moduleVersion}"
+        requireBranch = "release-ectimeoff-${tomlVersion}"
         pushToRemote = 'origin'
     }
 }
 
+build.dependsOn "generatePomFileForMavenPublication"
 publishToMavenLocal.dependsOn build
 publish.dependsOn build

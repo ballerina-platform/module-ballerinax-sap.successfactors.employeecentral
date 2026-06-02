@@ -25,7 +25,22 @@ plugins {
 description = 'Ballerina - SAP SuccessFactors Employee Central Apprentice Management API'
 
 def packageName = "sap.successfactors.ecapprenticemanagement"
-def moduleVersion = project.ecapprenticemanagementVersion.replace("-SNAPSHOT", "")
+def moduleVersion = stripBallerinaExtensionVersion("${project.ecapprenticemanagementVersion}")
+
+def stripBallerinaExtensionVersion(String extVersion) {
+    if (extVersion.matches(project.ext.timestampedVersionRegex)) {
+        def splitVersion = extVersion.split('-')
+        if (splitVersion.length > 3) {
+            def strippedValues = splitVersion[0..-4]
+            return strippedValues.join('-')
+        } else {
+            return extVersion
+        }
+    } else {
+        return extVersion.replace("${project.ext.snapshotVersion}", "")
+    }
+}
+
 def ballerinaTomlFile = file("${project.projectDir}/Ballerina.toml")
 
 ballerina {

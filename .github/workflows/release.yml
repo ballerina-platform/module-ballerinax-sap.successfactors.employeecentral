@@ -8,27 +8,27 @@ on:
         description: Select Connector
         required: true
         options:
+          - ecadvances
+          - ecalternativecostdistribution
+          - ecapprenticemanagement
+          - eccompensationinformation
+          - ecdismissalprotection
+          - ecemployeecentralpayroll
           - ecemployeeprofile
           - ecemploymentinformation
-          - ecpersonalinformation
-          - employeecentralec
-          - eccompensationinformation
-          - ecalternativecostdistribution
-          - ecglobalbenefits
-          - ecadvances
-          - ecpositionmanagement
           - ecfoundationorganization
           - ecglobalassignment
-          - ecmasterdatareplication
-          - ecpayrolltimesheets
-          - ectimeoff
-          - ecemployeecentralpayroll
-          - ecpaymentinformation
+          - ecglobalbenefits
           - ecincometaxdeclaration
+          - ecmasterdatareplication
+          - ecpaymentinformation
+          - ecpayrolltimesheets
+          - ecpersonalinformation
+          - ecpositionmanagement
           - ecskillsmanagement
-          - ecapprenticemanagement
+          - ectimeoff
           - ecworkflow
-          - ecdismissalprotection
+          - employeecentralec
 
 jobs:
   call_workflow:

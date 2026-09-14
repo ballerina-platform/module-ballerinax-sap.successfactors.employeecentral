@@ -32,7 +32,7 @@ listener http:Listener ep0 = new (9090,
     }
 );
 
-service /successfactors/odata/v2 on ep0 {
+service /odata/v2 on ep0 {
     # Get entities from EmployeeTimeSheet
     #
     # + return - Retrieved entities

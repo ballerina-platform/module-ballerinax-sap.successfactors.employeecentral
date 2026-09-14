@@ -20,7 +20,7 @@ The `ballerinax/sap.successfactors.ecfoundationorganization` package provides AP
 2. Navigate to **Admin Center** > **Manage OAuth2 Client Applications** and register a new OAuth2 client application
    for your integration.
 
-   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap/main/docs/setup/sf-1-register-oauth.png)
+   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-1-register-oauth.png)
 
 3. Note down the **API Key** (client ID) and configure the appropriate scopes for the Employee Central APIs you intend
    to use.

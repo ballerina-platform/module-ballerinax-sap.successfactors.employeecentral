@@ -4,15 +4,13 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.employeecentralec` package provides APIs that enable seamless integration with the
-[SAP SuccessFactors Employee Central Core API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
-The service provides comprehensive access to core employee central functionalities and global employee information.
+The `ballerinax/sap.successfactors.employeecentralec` package provides APIs that enable seamless integration with the [SAP SuccessFactors Employee Central Core API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html). The service provides comprehensive access to core employee central functionalities and global employee information.
 
 ### Key Features
 
 - Comprehensive Employee Central APIs for employee data management
 - Access organizational structure and position information
-- Query global employee information across multiple regions (e.g. Argentina, Brazil, China, Switzerland, the UK)
+- Query global employee information across multiple regions
 - Support for basic and OAuth 2.0 authentication
 
 ## Setup guide
@@ -70,7 +68,7 @@ eccore:Client eccoreClient = check new (
 Now, utilize the available connector operations.
 
 ```ballerina
-eccore:Wrapper globalInfo = check eccoreClient->listPerGlobalInfoAREs();
+eccore:PerGlobalInfoUSAWrapper globalInfo = check eccoreClient->getPerGlobalInfoUSA();
 ```
 
 ### Step 4: Run the Ballerina application

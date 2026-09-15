@@ -19,7 +19,6 @@
 
 import ballerina/constraint;
 import ballerina/http;
-import ballerinax/sap;
 
 # Represents the Queries record for the operation: createwithdrawWfRequest
 public type CreatewithdrawWfRequestQueries record {
@@ -137,7 +136,7 @@ public type PendDataInlineGroupBean record {
 @display {label: "Connection Config"}
 public type ConnectionConfig record {|
     # Configurations related to client authentication
-    http:CredentialsConfig|sap:SamlBearerAuthConfig auth;
+    http:CredentialsConfig|SamlBearerAuthConfig auth;
     # The HTTP version understood by the client
     http:HttpVersion httpVersion = http:HTTP_2_0;
     # Configurations related to HTTP/1.x protocol

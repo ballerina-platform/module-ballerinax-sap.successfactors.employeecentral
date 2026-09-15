@@ -19,7 +19,6 @@
 
 import ballerina/constraint;
 import ballerina/http;
-import ballerinax/sap;
 
 public type CollectionofPersonEmpTerminationInfo record {
     PersonEmpTerminationInfo[] results?;
@@ -110,7 +109,7 @@ public type GetEmpWorkPermitQueries record {
 @display {label: "Connection Config"}
 public type ConnectionConfig record {|
     # Configurations related to client authentication
-    http:CredentialsConfig|sap:SamlBearerAuthConfig auth;
+    http:CredentialsConfig|SamlBearerAuthConfig auth;
     # The HTTP version understood by the client
     http:HttpVersion httpVersion = http:HTTP_2_0;
     # Configurations related to HTTP/1.x protocol

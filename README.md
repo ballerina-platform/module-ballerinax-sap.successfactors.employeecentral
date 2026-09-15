@@ -11,8 +11,8 @@ for HR processes including employee data management, organizational structures, 
 
 This repository encompasses all Ballerina packages pertaining to the SAP SuccessFactors Employee Central module. Notably:
 
-1. The `ballerinax/sap.successfactors.ecadvances` package provides APIs to interact with the SAP SuccessFactors
-   Employee Central Advances API.
+1. WSO2 SAP Successfactors Ecadvances provides a way to interact with the SAP SuccessFactors Employee Central
+   Advances APIs.
 
 2. The `ballerinax/sap.successfactors.ecalternativecostdistribution` package provides APIs that enable seamless
    integration with the [SAP SuccessFactors Alternative Cost Distribution API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).

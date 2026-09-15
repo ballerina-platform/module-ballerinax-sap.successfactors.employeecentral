@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ecadvances` package provides APIs to interact with the SAP SuccessFactors Employee Central Advances API.
+WSO2 SAP Successfactors Ecadvances provides a way to interact with the SAP SuccessFactors Employee Central Advances APIs.
 
 ### Key Features
 

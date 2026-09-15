@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ecpayrolltimesheets` package provides APIs that enable seamless integration with the [SAP SuccessFactors Payroll Time Sheets API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html). The service allows to manage employee time sheet data, working hours, and payroll-related time information.
+WSO2 SAP Successfactors Ecpayrolltimesheets provides a way to interact with the [SAP SuccessFactors Payroll Time Sheets API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html). The service allows to manage employee time sheet data, working hours, and payroll-related time information.
 
 ### Key Features
 
@@ -20,7 +20,7 @@ The `ballerinax/sap.successfactors.ecpayrolltimesheets` package provides APIs th
 2. Navigate to **Admin Center** > **Manage OAuth2 Client Applications** and register a new OAuth2 client application
    for your integration.
 
-   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap/main/docs/setup/sf-1-register-oauth.png)
+   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-1-register-oauth.png)
 
 3. Note down the **API Key** (client ID) and configure the appropriate scopes for the Employee Central APIs you intend
    to use.

@@ -19,6 +19,7 @@
 
 import ballerina/constraint;
 import ballerina/http;
+import ballerinax/sap;
 
 # Represents the Headers record for the operation: deleteApprenticeSchoolEvent
 public type DeleteApprenticeSchoolEventHeaders record {
@@ -85,7 +86,7 @@ public type DeleteApprenticeInternalTrainingEventHeaders record {
 @display {label: "Connection Config"}
 public type ConnectionConfig record {|
     # Configurations related to client authentication
-    http:CredentialsConfig|SamlBearerAuthConfig auth;
+    http:CredentialsConfig|sap:SamlBearerAuthConfig auth;
     # The HTTP version understood by the client
     http:HttpVersion httpVersion = http:HTTP_2_0;
     # Configurations related to HTTP/1.x protocol

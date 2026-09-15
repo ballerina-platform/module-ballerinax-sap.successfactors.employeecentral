@@ -35,8 +35,8 @@ public isolated client class Client {
     public isolated function init(ConnectionConfig config, string hostname, int port = 443) returns error? {
         string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
         http:CredentialsConfig|http:BearerTokenConfig resolvedAuth;
-        if config.auth is SamlBearerAuthConfig {
-            string accessToken = check getSamlBearerAccessToken(<SamlBearerAuthConfig>config.auth);
+        if config.auth is sap:SamlBearerAuthConfig {
+            string accessToken = check sap:getSamlBearerAccessToken(<sap:SamlBearerAuthConfig>config.auth);
             resolvedAuth = {token: accessToken};
         } else {
             resolvedAuth = <http:CredentialsConfig>config.auth;

@@ -18,6 +18,7 @@
 // under the License.
 
 import ballerina/http;
+import ballerinax/sap;
 
 public type ModifiedPaymentInformationDetailV3GBR record {
     PaymentInformationDetailV3GBR d?;
@@ -158,7 +159,7 @@ public type PaymentInformationDetailV3TUN record {
 @display {label: "Connection Config"}
 public type ConnectionConfig record {|
     # Configurations related to client authentication
-    http:CredentialsConfig|SamlBearerAuthConfig auth;
+    http:CredentialsConfig|sap:SamlBearerAuthConfig auth;
     # The HTTP version understood by the client
     http:HttpVersion httpVersion = http:HTTP_2_0;
     # Configurations related to HTTP/1.x protocol

@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ecemploymentinformation` package provides APIs that enable seamless integration with the [SAP SuccessFactors Employment Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/d91ecc323849441cb2773fc86f0eff0f.html). The service allows to access employment related information, including job information, employment termination, and work permit.
+WSO2 SAP Successfactors Ecemploymentinformation provides a way to interact with the [SAP SuccessFactors Employment Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/d91ecc323849441cb2773fc86f0eff0f.html). The service allows to access employment related information, including job information, employment termination, and work permit.
 
 ### Key Features
 

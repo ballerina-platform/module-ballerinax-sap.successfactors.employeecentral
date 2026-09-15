@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ecfoundationorganization` package provides APIs to interact with the SAP SuccessFactors Employee Central Foundation Organization API.
+WSO2 SAP Successfactors Ecfoundationorganization provides a way to interact with the SAP SuccessFactors Employee Central Foundation Organization APIs.
 
 ### Key Features
 

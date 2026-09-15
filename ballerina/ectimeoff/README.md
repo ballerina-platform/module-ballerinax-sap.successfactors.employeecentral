@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ectimeoff` package provides APIs to interact with the SAP SuccessFactors Employee Central Time Off API.
+WSO2 SAP Successfactors Ectimeoff provides a way to interact with the SAP SuccessFactors Employee Central Time Off APIs.
 
 ### Key Features
 

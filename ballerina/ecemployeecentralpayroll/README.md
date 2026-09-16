@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-The `ballerinax/sap.successfactors.ecemployeecentralpayroll` package provides APIs to interact with the SAP SuccessFactors Employee Central Employee Central Payroll API.
+WSO2 SAP Successfactors Ecemployeecentralpayroll provides a way to interact with the SAP SuccessFactors Employee Central Employee Central Payroll APIs.
 
 ### Key Features
 
@@ -20,7 +20,7 @@ The `ballerinax/sap.successfactors.ecemployeecentralpayroll` package provides AP
 2. Navigate to **Admin Center** > **Manage OAuth2 Client Applications** and register a new OAuth2 client application
    for your integration.
 
-   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap/main/docs/setup/sf-1-register-oauth.png)
+   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-1-register-oauth.png)
 
 3. Note down the **API Key** (client ID) and configure the appropriate scopes for the Employee Central APIs you intend
    to use.

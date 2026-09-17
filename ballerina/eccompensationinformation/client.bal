@@ -17,7 +17,6 @@
 // specific language governing permissions and limitations
 // under the License.
 
-import ballerina/http;
 import ballerinax/sap;
 
 # You can use APIs to access the compensation information of an employee, including salary, recurring bonuses and non-recurring compensation information. You can use these APIs to create non-recurring deductions in a payment.
@@ -32,8 +31,8 @@ public isolated client class Client {
     # + serviceUrl - URL of the target service 
     # + return - An error if connector initialization failed 
     public isolated function init(ConnectionConfig config, string hostname, int port = 443) returns error? {
-        string serviceUrl = string `${hostname}:${port}/successfactors/odata/v2`;
-        http:ClientConfiguration httpClientConfig = {auth: config.auth, httpVersion: config.httpVersion, http1Settings: config.http1Settings, http2Settings: config.http2Settings, timeout: config.timeout, forwarded: config.forwarded, followRedirects: config.followRedirects, poolConfig: config.poolConfig, cache: config.cache, compression: config.compression, circuitBreaker: config.circuitBreaker, retryConfig: config.retryConfig, cookieConfig: config.cookieConfig, responseLimits: config.responseLimits, secureSocket: config.secureSocket, proxy: config.proxy, socketConfig: config.socketConfig, validation: config.validation, laxDataBinding: config.laxDataBinding};
+        string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
+        sap:ConnectionConfig httpClientConfig = {auth: config.auth, httpVersion: config.httpVersion, http1Settings: config.http1Settings, http2Settings: config.http2Settings, timeout: config.timeout, forwarded: config.forwarded, followRedirects: config.followRedirects, poolConfig: config.poolConfig, cache: config.cache, compression: config.compression, circuitBreaker: config.circuitBreaker, retryConfig: config.retryConfig, cookieConfig: config.cookieConfig, responseLimits: config.responseLimits, secureSocket: config.secureSocket, proxy: config.proxy, socketConfig: config.socketConfig, validation: config.validation, laxDataBinding: config.laxDataBinding};
         self.clientEp = check new (serviceUrl, httpClientConfig);
     }
 

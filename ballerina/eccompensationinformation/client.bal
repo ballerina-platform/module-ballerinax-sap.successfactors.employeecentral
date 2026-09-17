@@ -17,7 +17,6 @@
 // specific language governing permissions and limitations
 // under the License.
 
-import ballerina/http;
 import ballerinax/sap;
 
 # You can use APIs to access the compensation information of an employee, including salary, recurring bonuses and non-recurring compensation information. You can use these APIs to create non-recurring deductions in a payment.

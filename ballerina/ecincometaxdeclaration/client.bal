@@ -17,7 +17,6 @@
 // specific language governing permissions and limitations
 // under the License.
 
-import ballerina/http;
 import ballerinax/sap;
 
 # You can use these APIs to record income tax declaration and submit tax declarations actuals. You can also use these APIs to categorize or group investment types, and configure the window period that controls the creation of actuals and proposals.

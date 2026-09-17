@@ -17,7 +17,6 @@
 // specific language governing permissions and limitations
 // under the License.
 
-import ballerina/http;
 import ballerinax/sap;
 
 # You can use these APIs to manage the information about payroll advances and the recovery of the advances.

@@ -2,7 +2,7 @@
 org = "ballerinax"
 name = "sap.successfactors.ecpersonalinformation"
 version = "1.1.0"
-distribution = "2201.12.0"
+distribution = "2201.13.0"
 authors = ["Ballerina"]
 keywords = ["Name/SAP Success Factors Personal Information", "Type/Connector", "Vendor/SAP", "Area/ERP & Business Operations", "Business Management/HCM", "Cost/Paid", "SuccessFactors", "Employee Central", "Personal Information"]
 repository = "https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral"

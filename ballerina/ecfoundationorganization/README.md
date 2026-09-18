@@ -15,21 +15,68 @@ WSO2 SAP Successfactors Ecfoundationorganization provides a way to interact with
 
 ## Setup guide
 
-1. Sign in to your SAP SuccessFactors instance as an administrator.
+This connector supports two authentication methods: **Basic Authentication** and **OAuth 2.0 SAML Bearer**.
 
-2. Navigate to **Admin Center** > **Manage OAuth2 Client Applications** and register a new OAuth2 client application
-   for your integration.
+### Method 1: Basic Authentication
 
-   ![Register OAuth2 App](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-1-register-oauth.png)
+Use your existing SAP SuccessFactors username and password - no additional registration is required.
 
-3. Note down the **API Key** (client ID) and configure the appropriate scopes for the Employee Central APIs you intend
-   to use.
+1. Sign in to your SAP SuccessFactors instance to confirm your username and password.
 
-4. Locate your **Company ID** and the API server hostname for your SuccessFactors region. You can find the list of API
-   servers in the
+2. Locate your API server hostname for your SuccessFactors region. You can find the list of API servers in the
    [SAP SuccessFactors API documentation](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/LATEST/en-US/af2b8d5437494b12be88fe374eba75b6.html).
 
-5. Use **Basic Authentication** (username + password) or **OAuth 2.0 SAML Bearer** to authenticate with the API.
+You now have everything you need: your username, password, and hostname.
+
+### Method 2: OAuth 2.0 SAML Bearer
+
+#### Prerequisites
+
+- Administrator access to your SAP SuccessFactors instance's Admin Center.
+- An RSA key pair and a matching X.509 certificate. If you don't already have one, generate a self-signed pair with
+  OpenSSL:
+
+  ```sh
+  openssl req -x509 -newkey rsa:2048 -keyout private_key.pem -out certificate.pem -days 365 -nodes -subj "/CN=YourAppName"
+  ```
+
+  `private_key.pem` is secret - it never leaves your machine or gets uploaded anywhere. Only `certificate.pem` is
+  registered with SAP.
+
+#### Step 1: Register an OAuth2 client application
+
+1. Sign in to your SAP SuccessFactors instance as an administrator.
+
+2. Search for **Manage OAuth2 Client Applications** in Admin Center's action search, or navigate to it directly under
+   **Admin Center** > **Company Settings**.
+
+   ![Search for Manage OAuth2 Client Applications](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-2-search-oauth-action.png)
+
+3. Choose **Register Client Application** and provide the following information:
+
+   | Field | Description |
+   |-------|-------------|
+   | Application Name | A name to identify this integration |
+   | Description | An optional description |
+   | X.509 Certificate | The contents of `certificate.pem` as a single continuous base64 string, with the `-----BEGIN CERTIFICATE-----` / `-----END CERTIFICATE-----` lines and line breaks removed |
+
+4. Choose **Register** to save the application.
+
+#### Step 2: Note your credentials
+
+After registering, open the application (choose **View** from the application list) to find the **Company ID** and
+the **API Key** SAP assigned to it.
+
+![View a registered OAuth2 client application](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/main/docs/setup/sf-3-saml-view-app.png)
+
+You now have everything `sap:SamlBearerAuthConfig` needs:
+
+- **apiKey** - the API Key from the application you just registered
+- **companyId** - the Company ID shown on the same screen
+- **username** - the SAP user to authenticate as
+- **privateKey** - the path to your `private_key.pem` file
+- **certificate** - the path to your `certificate.pem` file, or its content
+- **tokenUrl** - your Admin Center's OAuth2 token endpoint, typically `https://<admin-center-host>/oauth/token`
 
 ## Quickstart
 

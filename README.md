@@ -1,7 +1,6 @@
 # Ballerina SAP SuccessFactors Employee Central Connectors
 
 [![Build](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/branch/main/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral.svg)](https://github.com/ballerina-platform/module-ballerinax-sap.successfactors.employeecentral/commits/main)
 [![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/successfactors.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%2Fsuccessfactors)
 

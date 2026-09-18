@@ -11,7 +11,6 @@ WSO2 SAP Successfactors Ecemployeecentralpayroll provides a way to interact with
 - Access Employee Central Payroll run results and data
 - Query payroll processing records and pay slip information
 - Retrieve payroll simulation and calculation results
-- Support for basic and OAuth 2.0 authentication
 
 ## Setup guide
 
@@ -19,31 +18,34 @@ This connector supports two authentication methods: **Basic Authentication** and
 
 ### Method 1: Basic Authentication
 
-Use your existing SAP SuccessFactors username and password - no additional registration is required.
+If you already have a username and password for this integration to work, you can use those directly. If you'd
+rather create a new account with narrowed scope for this integration, follow these steps:
 
-1. Sign in to your SAP SuccessFactors instance to confirm your username and password.
+1. Sign in to your SAP SuccessFactors instance as an administrator.
+2. Navigate to **Admin Center** > **Add New Employee** and create a new user account for this integration.
+3. Navigate to **Admin Center** > **Manage Permission Roles**, create a role scoped to only the permissions this
+   integration needs, and grant it to the new user.
+4. Navigate to **Admin Center** > **Reset User Password** and set a password for the new user account.
 
-2. Locate your API server hostname for your SuccessFactors region. You can find the list of API servers in the
-   [SAP SuccessFactors API documentation](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/LATEST/en-US/af2b8d5437494b12be88fe374eba75b6.html).
-
-You now have everything you need: your username, password, and hostname.
+Either way, you'll also need your API server hostname for your SuccessFactors region - you can find the list of API
+servers in the
+[SAP SuccessFactors API documentation](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/LATEST/en-US/af2b8d5437494b12be88fe374eba75b6.html).
 
 ### Method 2: OAuth 2.0 SAML Bearer
 
-#### Prerequisites
+#### Step 1: Generate a key pair and certificate
 
-- Administrator access to your SAP SuccessFactors instance's Admin Center.
-- An RSA key pair and a matching X.509 certificate. If you don't already have one, generate a self-signed pair with
-  OpenSSL:
+1. Generate an RSA key pair and a matching X.509 certificate. If you don't already have one, generate a self-signed
+   pair with OpenSSL:
 
-  ```sh
-  openssl req -x509 -newkey rsa:2048 -keyout private_key.pem -out certificate.pem -days 365 -nodes -subj "/CN=YourAppName"
-  ```
+   ```sh
+   openssl req -x509 -newkey rsa:2048 -keyout private_key.pem -out certificate.pem -days 365 -nodes -subj "/CN=YourAppName"
+   ```
 
-  `private_key.pem` is secret - it never leaves your machine or gets uploaded anywhere. Only `certificate.pem` is
-  registered with SAP.
+   `private_key.pem` is secret - it never leaves your machine or gets uploaded anywhere. Only `certificate.pem` is
+   registered with SAP.
 
-#### Step 1: Register an OAuth2 client application
+#### Step 2: Register an OAuth2 client application
 
 1. Sign in to your SAP SuccessFactors instance as an administrator.
 
@@ -58,11 +60,11 @@ You now have everything you need: your username, password, and hostname.
    |-------|-------------|
    | Application Name | A name to identify this integration |
    | Description | An optional description |
-   | X.509 Certificate | The contents of `certificate.pem` as a single continuous base64 string, with the `-----BEGIN CERTIFICATE-----` / `-----END CERTIFICATE-----` lines and line breaks removed |
+   | X.509 Certificate | The contents of `certificate.pem` as a single continuous base64 string, with the `-----BEGIN CERTIFICATE-----` / `-----END CERTIFICATE-----` lines and line breaks removed. Produce this with `awk '/BEGIN CERTIFICATE/{flag=1;next}/END CERTIFICATE/{flag=0}flag' certificate.pem \| tr -d '\n'` and paste the single line of output it prints. |
 
 4. Choose **Register** to save the application.
 
-#### Step 2: Note your credentials
+#### Step 3: Note your credentials
 
 After registering, open the application (choose **View** from the application list) to find the **Company ID** and
 the **API Key** SAP assigned to it.

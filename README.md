@@ -10,74 +10,85 @@ for HR processes including employee data management, organizational structures, 
 
 This repository encompasses all Ballerina packages pertaining to the SAP SuccessFactors Employee Central module. Notably:
 
-1. WSO2 SAP Successfactors Ecadvances provides a way to interact with the SAP SuccessFactors Employee Central
-   Advances APIs.
+1. [SAP SuccessFactors Employee Central Advances](ballerina/ecadvances) provides a way to interact with the
+   [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-2. WSO2 SAP Successfactors Ecalternativecostdistribution provides a way to interact with the [SAP SuccessFactors Alternative Cost Distribution API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+2. [SAP SuccessFactors Employee Central Alternative Cost Distribution](ballerina/ecalternativecostdistribution)
+   provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to manage employee cost distribution across multiple cost centers and organizational units.
 
-3. WSO2 SAP Successfactors Ecapprenticemanagement provides a way to interact with the [SAP SuccessFactors Apprentice Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+3. [SAP SuccessFactors Employee Central Apprentice Management](ballerina/ecapprenticemanagement) provides a way to
+   interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to manage apprenticeship programs, track apprentice progress, and maintain apprentice-related
    information.
 
-4. WSO2 SAP Successfactors Eccompensationinformation provides a way to interact with the [SAP SuccessFactors Compensation Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+4. [SAP SuccessFactors Employee Central Compensation Information](ballerina/eccompensationinformation) provides a way
+   to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to manage employee compensation data, salary information, and pay components.
 
-5. WSO2 SAP Successfactors Ecdismissalprotection provides a way to interact with the [SAP SuccessFactors Dismissal Protection API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+5. [SAP SuccessFactors Employee Central Dismissal Protection](ballerina/ecdismissalprotection) provides a way to
+   interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to manage dismissal protection information for employees, ensuring compliance with labor laws and
    regulations.
 
-6. WSO2 SAP Successfactors Ecemployeecentralpayroll provides a way to interact with the SAP
-   SuccessFactors Employee Central Payroll APIs.
+6. [SAP SuccessFactors Employee Central Payroll](ballerina/ecemployeecentralpayroll) provides a way to interact with
+   the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-7. WSO2 SAP Successfactors Ecemployeeprofile provides a way to interact with the [SAP SuccessFactors Employee Profile API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+7. [SAP SuccessFactors Employee Central Employee Profile](ballerina/ecemployeeprofile) provides a way to interact
+   with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to maintain the general background information of an employee, including education and outside
    work experiences.
 
-8. WSO2 SAP Successfactors Ecemploymentinformation provides a way to interact with the [SAP SuccessFactors Employment Information API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/d91ecc323849441cb2773fc86f0eff0f.html).
+8. [SAP SuccessFactors Employee Central Employment Information](ballerina/ecemploymentinformation) provides a way to
+   interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
    The service allows to access employment related information, including job information, employment termination, and
    work permit.
 
-9. WSO2 SAP Successfactors Ecfoundationorganization provides a way to interact with the SAP
-   SuccessFactors Employee Central Foundation Organization APIs.
+9. [SAP SuccessFactors Employee Central Foundation Organization](ballerina/ecfoundationorganization) provides a way
+   to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-10. WSO2 SAP Successfactors Ecglobalassignment provides a way to interact with the SAP
-    SuccessFactors Employee Central Global Assignment APIs.
+10. [SAP SuccessFactors Employee Central Global Assignment](ballerina/ecglobalassignment) provides a way to interact
+    with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-11. WSO2 SAP Successfactors Ecglobalbenefits provides a way to interact with the SAP SuccessFactors
-    Employee Central Global Benefits APIs.
+11. [SAP SuccessFactors Employee Central Global Benefits](ballerina/ecglobalbenefits) provides a way to interact with
+    the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-12. WSO2 SAP Successfactors Ecincometaxdeclaration provides a way to interact with the SAP
-    SuccessFactors Employee Central Income Tax Declaration APIs.
+12. [SAP SuccessFactors Employee Central Income Tax Declaration](ballerina/ecincometaxdeclaration) provides a way to
+    interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-13. WSO2 SAP Successfactors Ecmasterdatareplication provides a way to interact with the [SAP SuccessFactors Master Data Replication API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+13. [SAP SuccessFactors Employee Central Master Data Replication](ballerina/ecmasterdatareplication) provides a way
+    to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service allows to replicate and synchronize employee master data across different systems and maintain data
     consistency.
 
-14. WSO2 SAP Successfactors Ecpaymentinformation provides a way to interact with the SAP
-    SuccessFactors Employee Central Payment Information APIs.
+14. [SAP SuccessFactors Employee Central Payment Information](ballerina/ecpaymentinformation) provides a way to
+    interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-15. WSO2 SAP Successfactors Ecpayrolltimesheets provides a way to interact with the [SAP SuccessFactors Payroll Time Sheets API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+15. [SAP SuccessFactors Employee Central Payroll Time Sheets](ballerina/ecpayrolltimesheets) provides a way to
+    interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service allows to manage employee time sheet data, working hours, and payroll-related time information.
 
-16. WSO2 SAP Successfactors Ecpersonalinformation provides a way to interact with the SAP
-    SuccessFactors Employee Central Personal Information APIs.
+16. [SAP SuccessFactors Employee Central Personal Information](ballerina/ecpersonalinformation) provides a way to
+    interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-17. WSO2 SAP Successfactors Ecpositionmanagement provides a way to interact with the [SAP SuccessFactors Position Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+17. [SAP SuccessFactors Employee Central Position Management](ballerina/ecpositionmanagement) provides a way to
+    interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service allows to manage organizational positions, position hierarchies, and position-related information.
 
-18. WSO2 SAP Successfactors Ecskillsmanagement provides a way to interact with the [SAP SuccessFactors Skills Management API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+18. [SAP SuccessFactors Employee Central Skills Management](ballerina/ecskillsmanagement) provides a way to interact
+    with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service allows to manage employee skills, competencies, job profiles, and skills-related assessments.
 
-19. WSO2 SAP Successfactors Ectimeoff provides a way to interact with the SAP SuccessFactors
-    Employee Central Time Off APIs.
+19. [SAP SuccessFactors Employee Central Time Off](ballerina/ectimeoff) provides a way to interact with the
+    [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
-20. WSO2 SAP Successfactors Ecworkflow provides a way to interact with the
-    [SAP SuccessFactors Workflow API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+20. [SAP SuccessFactors Employee Central Workflow](ballerina/ecworkflow) provides a way to interact with the
+    [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service allows to manage workflow processes, approvals, and workflow-related operations for employee
     transactions.
 
-21. WSO2 SAP Successfactors Employeecentralec provides a way to interact with the [SAP SuccessFactors Employee Central Core API v1.0](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/c508d8543026442d88457f3654b4e91d.html).
+21. [SAP SuccessFactors Employee Central Core](ballerina/employeecentralec) provides a way to interact with the
+    [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
     The service provides comprehensive access to core employee central functionalities and global employee information.
 
 ## Issues and projects

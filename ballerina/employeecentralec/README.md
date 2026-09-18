@@ -29,8 +29,8 @@ rather create a new account with narrowed scope for this integration, follow the
    integration needs, and grant it to the new user.
 4. Navigate to **Admin Center** > **Reset User Password** and set a password for the new user account.
 
-Either way, you'll also need your API server hostname for your SuccessFactors region - you can find the list of API
-servers in the
+In either case, you will also need the API server hostname for your SuccessFactors region, for example,
+`api12.successfactors.eu`. The complete list of API server hostnames by region is available in the
 [SAP SuccessFactors API documentation](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/LATEST/en-US/af2b8d5437494b12be88fe374eba75b6.html).
 
 ### Method 2: OAuth 2.0 SAML Bearer

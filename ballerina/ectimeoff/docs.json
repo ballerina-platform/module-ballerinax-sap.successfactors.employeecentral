@@ -1,5 +1,5 @@
 {
-  "description": "The `ballerinax/sap.successfactors.ectimeoff` package provides APIs to interact with the SAP SuccessFactors Employee Central Time Off API.",
+  "description": "WSO2 SAP Successfactors Ectimeoff provides a way to interact with the SAP SuccessFactors Employee Central Time Off APIs.",
   "communication-scenario": "Time Off Management",
   "import-statement": "import ballerinax/sap.successfactors.ectimeoff as timeoff;",
   "client-init": "timeoff:Client timeoffClient = check new (",
@@ -7,7 +7,6 @@
   "key-features": [
     "Manage time off and leave requests for employees",
     "Access time accounts, holiday calendars, and work schedules",
-    "Query time account posting rules and employee time records",
-    "Support for basic and OAuth 2.0 authentication"
+    "Query time account posting rules and employee time records"
   ]
 }

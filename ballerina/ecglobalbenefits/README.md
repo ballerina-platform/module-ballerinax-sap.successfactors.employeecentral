@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Ecglobalbenefits provides a way to interact with the SAP SuccessFactors Employee Central Global Benefits APIs.
+WSO2 SAP Successfactors Global Benefits provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
 ### Key Features
 

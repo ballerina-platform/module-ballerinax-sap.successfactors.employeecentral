@@ -1,5 +1,5 @@
 {
-  "description": "The `ballerinax/sap.successfactors.ecfoundationorganization` package provides APIs to interact with the SAP SuccessFactors Employee Central Foundation Organization API.",
+  "description": "WSO2 SAP Successfactors Foundation Organization provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Foundation Organization",
   "import-statement": "import ballerinax/sap.successfactors.ecfoundationorganization as foundationorganization;",
   "client-init": "foundationorganization:Client foundationorganizationClient = check new (",
@@ -7,7 +7,6 @@
   "key-features": [
     "Access foundation objects including legal entities and departments",
     "Manage divisions, job classifications, and cost centers",
-    "Query pay structures and organizational hierarchies",
-    "Support for basic and OAuth 2.0 authentication"
+    "Query pay structures and organizational hierarchies"
   ]
 }

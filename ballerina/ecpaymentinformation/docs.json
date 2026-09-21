@@ -1,5 +1,5 @@
 {
-  "description": "The `ballerinax/sap.successfactors.ecpaymentinformation` package provides APIs to interact with the SAP SuccessFactors Employee Central Payment Information API.",
+  "description": "WSO2 SAP Successfactors Payment Information provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Payment Information",
   "import-statement": "import ballerinax/sap.successfactors.ecpaymentinformation as paymentinformation;",
   "client-init": "paymentinformation:Client paymentinformationClient = check new (",
@@ -7,7 +7,6 @@
   "key-features": [
     "Manage employee payment information and bank accounts",
     "Configure payment methods and direct deposit details",
-    "Query payment information across multiple regions",
-    "Support for basic and OAuth 2.0 authentication"
+    "Query payment information across multiple regions"
   ]
 }

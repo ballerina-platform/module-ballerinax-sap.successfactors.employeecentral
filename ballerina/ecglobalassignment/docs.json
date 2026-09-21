@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecglobalassignment provides a way to interact with the SAP SuccessFactors Employee Central Global Assignment APIs.",
+  "description": "WSO2 SAP Successfactors Global Assignment provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Global Assignment Management",
   "import-statement": "import ballerinax/sap.successfactors.ecglobalassignment as globalassignment;",
   "client-init": "globalassignment:Client globalassignmentClient = check new (",

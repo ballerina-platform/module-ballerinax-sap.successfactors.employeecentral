@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecemployeecentralpayroll provides a way to interact with the SAP SuccessFactors Employee Central Employee Central Payroll APIs.",
+  "description": "WSO2 SAP Successfactors Employee Central Payroll provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Payroll Run Results",
   "import-statement": "import ballerinax/sap.successfactors.ecemployeecentralpayroll as employeentralpayroll;",
   "client-init": "employeentralpayroll:Client employeentralpayrollClient = check new (",

@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecglobalbenefits provides a way to interact with the SAP SuccessFactors Employee Central Global Benefits APIs.",
+  "description": "WSO2 SAP Successfactors Global Benefits provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Benefits Management",
   "import-statement": "import ballerinax/sap.successfactors.ecglobalbenefits as globalbenefits;",
   "client-init": "globalbenefits:Client globalbenefitsClient = check new (",

@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecpersonalinformation provides a way to interact with the SAP SuccessFactors Employee Central Personal Information APIs.",
+  "description": "WSO2 SAP Successfactors Personal Information provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Personal Information",
   "import-statement": "import ballerinax/sap.successfactors.ecpersonalinformation as personalinformation;",
   "client-init": "personalinformation:Client personalinformationClient = check new (",

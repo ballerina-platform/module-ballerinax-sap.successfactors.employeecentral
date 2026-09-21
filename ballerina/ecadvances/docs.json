@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecadvances provides a way to interact with the SAP SuccessFactors Employee Central Advances APIs.",
+  "description": "WSO2 SAP Successfactors Advances provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Advances Management",
   "import-statement": "import ballerinax/sap.successfactors.ecadvances as advances;",
   "client-init": "advances:Client advancesClient = check new (",

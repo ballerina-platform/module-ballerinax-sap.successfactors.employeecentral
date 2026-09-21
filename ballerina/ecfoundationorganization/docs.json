@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Ecfoundationorganization provides a way to interact with the SAP SuccessFactors Employee Central Foundation Organization APIs.",
+  "description": "WSO2 SAP Successfactors Foundation Organization provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).",
   "communication-scenario": "Foundation Organization",
   "import-statement": "import ballerinax/sap.successfactors.ecfoundationorganization as foundationorganization;",
   "client-init": "foundationorganization:Client foundationorganizationClient = check new (",

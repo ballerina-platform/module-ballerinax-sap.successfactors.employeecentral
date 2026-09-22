@@ -364,7 +364,7 @@ modules = [
 [[package]]
 org = "ballerinax"
 name = "sap.successfactors.eccompensationinformation"
-version = "1.1.0"
+version = "1.1.1"
 dependencies = [
 	{org = "ballerina", name = "constraint"},
 	{org = "ballerina", name = "http"},

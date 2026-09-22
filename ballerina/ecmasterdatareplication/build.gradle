@@ -53,9 +53,12 @@ ballerina {
 
 task updateTomlFiles {
     doLast {
-        def newBallerinaToml = ballerinaTomlFilePlaceHolder.text.replace("@package.name@", packageName)
-        newBallerinaToml = newBallerinaToml.replace("@toml.version@", moduleVersion)
-        ballerinaTomlFile.text = newBallerinaToml
+        // Bump the version in place; the rest of Ballerina.toml (keywords, Name/ tag,
+        // description, etc.) is hand-maintained per connector and must not be clobbered
+        // by the shared build-config/resources/Ballerina.toml template.
+        def tomlText = ballerinaTomlFile.text
+        tomlText = tomlText.replaceFirst(/(?m)^version\s*=\s*".*"$/, "version = \"${moduleVersion}\"")
+        ballerinaTomlFile.text = tomlText
     }
 }
 

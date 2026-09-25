@@ -174,7 +174,7 @@ public type ListEmpBeneficiariesQueries record {
     ("createdBy"|"createdDateTime"|"createdOn"|"endDate"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"payrollEndDate"|"personIdExternal"|"plannedEndDate"|"startDate"|"userId")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListEmpBeneficiariesResponse record {
     CollectionofEmpBeneficiary d?;
 };
 
@@ -330,7 +330,7 @@ public type HireDateChange record {
     string code?;
 };
 
-public type Wrapper_8 record {
+public type ListHireDateChangesResponse record {
     CollectionofHireDateChange d?;
 };
 
@@ -356,23 +356,23 @@ public type GetHireDateChangeQueries record {
     ("code"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"newHireDate"|"originalHireDate"|"processingStatus"|"usersSysId")[] \$select?;
 };
 
-public type Wrapper_4 record {
+public type ListEmpWorkPermitsResponse record {
     CollectionofEmpWorkPermit d?;
 };
 
-public type Wrapper_5 record {
+public type ListEmpJobRelationshipssResponse record {
     CollectionofEmpJobRelationships d?;
 };
 
-public type Wrapper_6 record {
+public type ListEmpJobsResponse record {
     CollectionofEmpJob d?;
 };
 
-public type Wrapper_7 record {
+public type ListPersonEmpTerminationInfosResponse record {
     CollectionofPersonEmpTerminationInfo d?;
 };
 
-public type Wrapper_1 record {
+public type ListEmpEmploymentsResponse record {
     CollectionofEmpEmployment d?;
 };
 
@@ -382,11 +382,11 @@ public type DeleteHireDateChangeHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_2 record {
+public type ListEmpEmploymentTerminationsResponse record {
     CollectionofEmpEmploymentTermination d?;
 };
 
-public type Wrapper_3 record {
+public type ListEmpPensionPayoutsResponse record {
     CollectionofEmpPensionPayout d?;
 };
 

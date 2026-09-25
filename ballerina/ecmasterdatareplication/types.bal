@@ -41,7 +41,7 @@ public type EmployeeDataReplicationConfirmationErrorMessage_1 record {
     EmployeeDataReplicationConfirmationErrorMessage d?;
 };
 
-public type Wrapper_1 record {
+public type ListEmployeeDataReplicationElementsResponse record {
     CollectionofEmployeeDataReplicationElement d?;
 };
 
@@ -57,11 +57,11 @@ public type EmployeeDataReplicationElement_1 record {
     EmployeeDataReplicationElement d?;
 };
 
-public type Wrapper_2 record {
+public type ListEmployeeDataReplicationNotificationsResponse record {
     CollectionofEmployeeDataReplicationNotification d?;
 };
 
-public type Wrapper_3 record {
+public type ListEmployeeDataReplicationConfirmationsResponse record {
     CollectionofEmployeeDataReplicationConfirmation d?;
 };
 
@@ -120,7 +120,7 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type Wrapper record {
+public type ListEmployeeDataReplicationConfirmationErrorMessagesResponse record {
     CollectionofEmployeeDataReplicationConfirmationErrorMessage d?;
 };
 

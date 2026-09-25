@@ -20,7 +20,7 @@
 import ballerina/http;
 import ballerinax/sap;
 
-public type ModifiedEmployee\ Time\ AUS record {
+public type UpdateEmployeeTimeAUSPayload record {
     EmployeeTimeAUS d?;
 };
 
@@ -48,7 +48,7 @@ public type RelatedCollectionSFOData_TimeManagementTerminationEndHandlingExclude
     TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
 };
 
-public type Work\ Schedule\ Day\ Model\ Variant\ Identifier record {
+public type GetWorkScheduleDayModelVariantIdentifierResponse record {
     WorkScheduleDayModelVariantIdentifier d?;
 };
 
@@ -58,7 +58,7 @@ public type GetPeriodicTimeAccountUpdateProfileQueries record {
     ("automationLevel"|"country"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"frequencyQuantity"|"frequencyUnit"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"offsetInDays"|"referenceDate"|"updateRule")[] \$select?;
 };
 
-public type CreatedEmployee\ Time\ SWE record {
+public type CreateEmployeeTimeSWEResponse record {
     EmployeeTimeSWE d?;
 };
 
@@ -71,12 +71,12 @@ public type AbsenceCountingMethod record {
     string externalCode?;
 };
 
-public type CollectionofTime\ Management\ Termination\ End\ Handling\ Exclusion record {
+public type CollectionofTimeManagementTerminationEndHandlingExclusion record {
     TimeManagementTerminationEndHandlingExclusion[] results?;
 };
 
-public type Wrapper_19 record {
-    CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type d?;
+public type ListTimeManagementTerminationEndHandlingExcludedTimeAccountTypesResponse record {
+    CollectionofTimeManagementTerminationEndHandlingExcludedTimeAccountType d?;
 };
 
 # Represents the Queries record for the operation: getWorkScheduleDayModelAssignmentSegment
@@ -85,40 +85,40 @@ public type GetWorkScheduleDayModelAssignmentSegmentQueries record {
     ("WorkScheduleDayModelAssignment_day"|"WorkSchedule_externalCode"|"category"|"createdBy"|"createdDate"|"createdDateTime"|"duration"|"endTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"startTime")[] \$select?;
 };
 
-public type CollectionofHoliday\ Assignment record {
+public type CollectionofHolidayAssignment record {
     HolidayAssignment[] results?;
 };
 
-public type Wrapper_17 record {
-    CollectionofWork\ Schedule\ Day d?;
+public type ListWorkScheduleDaysResponse record {
+    CollectionofWorkScheduleDay d?;
 };
 
-public type Wrapper_18 record {
-    CollectionofHoliday\ Calendar d?;
+public type ListHolidayCalendarsResponse record {
+    CollectionofHolidayCalendar d?;
 };
 
 public type ElectronicSicknessCertificateExclusionReasonDEU record {
     string externalCode?;
 };
 
-public type Wrapper_15 record {
-    CollectionofAbsence\ Counting\ Method d?;
+public type ListAbsenceCountingMethodsResponse record {
+    CollectionofAbsenceCountingMethod d?;
 };
 
-public type Wrapper_16 record {
-    CollectionofShift\ Classification d?;
+public type ListShiftClassificationsResponse record {
+    CollectionofShiftClassification d?;
 };
 
-public type Wrapper_13 record {
-    CollectionofTime\ Type\ NOR d?;
+public type ListTimeTypeNORsResponse record {
+    CollectionofTimeTypeNOR d?;
 };
 
-public type Wrapper_14 record {
-    CollectionofTime\ Type\ ITA d?;
+public type ListTimeTypeITAsResponse record {
+    CollectionofTimeTypeITA d?;
 };
 
-public type Wrapper_11 record {
-    CollectionofTime\ Type\ NLD d?;
+public type ListTimeTypeNLDsResponse record {
+    CollectionofTimeTypeNLD d?;
 };
 
 # Represents the Queries record for the operation: listTimeTypeUSAs
@@ -139,15 +139,15 @@ public type ListTimeTypeUSAsQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"durationOfDisabilityPeriodOne"|"durationOfDisabilityPeriodThree"|"durationOfDisabilityPeriodTwo"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"sicknessVariant")[] \$select?;
 };
 
-public type Wrapper_12 record {
-    CollectionofTime\ Type\ SWE d?;
+public type ListTimeTypeSWEsResponse record {
+    CollectionofTimeTypeSWE d?;
 };
 
-public type CreatedEmployee\ Time\ NLD record {
+public type CreateEmployeeTimeNLDResponse record {
     EmployeeTimeNLD d?;
 };
 
-public type CollectionofTime\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment record {
+public type CollectionofTimeAccountPurchaseProfilePayComponentAssignment record {
     TimeAccountPurchaseProfilePayComponentAssignment[] results?;
 };
 
@@ -177,7 +177,7 @@ public type WorkScheduleDayModelAssignmentSegment record {
     string externalCode?;
 };
 
-public type ModifiedWork\ Schedule\ Day record {
+public type UpdateWorkScheduleDayPayload record {
     WorkScheduleDay d?;
 };
 
@@ -194,7 +194,7 @@ public type GetAvailableTimeTypeQueries record {
     ("TimeTypeProfile_externalCode"|"TimeTypeProfile_mdfSystemEffectiveStartDate"|"copyableInTimesheet"|"createdBy"|"createdDate"|"createdDateTime"|"enabledInEssScenario"|"entityUUID"|"externalCode"|"favoriteTimeType"|"hideAccountBalance"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"timeType"|"timeTypeFilterRule")[] \$select?;
 };
 
-public type CollectionofTime\ Account\ Type\ AUS record {
+public type CollectionofTimeAccountTypeAUS record {
     TimeAccountTypeAUS[] results?;
 };
 
@@ -224,15 +224,15 @@ public type DeleteWorkScheduleDayHeaders record {
     string If\-Match?;
 };
 
-public type CollectionofEmployee\ Time\ USA record {
+public type CollectionofEmployeeTimeUSA record {
     EmployeeTimeUSA[] results?;
 };
 
-public type CreatedWork\ Schedule\ Day\ Model\ Assignment record {
+public type CreateWorkScheduleDayModelAssignmentResponse record {
     WorkScheduleDayModelAssignment d?;
 };
 
-public type CreatedEmployee\ Time\ POL record {
+public type CreateEmployeeTimePOLResponse record {
     EmployeeTimePOL d?;
 };
 
@@ -276,11 +276,11 @@ public type TemporaryTimeInformation record {
     WorkSchedule workScheduleNav?;
 };
 
-public type ModifiedEmployee\ Time\ NOR record {
+public type UpdateEmployeeTimeNORPayload record {
     EmployeeTimeNOR d?;
 };
 
-public type CollectionofTime\ Type\ Profile record {
+public type CollectionofTimeTypeProfile record {
     TimeTypeProfile[] results?;
 };
 
@@ -337,7 +337,7 @@ public type GetEmployeeTimeAUSQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"cust_WorkflowField1"|"cust_WorkflowField2"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"requestAdvanceLeavePayment"|"splitPaymentAcrossFinancialYear")[] \$select?;
 };
 
-public type CreatedWork\ Schedule\ Day\ Model record {
+public type CreateWorkScheduleDayModelResponse record {
     WorkScheduleDayModel d?;
 };
 
@@ -359,7 +359,7 @@ public type ListPeriodicTimeAccountUpdateProfilesQueries record {
     ("automationLevel"|"country"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"frequencyQuantity"|"frequencyUnit"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"offsetInDays"|"referenceDate"|"updateRule")[] \$select?;
 };
 
-public type Holiday\ Calendar record {
+public type GetHolidayCalendarResponse record {
     HolidayCalendar d?;
 };
 
@@ -369,63 +369,63 @@ public type DeleteWorkScheduleDayModelHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_48 record {
-    CollectionofEmployee\ Time\ CAN d?;
+public type ListEmployeeTimeCANsResponse record {
+    CollectionofEmployeeTimeCAN d?;
 };
 
-public type Wrapper_49 record {
-    CollectionofTime\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration d?;
+public type ListTimeManagementTerminationEndHandlingLegalEntityConfigurationsResponse record {
+    CollectionofTimeManagementTerminationEndHandlingLegalEntityConfiguration d?;
 };
 
-public type Wrapper_46 record {
-    CollectionofEmployee\ Time\ NOR d?;
+public type ListEmployeeTimeNORsResponse record {
+    CollectionofEmployeeTimeNOR d?;
 };
 
-public type ModifiedEmployee\ Time\ POL record {
+public type UpdateEmployeeTimePOLPayload record {
     EmployeeTimePOL d?;
 };
 
-public type Wrapper_47 record {
-    CollectionofEmployee\ Time\ ITA d?;
+public type ListEmployeeTimeITAsResponse record {
+    CollectionofEmployeeTimeITA d?;
 };
 
-public type Wrapper_44 record {
-    CollectionofEmployee\ Time\ NLD d?;
+public type ListEmployeeTimeNLDsResponse record {
+    CollectionofEmployeeTimeNLD d?;
 };
 
-public type Wrapper_45 record {
-    CollectionofEmployee\ Time\ SWE d?;
+public type ListEmployeeTimeSWEsResponse record {
+    CollectionofEmployeeTimeSWE d?;
 };
 
-public type Wrapper_42 record {
-    CollectionofEmployee\ Time\ Account\ Balance d?;
+public type ListEmpTimeAccountBalancesResponse record {
+    CollectionofEmpTimeAccountBalance d?;
 };
 
-public type Wrapper_40 record {
-    CollectionofWork\ Schedule\ Day\ Model d?;
+public type ListWorkScheduleDayModelsResponse record {
+    CollectionofWorkScheduleDayModel d?;
 };
 
-public type Shift\ Classification record {
+public type GetShiftClassificationResponse record {
     ShiftClassification d?;
 };
 
-public type Wrapper_41 record {
-    CollectionofTime\ Account\ Snapshot d?;
+public type ListTimeAccountSnapshotsResponse record {
+    CollectionofTimeAccountSnapshot d?;
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDayModelAssignment record {
     WorkScheduleDayModelAssignment[] results?;
 };
 
-public type CollectionofAccrual\ Calculation\ Base record {
+public type CollectionofAccrualCalculationBase record {
     AccrualCalculationBase[] results?;
 };
 
-public type Employee\ Time\ CAN record {
+public type GetEmployeeTimeCANResponse record {
     EmployeeTimeCAN d?;
 };
 
-public type Temporary\ Time\ Information record {
+public type GetTemporaryTimeInformationResponse record {
     TemporaryTimeInformation d?;
 };
 
@@ -450,7 +450,7 @@ public type GetEmployeeTimeESPQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"cust_ESP"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"originalAbsence")[] \$select?;
 };
 
-public type Time\ Account\ Posting\ Rule record {
+public type GetTimeAccountPostingRuleResponse record {
     TimeAccountPostingRule d?;
 };
 
@@ -472,32 +472,32 @@ public type ListTimeAccountPayoutsQueries record {
     ("accountType"|"accrualSeparated"|"approvalStatus"|"createdBy"|"createdDateTime"|"currency"|"customRate"|"entityId"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payComponentId"|"payoutScenario"|"postingDate"|"quantity"|"rateCategory"|"standardRate"|"timeAccount"|"timeAccountDetail"|"totalAmount"|"unit"|"userId"|"workflowRequestId")[] \$select?;
 };
 
-public type Wrapper_59 record {
+public type ListHolidaysResponse record {
     CollectionofHoliday d?;
 };
 
-public type Wrapper_57 record {
-    CollectionofWork\ Schedule\ Day\ Model\ Segment d?;
+public type ListWorkScheduleDayModelSegmentsResponse record {
+    CollectionofWorkScheduleDayModelSegment d?;
 };
 
-public type Wrapper_58 record {
-    CollectionofRecalculation\ Based\ Field d?;
+public type ListRecalculationBasedFieldsResponse record {
+    CollectionofRecalculationBasedField d?;
 };
 
-public type Wrapper_55 record {
-    CollectionofWork\ Schedule d?;
+public type ListWorkSchedulesResponse record {
+    CollectionofWorkSchedule d?;
 };
 
-public type Wrapper_56 record {
-    CollectionofEmployee\ Time\ AUS d?;
+public type ListEmployeeTimeAUSsResponse record {
+    CollectionofEmployeeTimeAUS d?;
 };
 
-public type Employee\ Time\ Account\ Balance record {
+public type GetEmpTimeAccountBalanceResponse record {
     EmpTimeAccountBalance d?;
 };
 
-public type Wrapper_53 record {
-    CollectionofPeriodic\ Time\ Account\ Update\ Profile d?;
+public type ListPeriodicTimeAccountUpdateProfilesResponse record {
+    CollectionofPeriodicTimeAccountUpdateProfile d?;
 };
 
 public type EmployeeTimeESP record {
@@ -506,12 +506,12 @@ public type EmployeeTimeESP record {
     EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
-public type Wrapper_54 record {
-    CollectionofAvailable\ Time\ Type d?;
+public type ListAvailableTimeTypesResponse record {
+    CollectionofAvailableTimeType d?;
 };
 
-public type Wrapper_51 record {
-    CollectionofTime\ Account\ Payout\ Profile d?;
+public type ListTimeAccountPayoutProfilesResponse record {
+    CollectionofTimeAccountPayoutProfile d?;
 };
 
 public type EmployeeTimeCOL record {
@@ -520,8 +520,8 @@ public type EmployeeTimeCOL record {
     EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
-public type Wrapper_52 record {
-    CollectionofTime\ Account\ Type\ AUS d?;
+public type ListTimeAccountTypeAUSsResponse record {
+    CollectionofTimeAccountTypeAUS d?;
 };
 
 # Represents the Queries record for the operation: listWorkScheduleDayModelAssignments
@@ -548,8 +548,8 @@ public type RelatedCollectionSFOData_TimeManagementTerminationEndHandlingLegalEn
     TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
 };
 
-public type Wrapper_50 record {
-    CollectionofEmployee\ Time\ POL d?;
+public type ListEmployeeTimePOLsResponse record {
+    CollectionofEmployeeTimePOL d?;
 };
 
 # Represents the Queries record for the operation: getTimeManagementTerminationEndHandlingLegalEntityConfiguration
@@ -576,24 +576,24 @@ public type TimeManagementTerminationEndHandlingExcludedEventReason record {
     string externalCode?;
 };
 
-public type ModifiedAccrual\ Calculation\ Base record {
+public type UpdateAccrualCalculationBasePayload record {
     AccrualCalculationBase d?;
 };
 
-public type Wrapper_29 record {
-    CollectionofTime\ Account\ Type d?;
+public type ListTimeAccountTypesResponse record {
+    CollectionofTimeAccountType d?;
 };
 
-public type Wrapper_26 record {
+public type ListHolidayCategorysResponse record {
     CollectionofHolidayCategory d?;
 };
 
-public type CollectionofTime\ Type\ USA record {
+public type CollectionofTimeTypeUSA record {
     TimeTypeUSA[] results?;
 };
 
-public type Wrapper_27 record {
-    CollectionofElectronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU d?;
+public type ListElectronicSicknessCertificateExclusionReasonDEUsResponse record {
+    CollectionofElectronicSicknessCertificateExclusionReasonDEU d?;
 };
 
 # Represents the Queries record for the operation: getTimeAccountTypeAUS
@@ -610,12 +610,12 @@ public type GetTimeManagementTerminationEndHandlingExcludedTimeAccountTypeQuerie
     ("TimeManagementTerminationEndHandlingExclusion_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"timeAccountType")[] \$select?;
 };
 
-public type Wrapper_25 record {
-    CollectionofTime\ Management\ Termination\ End\ Handling\ Configuration d?;
+public type ListTimeManagementTerminationEndHandlingConfigurationsResponse record {
+    CollectionofTimeManagementTerminationEndHandlingConfiguration d?;
 };
 
-public type Wrapper_22 record {
-    CollectionofWork\ Schedule\ Day\ Model\ Assignment\ Segment d?;
+public type ListWorkScheduleDayModelAssignmentSegmentsResponse record {
+    CollectionofWorkScheduleDayModelAssignmentSegment d?;
 };
 
 # Represents the Headers record for the operation: deleteEmployeeTimeMEX
@@ -624,11 +624,11 @@ public type DeleteEmployeeTimeMEXHeaders record {
     string If\-Match?;
 };
 
-public type CollectionofTime\ Management\ Termination\ End\ Handling\ Configuration record {
+public type CollectionofTimeManagementTerminationEndHandlingConfiguration record {
     TimeManagementTerminationEndHandlingConfiguration[] results?;
 };
 
-public type Work\ Schedule\ Day\ Model\ Segment record {
+public type GetWorkScheduleDayModelSegmentResponse record {
     WorkScheduleDayModelSegment d?;
 };
 
@@ -638,7 +638,7 @@ public type GetTimeTypeDEUQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"electronicSicknessCertificateExclusionReasonAllowed"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"withoutSickPayDates")[] \$select?;
 };
 
-public type ModifiedEmployee\ Time\ SWE record {
+public type UpdateEmployeeTimeSWEPayload record {
     EmployeeTimeSWE d?;
 };
 
@@ -646,11 +646,11 @@ public type CollectionofHoliday record {
     Holiday[] results?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model\ Assignment record {
+public type CollectionofWorkScheduleDayModelAssignment record {
     WorkScheduleDayModelAssignment[] results?;
 };
 
-public type Work\ Schedule\ Day\ Model record {
+public type GetWorkScheduleDayModelResponse record {
     WorkScheduleDayModel d?;
 };
 
@@ -659,7 +659,7 @@ public type TimeAccountTypeAUS record {
     string externalCode?;
 };
 
-public type Work\ Schedule\ Day record {
+public type GetWorkScheduleDayResponse record {
     WorkScheduleDay d?;
 };
 
@@ -667,48 +667,48 @@ public type RelatedCollectionSFOData_WorkScheduleDayModelSegment record {
     WorkScheduleDayModelSegment[] results?;
 };
 
-public type Wrapper_37 record {
-    CollectionofTime\ Type d?;
+public type ListTimeTypesResponse record {
+    CollectionofTimeType d?;
 };
 
-public type Wrapper_38 record {
-    CollectionofTime\ Management\ Termination\ End\ Handling\ Exclusion d?;
+public type ListTimeManagementTerminationEndHandlingExclusionsResponse record {
+    CollectionofTimeManagementTerminationEndHandlingExclusion d?;
 };
 
 public type RelatedCollectionSFOData_WorkScheduleDay record {
     WorkScheduleDay[] results?;
 };
 
-public type Wrapper_36 record {
-    CollectionofTime\ Type\ DEU d?;
+public type ListTimeTypeDEUsResponse record {
+    CollectionofTimeTypeDEU d?;
 };
 
-public type Wrapper_33 record {
-    CollectionofTemporary\ Time\ Information d?;
+public type ListTemporaryTimeInformationsResponse record {
+    CollectionofTemporaryTimeInformation d?;
 };
 
-public type Wrapper_34 record {
-    CollectionofTime\ Type\ Profile d?;
+public type ListTimeTypeProfilesResponse record {
+    CollectionofTimeTypeProfile d?;
 };
 
-public type Wrapper_31 record {
-    CollectionofEmployee\ Time\ USA d?;
+public type ListEmployeeTimeUSAsResponse record {
+    CollectionofEmployeeTimeUSA d?;
 };
 
-public type Recalculation\ Based\ Field record {
+public type GetRecalculationBasedFieldResponse record {
     RecalculationBasedField d?;
 };
 
-public type Wrapper_32 record {
-    CollectionofTime\ Type\ USA d?;
+public type ListTimeTypeUSAsResponse record {
+    CollectionofTimeTypeUSA d?;
 };
 
-public type CreatedWork\ Schedule\ Day record {
+public type CreateWorkScheduleDayResponse record {
     WorkScheduleDay d?;
 };
 
-public type Wrapper_30 record {
-    CollectionofAccrual\ Calculation\ Base d?;
+public type ListAccrualCalculationBasesResponse record {
+    CollectionofAccrualCalculationBase d?;
 };
 
 # Represents the Queries record for the operation: getAccrualCalculationBase
@@ -725,11 +725,11 @@ public type GetEmployeeTimeGroupItemQueries record {
     ("EmployeeTimeGroup_externalCode"|"comment"|"createdBy"|"createdDate"|"createdDateTime"|"employeeTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Work\ Schedule record {
+public type GetWorkScheduleResponse record {
     WorkSchedule d?;
 };
 
-public type ModifiedEmployee\ Time\ NLD record {
+public type UpdateEmployeeTimeNLDPayload record {
     EmployeeTimeNLD d?;
 };
 
@@ -759,15 +759,15 @@ public type ListTimeManagementTerminationEndHandlingExcludedEventReasonsQueries 
     ("TimeManagementTerminationEndHandlingExclusion_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"eventReason"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Time\ Type\ USA record {
+public type GetTimeTypeUSAResponse record {
     TimeTypeUSA d?;
 };
 
-public type CollectionofEmployee\ Time\ NOR record {
+public type CollectionofEmployeeTimeNOR record {
     EmployeeTimeNOR[] results?;
 };
 
-public type Time\ Type record {
+public type GetTimeTypeResponse record {
     TimeType d?;
 };
 
@@ -801,7 +801,7 @@ public type GetEmpTimeAccountBalanceQueries record {
     ("accountClosed"|"balance"|"timeAccount"|"timeAccountType"|"timeUnit"|"userId")[] \$select?;
 };
 
-public type CreatedEmployee\ Time\ USA record {
+public type CreateEmployeeTimeUSAResponse record {
     EmployeeTimeUSA d?;
 };
 
@@ -883,7 +883,7 @@ public type ListEmployeeTimesQueries record {
     ("absenceDurationCategory"|"approvalStatus"|"cancellationWorkflowRequestId"|"comment"|"createdBy"|"createdDate"|"createdDateTime"|"deductionQuantity"|"displayQuantity"|"editable"|"endDate"|"endTime"|"entityUUID"|"externalCode"|"flexibleRequesting"|"fractionQuantity"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"loaActualReturnDate"|"loaEndJobInfoId"|"loaExpectedReturnDate"|"loaStartJobInfoId"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"originalQuantityInDays"|"physicalEndDate"|"physicalStartDate"|"quantityInDays"|"quantityInHours"|"recurrenceGroup"|"startDate"|"startTime"|"timeRecordOrigin"|"timeType"|"undeterminedEndDate"|"userId"|"workflowInitiatedByAdmin"|"workflowRequestId")[] \$select?;
 };
 
-public type CollectionofAvailable\ Time\ Type record {
+public type CollectionofAvailableTimeType record {
     AvailableTimeType[] results?;
 };
 
@@ -895,7 +895,7 @@ public type GetTimeManagementAlertQueries record {
     ("adminAlertStatus"|"assigneeUserId"|"category"|"concatenatedMessage"|"createdBy"|"createdDateTime"|"date"|"encodedUserId"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"severity"|"severityName"|"status"|"targetId"|"targetType")[] \$select?;
 };
 
-public type CollectionofTime\ Account\ Payout\ Profile record {
+public type CollectionofTimeAccountPayoutProfile record {
     TimeAccountPayoutProfile[] results?;
 };
 
@@ -905,7 +905,7 @@ public type GetHolidayCategoryQueries record {
     ("createdBy"|"createdDateTime"|"description_ar_SA"|"description_cy_GB"|"description_de_DE"|"description_defaultValue"|"description_en_DEBUG"|"description_en_DEBUG_APOS"|"description_en_DEBUG_APOS_RTL"|"description_en_GB"|"description_en_RTL"|"description_en_US"|"description_es_ES"|"description_es_MX"|"description_fr_CA"|"description_fr_FR"|"description_hi_IN"|"description_iw_IL"|"description_ja_JP"|"description_ko_KR"|"description_localized"|"description_nl_NL"|"description_pt_BR"|"description_th_TH"|"description_zh_CN"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Periodic\ Time\ Account\ Update\ Profile record {
+public type GetPeriodicTimeAccountUpdateProfileResponse record {
     PeriodicTimeAccountUpdateProfile d?;
 };
 
@@ -914,7 +914,7 @@ public type TimeTypeUSA record {
     string externalCode?;
 };
 
-public type CollectionofPeriodic\ Time\ Account\ Update\ Profile record {
+public type CollectionofPeriodicTimeAccountUpdateProfile record {
     PeriodicTimeAccountUpdateProfile[] results?;
 };
 
@@ -924,7 +924,7 @@ public type GetElectronicSicknessCertificateExclusionReasonDEUQueries record {
     ("createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type CollectionofTime\ Account\ Snapshot record {
+public type CollectionofTimeAccountSnapshot record {
     TimeAccountSnapshot[] results?;
 };
 
@@ -936,32 +936,32 @@ public type AccrualCalculationBase record {
     string externalCode?;
 };
 
-public type Wrapper_9 record {
-    CollectionofWork\ Schedule\ Day\ Model\ Assignment d?;
+public type ListWorkScheduleDayModelAssignmentsResponse record {
+    CollectionofWorkScheduleDayModelAssignment d?;
 };
 
-public type CollectionofEmployee\ Time\ SWE record {
+public type CollectionofEmployeeTimeSWE record {
     EmployeeTimeSWE[] results?;
 };
 
-public type Wrapper_4 record {
-    CollectionofTime\ Type\ CAN d?;
+public type ListTimeTypeCANsResponse record {
+    CollectionofTimeTypeCAN d?;
 };
 
-public type Wrapper_5 record {
-    CollectionofWork\ Schedule\ Day\ Model\ Variant\ Identifier d?;
+public type ListWorkScheduleDayModelVariantIdentifiersResponse record {
+    CollectionofWorkScheduleDayModelVariantIdentifier d?;
 };
 
-public type CreatedWork\ Schedule\ Day\ Model\ Segment record {
+public type CreateWorkScheduleDayModelSegmentResponse record {
     WorkScheduleDayModelSegment d?;
 };
 
-public type Wrapper_6 record {
-    CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason d?;
+public type ListTimeManagementTerminationEndHandlingExcludedEventReasonsResponse record {
+    CollectionofTimeManagementTerminationEndHandlingExcludedEventReason d?;
 };
 
-public type Wrapper_7 record {
-    CollectionofTime\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment d?;
+public type ListTimeAccountPurchaseProfilePayComponentAssignmentsResponse record {
+    CollectionofTimeAccountPurchaseProfilePayComponentAssignment d?;
 };
 
 # Represents the Headers record for the operation: deleteWorkSchedule
@@ -970,16 +970,16 @@ public type DeleteWorkScheduleHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_1 record {
-    CollectionofWork\ Schedule\ Day\ Model\ Variant\ Assignment d?;
+public type ListWorkScheduleDayModelVariantAssignmentsResponse record {
+    CollectionofWorkScheduleDayModelVariantAssignment d?;
 };
 
-public type Wrapper_2 record {
-    CollectionofHoliday\ Assignment d?;
+public type ListHolidayAssignmentsResponse record {
+    CollectionofHolidayAssignment d?;
 };
 
-public type Wrapper_3 record {
-    CollectionofTime\ Account\ Purchase\ Profile d?;
+public type ListTimeAccountPurchaseProfilesResponse record {
+    CollectionofTimeAccountPurchaseProfile d?;
 };
 
 # Represents the Queries record for the operation: listTimeManagementAlertMessages
@@ -1032,11 +1032,11 @@ public type EmployeeTimeCAN record {
     string externalCode?;
 };
 
-public type Time\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration record {
+public type GetTimeManagementTerminationEndHandlingLegalEntityConfigurationResponse record {
     TimeManagementTerminationEndHandlingLegalEntityConfiguration d?;
 };
 
-public type CollectionofWork\ Schedule\ Day record {
+public type CollectionofWorkScheduleDay record {
     WorkScheduleDay[] results?;
 };
 
@@ -1046,15 +1046,15 @@ public type DeleteEmployeeTimeNLDHeaders record {
     string If\-Match?;
 };
 
-public type ModifiedEmployee\ Time\ CAN record {
+public type UpdateEmployeeTimeCANPayload record {
     EmployeeTimeCAN d?;
 };
 
-public type CollectionofEmployee\ Time\ AUS record {
+public type CollectionofEmployeeTimeAUS record {
     EmployeeTimeAUS[] results?;
 };
 
-public type ModifiedWork\ Schedule\ Day\ Model\ Assignment record {
+public type UpdateWorkScheduleDayModelAssignmentPayload record {
     WorkScheduleDayModelAssignment d?;
 };
 
@@ -1084,7 +1084,7 @@ public type ListEmployeeTimeCalendarsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"date"|"deductionQuantity"|"endTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"physicalEndDate"|"physicalStartDate"|"quantityInDays"|"quantityInHours"|"startTime"|"workScheduleInternalId")[] \$select?;
 };
 
-public type CollectionofTime\ Type\ NOR record {
+public type CollectionofTimeTypeNOR record {
     TimeTypeNOR[] results?;
 };
 
@@ -1116,7 +1116,7 @@ public type ListWorkScheduleDayModelVariantAssignmentsQueries record {
     ("WorkScheduleDayModel_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"variantDayModel"|"variantIdentifier")[] \$select?;
 };
 
-public type CollectionofTime\ Type\ AUS record {
+public type CollectionofTimeTypeAUS record {
     TimeTypeAUS[] results?;
 };
 
@@ -1132,7 +1132,7 @@ public type GetTimeAccountPurchaseProfilePayComponentAssignmentQueries record {
     ("TimeAccountPurchaseProfile_externalCode"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payComponent")[] \$select?;
 };
 
-public type Electronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU record {
+public type GetElectronicSicknessCertificateExclusionReasonDEUResponse record {
     ElectronicSicknessCertificateExclusionReasonDEU d?;
 };
 
@@ -1141,11 +1141,11 @@ public type EmployeeTimeITA record {
     string externalCode?;
 };
 
-public type Time\ Account\ Snapshot record {
+public type GetTimeAccountSnapshotResponse record {
     TimeAccountSnapshot d?;
 };
 
-public type CollectionofEmployee\ Time\ POL record {
+public type CollectionofEmployeeTimePOL record {
     EmployeeTimePOL[] results?;
 };
 
@@ -1187,7 +1187,7 @@ public type ListAccrualCalculationBasesQueries record {
     ("actualQuantity"|"createdBy"|"createdDate"|"createdDateTime"|"date"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"quantity1"|"quantity2"|"quantity3"|"quantity4"|"quantity5"|"userId")[] \$select?;
 };
 
-public type CollectionofTemporary\ Time\ Information record {
+public type CollectionofTemporaryTimeInformation record {
     TemporaryTimeInformation[] results?;
 };
 
@@ -1201,19 +1201,19 @@ public type DeleteEmployeeTimeSWEHeaders record {
     string If\-Match?;
 };
 
-public type CollectionofTime\ Account\ Purchase\ Profile record {
+public type CollectionofTimeAccountPurchaseProfile record {
     TimeAccountPurchaseProfile[] results?;
 };
 
-public type Time\ Management\ Termination\ End\ Handling\ Configuration record {
+public type GetTimeManagementTerminationEndHandlingConfigurationResponse record {
     TimeManagementTerminationEndHandlingConfiguration d?;
 };
 
-public type CollectionofEmployee\ Time\ NLD record {
+public type CollectionofEmployeeTimeNLD record {
     EmployeeTimeNLD[] results?;
 };
 
-public type CollectionofShift\ Classification record {
+public type CollectionofShiftClassification record {
     ShiftClassification[] results?;
 };
 
@@ -1227,7 +1227,7 @@ public type DeleteEmployeeTimeDEUHeaders record {
     string If\-Match?;
 };
 
-public type Time\ Type\ AUS record {
+public type GetTimeTypeAUSResponse record {
     TimeTypeAUS d?;
 };
 
@@ -1246,7 +1246,7 @@ public type GetTimeManagementTerminationEndHandlingExclusionQueries record {
     ("createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Employee\ Time\ ITA record {
+public type GetEmployeeTimeITAResponse record {
     EmployeeTimeITA d?;
 };
 
@@ -1288,15 +1288,15 @@ public type ListEmployeeTimeMEXsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"cust_MEX"|"cust_test"|"daysAlreadyCumulatedForSameSickness"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"referenceNumber")[] \$select?;
 };
 
-public type Time\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason record {
+public type GetTimeManagementTerminationEndHandlingExcludedEventReasonResponse record {
     TimeManagementTerminationEndHandlingExcludedEventReason d?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
+public type CollectionofWorkScheduleDayModelAssignmentSegment record {
     WorkScheduleDayModelAssignmentSegment[] results?;
 };
 
-public type CreatedWork\ Schedule record {
+public type CreateWorkScheduleResponse record {
     WorkSchedule d?;
 };
 
@@ -1319,7 +1319,7 @@ public type GetWorkScheduleQueries record {
     ("averageHoursPerDay"|"averageHoursPerMonth"|"averageHoursPerWeek"|"averageHoursPerYear"|"averageWorkingDaysPerWeek"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"crossMidnightAllowed"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"flexibleRequestingAllowed"|"individualWorkSchedule"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"modelCategory"|"periodModel"|"recordId"|"searchString"|"shiftClassification"|"simulatedWorkSchedule"|"startingDate"|"timeRecordingVariant"|"userId")[] \$select?;
 };
 
-public type CollectionofTime\ Type\ SWE record {
+public type CollectionofTimeTypeSWE record {
     TimeTypeSWE[] results?;
 };
 
@@ -1359,7 +1359,7 @@ public type ListTimeTypeITAsQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"sicknessIdentifierEssVisibility")[] \$select?;
 };
 
-public type Time\ Type\ NLD record {
+public type GetTimeTypeNLDResponse record {
     TimeTypeNLD d?;
 };
 
@@ -1371,19 +1371,19 @@ public type GetAccountTypeNavOfTimeAccountPayoutQueries record {
     ("accountBookingOffsetInMonths"|"accountCreationAutomationLevel"|"accountCreationDay"|"accountCreationMonth"|"accountCreationOffsetInMonths"|"accountCreationReferenceDate"|"accountDetailRetentionGroup"|"accountRetentionGroup"|"accrualAutomationLevel"|"accrualCalculationMethod"|"accrualCreationOffset"|"accrualFrequency"|"accrualFrequencyStartDate"|"accrualPeriodStartDay"|"accrualPeriodStartMonth"|"accrualRecalculationPostingMethod"|"accrualRule"|"accrualTransferDateRule"|"accrualTransferRule"|"accrualWaitingPeriod"|"accrualWaitingPeriodUnit"|"advancesAllowed"|"allowPayoutWithSimulation"|"calculateSnapshotApprovedAbsenceBalance"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"creation"|"effectOnTransferDateRule"|"entitlementMethod"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_he_IL"|"externalName_hi_IN"|"externalName_hr_HR"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_ro_RO"|"externalName_sr_RS"|"externalName_zh_CN"|"hireRule"|"initialAccrualTransferDateRule"|"initialFlexibleAccountStartDateRule"|"interimRule"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"levelOfSimulationPrecision"|"maximumSimulationHorizonInMonths"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"minimumBalanceAllowed"|"payComponent"|"payComponentAccrualSeparated"|"payComponentGroup"|"payComponentTermination"|"payComponentTerminationAccrualSeparated"|"payoutEligibility"|"pepCalendarAutomationLevel"|"periodEndProcessingRule"|"periodicTimeAccountUpdateProfile"|"postingOrder"|"purchaseEligibility"|"secondAccrualCreationOffset"|"simulateAccruals"|"simulationRule"|"snapshotsAllowed"|"terminationRule"|"terminationRuleDataEffectiveDate"|"timeAccountConfigurationRule"|"timeAccountPayoutProfile"|"timeAccountPurchaseProfile"|"unit")[] \$select?;
 };
 
-public type CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason record {
+public type CollectionofTimeManagementTerminationEndHandlingExcludedEventReason record {
     TimeManagementTerminationEndHandlingExcludedEventReason[] results?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model\ Variant\ Identifier record {
+public type CollectionofWorkScheduleDayModelVariantIdentifier record {
     WorkScheduleDayModelVariantIdentifier[] results?;
 };
 
-public type CollectionofTime\ Type\ NLD record {
+public type CollectionofTimeTypeNLD record {
     TimeTypeNLD[] results?;
 };
 
-public type CreatedEmployee\ Time\ ITA record {
+public type CreateEmployeeTimeITAResponse record {
     EmployeeTimeITA d?;
 };
 
@@ -1395,7 +1395,7 @@ public type GetEmployeeTimeQueries record {
     ("absenceDurationCategory"|"approvalStatus"|"cancellationWorkflowRequestId"|"comment"|"createdBy"|"createdDate"|"createdDateTime"|"deductionQuantity"|"displayQuantity"|"editable"|"endDate"|"endTime"|"entityUUID"|"externalCode"|"flexibleRequesting"|"fractionQuantity"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"loaActualReturnDate"|"loaEndJobInfoId"|"loaExpectedReturnDate"|"loaStartJobInfoId"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"originalQuantityInDays"|"physicalEndDate"|"physicalStartDate"|"quantityInDays"|"quantityInHours"|"recurrenceGroup"|"startDate"|"startTime"|"timeRecordOrigin"|"timeType"|"undeterminedEndDate"|"userId"|"workflowInitiatedByAdmin"|"workflowRequestId")[] \$select?;
 };
 
-public type Time\ Type\ Profile record {
+public type GetTimeTypeProfileResponse record {
     TimeTypeProfile d?;
 };
 
@@ -1417,27 +1417,27 @@ public type ListHolidaysQueries record {
     ("country"|"createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"holidayCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"name_ar_SA"|"name_cy_GB"|"name_de_DE"|"name_defaultValue"|"name_en_DEBUG"|"name_en_DEBUG_APOS"|"name_en_DEBUG_APOS_RTL"|"name_en_GB"|"name_en_RTL"|"name_en_US"|"name_es_ES"|"name_es_MX"|"name_fr_CA"|"name_fr_FR"|"name_hi_IN"|"name_iw_IL"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_th_TH"|"name_zh_CN"|"oldName")[] \$select?;
 };
 
-public type CollectionofHoliday\ Calendar record {
+public type CollectionofHolidayCalendar record {
     HolidayCalendar[] results?;
 };
 
-public type Time\ Type\ SWE record {
+public type GetTimeTypeSWEResponse record {
     TimeTypeSWE d?;
 };
 
-public type Time\ Account\ Type\ AUS record {
+public type GetTimeAccountTypeAUSResponse record {
     TimeAccountTypeAUS d?;
 };
 
-public type ModifiedWork\ Schedule\ Day\ Model\ Segment record {
+public type UpdateWorkScheduleDayModelSegmentPayload record {
     WorkScheduleDayModelSegment d?;
 };
 
-public type CollectionofEmployee\ Time\ CAN record {
+public type CollectionofEmployeeTimeCAN record {
     EmployeeTimeCAN[] results?;
 };
 
-public type CollectionofTime\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration record {
+public type CollectionofTimeManagementTerminationEndHandlingLegalEntityConfiguration record {
     TimeManagementTerminationEndHandlingLegalEntityConfiguration[] results?;
 };
 
@@ -1447,7 +1447,7 @@ public type DeleteEmployeeTimeCANHeaders record {
     string If\-Match?;
 };
 
-public type Available\ Time\ Type record {
+public type GetAvailableTimeTypeResponse record {
     AvailableTimeType d?;
 };
 
@@ -1483,7 +1483,7 @@ public type EmployeeTimeGroupItem record {
     EmployeeTime employeeTimeNav?;
 };
 
-public type CollectionofTime\ Account\ Posting\ Rule record {
+public type CollectionofTimeAccountPostingRule record {
     TimeAccountPostingRule[] results?;
 };
 
@@ -1491,11 +1491,11 @@ public type RelatedCollectionSFOData_RecalculationBasedField record {
     RecalculationBasedField[] results?;
 };
 
-public type Work\ Schedule\ Day\ Model\ Assignment record {
+public type GetWorkScheduleDayModelAssignmentResponse record {
     WorkScheduleDayModelAssignment d?;
 };
 
-public type ModifiedWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
+public type UpdateWorkScheduleDayModelAssignmentSegmentPayload record {
     WorkScheduleDayModelAssignmentSegment d?;
 };
 
@@ -1550,8 +1550,8 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type Wrapper record {
-    CollectionofTime\ Account\ Posting\ Rule d?;
+public type ListTimeAccountPostingRulesResponse record {
+    CollectionofTimeAccountPostingRule d?;
 };
 
 # Represents the Headers record for the operation: deleteWorkScheduleDayModelSegment
@@ -1567,7 +1567,7 @@ public type WorkScheduleDayModel record {
     RelatedCollectionSFOData_WorkScheduleDayModelVariantAssignment variants?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model\ Variant\ Assignment record {
+public type CollectionofWorkScheduleDayModelVariantAssignment record {
     WorkScheduleDayModelVariantAssignment[] results?;
 };
 
@@ -1577,11 +1577,11 @@ public type DeleteEmployeeTimeITAHeaders record {
     string If\-Match?;
 };
 
-public type Work\ Schedule\ Day\ Model\ Assignment\ Segment record {
+public type GetWorkScheduleDayModelAssignmentSegmentResponse record {
     WorkScheduleDayModelAssignmentSegment d?;
 };
 
-public type ModifiedEmployee\ Time\ ITA record {
+public type UpdateEmployeeTimeITAPayload record {
     EmployeeTimeITA d?;
 };
 
@@ -1591,7 +1591,7 @@ public type DeleteTemporaryTimeInformationHeaders record {
     string If\-Match?;
 };
 
-public type Time\ Account\ Type record {
+public type GetTimeAccountTypeResponse record {
     TimeAccountType d?;
 };
 
@@ -1600,7 +1600,7 @@ public type TimeTypeSWE record {
     string externalCode?;
 };
 
-public type CollectionofTime\ Type\ DEU record {
+public type CollectionofTimeTypeDEU record {
     TimeTypeDEU[] results?;
 };
 
@@ -1622,7 +1622,7 @@ public type ListWorkScheduleDayModelAssignmentSegmentsQueries record {
     ("WorkScheduleDayModelAssignment_day"|"WorkSchedule_externalCode"|"category"|"createdBy"|"createdDate"|"createdDateTime"|"duration"|"endTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"startTime")[] \$select?;
 };
 
-public type CollectionofTime\ Account\ Summary record {
+public type ListTimeAccountSummarysResponse record {
     TimeAccountSummary[] value?;
 };
 
@@ -1635,7 +1635,7 @@ public type TimeAccountSnapshot record {
     TimeAccountType accountTypeNav?;
 };
 
-public type ModifiedWork\ Schedule record {
+public type UpdateWorkSchedulePayload record {
     WorkSchedule d?;
 };
 
@@ -1644,7 +1644,7 @@ public type EmployeeTimeGroup record {
     RelatedCollectionSFOData_EmployeeTimeGroupItem items?;
 };
 
-public type CollectionofTime\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type record {
+public type CollectionofTimeManagementTerminationEndHandlingExcludedTimeAccountType record {
     TimeManagementTerminationEndHandlingExcludedTimeAccountType[] results?;
 };
 
@@ -1668,7 +1668,7 @@ public type ListTimeTypeProfilesQueries record {
     ("bookTimeOffInLieuOnTimeSheetApproval"|"bookWorkingTimeOnTimeSheetApproval"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"defaultImportAttendanceTimeType"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mainAttendanceTimeType"|"mainBreakTimeType"|"mainESSTimeType"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"timeAccountTypeForTimeOffInLieu"|"timeAccountTypeForWorkingTimeAccount"|"timeOffEssInstructionalText_ar_SA"|"timeOffEssInstructionalText_cy_GB"|"timeOffEssInstructionalText_de_DE"|"timeOffEssInstructionalText_defaultValue"|"timeOffEssInstructionalText_en_DEBUG"|"timeOffEssInstructionalText_en_DEBUG_APOS"|"timeOffEssInstructionalText_en_DEBUG_APOS_RTL"|"timeOffEssInstructionalText_en_GB"|"timeOffEssInstructionalText_en_RTL"|"timeOffEssInstructionalText_en_US"|"timeOffEssInstructionalText_es_ES"|"timeOffEssInstructionalText_es_MX"|"timeOffEssInstructionalText_fr_CA"|"timeOffEssInstructionalText_fr_FR"|"timeOffEssInstructionalText_hi_IN"|"timeOffEssInstructionalText_iw_IL"|"timeOffEssInstructionalText_ja_JP"|"timeOffEssInstructionalText_ko_KR"|"timeOffEssInstructionalText_localized"|"timeOffEssInstructionalText_nl_NL"|"timeOffEssInstructionalText_pt_BR"|"timeOffEssInstructionalText_th_TH"|"timeOffEssInstructionalText_zh_CN"|"timeRecordingVariant")[] \$select?;
 };
 
-public type Time\ Type\ NOR record {
+public type GetTimeTypeNORResponse record {
     TimeTypeNOR d?;
 };
 
@@ -1692,7 +1692,7 @@ public type GetEmployeeTimeUSAQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"disabilityPeriodOneEndDate"|"disabilityPeriodThreeEndDate"|"disabilityPeriodTwoEndDate"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"policyDeviation"|"refDisabilityPeriodOneEndDate"|"refDisabilityPeriodThreeEndDate"|"refDisabilityPeriodTwoEndDate")[] \$select?;
 };
 
-public type CollectionofRecalculation\ Based\ Field record {
+public type CollectionofRecalculationBasedField record {
     RecalculationBasedField[] results?;
 };
 
@@ -1725,11 +1725,11 @@ public type ListTimeTypeNORsQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workPercentageESSView"|"workPercentageType")[] \$select?;
 };
 
-public type Time\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment record {
+public type GetTimeAccountPurchaseProfilePayComponentAssignmentResponse record {
     TimeAccountPurchaseProfilePayComponentAssignment d?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model\ Segment record {
+public type CollectionofWorkScheduleDayModelSegment record {
     WorkScheduleDayModelSegment[] results?;
 };
 
@@ -1758,7 +1758,7 @@ public type ListWorkScheduleDayModelsQueries record {
     ("country"|"createdBy"|"createdDate"|"createdDateTime"|"crossMidnightAllowed"|"description"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"hoursAndMinutes"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"nonWorkingDay"|"roundingBasedOnWorkScheduleInformation"|"shiftClassification"|"timeRecordingVariant"|"variantUsage"|"workingHours")[] \$select?;
 };
 
-public type Time\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type record {
+public type GetTimeManagementTerminationEndHandlingExcludedTimeAccountTypeResponse record {
     TimeManagementTerminationEndHandlingExcludedTimeAccountType d?;
 };
 
@@ -1816,7 +1816,7 @@ public type EmployeeTimeAUS record {
     string externalCode?;
 };
 
-public type CollectionofTime\ Type\ CAN record {
+public type CollectionofTimeTypeCAN record {
     TimeTypeCAN[] results?;
 };
 
@@ -1850,7 +1850,7 @@ public type GetEmployeeTimeGroupQueries record {
     ("createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"externalCode"|"itemsCategory"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"userId")[] \$select?;
 };
 
-public type CollectionofWork\ Schedule\ Day\ Model record {
+public type CollectionofWorkScheduleDayModel record {
     WorkScheduleDayModel[] results?;
 };
 
@@ -1862,7 +1862,7 @@ public type GetTimeAccountTypeQueries record {
     ("accountBookingOffsetInMonths"|"accountCreationAutomationLevel"|"accountCreationDay"|"accountCreationMonth"|"accountCreationOffsetInMonths"|"accountCreationReferenceDate"|"accountDetailRetentionGroup"|"accountRetentionGroup"|"accrualAutomationLevel"|"accrualCalculationMethod"|"accrualCreationOffset"|"accrualFrequency"|"accrualFrequencyStartDate"|"accrualPeriodStartDay"|"accrualPeriodStartMonth"|"accrualRecalculationPostingMethod"|"accrualRule"|"accrualTransferDateRule"|"accrualTransferRule"|"accrualWaitingPeriod"|"accrualWaitingPeriodUnit"|"advancesAllowed"|"allowPayoutWithSimulation"|"calculateSnapshotApprovedAbsenceBalance"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"creation"|"effectOnTransferDateRule"|"entitlementMethod"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"hireRule"|"initialAccrualTransferDateRule"|"initialFlexibleAccountStartDateRule"|"interimRule"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"levelOfSimulationPrecision"|"maximumSimulationHorizonInMonths"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"minimumBalanceAllowed"|"payComponent"|"payComponentAccrualSeparated"|"payComponentGroup"|"payComponentTermination"|"payComponentTerminationAccrualSeparated"|"payoutEligibility"|"pepCalendarAutomationLevel"|"periodEndProcessingRule"|"periodicTimeAccountUpdateProfile"|"postingOrder"|"purchaseEligibility"|"secondAccrualCreationOffset"|"simulateAccruals"|"simulationRule"|"snapshotsAllowed"|"terminationRule"|"terminationRuleDataEffectiveDate"|"timeAccountConfigurationRule"|"timeAccountPayoutProfile"|"timeAccountPurchaseProfile"|"unit")[] \$select?;
 };
 
-public type Time\ Management\ Termination\ End\ Handling\ Exclusion record {
+public type GetTimeManagementTerminationEndHandlingExclusionResponse record {
     TimeManagementTerminationEndHandlingExclusion d?;
 };
 
@@ -1884,11 +1884,11 @@ public type ListTimeTypeNLDsQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"illnessRecoveryTracking"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type CollectionofAbsence\ Counting\ Method record {
+public type CollectionofAbsenceCountingMethod record {
     AbsenceCountingMethod[] results?;
 };
 
-public type CreatedEmployee\ Time\ CAN record {
+public type CreateEmployeeTimeCANResponse record {
     EmployeeTimeCAN d?;
 };
 
@@ -1930,7 +1930,7 @@ public type ListHolidayAssignmentsQueries record {
     ("HolidayCalendar_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"cust_testHolidayAssignment"|"date"|"entityUUID"|"holiday"|"holidayCategory"|"holidayClass"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Time\ Account\ Purchase\ Profile record {
+public type GetTimeAccountPurchaseProfileResponse record {
     TimeAccountPurchaseProfile d?;
 };
 
@@ -1984,7 +1984,7 @@ public type ListWorkScheduleDaysQueries record {
     ("WorkSchedule_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"cust_testdata"|"day"|"entityUUID"|"hoursAndMinutes"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"workingHours")[] \$select?;
 };
 
-public type CollectionofWork\ Schedule record {
+public type CollectionofWorkSchedule record {
     WorkSchedule[] results?;
 };
 
@@ -2032,7 +2032,7 @@ public type GetTimeAccountPayoutProfileQueries record {
     ("country"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"payComponent"|"payComponentAccrualSeparated"|"payComponentGroup"|"payComponentTermination"|"payComponentTerminationAccrualSeparated"|"payoutMessageText_ar_SA"|"payoutMessageText_cy_GB"|"payoutMessageText_de_DE"|"payoutMessageText_defaultValue"|"payoutMessageText_en_DEBUG"|"payoutMessageText_en_DEBUG_APOS"|"payoutMessageText_en_DEBUG_APOS_RTL"|"payoutMessageText_en_GB"|"payoutMessageText_en_RTL"|"payoutMessageText_en_US"|"payoutMessageText_es_ES"|"payoutMessageText_es_MX"|"payoutMessageText_fr_CA"|"payoutMessageText_fr_FR"|"payoutMessageText_hi_IN"|"payoutMessageText_iw_IL"|"payoutMessageText_ja_JP"|"payoutMessageText_ko_KR"|"payoutMessageText_localized"|"payoutMessageText_nl_NL"|"payoutMessageText_pt_BR"|"payoutMessageText_th_TH"|"payoutMessageText_zh_CN"|"workflowConfiguration")[] \$select?;
 };
 
-public type Employee\ Time\ USA record {
+public type GetEmployeeTimeUSAResponse record {
     EmployeeTimeUSA d?;
 };
 
@@ -2060,7 +2060,7 @@ public type GetTimeAccountNavOfTimeAccountPayoutQueries record {
     ("accountClosed"|"accountType"|"bookingEndDate"|"bookingStartDate"|"createdBy"|"createdDate"|"createdDateTime"|"cust_balanceAtAccountClosing"|"cust_test"|"endDate"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"startDate"|"userId")[] \$select?;
 };
 
-public type Accrual\ Calculation\ Base record {
+public type GetAccrualCalculationBaseResponse record {
     AccrualCalculationBase d?;
 };
 
@@ -2144,11 +2144,11 @@ public type ListTimeTypeAUSsQueries record {
     ("TimeType_externalCode"|"advanceLeavePaymentAllowed"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"splitPaymentAcrossFinancialYearAllowed")[] \$select?;
 };
 
-public type CreatedWork\ Schedule\ Day\ Model\ Assignment\ Segment record {
+public type CreateWorkScheduleDayModelAssignmentSegmentResponse record {
     WorkScheduleDayModelAssignmentSegment d?;
 };
 
-public type Time\ Account\ Payout\ Profile record {
+public type GetTimeAccountPayoutProfileResponse record {
     TimeAccountPayoutProfile d?;
 };
 
@@ -2196,7 +2196,7 @@ public type ListEmployeeTimeSWEsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workIncapacityPercentageDuringIllness")[] \$select?;
 };
 
-public type ModifiedTemporary\ Time\ Information record {
+public type UpdateTemporaryTimeInformationPayload record {
     TemporaryTimeInformation d?;
 };
 
@@ -2205,7 +2205,7 @@ public type TimeTypeAUS record {
     string externalCode?;
 };
 
-public type ModifiedWork\ Schedule\ Day\ Model record {
+public type UpdateWorkScheduleDayModelPayload record {
     WorkScheduleDayModel d?;
 };
 
@@ -2281,7 +2281,7 @@ public type DeleteTimeAccountHeaders record {
     string If\-Match?;
 };
 
-public type Time\ Type\ DEU record {
+public type GetTimeTypeDEUResponse record {
     TimeTypeDEU d?;
 };
 
@@ -2303,7 +2303,7 @@ public type ListEmployeeTimeCANsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"disabilityPeriodOneEndDate"|"disabilityPeriodThreeEndDate"|"disabilityPeriodTwoEndDate"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"policyDeviation"|"refDisabilityPeriodOneEndDate"|"refDisabilityPeriodThreeEndDate"|"refDisabilityPeriodTwoEndDate")[] \$select?;
 };
 
-public type Employee\ Time\ POL record {
+public type GetEmployeeTimePOLResponse record {
     EmployeeTimePOL d?;
 };
 
@@ -2357,11 +2357,11 @@ public type ListEmployeeTimeCOLsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Employee\ Time\ SWE record {
+public type GetEmployeeTimeSWEResponse record {
     EmployeeTimeSWE d?;
 };
 
-public type Employee\ Time\ NLD record {
+public type GetEmployeeTimeNLDResponse record {
     EmployeeTimeNLD d?;
 };
 
@@ -2445,7 +2445,7 @@ public type GetTimeAccountPostingRuleQueries record {
     ("TimeType_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"timeAccountType")[] \$select?;
 };
 
-public type CollectionofEmployee\ Time\ ITA record {
+public type CollectionofEmployeeTimeITA record {
     EmployeeTimeITA[] results?;
 };
 
@@ -2489,11 +2489,11 @@ public type ListEmployeeTimeDEUsQueries record {
     ("EmployeeTime_externalCode"|"continuedPayCreditedDays"|"continuedPayEndDate"|"createdBy"|"createdDate"|"createdDateTime"|"cust_mandat_test_string"|"deviationFromSickPayPeriods"|"electronicSicknessCertificateExclusionReason"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"overlappingSicknessGroup"|"paySupplementEndDate"|"paySupplementStartDate"|"refContinuedPayEndDate"|"refPaySupplementEndDate"|"refPaySupplementStartDate"|"sicknessCertificateStartDate")[] \$select?;
 };
 
-public type Time\ Type\ CAN record {
+public type GetTimeTypeCANResponse record {
     TimeTypeCAN d?;
 };
 
-public type CollectionofElectronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU record {
+public type CollectionofElectronicSicknessCertificateExclusionReasonDEU record {
     ElectronicSicknessCertificateExclusionReasonDEU[] results?;
 };
 
@@ -2523,15 +2523,15 @@ public type EmployeeTimeMEX record {
     EmployeeTimeGroup identicalSicknessGroupNav?;
 };
 
-public type CreatedTemporary\ Time\ Information record {
+public type CreateTemporaryTimeInformationResponse record {
     TemporaryTimeInformation d?;
 };
 
-public type Wrapper_61 record {
-    CollectionofTime\ Type\ AUS d?;
+public type ListTimeTypeAUSsResponse record {
+    CollectionofTimeTypeAUS d?;
 };
 
-public type CollectionofTime\ Type record {
+public type CollectionofTimeType record {
     TimeType[] results?;
 };
 
@@ -2575,11 +2575,11 @@ public type RelatedCollectionSFOData_WorkScheduleDayModelAssignmentSegment recor
     WorkScheduleDayModelAssignmentSegment[] results?;
 };
 
-public type Holiday\ Category record {
+public type GetHolidayCategoryResponse record {
     HolidayCategory d?;
 };
 
-public type CreatedAccrual\ Calculation\ Base record {
+public type CreateAccrualCalculationBaseResponse record {
     AccrualCalculationBase d?;
 };
 
@@ -2599,11 +2599,11 @@ public type GetTimeAccountPurchaseProfileQueries record {
     ("allowDeductionStartDateSelection"|"country"|"createdBy"|"createdDateTime"|"deductionSchedule"|"deductionType"|"entityUUID"|"equivalentUnits"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"helpText_ar_SA"|"helpText_cy_GB"|"helpText_de_DE"|"helpText_defaultValue"|"helpText_en_DEBUG"|"helpText_en_DEBUG_APOS"|"helpText_en_DEBUG_APOS_RTL"|"helpText_en_GB"|"helpText_en_RTL"|"helpText_en_US"|"helpText_es_ES"|"helpText_es_MX"|"helpText_fr_CA"|"helpText_fr_FR"|"helpText_hi_IN"|"helpText_iw_IL"|"helpText_ja_JP"|"helpText_ko_KR"|"helpText_localized"|"helpText_nl_NL"|"helpText_pt_BR"|"helpText_th_TH"|"helpText_zh_CN"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"workflowConfiguration")[] \$select?;
 };
 
-public type Work\ Schedule\ Day\ Model\ Variant\ Assignment record {
+public type GetWorkScheduleDayModelVariantAssignmentResponse record {
     WorkScheduleDayModelVariantAssignment d?;
 };
 
-public type Time\ Type\ ITA record {
+public type GetTimeTypeITAResponse record {
     TimeTypeITA d?;
 };
 
@@ -2693,7 +2693,7 @@ public type GetAbsenceCountingMethodQueries record {
     ("base"|"considerHolidays"|"country"|"createdBy"|"createdDate"|"createdDateTime"|"deductionFactor"|"entityUUID"|"externalCode"|"externalName_ar_SA"|"externalName_cy_GB"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_DEBUG"|"externalName_en_DEBUG_APOS"|"externalName_en_DEBUG_APOS_RTL"|"externalName_en_GB"|"externalName_en_RTL"|"externalName_en_US"|"externalName_es_ES"|"externalName_es_MX"|"externalName_fr_CA"|"externalName_fr_FR"|"externalName_hi_IN"|"externalName_iw_IL"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_th_TH"|"externalName_zh_CN"|"friday"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"monday"|"saturday"|"sunday"|"thursday"|"tuesday"|"wednesday")[] \$select?;
 };
 
-public type Employee\ Time\ NOR record {
+public type GetEmployeeTimeNORResponse record {
     EmployeeTimeNOR d?;
 };
 
@@ -2741,7 +2741,7 @@ public type ListEmployeeTimeAUSsQueries record {
     ("EmployeeTime_externalCode"|"createdBy"|"createdDateTime"|"cust_WorkflowField1"|"cust_WorkflowField2"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"requestAdvanceLeavePayment"|"splitPaymentAcrossFinancialYear")[] \$select?;
 };
 
-public type CreatedEmployee\ Time\ NOR record {
+public type CreateEmployeeTimeNORResponse record {
     EmployeeTimeNOR d?;
 };
 
@@ -2784,7 +2784,7 @@ public type TimeTypeDEU record {
     string externalCode?;
 };
 
-public type Absence\ Counting\ Method record {
+public type GetAbsenceCountingMethodResponse record {
     AbsenceCountingMethod d?;
 };
 
@@ -2794,7 +2794,7 @@ public type DeleteAccrualCalculationBaseHeaders record {
     string If\-Match?;
 };
 
-public type Holiday\ Assignment record {
+public type GetHolidayAssignmentResponse record {
     HolidayAssignment d?;
 };
 
@@ -2810,7 +2810,7 @@ public type RelatedCollectionSFOData_HolidayAssignment record {
     HolidayAssignment[] results?;
 };
 
-public type CollectionofTime\ Account\ Type record {
+public type CollectionofTimeAccountType record {
     TimeAccountType[] results?;
 };
 
@@ -2832,7 +2832,7 @@ public type ListEmployeeTimePOLsQueries record {
     ("EmployeeTime_externalCode"|"absenceCode"|"createdBy"|"createdDateTime"|"cust_pol"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"zlaDeliveryDate"|"zlaDocumentNumber"|"zlaIssueDate")[] \$select?;
 };
 
-public type CollectionofTime\ Type\ ITA record {
+public type CollectionofTimeTypeITA record {
     TimeTypeITA[] results?;
 };
 
@@ -2869,7 +2869,7 @@ public type GetHolidayCalendarQueries record {
     ("country"|"createdBy"|"createdDate"|"createdDateTime"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"name_ar_SA"|"name_cy_GB"|"name_de_DE"|"name_defaultValue"|"name_en_DEBUG"|"name_en_DEBUG_APOS"|"name_en_DEBUG_APOS_RTL"|"name_en_GB"|"name_en_RTL"|"name_en_US"|"name_es_ES"|"name_es_MX"|"name_fr_CA"|"name_fr_FR"|"name_hi_IN"|"name_iw_IL"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_th_TH"|"name_zh_CN"|"oldName")[] \$select?;
 };
 
-public type CollectionofEmployee\ Time\ Account\ Balance record {
+public type CollectionofEmpTimeAccountBalance record {
     EmpTimeAccountBalance[] results?;
 };
 
@@ -2890,7 +2890,7 @@ public type EmployeeTimeNLD record {
     string externalCode?;
 };
 
-public type CreatedEmployee\ Time\ AUS record {
+public type CreateEmployeeTimeAUSResponse record {
     EmployeeTimeAUS d?;
 };
 
@@ -2908,7 +2908,7 @@ public type GetEmployeeTimeDEUQueries record {
     ("EmployeeTime_externalCode"|"continuedPayCreditedDays"|"continuedPayEndDate"|"createdBy"|"createdDate"|"createdDateTime"|"cust_mandat_test_string"|"deviationFromSickPayPeriods"|"electronicSicknessCertificateExclusionReason"|"entityUUID"|"externalCode"|"identicalSicknessGroup"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"overlappingSicknessGroup"|"paySupplementEndDate"|"paySupplementStartDate"|"refContinuedPayEndDate"|"refPaySupplementEndDate"|"refPaySupplementStartDate"|"sicknessCertificateStartDate")[] \$select?;
 };
 
-public type ModifiedEmployee\ Time\ USA record {
+public type UpdateEmployeeTimeUSAPayload record {
     EmployeeTimeUSA d?;
 };
 
@@ -2986,7 +2986,7 @@ public type GetTimeAccountSummaryQueries record {
     ("createdBy"|"createdDateTime"|"earnedBalance"|"entityUUID"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Employee\ Time\ AUS record {
+public type GetEmployeeTimeAUSResponse record {
     EmployeeTimeAUS d?;
 };
 

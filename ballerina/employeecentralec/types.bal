@@ -262,7 +262,7 @@ public type PerGlobalInfoSAU_1 record {
     PerGlobalInfoSAU d?;
 };
 
-public type Wrapper record {
+public type ListPerGlobalInfoAREsResponse record {
     CollectionofPerGlobalInfoARE d?;
 };
 
@@ -326,7 +326,7 @@ public type ListPerGlobalInfoFRAsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"genericDate1"|"genericDate10"|"genericDate2"|"genericDate3"|"genericDate4"|"genericDate5"|"genericDate6"|"genericDate7"|"genericNumber1"|"genericNumber10"|"genericNumber11"|"genericNumber12"|"genericNumber13"|"genericNumber14"|"genericNumber15"|"genericNumber16"|"genericNumber2"|"genericNumber3"|"genericNumber4"|"genericNumber5"|"genericNumber6"|"genericNumber7"|"genericNumber8"|"genericNumber9"|"genericString1"|"genericString10"|"genericString11"|"genericString12"|"genericString13"|"genericString14"|"genericString15"|"genericString16"|"genericString17"|"genericString18"|"genericString19"|"genericString2"|"genericString20"|"genericString21"|"genericString22"|"genericString3"|"genericString4"|"genericString5"|"genericString6"|"genericString7"|"genericString8"|"genericString9"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal"|"startDate")[] \$select?;
 };
 
-public type Wrapper_19 record {
+public type ListPerGlobalInfoDEUsResponse record {
     CollectionofPerGlobalInfoDEU d?;
 };
 
@@ -337,15 +337,15 @@ public type PerGlobalInfoNLD record {
     string startDate?;
 };
 
-public type Wrapper_17 record {
+public type ListEducationMajorContentsResponse record {
     CollectionofEducationMajorContent d?;
 };
 
-public type Wrapper_18 record {
+public type ListPerGlobalInfoFRAsResponse record {
     CollectionofPerGlobalInfoFRA d?;
 };
 
-public type Wrapper_15 record {
+public type ListPerGlobalInfoUSAsResponse record {
     CollectionofPerGlobalInfoUSA d?;
 };
 
@@ -353,7 +353,7 @@ public type CollectionofPerGlobalInfoARE record {
     PerGlobalInfoARE[] results?;
 };
 
-public type Wrapper_16 record {
+public type ListServiceDeskCountrySupportInformationsResponse record {
     CollectionofServiceDeskCountrySupportInformation d?;
 };
 
@@ -366,11 +366,11 @@ public type EducationMajorContent record {
     EducationDegreeEntity mappedDegreeIdNav?;
 };
 
-public type Wrapper_13 record {
+public type ListEducationMajorEntitiesResponse record {
     CollectionofEducationMajorEntity d?;
 };
 
-public type Wrapper_14 record {
+public type ListPerGlobalInfoCANsResponse record {
     CollectionofPerGlobalInfoCAN d?;
 };
 
@@ -384,11 +384,11 @@ public type GetPerGlobalInfoFRAQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"genericDate1"|"genericDate10"|"genericDate2"|"genericDate3"|"genericDate4"|"genericDate5"|"genericDate6"|"genericDate7"|"genericNumber1"|"genericNumber10"|"genericNumber11"|"genericNumber12"|"genericNumber13"|"genericNumber14"|"genericNumber15"|"genericNumber16"|"genericNumber2"|"genericNumber3"|"genericNumber4"|"genericNumber5"|"genericNumber6"|"genericNumber7"|"genericNumber8"|"genericNumber9"|"genericString1"|"genericString10"|"genericString11"|"genericString12"|"genericString13"|"genericString14"|"genericString15"|"genericString16"|"genericString17"|"genericString18"|"genericString19"|"genericString2"|"genericString20"|"genericString21"|"genericString22"|"genericString3"|"genericString4"|"genericString5"|"genericString6"|"genericString7"|"genericString8"|"genericString9"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal"|"startDate")[] \$select?;
 };
 
-public type Wrapper_11 record {
+public type ListPerGlobalInfoAUSsResponse record {
     CollectionofPerGlobalInfoAUS d?;
 };
 
-public type Wrapper_12 record {
+public type ListPerGlobalInfoESPsResponse record {
     CollectionofPerGlobalInfoESP d?;
 };
 
@@ -403,7 +403,7 @@ public type PerGlobalInfoARE record {
     string startDate?;
 };
 
-public type Wrapper_10 record {
+public type ListPerGlobalInfoGBRsResponse record {
     CollectionofPerGlobalInfoGBR d?;
 };
 
@@ -503,11 +503,11 @@ public type CollectionofEducationMajorContent record {
     EducationMajorContent[] results?;
 };
 
-public type Wrapper_8 record {
+public type ListPerGlobalInfoBRAsResponse record {
     CollectionofPerGlobalInfoBRA d?;
 };
 
-public type Wrapper_9 record {
+public type ListPerGlobalInfoCHEsResponse record {
     CollectionofPerGlobalInfoCHE d?;
 };
 
@@ -525,19 +525,19 @@ public type CollectionofPerGlobalInfoCAN record {
     PerGlobalInfoCAN[] results?;
 };
 
-public type Wrapper_4 record {
+public type ListCurrencyExchangeRatesResponse record {
     CollectionofCurrencyExchangeRate d?;
 };
 
-public type Wrapper_5 record {
+public type ListNonRecurringPaymentsResponse record {
     CollectionofNonRecurringPayment d?;
 };
 
-public type Wrapper_6 record {
+public type ListEducationDegreeEntitiesResponse record {
     CollectionofEducationDegreeEntity d?;
 };
 
-public type Wrapper_7 record {
+public type ListServiceDeskContactSupportInformationsResponse record {
     CollectionofServiceDeskContactSupportInformation d?;
 };
 
@@ -545,7 +545,7 @@ public type CollectionofEducationDegreeEntity record {
     EducationDegreeEntity[] results?;
 };
 
-public type Wrapper_1 record {
+public type ListPerGlobalInfoCHNsResponse record {
     CollectionofPerGlobalInfoCHN d?;
 };
 
@@ -553,11 +553,11 @@ public type PerGlobalInfoGBR_1 record {
     PerGlobalInfoGBR d?;
 };
 
-public type Wrapper_2 record {
+public type ListPerGlobalInfoFINsResponse record {
     CollectionofPerGlobalInfoFIN d?;
 };
 
-public type Wrapper_3 record {
+public type ListEducationDegreeContentsResponse record {
     CollectionofEducationDegreeContent d?;
 };
 
@@ -1127,7 +1127,7 @@ public type ListPerGlobalInfoCANsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"genericDate1"|"genericDate10"|"genericDate2"|"genericDate3"|"genericDate4"|"genericDate5"|"genericDate6"|"genericDate7"|"genericNumber1"|"genericNumber10"|"genericNumber11"|"genericNumber12"|"genericNumber13"|"genericNumber14"|"genericNumber15"|"genericNumber16"|"genericNumber2"|"genericNumber3"|"genericNumber4"|"genericNumber5"|"genericNumber6"|"genericNumber7"|"genericNumber8"|"genericNumber9"|"genericString1"|"genericString10"|"genericString11"|"genericString12"|"genericString13"|"genericString14"|"genericString15"|"genericString16"|"genericString2"|"genericString3"|"genericString4"|"genericString5"|"genericString6"|"genericString7"|"genericString8"|"genericString9"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"personIdExternal"|"startDate")[] \$select?;
 };
 
-public type Wrapper_26 record {
+public type ListPerGlobalInfoZAFsResponse record {
     CollectionofPerGlobalInfoZAF d?;
 };
 
@@ -1143,27 +1143,27 @@ public type GetEducationDegreeEntityQueries record {
     ("createdBy"|"createdDate"|"createdDateTime"|"degree_de_DE"|"degree_defaultValue"|"degree_en_GB"|"degree_en_US"|"degree_es_ES"|"degree_fr_FR"|"degree_ja_JP"|"degree_ko_KR"|"degree_localized"|"degree_nl_NL"|"degree_pt_BR"|"degree_pt_PT"|"degree_ru_RU"|"degree_zh_CN"|"degree_zh_TW"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemVersionId"|"status"|"subModule"|"transactionSequence")[] \$select?;
 };
 
-public type Wrapper_24 record {
+public type ListPerGlobalInfoQATsResponse record {
     CollectionofPerGlobalInfoQAT d?;
 };
 
-public type Wrapper_25 record {
+public type ListPerGlobalInfoSAUsResponse record {
     CollectionofPerGlobalInfoSAU d?;
 };
 
-public type Wrapper_22 record {
+public type ListPerGlobalInfoNLDsResponse record {
     CollectionofPerGlobalInfoNLD d?;
 };
 
-public type Wrapper_23 record {
+public type ListPerGlobalInfoPRTsResponse record {
     CollectionofPerGlobalInfoPRT d?;
 };
 
-public type Wrapper_20 record {
+public type ListPerGlobalInfoDNKsResponse record {
     CollectionofPerGlobalInfoDNK d?;
 };
 
-public type Wrapper_21 record {
+public type ListPerGlobalInfoITAsResponse record {
     CollectionofPerGlobalInfoITA d?;
 };
 

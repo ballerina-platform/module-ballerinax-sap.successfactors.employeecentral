@@ -24,7 +24,7 @@ public type CollectionofEmployeePayrollRunResultsItems record {
     EmployeePayrollRunResultsItems[] results?;
 };
 
-public type Wrapper record {
+public type ListEmployeePayrollRunResultsItemssResponse record {
     CollectionofEmployeePayrollRunResultsItems d?;
 };
 
@@ -122,7 +122,7 @@ public type DeleteEmployeePayrollRunResultsHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_1 record {
+public type ListEmployeePayrollRunResultssResponse record {
     CollectionofEmployeePayrollRunResults d?;
 };
 

@@ -65,7 +65,7 @@ public function main() returns error? {
             continue;
         }
 
-        personalinfo:Wrapper_3|error result = sfClient->listPerPersonals(
+        personalinfo:ListPerPersonalsResponse|error result = sfClient->listPerPersonals(
             queries = {
                 \$filter: string `personIdExternal eq '${personId}'`,
                 \$top: 1

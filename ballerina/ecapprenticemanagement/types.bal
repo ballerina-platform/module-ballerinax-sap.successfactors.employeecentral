@@ -152,7 +152,7 @@ public type DeleteApprenticePracticalTrainingEventHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper record {
+public type ListApprenticeEventTypesResponse record {
     CollectionofApprenticeEventType d?;
 };
 
@@ -328,15 +328,15 @@ public type ApprenticeEventType record {
     ApprenticeEvent d?;
 };
 
-public type Wrapper_4 record {
+public type ListApprenticeSchoolEventsResponse record {
     CollectionofApprenticeSchoolEvent d?;
 };
 
-public type Wrapper_7 record {
+public type ListApprenticesResponse record {
     CollectionofApprentice d?;
 };
 
-public type Wrapper_1 record {
+public type ListDepartmentApprenticeDetailsResponse record {
     CollectionofDepartmentApprenticeDetail d?;
 };
 
@@ -344,11 +344,11 @@ public type ModifiedApprenticeEventType record {
     ApprenticeEvent d?;
 };
 
-public type Wrapper_2 record {
+public type ListApprenticeSchoolsResponse record {
     CollectionofApprenticeSchool d?;
 };
 
-public type Wrapper_3 record {
+public type ListApprenticeGroupsResponse record {
     CollectionofApprenticeGroup d?;
 };
 

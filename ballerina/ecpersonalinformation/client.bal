@@ -41,7 +41,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerEmergencyContactss(map<string|string[]> headers = {}, *ListPerEmergencyContactssQueries queries) returns Wrapper|error {
+    remote isolated function listPerEmergencyContactss(map<string|string[]> headers = {}, *ListPerEmergencyContactssQueries queries) returns ListPerEmergencyContactssResponse|error {
         string resourcePath = string `/PerEmergencyContacts`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -68,7 +68,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerPhones(map<string|string[]> headers = {}, *ListPerPhonesQueries queries) returns Wrapper_1|error {
+    remote isolated function listPerPhones(map<string|string[]> headers = {}, *ListPerPhonesQueries queries) returns ListPerPhonesResponse|error {
         string resourcePath = string `/PerPhone`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -94,7 +94,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPersonKeys(map<string|string[]> headers = {}, *ListPersonKeysQueries queries) returns Wrapper_2|error {
+    remote isolated function listPersonKeys(map<string|string[]> headers = {}, *ListPersonKeysQueries queries) returns ListPersonKeysResponse|error {
         string resourcePath = string `/PersonKey`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -119,7 +119,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerPersonals(map<string|string[]> headers = {}, *ListPerPersonalsQueries queries) returns Wrapper_3|error {
+    remote isolated function listPerPersonals(map<string|string[]> headers = {}, *ListPerPersonalsQueries queries) returns ListPerPersonalsResponse|error {
         string resourcePath = string `/PerPersonal`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -145,7 +145,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerSocialAccounts(map<string|string[]> headers = {}, *ListPerSocialAccountsQueries queries) returns Wrapper_4|error {
+    remote isolated function listPerSocialAccounts(map<string|string[]> headers = {}, *ListPerSocialAccountsQueries queries) returns ListPerSocialAccountsResponse|error {
         string resourcePath = string `/PerSocialAccount`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -171,7 +171,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerPersons(map<string|string[]> headers = {}, *ListPerPersonsQueries queries) returns Wrapper_5|error {
+    remote isolated function listPerPersons(map<string|string[]> headers = {}, *ListPerPersonsQueries queries) returns ListPerPersonsResponse|error {
         string resourcePath = string `/PerPerson`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -196,7 +196,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerPersonRelationships(map<string|string[]> headers = {}, *ListPerPersonRelationshipsQueries queries) returns Wrapper_6|error {
+    remote isolated function listPerPersonRelationships(map<string|string[]> headers = {}, *ListPerPersonRelationshipsQueries queries) returns ListPerPersonRelationshipsResponse|error {
         string resourcePath = string `/PerPersonRelationship`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -223,7 +223,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerEmails(map<string|string[]> headers = {}, *ListPerEmailsQueries queries) returns Wrapper_7|error {
+    remote isolated function listPerEmails(map<string|string[]> headers = {}, *ListPerEmailsQueries queries) returns ListPerEmailsResponse|error {
         string resourcePath = string `/PerEmail`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -249,7 +249,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listHrisEmergencyContactAddressDEFLTs(map<string|string[]> headers = {}, *ListHrisEmergencyContactAddressDEFLTsQueries queries) returns Wrapper_8|error {
+    remote isolated function listHrisEmergencyContactAddressDEFLTs(map<string|string[]> headers = {}, *ListHrisEmergencyContactAddressDEFLTsQueries queries) returns ListHrisEmergencyContactAddressDEFLTsResponse|error {
         string resourcePath = string `/HrisEmergencyContactAddressDEFLT`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -274,7 +274,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerNationalIds(map<string|string[]> headers = {}, *ListPerNationalIdsQueries queries) returns Wrapper_9|error {
+    remote isolated function listPerNationalIds(map<string|string[]> headers = {}, *ListPerNationalIdsQueries queries) returns ListPerNationalIdsResponse|error {
         string resourcePath = string `/PerNationalId`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -301,7 +301,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerNationalIdWithValidityPeriods(map<string|string[]> headers = {}, *ListPerNationalIdWithValidityPeriodsQueries queries) returns Wrapper_10|error {
+    remote isolated function listPerNationalIdWithValidityPeriods(map<string|string[]> headers = {}, *ListPerNationalIdWithValidityPeriodsQueries queries) returns ListPerNationalIdWithValidityPeriodsResponse|error {
         string resourcePath = string `/PerNationalIdWithValidityPeriod`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -327,7 +327,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerAddressDEFLTs(map<string|string[]> headers = {}, *ListPerAddressDEFLTsQueries queries) returns Wrapper_11|error {
+    remote isolated function listPerAddressDEFLTs(map<string|string[]> headers = {}, *ListPerAddressDEFLTsQueries queries) returns ListPerAddressDEFLTsResponse|error {
         string resourcePath = string `/PerAddressDEFLT`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -364,7 +364,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listNameFormatGOs(map<string|string[]> headers = {}, *ListNameFormatGOsQueries queries) returns Wrapper_12|error {
+    remote isolated function listNameFormatGOs(map<string|string[]> headers = {}, *ListNameFormatGOsQueries queries) returns ListNameFormatGOsResponse|error {
         string resourcePath = string `/NameFormatGO`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -389,7 +389,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listNameElementGOs(map<string|string[]> headers = {}, *ListNameElementGOsQueries queries) returns Wrapper_13|error {
+    remote isolated function listNameElementGOs(map<string|string[]> headers = {}, *ListNameElementGOsQueries queries) returns ListNameElementGOsResponse|error {
         string resourcePath = string `/NameElementGO`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -415,7 +415,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerBiographicalInfoLocBRAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocBRAsQueries queries) returns Wrapper_14|error {
+    remote isolated function listPerBiographicalInfoLocBRAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocBRAsQueries queries) returns ListPerBiographicalInfoLocBRAsResponse|error {
         string resourcePath = string `/PerBiographicalInfoLocBRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -441,7 +441,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerBiographicalInfoLocCHLs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocCHLsQueries queries) returns Wrapper_15|error {
+    remote isolated function listPerBiographicalInfoLocCHLs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocCHLsQueries queries) returns ListPerBiographicalInfoLocCHLsResponse|error {
         string resourcePath = string `/PerBiographicalInfoLocCHL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -467,7 +467,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerBiographicalInfoLocFRAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocFRAsQueries queries) returns Wrapper_16|error {
+    remote isolated function listPerBiographicalInfoLocFRAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocFRAsQueries queries) returns ListPerBiographicalInfoLocFRAsResponse|error {
         string resourcePath = string `/PerBiographicalInfoLocFRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -493,7 +493,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerBiographicalInfoLocITAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocITAsQueries queries) returns Wrapper_17|error {
+    remote isolated function listPerBiographicalInfoLocITAs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocITAsQueries queries) returns ListPerBiographicalInfoLocITAsResponse|error {
         string resourcePath = string `/PerBiographicalInfoLocITA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -519,7 +519,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerBiographicalInfoLocVENs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocVENsQueries queries) returns Wrapper_18|error {
+    remote isolated function listPerBiographicalInfoLocVENs(map<string|string[]> headers = {}, *ListPerBiographicalInfoLocVENsQueries queries) returns ListPerBiographicalInfoLocVENsResponse|error {
         string resourcePath = string `/PerBiographicalInfoLocVEN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

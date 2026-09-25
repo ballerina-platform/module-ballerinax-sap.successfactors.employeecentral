@@ -43,7 +43,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeSheets(map<string|string[]> headers = {}, *ListEmployeeTimeSheetsQueries queries) returns Wrapper|error {
+    remote isolated function listEmployeeTimeSheets(map<string|string[]> headers = {}, *ListEmployeeTimeSheetsQueries queries) returns ListEmployeeTimeSheetsResponse|error {
         string resourcePath = string `/EmployeeTimeSheet`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -68,7 +68,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listExternalAllowances(map<string|string[]> headers = {}, *ListExternalAllowancesQueries queries) returns Wrapper_1|error {
+    remote isolated function listExternalAllowances(map<string|string[]> headers = {}, *ListExternalAllowancesQueries queries) returns ListExternalAllowancesResponse|error {
         string resourcePath = string `/ExternalAllowance`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -131,7 +131,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeCollectors(map<string|string[]> headers = {}, *ListTimeCollectorsQueries queries) returns Wrapper_2|error {
+    remote isolated function listTimeCollectors(map<string|string[]> headers = {}, *ListTimeCollectorsQueries queries) returns ListTimeCollectorsResponse|error {
         string resourcePath = string `/TimeCollector`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -156,7 +156,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listExternalTimeRecords(map<string|string[]> headers = {}, *ListExternalTimeRecordsQueries queries) returns Wrapper_3|error {
+    remote isolated function listExternalTimeRecords(map<string|string[]> headers = {}, *ListExternalTimeRecordsQueries queries) returns ListExternalTimeRecordsResponse|error {
         string resourcePath = string `/ExternalTimeRecord`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -219,7 +219,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listExternalTimeData(map<string|string[]> headers = {}, *ListExternalTimeDataQueries queries) returns Wrapper_4|error {
+    remote isolated function listExternalTimeData(map<string|string[]> headers = {}, *ListExternalTimeDataQueries queries) returns ListExternalTimeDataResponse|error {
         string resourcePath = string `/ExternalTimeData`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -282,7 +282,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listDataReplicationProxies(map<string|string[]> headers = {}, *ListDataReplicationProxiesQueries queries) returns Wrapper_5|error {
+    remote isolated function listDataReplicationProxies(map<string|string[]> headers = {}, *ListDataReplicationProxiesQueries queries) returns ListDataReplicationProxiesResponse|error {
         string resourcePath = string `/DataReplicationProxy`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -307,7 +307,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeSheetEntries(map<string|string[]> headers = {}, *ListEmployeeTimeSheetEntriesQueries queries) returns Wrapper_6|error {
+    remote isolated function listEmployeeTimeSheetEntries(map<string|string[]> headers = {}, *ListEmployeeTimeSheetEntriesQueries queries) returns ListEmployeeTimeSheetEntriesResponse|error {
         string resourcePath = string `/EmployeeTimeSheetEntry`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -333,7 +333,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeValuationResults(map<string|string[]> headers = {}, *ListEmployeeTimeValuationResultsQueries queries) returns Wrapper_7|error {
+    remote isolated function listEmployeeTimeValuationResults(map<string|string[]> headers = {}, *ListEmployeeTimeValuationResultsQueries queries) returns ListEmployeeTimeValuationResultsResponse|error {
         string resourcePath = string `/EmployeeTimeValuationResult`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -359,7 +359,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAllowanceRecordings(map<string|string[]> headers = {}, *ListAllowanceRecordingsQueries queries) returns Wrapper_8|error {
+    remote isolated function listAllowanceRecordings(map<string|string[]> headers = {}, *ListAllowanceRecordingsQueries queries) returns ListAllowanceRecordingsResponse|error {
         string resourcePath = string `/AllowanceRecording`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -384,7 +384,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAvailableAllowanceTypes(map<string|string[]> headers = {}, *ListAvailableAllowanceTypesQueries queries) returns Wrapper_9|error {
+    remote isolated function listAvailableAllowanceTypes(map<string|string[]> headers = {}, *ListAvailableAllowanceTypesQueries queries) returns ListAvailableAllowanceTypesResponse|error {
         string resourcePath = string `/AvailableAllowanceType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -411,7 +411,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listExternalTimeSegments(map<string|string[]> headers = {}, *ListExternalTimeSegmentsQueries queries) returns Wrapper_10|error {
+    remote isolated function listExternalTimeSegments(map<string|string[]> headers = {}, *ListExternalTimeSegmentsQueries queries) returns ListExternalTimeSegmentsResponse|error {
         string resourcePath = string `/ExternalTimeSegment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -477,7 +477,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeRecordings(map<string|string[]> headers = {}, *ListTimeRecordingsQueries queries) returns Wrapper_11|error {
+    remote isolated function listTimeRecordings(map<string|string[]> headers = {}, *ListTimeRecordingsQueries queries) returns ListTimeRecordingsResponse|error {
         string resourcePath = string `/TimeRecording`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -502,7 +502,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAllowances(map<string|string[]> headers = {}, *ListAllowancesQueries queries) returns Wrapper_12|error {
+    remote isolated function listAllowances(map<string|string[]> headers = {}, *ListAllowancesQueries queries) returns ListAllowancesResponse|error {
         string resourcePath = string `/Allowance`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

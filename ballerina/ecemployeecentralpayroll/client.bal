@@ -42,7 +42,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeePayrollRunResultsItemss(map<string|string[]> headers = {}, *ListEmployeePayrollRunResultsItemssQueries queries) returns Wrapper|error {
+    remote isolated function listEmployeePayrollRunResultsItemss(map<string|string[]> headers = {}, *ListEmployeePayrollRunResultsItemssQueries queries) returns ListEmployeePayrollRunResultsItemssResponse|error {
         string resourcePath = string `/EmployeePayrollRunResultsItems`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -111,7 +111,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeePayrollRunResultss(map<string|string[]> headers = {}, *ListEmployeePayrollRunResultssQueries queries) returns Wrapper_1|error {
+    remote isolated function listEmployeePayrollRunResultss(map<string|string[]> headers = {}, *ListEmployeePayrollRunResultssQueries queries) returns ListEmployeePayrollRunResultssResponse|error {
         string resourcePath = string `/EmployeePayrollRunResults`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

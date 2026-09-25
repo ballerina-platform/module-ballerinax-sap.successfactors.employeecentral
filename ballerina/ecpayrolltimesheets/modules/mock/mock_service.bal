@@ -18,11 +18,16 @@
 // under the License.
 
 import ballerina/http;
+import ballerina/os;
+
+boolean isBalBuild = os:getEnv("IS_BAL_BUILD") == "true";
+string certPathPostFix = isBalBuild ? "../" : "/home/ballerina/ballerina/";
+
 listener http:Listener ep0 = new (9090,
     secureSocket = {
         key: {
-            certFile: "../resources/public.crt",
-            keyFile: "../resources/private.key"
+            certFile: certPathPostFix + "resources/public.crt",
+            keyFile: certPathPostFix + "resources/private.key"
         }
     }
 );

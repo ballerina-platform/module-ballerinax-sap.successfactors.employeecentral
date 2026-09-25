@@ -24,7 +24,7 @@ public type CollectionofEmpCostDistribution record {
     EmpCostDistribution[] results?;
 };
 
-public type Wrapper record {
+public type ListEmpCostDistributionsResponse record {
     CollectionofEmpCostDistribution d?;
 };
 
@@ -116,7 +116,7 @@ public type DeleteEmpCostDistributionHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_1 record {
+public type ListEmpCostDistributionItemsResponse record {
     CollectionofEmpCostDistributionItem d?;
 };
 

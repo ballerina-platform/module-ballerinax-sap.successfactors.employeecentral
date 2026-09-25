@@ -2,6 +2,22 @@
 
 This file contains all the notable changes done to the Ballerina `sap.successfactors.employeecentral` module.
 
+## [2.0.0] - Unreleased
+
+### Fixed
+
+- **Breaking:** renamed every meaningless `Wrapper`/`Wrapper_N` OData response-envelope type (476
+  occurrences across all 21 modules) and every escaped-space-identifier envelope type in `ectimeoff`
+  specifically (132 occurrences, e.g. `` Time\ Account\ Posting\ Rule ``, `` Modified Work Schedule Day ``)
+  to a meaningful, collision-free name derived from the operation that returns/accepts it, e.g.
+  `getTimeAccountPostingRule` → `GetTimeAccountPostingRuleResponse`, `updateEmployeeTimeAUS` payload →
+  `UpdateEmployeeTimeAUSPayload`. Anyone referencing these types by name (rather than through type
+  inference) needs to update to the new names.
+
+### Changed
+
+- Bumped every connector package to version `2.0.0` (from `1.1.1`).
+
 ## [1.0.0] - Unreleased
 
 ### Fixed

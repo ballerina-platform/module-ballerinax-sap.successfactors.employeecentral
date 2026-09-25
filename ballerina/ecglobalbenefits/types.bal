@@ -202,7 +202,7 @@ public type BenefitPensionNonDependentNominees record {
     BenefitPensionNonDependentNominees d?;
 };
 
-public type Wrapper_19 record {
+public type ListSavingsAccountDeductionDetailsResponse record {
     CollectionofSavingsAccountDeductionDetails d?;
 };
 
@@ -228,7 +228,7 @@ public type ListEmployeeWithEmployerMatchContributionEntriessQueries record {
     ("EmployeeWithEmployerMatchContributions_configurationId"|"EmployeeWithEmployerMatchContributions_effectiveStartDate"|"createdBy"|"createdDateTime"|"eeContributionPercentage"|"eeERMatchValuesID"|"erContributionPercentage"|"isDefault"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_17 record {
+public type ListBenefitSchedulessResponse record {
     CollectionofBenefitSchedules d?;
 };
 
@@ -244,11 +244,11 @@ public type GetBenefitProgramQueries record {
     ("amount"|"createdBy"|"createdDateTime"|"currency"|"effectiveStartDate"|"eligibilityRuleId"|"exceptionWorkflowId"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"multipleSelectionAllowed"|"programEnrollmentWorkflowId"|"programId"|"programName"|"programSchedule"|"status"|"supressClientDateValidation")[] \$select?;
 };
 
-public type Wrapper_16 record {
+public type ListBenefitEventsResponse record {
     CollectionofBenefitEvent d?;
 };
 
-public type Wrapper_13 record {
+public type ListImputedCostForAgeRangessResponse record {
     CollectionofImputedCostForAgeRanges d?;
 };
 
@@ -270,7 +270,7 @@ public type ListBenefitPensionMinMaxContributionLimitssQueries record {
     ("configurationTableId"|"configurationTableName"|"createdBy"|"createdDateTime"|"currency"|"eeDefaultAmount"|"eeDefaultPercentage"|"eeMaxContributionAmount"|"eeMaxContributionPercentage"|"eeMinContributionAmount"|"eeMinContributionPercentage"|"effectiveEndDate"|"effectiveStartDate"|"employeeContributionType"|"employerContributionType"|"erDefaultAmount"|"erDefaultPercentage"|"erMaxContributionAmount"|"erMaxContributionPercentage"|"erMinContributionAmount"|"erMinContributionPercentage"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_11 record {
+public type ListBenefitEmployeeLifeEventDeclarationFormsResponse record {
     CollectionofBenefitEmployeeLifeEventDeclarationForm d?;
 };
 
@@ -516,7 +516,7 @@ public type RelatedCollectionSFOData_BenefitFuelReimbursementClaimDetail record 
     BenefitFuelReimbursementClaimDetail[] results?;
 };
 
-public type Wrapper_49 record {
+public type ListBenefitPensionEmployerContributionDetailsResponse record {
     CollectionofBenefitPensionEmployerContributionDetail d?;
 };
 
@@ -528,15 +528,15 @@ public type GetBenefitsIntegrationRecurringInfoQueries record {
     ("benefit"|"benefitEnrollment"|"benefitSchedulePeriod"|"category"|"createdBy"|"createdDateTime"|"currency"|"effectiveStatus"|"externalName"|"frequency"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"payCompBeginDate"|"payCompEndDate"|"payComponent"|"recordStatus"|"reference"|"unitOfMeasure"|"value"|"workerId")[] \$select?;
 };
 
-public type Wrapper_46 record {
+public type ListBenefitPensionMinMaxContributionLimitssResponse record {
     CollectionofBenefitPensionMinMaxContributionLimits d?;
 };
 
-public type Wrapper_47 record {
+public type ListBenefitDependentDetailsResponse record {
     CollectionofBenefitDependentDetail d?;
 };
 
-public type Wrapper_44 record {
+public type ListBenefitPensionFundEnrollmentContributionDetailsResponse record {
     CollectionofBenefitPensionFundEnrollmentContributionDetail d?;
 };
 
@@ -546,7 +546,7 @@ public type GetBenefitDependentDetailQueries record {
     ("BenefitEmployeeClaim_id"|"createdBy"|"createdDateTime"|"dateOfBirth"|"dependentName"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"relationShipType")[] \$select?;
 };
 
-public type Wrapper_45 record {
+public type ListBenefitPensionEnrollmentContributionDetailsResponse record {
     CollectionofBenefitPensionEnrollmentContributionDetail d?;
 };
 
@@ -675,11 +675,11 @@ public type ListSavingsAccountUSAsQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"SavingsAccountBenefitDetails_externalCode"|"annualMaxContributionAmount"|"annualMaxPayComponent"|"annualMinContributionAmount"|"beneficiaryRelevant"|"createdBy"|"createdDateTime"|"empAnnualLimitPayComponent"|"employerContributionHSA"|"employerPayComponent"|"externalCode"|"isEmployerContributionRequired"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"savingsPlanCatchUpDetail"|"savingsPlanSubType")[] \$select?;
 };
 
-public type Wrapper_59 record {
+public type ListBenefitInsuranceEnrolleeTypesResponse record {
     CollectionofBenefitInsuranceEnrolleeType d?;
 };
 
-public type Wrapper_57 record {
+public type ListBenefitSavingsPlanEnrollmentContributionDetailsResponse record {
     CollectionofBenefitSavingsPlanEnrollmentContributionDetail d?;
 };
 
@@ -691,7 +691,7 @@ public type SavingsAccountDeductionDetails record {
     string deductionDetailId?;
 };
 
-public type Wrapper_58 record {
+public type ListBenefitCompanyCarRecommendedVendorssResponse record {
     CollectionofBenefitCompanyCarRecommendedVendors d?;
 };
 
@@ -715,7 +715,7 @@ public type ListEmployeeWithEmployerMatchContributionssQueries record {
     ("configurationId"|"configurationName"|"createdBy"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_56 record {
+public type ListBenefitLegalEntitysResponse record {
     CollectionofBenefitLegalEntity d?;
 };
 
@@ -723,7 +723,7 @@ public type CollectionofBenefitPensionFundEnrollmentContributionDetail record {
     BenefitPensionFundEnrollmentContributionDetail[] results?;
 };
 
-public type Wrapper_53 record {
+public type ListPensionBandingConfigurationDetailsResponse record {
     CollectionofPensionBandingConfigurationDetails d?;
 };
 
@@ -747,15 +747,15 @@ public type ListBenefitInsurancePlanUSAsQueries record {
     ("BenefitInsurancePlan_effectiveStartDate"|"BenefitInsurancePlan_id"|"IRSPremiumTable"|"cobraRelevant"|"createdBy"|"createdDateTime"|"employeeContributionTaxAllocation"|"employeePostTaxContributionPayComponent"|"employeePreTaxContributionPayComponent"|"id"|"imputedIncomeHandling"|"imputedIncomePayComponent"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_51 record {
+public type ListBenefitDocumentssResponse record {
     CollectionofBenefitDocuments d?;
 };
 
-public type Wrapper_52 record {
+public type ListBenefitPensionFundsResponse record {
     CollectionofBenefitPensionFund d?;
 };
 
-public type Wrapper_50 record {
+public type ListBenefitsConfigUIScreenLookupsResponse record {
     CollectionofBenefitsConfigUIScreenLookup d?;
 };
 
@@ -805,19 +805,19 @@ public type CollectionofBenefitSavingsPlanSubTypeCountryLookup record {
     BenefitSavingsPlanSubTypeCountryLookup[] results?;
 };
 
-public type Wrapper_28 record {
+public type ListPensionBandingConfigurationsResponse record {
     CollectionofPensionBandingConfiguration d?;
 };
 
-public type Wrapper_29 record {
+public type ListBenefitInsuranceDependentDetailsResponse record {
     CollectionofBenefitInsuranceDependentDetail d?;
 };
 
-public type Wrapper_26 record {
+public type ListBenefitSchedulePeriodsResponse record {
     CollectionofBenefitSchedulePeriod d?;
 };
 
-public type Wrapper_25 record {
+public type ListIRSPremiumTablesResponse record {
     CollectionofIRSPremiumTable d?;
 };
 
@@ -825,7 +825,7 @@ public type BenefitEvent record {
     BenefitEvent d?;
 };
 
-public type Wrapper_22 record {
+public type ListLifeEventForBenefitsResponse record {
     CollectionofLifeEventForBenefit d?;
 };
 
@@ -833,15 +833,15 @@ public type BenefitSavingsPlanSubType record {
     BenefitSavingsPlanSubType d?;
 };
 
-public type Wrapper_23 record {
+public type ListBenefitInsurancePlanUSAsResponse record {
     CollectionofBenefitInsurancePlanUSA d?;
 };
 
-public type Wrapper_20 record {
+public type ListBenefitPaymentOptionssResponse record {
     CollectionofBenefitPaymentOptions d?;
 };
 
-public type Wrapper_21 record {
+public type ListBenefitSavingsPlanSubTypeCountryLookupsResponse record {
     CollectionofBenefitSavingsPlanSubTypeCountryLookup d?;
 };
 
@@ -906,7 +906,7 @@ public type BenefitDependentDetail record {
     string dependentName?;
 };
 
-public type Wrapper_37 record {
+public type ListBenefitPensionAdditionalContributionLimitssResponse record {
     CollectionofBenefitPensionAdditionalContributionLimits d?;
 };
 
@@ -916,27 +916,27 @@ public type GetBenefitHyperlinkConfigurationQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"createdBy"|"createdDateTime"|"id"|"label_de_DE"|"label_defaultValue"|"label_en_DEBUG"|"label_en_GB"|"label_en_US"|"label_es_ES"|"label_fr_FR"|"label_ja_JP"|"label_ko_KR"|"label_localized"|"label_nl_NL"|"label_pt_BR"|"label_pt_PT"|"label_ru_RU"|"label_zh_CN"|"label_zh_TW"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"url")[] \$select?;
 };
 
-public type Wrapper_38 record {
+public type ListBenefitPensionNonDependentNomineessResponse record {
     CollectionofBenefitPensionNonDependentNominees d?;
 };
 
-public type Wrapper_35 record {
+public type ListBenefitCompanyCarsResponse record {
     CollectionofBenefitCompanyCar d?;
 };
 
-public type Wrapper_36 record {
+public type ListBenefitCompanyHousingsResponse record {
     CollectionofBenefitCompanyHousing d?;
 };
 
-public type Wrapper_33 record {
+public type ListBenefitFuelReimbursementsResponse record {
     CollectionofBenefitFuelReimbursement d?;
 };
 
-public type Wrapper_34 record {
+public type ListInsuranceEnrollmentFieldsConfigurationsResponse record {
     CollectionofInsuranceEnrollmentFieldsConfiguration d?;
 };
 
-public type Wrapper_32 record {
+public type ListBenefitEmployeeClaimDetailsResponse record {
     CollectionofBenefitEmployeeClaimDetail d?;
 };
 
@@ -1211,11 +1211,11 @@ public type BenefitLeaveTravelReimbursementClaim record {
     BenefitLeaveTravelReimbursementClaim d?;
 };
 
-public type Wrapper_9 record {
+public type ListBenefitCompanyCarLeaseServiceProvidersResponse record {
     CollectionofBenefitCompanyCarLeaseServiceProvider d?;
 };
 
-public type Wrapper_4 record {
+public type ListEmployeeWithEmployerMatchContributionssResponse record {
     CollectionofEmployeeWithEmployerMatchContributions d?;
 };
 
@@ -1223,7 +1223,7 @@ public type CollectionofBenefitFuelReimbursementClaimDetail record {
     BenefitFuelReimbursementClaimDetail[] results?;
 };
 
-public type Wrapper_6 record {
+public type ListEmployeeWithEmployerMatchContributionEntriessResponse record {
     CollectionofEmployeeWithEmployerMatchContributionEntries d?;
 };
 
@@ -1231,7 +1231,7 @@ public type BenefitCompanyCarClaim record {
     BenefitCompanyCarClaim d?;
 };
 
-public type Wrapper_1 record {
+public type ListBenefitSavingsPlanSubTypesResponse record {
     CollectionofBenefitSavingsPlanSubType d?;
 };
 
@@ -1239,7 +1239,7 @@ public type BenefitSavingsPlanPrimaryBeneficiary record {
     BenefitSavingsPlanPrimaryBeneficiary d?;
 };
 
-public type Wrapper_3 record {
+public type ListBenefitBalanceCarryForwardDetailsResponse record {
     CollectionofBenefitBalanceCarryForwardDetail d?;
 };
 
@@ -2207,15 +2207,15 @@ public type GetBenefitEffectiveDateConfigurationQueries record {
     ("BenefitLifeEventConfiguration_configurationId"|"BenefitLifeEventConfiguration_effectiveStartDate"|"benefit"|"createdBy"|"createdDateTime"|"deductionRule"|"exceptionFor"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"rule")[] \$select?;
 };
 
-public type Wrapper_100 record {
+public type ListBenefitSavingsPlanEnrollmentDetailsResponse record {
     CollectionofBenefitSavingsPlanEnrollmentDetails d?;
 };
 
-public type Wrapper_101 record {
+public type ListACAReportingDependentDetailsResponse record {
     CollectionofACAReportingDependentDetails d?;
 };
 
-public type Wrapper_102 record {
+public type ListBenefitDeductionDetailsResponse record {
     CollectionofBenefitDeductionDetails d?;
 };
 
@@ -2937,23 +2937,23 @@ public type GetBenefitSavingsPlanTierConfigurationQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"annualMaxContributionAmount"|"annualMinContributionAmount"|"coverageTier"|"createdBy"|"createdDateTime"|"employerContributionConfig"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_88 record {
+public type ListBenefitSavingsPlanContingentBeneficiarysResponse record {
     CollectionofBenefitSavingsPlanContingentBeneficiary d?;
 };
 
-public type Wrapper_89 record {
+public type ListBenefitHyperlinkConfigurationsResponse record {
     CollectionofBenefitHyperlinkConfiguration d?;
 };
 
-public type Wrapper_87 record {
+public type ListBenefitSavingsPlanPrimaryBeneficiarysResponse record {
     CollectionofBenefitSavingsPlanPrimaryBeneficiary d?;
 };
 
-public type Wrapper_82 record {
+public type ListBenefitSavingsPlanERContributionConfigDetailsResponse record {
     CollectionofBenefitSavingsPlanERContributionConfigDetail d?;
 };
 
-public type Wrapper_83 record {
+public type ListBenefitSavingsPlanCatchUpDetailsResponse record {
     CollectionofBenefitSavingsPlanCatchUpDetail d?;
 };
 
@@ -2979,7 +2979,7 @@ public type ListBenefitPensionEmployeeContributionDetailsQueries record {
     ("Benefit_benefitId"|"Benefit_effectiveStartDate"|"createdBy"|"createdDate"|"createdDateTime"|"employeeCanEditEmployeeContribution"|"employeeContributionAmount"|"employeeContributionPercentage"|"employeeContributionRule"|"employeeContributionType"|"employeeStatutoryMinimumAmount"|"employeeStatutoryMinimumPercentage"|"id"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_81 record {
+public type ListBenefitSavingsPlanERContributionConfigsResponse record {
     CollectionofBenefitSavingsPlanERContributionConfig d?;
 };
 
@@ -3038,7 +3038,7 @@ public type GetPensionBandingConfigurationDetailsQueries record {
     ("PensionBandingConfiguration_bandingConfigurationId"|"PensionBandingConfiguration_effectiveStartDate"|"bandingDetailsId"|"createdBy"|"createdDateTime"|"employeePercentage"|"employerPercentage"|"lastModifiedBy"|"lastModifiedDateTime"|"lowerBandValue"|"mdfSystemRecordStatus"|"upperBandValue")[] \$select?;
 };
 
-public type Wrapper_98 record {
+public type ListBenefitPensionAdditionalEmployeeContributionDetailsResponse record {
     CollectionofBenefitPensionAdditionalEmployeeContributionDetail d?;
 };
 
@@ -3052,11 +3052,11 @@ public type GetBenefitCompanyCarAllowedModelsQueries record {
     ("carModelName"|"createdBy"|"createdDate"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_91 record {
+public type ListBenefitOverviewHyperlinkDetailsResponse record {
     CollectionofBenefitOverviewHyperlinkDetails d?;
 };
 
-public type Wrapper_90 record {
+public type ListBenefitOverviewHyperlinkConfigurationsResponse record {
     CollectionofBenefitOverviewHyperlinkConfiguration d?;
 };
 
@@ -3122,7 +3122,7 @@ public type GetBenefitEnrollmentGroupQueries record {
     ("createdBy"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"openEnrollmentConfig"|"recordStatus"|"schedulePeriod"|"workerId")[] \$select?;
 };
 
-public type Wrapper_69 record {
+public type ListBenefitLeaveTravelReimbursementClaimsResponse record {
     CollectionofBenefitLeaveTravelReimbursementClaim d?;
 };
 
@@ -3130,7 +3130,7 @@ public type RelatedCollectionSFOData_BenefitCompanyCarAllowedModels record {
     BenefitCompanyCarAllowedModels[] results?;
 };
 
-public type Wrapper_66 record {
+public type ListBenefitFuelReimbursementClaimDetailsResponse record {
     CollectionofBenefitFuelReimbursementClaimDetail d?;
 };
 
@@ -3142,15 +3142,15 @@ public type GetBenefitsIntegrationOneTimeInfoQueries record {
     ("benefit"|"benefitEnrollment"|"benefitSchedulePeriod"|"category"|"createdBy"|"createdDateTime"|"currency"|"effectiveStatus"|"externalName"|"id"|"lastModifiedBy"|"lastModifiedDateTime"|"payCompDate"|"payComponent"|"recordStatus"|"reference"|"unitOfMeasure"|"value"|"workerId")[] \$select?;
 };
 
-public type Wrapper_67 record {
+public type ListBenefitPensionStatutoryMinimumLookupsResponse record {
     CollectionofBenefitPensionStatutoryMinimumLookup d?;
 };
 
-public type Wrapper_64 record {
+public type ListBenefitPensionDependentNomineessResponse record {
     CollectionofBenefitPensionDependentNominees d?;
 };
 
-public type Wrapper_65 record {
+public type ListBenefitContactsResponse record {
     CollectionofBenefitContact d?;
 };
 
@@ -3200,7 +3200,7 @@ public type GetBenefitCompanyCarLeaseServiceProviderQueries record {
     ("createdBy"|"createdDate"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"emiInterestRate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"serviceProviderName")[] \$select?;
 };
 
-public type Wrapper_61 record {
+public type ListBenefitCompanyCarClaimsResponse record {
     CollectionofBenefitCompanyCarClaim d?;
 };
 
@@ -3278,7 +3278,7 @@ public type GetBenefitExceptionDetailsQueries record {
     ("BenefitsException_exceptionId"|"adjustmentAmount"|"benefit"|"benefitSchedulePeriodDataSourceWithExternalCode"|"createdBy"|"createdDateTime"|"deductionStartDateRule"|"effectiveStartDateRule"|"enrollmentEffectiveDate"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"schedulePeriod")[] \$select?;
 };
 
-public type Wrapper_79 record {
+public type ListBenefitDeductibleAllowanceEnrollmentsResponse record {
     CollectionofBenefitDeductibleAllowanceEnrollment d?;
 };
 
@@ -3288,11 +3288,11 @@ public type GetBenefitPensionNonDependentNomineesQueries record {
     ("BenefitEnrollment_effectiveStartDate"|"BenefitEnrollment_id"|"address"|"contact"|"createdBy"|"createdDateTime"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"name"|"nomineesId"|"percentage")[] \$select?;
 };
 
-public type Wrapper_77 record {
+public type ListBenefitPensionEmployeeContributionDetailsResponse record {
     CollectionofBenefitPensionEmployeeContributionDetail d?;
 };
 
-public type Wrapper_76 record {
+public type ListBenefitCompanyHousingEnrollmentsResponse record {
     CollectionofBenefitCompanyHousingEnrollment d?;
 };
 
@@ -3312,15 +3312,15 @@ public type CollectionofBenefitInsuranceEnrolleeType record {
     BenefitInsuranceEnrolleeType[] results?;
 };
 
-public type Wrapper_71 record {
+public type ListBenefitCompanyCarAllowedModelssResponse record {
     CollectionofBenefitCompanyCarAllowedModels d?;
 };
 
-public type Wrapper_72 record {
+public type ListBenefitsConfirmationStatementConfigurationsResponse record {
     CollectionofBenefitsConfirmationStatementConfiguration d?;
 };
 
-public type Wrapper_70 record {
+public type ListBenefitBalanceCarryForwardsResponse record {
     CollectionofBenefitBalanceCarryForward d?;
 };
 

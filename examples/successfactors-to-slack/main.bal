@@ -41,7 +41,7 @@ public function main() returns error? {
 
     log:printInfo(string `Fetching new hires since ${sinceDate}...`);
 
-    empinfo:Wrapper_1 response = check sfClient->listEmpEmployments(
+    empinfo:ListEmpEmploymentsResponse response = check sfClient->listEmpEmployments(
         queries = {
             \$filter: string `startDate ge datetime'${sinceDate}T00:00:00'`,
             \$top: 50

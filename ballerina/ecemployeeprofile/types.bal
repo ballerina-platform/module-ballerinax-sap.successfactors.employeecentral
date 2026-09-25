@@ -149,7 +149,7 @@ public type EPPublicProfile record {
     string userId?;
 };
 
-public type Wrapper record {
+public type ListBackgroundCommunitiesResponse record {
     CollectionofBackground_Community d?;
 };
 
@@ -175,7 +175,7 @@ public type BackgroundBenefitselection record {
     Background_Benefitselection d?;
 };
 
-public type Wrapper_19 record {
+public type ListBadgeTemplatessResponse record {
     CollectionofBadgeTemplates d?;
 };
 
@@ -183,7 +183,7 @@ public type CollectionofBackground_InsideWorkExperience record {
     Background_InsideWorkExperience[] results?;
 };
 
-public type Wrapper_17 record {
+public type ListBackgroundInsideWorkExperiencesResponse record {
     CollectionofBackground_InsideWorkExperience d?;
 };
 
@@ -195,7 +195,7 @@ public type CreatedBackground_VarPayEmpHistData record {
     Background_VarPayEmpHistData d?;
 };
 
-public type Wrapper_18 record {
+public type ListBackgroundPreferredNextMovesResponse record {
     CollectionofBackground_PreferredNextMove d?;
 };
 
@@ -205,7 +205,7 @@ public type GetBackgroundFuncExperienceQueries record {
     ("backgroundElementId"|"bgOrderPos"|"comments"|"experience"|"lastModifiedDate"|"userId"|"years")[] \$select?;
 };
 
-public type Wrapper_15 record {
+public type ListBackgroundMobilitiesResponse record {
     CollectionofBackground_Mobility d?;
 };
 
@@ -216,11 +216,11 @@ public type Background_InsideWorkExperience record {
     string userId?;
 };
 
-public type Wrapper_16 record {
+public type ListBackgroundVarPayEmpHistDataResponse record {
     CollectionofBackground_VarPayEmpHistData d?;
 };
 
-public type Wrapper_13 record {
+public type ListBackgroundAwardssResponse record {
     CollectionofBackground_Awards d?;
 };
 
@@ -228,15 +228,15 @@ public type BadgeTemplates record {
     int:Signed32 badgeId?;
 };
 
-public type Wrapper_14 record {
+public type ListBackgroundEducationsResponse record {
     CollectionofBackground_Education d?;
 };
 
-public type Wrapper_11 record {
+public type ListUserBadgessResponse record {
     CollectionofUserBadges d?;
 };
 
-public type Wrapper_12 record {
+public type ListBackgroundGoogledocssResponse record {
     CollectionofBackground_Googledocs d?;
 };
 
@@ -251,7 +251,7 @@ public type CreatedBackground_Languages record {
     Background_Languages d?;
 };
 
-public type Wrapper_10 record {
+public type ListBackgroundTalentPoolsResponse record {
     CollectionofBackground_TalentPool d?;
 };
 
@@ -799,11 +799,11 @@ public type Background_TalentPool record {
     string userId?;
 };
 
-public type Wrapper_28 record {
+public type ListBackgroundLeadExperiencesResponse record {
     CollectionofBackground_LeadExperience d?;
 };
 
-public type Wrapper_29 record {
+public type ListTrendDataSysOverallObjectivesResponse record {
     CollectionofTrendData_SysOverallObjective d?;
 };
 
@@ -822,7 +822,7 @@ public type DeleteBackgroundAwardsHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_26 record {
+public type ListBackgroundCertificatessResponse record {
     CollectionofBackground_Certificates d?;
 };
 
@@ -836,7 +836,7 @@ public type GetBackgroundSysScoreCardDevelopmentObjectivesPortletQueries record 
     ("backgroundElementId"|"bgOrderPos"|"lastModifiedDate"|"userId")[] \$select?;
 };
 
-public type Wrapper_27 record {
+public type ListBackgroundVarPayEmpHistDataECSourcesResponse record {
     CollectionofBackground_VarPayEmpHistDataECSource d?;
 };
 
@@ -852,27 +852,27 @@ public type GetBackgroundPreferredNextMoveQueries record {
     ("backgroundElementId"|"bgOrderPos"|"comments"|"function"|"lastModifiedDate"|"level"|"timeframe"|"title"|"userId")[] \$select?;
 };
 
-public type Wrapper_24 record {
+public type ListEPCustomBackgroundPortletsResponse record {
     CollectionofEPCustomBackgroundPortlet d?;
 };
 
-public type Wrapper_25 record {
+public type ListBackgroundSpecialAssignsResponse record {
     CollectionofBackground_SpecialAssign d?;
 };
 
-public type Wrapper_22 record {
+public type ListBackgroundSysScoreCardDevelopmentObjectivesPortletsResponse record {
     CollectionofBackground_SysScoreCardDevelopmentObjectivesPortlet d?;
 };
 
-public type Wrapper_23 record {
+public type ListBackgroundTalentPoolcorpsResponse record {
     CollectionofBackground_TalentPoolcorp d?;
 };
 
-public type Wrapper_20 record {
+public type ListEPPublicProfilesResponse record {
     CollectionofEPPublicProfile d?;
 };
 
-public type Wrapper_21 record {
+public type ListBackgroundLanguagessResponse record {
     CollectionofBackground_Languages d?;
 };
 
@@ -986,7 +986,7 @@ public type DeleteBackgroundGoogledocsHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_33 record {
+public type ListTrendDataSysOverallCustom1sResponse record {
     CollectionofTrendData_SysOverallCustom1 d?;
 };
 
@@ -994,7 +994,7 @@ public type ModifiedBackground_VarPayEmpHistData record {
     Background_VarPayEmpHistData d?;
 };
 
-public type Wrapper_34 record {
+public type ListTrendDataSysOverallCustom2sResponse record {
     CollectionofTrendData_SysOverallCustom2 d?;
 };
 
@@ -1022,7 +1022,7 @@ public type GetBackgroundInsideWorkExperienceQueries record {
     ("backgroundElementId"|"bgOrderPos"|"department"|"endDate"|"lastModifiedDate"|"startDate"|"title"|"userId")[] \$select?;
 };
 
-public type Wrapper_31 record {
+public type ListTrendDataSysOverallPotentialsResponse record {
     CollectionofTrendData_SysOverallPotential d?;
 };
 
@@ -1032,7 +1032,7 @@ public type DeleteBackgroundVarPayEmpHistDataECSourceHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_32 record {
+public type ListTrendDataSysOverallPerformancesResponse record {
     CollectionofTrendData_SysOverallPerformance d?;
 };
 
@@ -1044,7 +1044,7 @@ public type CollectionofBackground_Community record {
     Background_Community[] results?;
 };
 
-public type Wrapper_30 record {
+public type ListTrendDataSysOverallCompetenciesResponse record {
     CollectionofTrendData_SysOverallCompetency d?;
 };
 
@@ -1236,7 +1236,7 @@ public type Background_FuncExperience_1 record {
     Background_FuncExperience d?;
 };
 
-public type Wrapper_8 record {
+public type ListBackgroundDocumentssResponse record {
     CollectionofBackground_Documents d?;
 };
 
@@ -1246,15 +1246,15 @@ public type DeleteTrendDataSysOverallPerformanceHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_9 record {
+public type ListBackgroundFuncExperiencesResponse record {
     CollectionofBackground_FuncExperience d?;
 };
 
-public type Wrapper_4 record {
+public type ListBackgroundPromotabilitiesResponse record {
     CollectionofBackground_Promotability d?;
 };
 
-public type Wrapper_5 record {
+public type ListBackgroundFsaelectionsResponse record {
     CollectionofBackground_Fsaelection d?;
 };
 
@@ -1276,7 +1276,7 @@ public type ListBackgroundCertificatessQueries record {
     ("backgroundElementId"|"bgOrderPos"|"custom1"|"description"|"endDate"|"institution"|"lastModifiedDate"|"licenseCountry"|"licenseName"|"licenseNumber"|"licenseState"|"name"|"startDate"|"userId")[] \$select?;
 };
 
-public type Wrapper_6 record {
+public type ListBackgroundCompensationsResponse record {
     CollectionofBackground_Compensation d?;
 };
 
@@ -1302,7 +1302,7 @@ public type ListEPCustomBackgroundPortletsQueries record {
     ("backgroundElementId"|"backgroundPropertyLists"|"editable"|"userId"|"viewable")[] \$select?;
 };
 
-public type Wrapper_7 record {
+public type ListBackgroundMembershipssResponse record {
     CollectionofBackground_Memberships d?;
 };
 
@@ -1323,11 +1323,11 @@ public type UserBadges record {
     string userId?;
 };
 
-public type Wrapper_1 record {
+public type ListBackgroundCoursessResponse record {
     CollectionofBackground_Courses d?;
 };
 
-public type Wrapper_2 record {
+public type ListBackgroundBenefitselectionsResponse record {
     CollectionofBackground_Benefitselection d?;
 };
 
@@ -1335,7 +1335,7 @@ public type Background_InsideWorkExperience_1 record {
     Background_InsideWorkExperience d?;
 };
 
-public type Wrapper_3 record {
+public type ListBackgroundOutsideWorkExperiencesResponse record {
     CollectionofBackground_OutsideWorkExperience d?;
 };
 

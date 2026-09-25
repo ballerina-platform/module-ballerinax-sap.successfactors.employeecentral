@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testEmployeeDismissalProtectionDetails() returns error? {
-    Wrapper listEmployeeDismissalProtectionDetailsResult = check sfClient->listEmployeeDismissalProtectionDetails();
+    ListEmployeeDismissalProtectionDetailsResponse listEmployeeDismissalProtectionDetailsResult = check sfClient->listEmployeeDismissalProtectionDetails();
     test:assertTrue(listEmployeeDismissalProtectionDetailsResult.d !is (), "Result should not be null");
 }

@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testFOLegalEntityLocalUSAs() returns error? {
-    Wrapper listFOLegalEntityLocalUSAsResult = check sfClient->listFOLegalEntityLocalUSAs();
+    ListFOLegalEntityLocalUSAsResponse listFOLegalEntityLocalUSAsResult = check sfClient->listFOLegalEntityLocalUSAs();
     test:assertTrue(listFOLegalEntityLocalUSAsResult.d !is (), "Result should not be null");
 }

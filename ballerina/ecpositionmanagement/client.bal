@@ -43,7 +43,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPositionRequisitionStatuses(map<string|string[]> headers = {}, *ListPositionRequisitionStatusesQueries queries) returns Wrapper|error {
+    remote isolated function listPositionRequisitionStatuses(map<string|string[]> headers = {}, *ListPositionRequisitionStatusesQueries queries) returns ListPositionRequisitionStatusesResponse|error {
         string resourcePath = string `/PositionRequisitionStatus`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -106,7 +106,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPositionMatrixRelationships(map<string|string[]> headers = {}, *ListPositionMatrixRelationshipsQueries queries) returns Wrapper_1|error {
+    remote isolated function listPositionMatrixRelationships(map<string|string[]> headers = {}, *ListPositionMatrixRelationshipsQueries queries) returns ListPositionMatrixRelationshipsResponse|error {
         string resourcePath = string `/PositionMatrixRelationship`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -175,7 +175,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPositions(map<string|string[]> headers = {}, *ListPositionsQueries queries) returns Wrapper_2|error {
+    remote isolated function listPositions(map<string|string[]> headers = {}, *ListPositionsQueries queries) returns ListPositionsResponse|error {
         string resourcePath = string `/Position`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -252,7 +252,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPositionRightToReturns(map<string|string[]> headers = {}, *ListPositionRightToReturnsQueries queries) returns Wrapper_3|error {
+    remote isolated function listPositionRightToReturns(map<string|string[]> headers = {}, *ListPositionRightToReturnsQueries queries) returns ListPositionRightToReturnsResponse|error {
         string resourcePath = string `/PositionRightToReturn`;
         resourcePath = resourcePath + check getPathForQueryParam(queries);
         return self.clientEp->get(resourcePath, headers);

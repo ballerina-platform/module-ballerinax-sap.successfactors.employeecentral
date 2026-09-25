@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testBackgroundCommunities() returns error? {
-    Wrapper listBackgroundCommunitiesResult = check sfClient->listBackgroundCommunities();
+    ListBackgroundCommunitiesResponse listBackgroundCommunitiesResult = check sfClient->listBackgroundCommunities();
     test:assertTrue(listBackgroundCommunitiesResult.d !is (), "Result should not be null");
 }

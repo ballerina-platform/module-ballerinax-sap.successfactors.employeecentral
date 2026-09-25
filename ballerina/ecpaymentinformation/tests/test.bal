@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testPaymentInformationDetailV3KENs() returns error? {
-    Wrapper listPaymentInformationDetailV3KENsResult = check sfClient->listPaymentInformationDetailV3KENs();
+    ListPaymentInformationDetailV3KENsResponse listPaymentInformationDetailV3KENsResult = check sfClient->listPaymentInformationDetailV3KENs();
     test:assertTrue(listPaymentInformationDetailV3KENsResult.d !is (), "Result should not be null");
 }

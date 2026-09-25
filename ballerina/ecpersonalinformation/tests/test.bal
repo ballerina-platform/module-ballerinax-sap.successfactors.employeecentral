@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testPerEmergencyContactss() returns error? {
-    Wrapper listPerEmergencyContactssResult = check sfClient->listPerEmergencyContactss();
+    ListPerEmergencyContactssResponse listPerEmergencyContactssResult = check sfClient->listPerEmergencyContactss();
     test:assertTrue(listPerEmergencyContactssResult.d !is (), "Result should not be null");
 }

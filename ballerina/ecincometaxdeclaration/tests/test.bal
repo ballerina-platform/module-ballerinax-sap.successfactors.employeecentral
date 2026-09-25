@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testDeclarationTypes() returns error? {
-    Wrapper listDeclarationTypesResult = check sfClient->listDeclarationTypes();
+    ListDeclarationTypesResponse listDeclarationTypesResult = check sfClient->listDeclarationTypes();
     test:assertTrue(listDeclarationTypesResult.d !is (), "Result should not be null");
 }

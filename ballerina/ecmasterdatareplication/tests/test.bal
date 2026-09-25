@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testEmployeeDataReplicationConfirmationErrorMessages() returns error? {
-    Wrapper listEmployeeDataReplicationConfirmationErrorMessagesResult = check sfClient->listEmployeeDataReplicationConfirmationErrorMessages();
+    ListEmployeeDataReplicationConfirmationErrorMessagesResponse listEmployeeDataReplicationConfirmationErrorMessagesResult = check sfClient->listEmployeeDataReplicationConfirmationErrorMessages();
     test:assertTrue(listEmployeeDataReplicationConfirmationErrorMessagesResult.d !is (), "Result should not be null");
 }

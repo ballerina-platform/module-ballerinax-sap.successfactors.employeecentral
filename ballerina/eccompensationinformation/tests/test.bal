@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testOneTimeDeductions() returns error? {
-    Wrapper listOneTimeDeductionsResult = check sfClient->listOneTimeDeductions();
+    ListOneTimeDeductionsResponse listOneTimeDeductionsResult = check sfClient->listOneTimeDeductions();
     test:assertTrue(listOneTimeDeductionsResult.d !is (), "Result should not be null");
 }

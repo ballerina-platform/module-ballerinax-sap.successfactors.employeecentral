@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testPerGlobalInfoAREs() returns error? {
-    Wrapper listPerGlobalInfoAREsResult = check sfClient->listPerGlobalInfoAREs();
+    ListPerGlobalInfoAREsResponse listPerGlobalInfoAREsResult = check sfClient->listPerGlobalInfoAREs();
     test:assertTrue(listPerGlobalInfoAREsResult.d !is (), "Result should not be null");
 }

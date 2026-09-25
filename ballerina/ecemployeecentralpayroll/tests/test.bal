@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testEmployeePayrollRunResultsItemss() returns error? {
-    Wrapper listEmployeePayrollRunResultsItemssResult = check sfClient->listEmployeePayrollRunResultsItemss();
+    ListEmployeePayrollRunResultsItemssResponse listEmployeePayrollRunResultsItemssResult = check sfClient->listEmployeePayrollRunResultsItemss();
     test:assertTrue(listEmployeePayrollRunResultsItemssResult.d !is (), "Result should not be null");
 }

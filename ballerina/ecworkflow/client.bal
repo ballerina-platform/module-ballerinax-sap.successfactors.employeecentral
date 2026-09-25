@@ -43,7 +43,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listMyPendingWorkflows(map<string|string[]> headers = {}, *ListMyPendingWorkflowsQueries queries) returns Wrapper|error {
+    remote isolated function listMyPendingWorkflows(map<string|string[]> headers = {}, *ListMyPendingWorkflowsQueries queries) returns ListMyPendingWorkflowsResponse|error {
         string resourcePath = string `/MyPendingWorkflow`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -68,7 +68,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWfRequestParticipators(map<string|string[]> headers = {}, *ListWfRequestParticipatorsQueries queries) returns Wrapper_1|error {
+    remote isolated function listWfRequestParticipators(map<string|string[]> headers = {}, *ListWfRequestParticipatorsQueries queries) returns ListWfRequestParticipatorsResponse|error {
         string resourcePath = string `/WfRequestParticipator`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -93,7 +93,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkflowAllowedActionLists(map<string|string[]> headers = {}, *ListWorkflowAllowedActionListsQueries queries) returns Wrapper_2|error {
+    remote isolated function listWorkflowAllowedActionLists(map<string|string[]> headers = {}, *ListWorkflowAllowedActionListsQueries queries) returns ListWorkflowAllowedActionListsResponse|error {
         string resourcePath = string `/WorkflowAllowedActionList`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -118,7 +118,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAlertMessages(map<string|string[]> headers = {}, *ListAlertMessagesQueries queries) returns Wrapper_3|error {
+    remote isolated function listAlertMessages(map<string|string[]> headers = {}, *ListAlertMessagesQueries queries) returns ListAlertMessagesResponse|error {
         string resourcePath = string `/AlertMessage`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -181,7 +181,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWfRequestCommentss(map<string|string[]> headers = {}, *ListWfRequestCommentssQueries queries) returns Wrapper_4|error {
+    remote isolated function listWfRequestCommentss(map<string|string[]> headers = {}, *ListWfRequestCommentssQueries queries) returns ListWfRequestCommentssResponse|error {
         string resourcePath = string `/WfRequestComments`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -206,7 +206,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWfRequestSteps(map<string|string[]> headers = {}, *ListWfRequestStepsQueries queries) returns Wrapper_5|error {
+    remote isolated function listWfRequestSteps(map<string|string[]> headers = {}, *ListWfRequestStepsQueries queries) returns ListWfRequestStepsResponse|error {
         string resourcePath = string `/WfRequestStep`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -231,7 +231,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAutoDelegateDetails(map<string|string[]> headers = {}, *ListAutoDelegateDetailsQueries queries) returns Wrapper_6|error {
+    remote isolated function listAutoDelegateDetails(map<string|string[]> headers = {}, *ListAutoDelegateDetailsQueries queries) returns ListAutoDelegateDetailsResponse|error {
         string resourcePath = string `/AutoDelegateDetail`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -333,7 +333,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmpWfRequests(map<string|string[]> headers = {}, *ListEmpWfRequestsQueries queries) returns Wrapper_8|error {
+    remote isolated function listEmpWfRequests(map<string|string[]> headers = {}, *ListEmpWfRequestsQueries queries) returns ListEmpWfRequestsResponse|error {
         string resourcePath = string `/EmpWfRequest`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -358,7 +358,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWfRequests(map<string|string[]> headers = {}, *ListWfRequestsQueries queries) returns Wrapper_9|error {
+    remote isolated function listWfRequests(map<string|string[]> headers = {}, *ListWfRequestsQueries queries) returns ListWfRequestsResponse|error {
         string resourcePath = string `/WfRequest`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

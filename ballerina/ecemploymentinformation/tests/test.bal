@@ -65,6 +65,6 @@ function initializeClientsForSFServer() returns error? {
 @test:Config {
 }
 function testEmpBeneficiaries() returns error? {
-    Wrapper listEmpBeneficiariesResult = check sfClient->listEmpBeneficiaries();
+    ListEmpBeneficiariesResponse listEmpBeneficiariesResult = check sfClient->listEmpBeneficiaries();
     test:assertTrue(listEmpBeneficiariesResult.d !is (), "Result should not be null");
 }

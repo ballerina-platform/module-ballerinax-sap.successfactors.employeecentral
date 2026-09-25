@@ -43,7 +43,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listApprenticeEventTypes(map<string|string[]> headers = {}, *ListApprenticeEventTypesQueries queries) returns Wrapper|error {
+    remote isolated function listApprenticeEventTypes(map<string|string[]> headers = {}, *ListApprenticeEventTypesQueries queries) returns ListApprenticeEventTypesResponse|error {
         string resourcePath = string `/ApprenticeEventType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -106,7 +106,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listDepartmentApprenticeDetails(map<string|string[]> headers = {}, *ListDepartmentApprenticeDetailsQueries queries) returns Wrapper_1|error {
+    remote isolated function listDepartmentApprenticeDetails(map<string|string[]> headers = {}, *ListDepartmentApprenticeDetailsQueries queries) returns ListDepartmentApprenticeDetailsResponse|error {
         string resourcePath = string `/DepartmentApprenticeDetail`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -175,7 +175,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listApprenticeSchools(map<string|string[]> headers = {}, *ListApprenticeSchoolsQueries queries) returns Wrapper_2|error {
+    remote isolated function listApprenticeSchools(map<string|string[]> headers = {}, *ListApprenticeSchoolsQueries queries) returns ListApprenticeSchoolsResponse|error {
         string resourcePath = string `/ApprenticeSchool`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -238,7 +238,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listApprenticeGroups(map<string|string[]> headers = {}, *ListApprenticeGroupsQueries queries) returns Wrapper_3|error {
+    remote isolated function listApprenticeGroups(map<string|string[]> headers = {}, *ListApprenticeGroupsQueries queries) returns ListApprenticeGroupsResponse|error {
         string resourcePath = string `/ApprenticeGroup`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -301,7 +301,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listApprenticeSchoolEvents(map<string|string[]> headers = {}, *ListApprenticeSchoolEventsQueries queries) returns Wrapper_4|error {
+    remote isolated function listApprenticeSchoolEvents(map<string|string[]> headers = {}, *ListApprenticeSchoolEventsQueries queries) returns ListApprenticeSchoolEventsResponse|error {
         string resourcePath = string `/ApprenticeSchoolEvent`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -436,7 +436,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listApprentices(map<string|string[]> headers = {}, *ListApprenticesQueries queries) returns Wrapper_7|error {
+    remote isolated function listApprentices(map<string|string[]> headers = {}, *ListApprenticesQueries queries) returns ListApprenticesResponse|error {
         string resourcePath = string `/Apprentice`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

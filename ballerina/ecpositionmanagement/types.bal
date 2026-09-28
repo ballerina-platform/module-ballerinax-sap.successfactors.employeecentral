@@ -113,7 +113,7 @@ public type RelatedCollectionSFOData_PositionMatrixRelationship record {
     PositionMatrixRelationship[] results?;
 };
 
-public type Wrapper_1 record {
+public type ListPositionMatrixRelationshipsResponse record {
     CollectionofPositionMatrixRelationship d?;
 };
 
@@ -121,11 +121,11 @@ public type Position_1 record {
     Position d?;
 };
 
-public type Wrapper_2 record {
+public type ListPositionsResponse record {
     CollectionofPosition d?;
 };
 
-public type Wrapper_3 record {
+public type ListPositionRightToReturnsResponse record {
     CollectionofPositionRightToReturn d?;
 };
 
@@ -195,7 +195,7 @@ public type ModifiedPosition record {
     Position d?;
 };
 
-public type Wrapper record {
+public type ListPositionRequisitionStatusesResponse record {
     CollectionofPositionRequisitionStatus d?;
 };
 

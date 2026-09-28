@@ -190,7 +190,7 @@ public type EssMssWorkflowSubAttributeBean record {
     string changeSetGroupSubTitle?;
 };
 
-public type Wrapper record {
+public type ListMyPendingWorkflowsResponse record {
     CollectionofMyPendingWorkflow d?;
 };
 
@@ -453,11 +453,11 @@ public type WfRequestParticipator record {
     string wfRequestParticipatorId?;
 };
 
-public type Wrapper_8 record {
+public type ListEmpWfRequestsResponse record {
     CollectionofEmpWfRequest d?;
 };
 
-public type Wrapper_9 record {
+public type ListWfRequestsResponse record {
     CollectionofWfRequest d?;
 };
 
@@ -483,19 +483,19 @@ public type ListEmpWfRequestsQueries record {
     ("actionType"|"effectiveDate"|"empWfRequestId"|"entityType"|"eventReason"|"requestType"|"subjectId"|"wfConfig"|"wfRequestId")[] \$select?;
 };
 
-public type Wrapper_4 record {
+public type ListWfRequestCommentssResponse record {
     CollectionofWfRequestComments d?;
 };
 
-public type Wrapper_5 record {
+public type ListWfRequestStepsResponse record {
     CollectionofWfRequestStep d?;
 };
 
-public type Wrapper_6 record {
+public type ListAutoDelegateDetailsResponse record {
     CollectionofAutoDelegateDetail d?;
 };
 
-public type Wrapper_1 record {
+public type ListWfRequestParticipatorsResponse record {
     CollectionofWfRequestParticipator d?;
 };
 
@@ -506,11 +506,11 @@ public type PendDataGroupBean record {
     string title?;
 };
 
-public type Wrapper_2 record {
+public type ListWorkflowAllowedActionListsResponse record {
     CollectionofWorkflowAllowedActionList d?;
 };
 
-public type Wrapper_3 record {
+public type ListAlertMessagesResponse record {
     CollectionofAlertMessage d?;
 };
 

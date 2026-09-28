@@ -117,7 +117,7 @@ eccore:Client eccoreClient = check new (
 Now, utilize the available connector operations.
 
 ```ballerina
-eccore:Wrapper globalInfo = check eccoreClient->listPerGlobalInfoAREs();
+eccore:ListPerGlobalInfoAREsResponse globalInfo = check eccoreClient->listPerGlobalInfoAREs();
 ```
 
 ### Step 4: Run the Ballerina application

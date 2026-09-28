@@ -157,7 +157,7 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type Wrapper record {
+public type ListPerEmergencyContactssResponse record {
     CollectionofPerEmergencyContacts d?;
 };
 
@@ -233,7 +233,7 @@ public type RelatedCollectionSFOData_PerPhone record {
     PerPhone[] results?;
 };
 
-public type Wrapper_17 record {
+public type ListPerBiographicalInfoLocITAsResponse record {
     CollectionofPerBiographicalInfoLocITA d?;
 };
 
@@ -255,27 +255,27 @@ public type ListNameElementGOsQueries record {
     ("NameFormatGO_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"nameArtifactEnum"|"sampleData"|"separator")[] \$select?;
 };
 
-public type Wrapper_18 record {
+public type ListPerBiographicalInfoLocVENsResponse record {
     CollectionofPerBiographicalInfoLocVEN d?;
 };
 
-public type Wrapper_15 record {
+public type ListPerBiographicalInfoLocCHLsResponse record {
     CollectionofPerBiographicalInfoLocCHL d?;
 };
 
-public type Wrapper_16 record {
+public type ListPerBiographicalInfoLocFRAsResponse record {
     CollectionofPerBiographicalInfoLocFRA d?;
 };
 
-public type Wrapper_13 record {
+public type ListNameElementGOsResponse record {
     CollectionofNameElementGO d?;
 };
 
-public type Wrapper_14 record {
+public type ListPerBiographicalInfoLocBRAsResponse record {
     CollectionofPerBiographicalInfoLocBRA d?;
 };
 
-public type Wrapper_11 record {
+public type ListPerAddressDEFLTsResponse record {
     CollectionofPerAddressDEFLT d?;
 };
 
@@ -283,11 +283,11 @@ public type PerAddressDEFLT record {
     PerAddressDEFLT d?;
 };
 
-public type Wrapper_12 record {
+public type ListNameFormatGOsResponse record {
     CollectionofNameFormatGO d?;
 };
 
-public type Wrapper_10 record {
+public type ListPerNationalIdWithValidityPeriodsResponse record {
     CollectionofPerNationalIdWithValidityPeriod d?;
 };
 
@@ -377,11 +377,11 @@ public type PerSocialAccount record {
     PerPerson personNav?;
 };
 
-public type Wrapper_8 record {
+public type ListHrisEmergencyContactAddressDEFLTsResponse record {
     CollectionofHrisEmergencyContactAddressDEFLT d?;
 };
 
-public type Wrapper_9 record {
+public type ListPerNationalIdsResponse record {
     CollectionofPerNationalId d?;
 };
 
@@ -389,7 +389,7 @@ public type PerEmergencyContacts record {
     PerEmergencyContacts d?;
 };
 
-public type Wrapper_4 record {
+public type ListPerSocialAccountsResponse record {
     CollectionofPerSocialAccount d?;
 };
 
@@ -411,7 +411,7 @@ public type ListPerBiographicalInfoLocITAsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"customString1"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"operation"|"personIdExternal"|"placeOfBirth"|"regionOfBirth")[] \$select?;
 };
 
-public type Wrapper_5 record {
+public type ListPerPersonsResponse record {
     CollectionofPerPerson d?;
 };
 
@@ -433,7 +433,7 @@ public type ListPersonKeysQueries record {
     ("perPersonUuid"|"personId"|"personIdExternal")[] \$select?;
 };
 
-public type Wrapper_6 record {
+public type ListPerPersonRelationshipsResponse record {
     CollectionofPerPersonRelationship d?;
 };
 
@@ -457,15 +457,15 @@ public type ListPerEmergencyContactssQueries record {
     ("addressAddress1"|"addressAddress2"|"addressAddress3"|"addressCity"|"addressCountry"|"addressCounty"|"addressProvince"|"addressState"|"addressZipCode"|"createdBy"|"createdDateTime"|"createdOn"|"email"|"isAddSameAsEmployee"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"operation"|"personIdExternal"|"phone"|"primaryFlag"|"relationship"|"secondPhone")[] \$select?;
 };
 
-public type Wrapper_7 record {
+public type ListPerEmailsResponse record {
     CollectionofPerEmail d?;
 };
 
-public type Wrapper_1 record {
+public type ListPerPhonesResponse record {
     CollectionofPerPhone d?;
 };
 
-public type Wrapper_2 record {
+public type ListPersonKeysResponse record {
     CollectionofPersonKey d?;
 };
 
@@ -473,7 +473,7 @@ public type CollectionofHrisEmergencyContactAddressDEFLT record {
     HrisEmergencyContactAddressDEFLT[] results?;
 };
 
-public type Wrapper_3 record {
+public type ListPerPersonalsResponse record {
     CollectionofPerPersonal d?;
 };
 

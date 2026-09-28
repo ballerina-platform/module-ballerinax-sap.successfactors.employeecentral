@@ -18,9 +18,21 @@ The sanitizer:
 - Prefixes Create/Update variants appropriately
 - Updates all `$ref` references throughout the spec to match renamed definitions
 
-### 2. Response Schema Title Sanitization (`sanitations.bal`)
+### 2. Response/Payload Envelope Title Sanitization (`sanitations.bal`)
 
-OData v2 responses wrap results in a `d` envelope with embedded type titles. The sanitizer normalizes titles like `"Collection of EmpEmployment"` → `"CollectionOfEmpEmployment"`.
+OData v2 wraps every entity in a `{"d": ...}` envelope, both in responses and in PUT/PATCH body
+parameters. Swagger 2.0 either leaves this envelope schema untitled (in which case `bal openapi`
+invents a meaningless `Wrapper`/`Wrapper_N` name for it) or copies the entity's own human-readable
+display name onto it verbatim, e.g. `"Time Account Posting Rule"` (which collides with the entity's
+own generated type name and forces `bal openapi` to fall back to an escaped-space identifier like
+`` Time\ Account\ Posting\ Rule ``, unusable as a normal identifier).
+
+The sanitizer retitles every such envelope schema — for both responses and body parameters, across
+`get`/`post`/`put`/`patch`/`delete` — from the operation's own `operationId`:
+`getTimeAccountPostingRule` → response envelope titled `GetTimeAccountPostingRuleResponse`;
+`updateEmployeeTimeAUS` → body envelope titled `UpdateEmployeeTimeAUSPayload`. This is always
+meaningful and, since it's derived from the (unique) operation name rather than the entity's own
+name, can never collide with the entity type it wraps.
 
 ### 3. Operation ID Generation (`operationId.bal`)
 
@@ -56,15 +68,16 @@ The `ballerinax/sap` client provides SAP-specific authentication and connection 
 
 1. **Obtain OpenAPI specs** from the [SAP API Hub](https://api.sap.com/package/SuccessFactorsEmployeeCentral/odata) and place them in `docs/spec/`.
 
-2. **Sanitize schema names** for each API:
+2. **Sanitize schema names** for each API (run from `docs/`, not `docs/sanitation/` — the script
+   resolves specs at `spec/<apiName>.json` relative to the current directory):
    ```bash
-   cd docs/sanitation
-   bal run sanitations.bal -- <apiName>
+   cd docs
+   bal run sanitation/sanitations.bal -- <apiName>
    ```
 
-3. **Add operation IDs** for each API:
+3. **Add operation IDs** for each API (also run from `docs/`):
    ```bash
-   bal run operationId.bal -- <apiName>
+   bal run sanitation/operationId.bal -- <apiName>
    ```
 
 4. **Generate Ballerina client** from the sanitized spec:
@@ -75,8 +88,10 @@ The `ballerinax/sap` client provides SAP-specific authentication and connection 
 5. **Sanitize the generated client**:
    ```bash
    cd docs/sanitation
-   bal run clientSanitations.bal -- <moduleName> successfactors/odata/v2
+   bal run clientSanitations.bal -- <moduleName> odata/v2
    ```
+   (the real SAP SuccessFactors OData v2 endpoint is `/odata/v2`, not `/successfactors/odata/v2` —
+   see `changelog.md`)
 
 6. **Build and verify**:
    ```bash

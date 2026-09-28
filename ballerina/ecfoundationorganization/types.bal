@@ -136,7 +136,7 @@ public type LegalEntityARG record {
     LegalEntityARG d?;
 };
 
-public type Wrapper_19 record {
+public type ListBudgetGroupsResponse record {
     CollectionofBudgetGroup d?;
 };
 
@@ -146,7 +146,7 @@ public type DeleteFOPayGroupHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_17 record {
+public type ListJobClassificationFRAsResponse record {
     CollectionofJobClassificationFRA d?;
 };
 
@@ -170,11 +170,11 @@ public type ListPayScaleGroupsQueries record {
     ("code"|"country"|"createdBy"|"createdDateTime"|"externalName_de_DE"|"externalName_defaultValue"|"externalName_en_GB"|"externalName_en_US"|"externalName_es_ES"|"externalName_fr_FR"|"externalName_ja_JP"|"externalName_ko_KR"|"externalName_localized"|"externalName_nl_NL"|"externalName_pt_BR"|"externalName_pt_PT"|"externalName_ru_RU"|"externalName_zh_CN"|"externalName_zh_TW"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemLastModifiedDate"|"mdfSystemLastModifiedDateWithTZ"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"payScaleArea"|"payScaleGroup"|"payScaleType")[] \$select?;
 };
 
-public type Wrapper_18 record {
+public type ListPeriodssResponse record {
     CollectionofPeriods d?;
 };
 
-public type Wrapper_15 record {
+public type ListLegalEntityDEUsResponse record {
     CollectionofLegalEntityDEU d?;
 };
 
@@ -186,7 +186,7 @@ public type GetFOJobClassLocalFRAQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"genericNumber2"|"genericString1"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type Wrapper_16 record {
+public type ListJobClassificationGBRsResponse record {
     CollectionofJobClassificationGBR d?;
 };
 
@@ -196,11 +196,11 @@ public type DeletePayScalePayComponentHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_13 record {
+public type ListJobClassificationBRAsResponse record {
     CollectionofJobClassificationBRA d?;
 };
 
-public type Wrapper_14 record {
+public type ListJobClassificationZAFsResponse record {
     CollectionofJobClassificationZAF d?;
 };
 
@@ -208,7 +208,7 @@ public type ModifiedLegalEntityUSA record {
     LegalEntityUSA d?;
 };
 
-public type Wrapper_12 record {
+public type ListFOJobClassLocalITAsResponse record {
     CollectionofFOJobClassLocalITA d?;
 };
 
@@ -222,7 +222,7 @@ public type DeletePayScaleLevelHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_10 record {
+public type ListFOJobClassLocalAUSsResponse record {
     CollectionofFOJobClassLocalAUS d?;
 };
 
@@ -496,35 +496,35 @@ public type GetFOLegalEntityLocalUSAQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"genericNumber1"|"genericString1"|"genericString2"|"genericString3"|"genericString4"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"legalEntityType"|"startDate"|"status")[] \$select?;
 };
 
-public type Wrapper_48 record {
+public type ListLegalEntityBOLsResponse record {
     CollectionofLegalEntityBOL d?;
 };
 
-public type Wrapper_49 record {
+public type ListLegalEntityTHAsResponse record {
     CollectionofLegalEntityTHA d?;
 };
 
-public type Wrapper_46 record {
+public type ListLegalEntityPRYsResponse record {
     CollectionofLegalEntityPRY d?;
 };
 
-public type Wrapper_47 record {
+public type ListLegalEntityCANsResponse record {
     CollectionofLegalEntityCAN d?;
 };
 
-public type Wrapper_44 record {
+public type ListLegalEntitySVNsResponse record {
     CollectionofLegalEntitySVN d?;
 };
 
-public type Wrapper_45 record {
+public type ListLegalEntitySAUsResponse record {
     CollectionofLegalEntitySAU d?;
 };
 
-public type Wrapper_42 record {
+public type ListJobClassificationCANsResponse record {
     CollectionofJobClassificationCAN d?;
 };
 
-public type Wrapper_40 record {
+public type ListFOLegalEntityLocalDEFLTsResponse record {
     CollectionofFOLegalEntityLocalDEFLT d?;
 };
 
@@ -532,7 +532,7 @@ public type CollectionofJobClassificationZAF record {
     JobClassificationZAF[] results?;
 };
 
-public type Wrapper_41 record {
+public type ListLegalEntityRUSsResponse record {
     CollectionofLegalEntityRUS d?;
 };
 
@@ -591,7 +591,7 @@ public type PayPeriod record {
     PayPeriod d?;
 };
 
-public type Wrapper_59 record {
+public type ListFOGeozonesResponse record {
     CollectionofFOGeozone d?;
 };
 
@@ -623,7 +623,7 @@ public type RelatedCollectionSFOData_LocalizedData record {
     LocalizedData[] results?;
 };
 
-public type Wrapper_58 record {
+public type ListFOLegalEntityLocalARGsResponse record {
     CollectionofFOLegalEntityLocalARG d?;
 };
 
@@ -631,15 +631,15 @@ public type CollectionofLegalEntityUSA record {
     LegalEntityUSA[] results?;
 };
 
-public type Wrapper_55 record {
+public type ListLegalEntityUSAsResponse record {
     CollectionofLegalEntityUSA d?;
 };
 
-public type Wrapper_56 record {
+public type ListPayPeriodsResponse record {
     CollectionofPayPeriod d?;
 };
 
-public type Wrapper_53 record {
+public type ListLegalEntityTUNsResponse record {
     CollectionofLegalEntityTUN d?;
 };
 
@@ -647,7 +647,7 @@ public type CollectionofLegalEntityESP record {
     LegalEntityESP[] results?;
 };
 
-public type Wrapper_54 record {
+public type ListLegalEntitySGPsResponse record {
     CollectionofLegalEntitySGP d?;
 };
 
@@ -671,7 +671,7 @@ public type ListFOPayRangesQueries record {
     ("companyFlx"|"createdBy"|"createdDateTime"|"createdOn"|"currency"|"description"|"endDate"|"externalCode"|"frequencyCode"|"geozoneFlx"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"maximumPay"|"midPoint"|"minimumPay"|"name"|"payGradeFlx"|"startDate"|"status")[] \$select?;
 };
 
-public type Wrapper_52 record {
+public type ListLegalEntityBLRsResponse record {
     CollectionofLegalEntityBLR d?;
 };
 
@@ -781,19 +781,19 @@ public type GetJobClassificationUSAQueries record {
     ("JobClassificationCountry_country"|"JobClassification_effectiveStartDate"|"JobClassification_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"eeo1JobCategory"|"eeo4JobCategory"|"eeo5JobCategory"|"eeo6JobCategory"|"eeoJobGroup"|"externalCode"|"flsaStatusUSA"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"localJobTitle"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_28 record {
+public type ListLegalEntityESPsResponse record {
     CollectionofLegalEntityESP d?;
 };
 
-public type Wrapper_29 record {
+public type ListFOJobClassLocalGBRsResponse record {
     CollectionofFOJobClassLocalGBR d?;
 };
 
-public type Wrapper_26 record {
+public type ListFOLegalEntityLocalDEUsResponse record {
     CollectionofFOLegalEntityLocalDEU d?;
 };
 
-public type Wrapper_27 record {
+public type ListJobClassificationITAsResponse record {
     CollectionofJobClassificationITA d?;
 };
 
@@ -801,7 +801,7 @@ public type CreatedPayScaleGroup record {
     PayScaleGroup d?;
 };
 
-public type Wrapper_24 record {
+public type ListFOLegalEntityLocalFRAsResponse record {
     CollectionofFOLegalEntityLocalFRA d?;
 };
 
@@ -809,11 +809,11 @@ public type FOCorporateAddressDEFLT record {
     FOCorporateAddressDEFLT d?;
 };
 
-public type Wrapper_25 record {
+public type ListFOJobClassLocalFRAsResponse record {
     CollectionofFOJobClassLocalFRA d?;
 };
 
-public type Wrapper_22 record {
+public type ListPayScaleAreasResponse record {
     CollectionofPayScaleArea d?;
 };
 
@@ -835,11 +835,11 @@ public type ListJobClassificationAUSsQueries record {
     ("JobClassificationCountry_country"|"JobClassification_effectiveStartDate"|"JobClassification_externalCode"|"ascoCode"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_23 record {
+public type ListFOJobClassLocalUSAsResponse record {
     CollectionofFOJobClassLocalUSA d?;
 };
 
-public type Wrapper_21 record {
+public type ListJobClassificationAUSsResponse record {
     CollectionofJobClassificationAUS d?;
 };
 
@@ -923,7 +923,7 @@ public type DeleteLegalEntityBOLHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_39 record {
+public type ListPayScaleTypesResponse record {
     CollectionofPayScaleType d?;
 };
 
@@ -969,7 +969,7 @@ public type ListFOPayGroupsQueries record {
     ("createdBy"|"createdDateTime"|"createdOn"|"dataDelimiter"|"decimalPoint"|"description"|"description_de_DE"|"description_defaultValue"|"description_en_GB"|"description_en_US"|"description_es_ES"|"description_fr_FR"|"description_ja_JP"|"description_ko_KR"|"description_localized"|"description_nl_NL"|"description_pt_BR"|"description_pt_PT"|"description_ru_RU"|"description_zh_CN"|"description_zh_TW"|"earliestChangeDate"|"endDate"|"externalCode"|"lag"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"name"|"name_de_DE"|"name_defaultValue"|"name_en_GB"|"name_en_US"|"name_es_ES"|"name_fr_FR"|"name_ja_JP"|"name_ko_KR"|"name_localized"|"name_nl_NL"|"name_pt_BR"|"name_pt_PT"|"name_ru_RU"|"name_zh_CN"|"name_zh_TW"|"payFrequency"|"paymentFrequency"|"payrollVendorId"|"primaryContactEmail"|"primaryContactID"|"primaryContactName"|"secondaryContactEmail"|"secondaryContactID"|"secondaryContactName"|"startDate"|"status"|"weeksInPayPeriod")[] \$select?;
 };
 
-public type Wrapper_37 record {
+public type ListFOLocationGroupsResponse record {
     CollectionofFOLocationGroup d?;
 };
 
@@ -993,11 +993,11 @@ public type ListFOLegalEntityLocalDEFLTsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"endDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type Wrapper_38 record {
+public type ListFOLegalEntityLocalESPsResponse record {
     CollectionofFOLegalEntityLocalESP d?;
 };
 
-public type Wrapper_36 record {
+public type ListFOJobClassLocalBRAsResponse record {
     CollectionofFOJobClassLocalBRA d?;
 };
 
@@ -1005,11 +1005,11 @@ public type LegalEntityESP record {
     LegalEntityESP d?;
 };
 
-public type Wrapper_33 record {
+public type ListFOJobClassLocalDEFLTsResponse record {
     CollectionofFOJobClassLocalDEFLT d?;
 };
 
-public type Wrapper_34 record {
+public type ListFOEventReasonsResponse record {
     CollectionofFOEventReason d?;
 };
 
@@ -1024,7 +1024,7 @@ public type JobClassificationGBR record {
     string externalCode?;
 };
 
-public type Wrapper_32 record {
+public type ListJobClassificationUSAsResponse record {
     CollectionofJobClassificationUSA d?;
 };
 
@@ -1058,7 +1058,7 @@ public type GetPeriodsQueries record {
     ("FiscalYearVariant_externalCode"|"createdBy"|"createdDateTime"|"day"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"month"|"period"|"yearShift")[] \$select?;
 };
 
-public type Wrapper_30 record {
+public type ListFOCorporateAddressDEFLTsResponse record {
     CollectionofFOCorporateAddressDEFLT d?;
 };
 
@@ -1372,11 +1372,11 @@ public type DeleteFOCostCenterHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_8 record {
+public type ListLegalEntityFRAsResponse record {
     CollectionofLegalEntityFRA d?;
 };
 
-public type Wrapper_9 record {
+public type ListFOPayGradesResponse record {
     CollectionofFOPayGrade d?;
 };
 
@@ -1392,19 +1392,19 @@ public type DeleteJobClassificationCANHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_4 record {
+public type ListJobClassificationCountrysResponse record {
     CollectionofJobClassificationCountry d?;
 };
 
-public type Wrapper_5 record {
+public type ListFOJobFunctionsResponse record {
     CollectionofFOJobFunction d?;
 };
 
-public type Wrapper_7 record {
+public type ListFOFrequencysResponse record {
     CollectionofFOFrequency d?;
 };
 
-public type Wrapper_2 record {
+public type ListFOJobClassLocalCANsResponse record {
     CollectionofFOJobClassLocalCAN d?;
 };
 
@@ -1418,7 +1418,7 @@ public type CreatedLegalEntityPRY record {
     LegalEntityPRY d?;
 };
 
-public type Wrapper_3 record {
+public type ListTerritorysResponse record {
     CollectionofTerritory d?;
 };
 
@@ -2071,7 +2071,7 @@ public type ListFOLegalEntityLocalARGsQueries record {
     ("country"|"createdBy"|"createdDateTime"|"createdOn"|"cuit"|"endDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"lastModifiedOn"|"startDate"|"status")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListFOLegalEntityLocalUSAsResponse record {
     CollectionofFOLegalEntityLocalUSA d?;
 };
 
@@ -2742,27 +2742,27 @@ public type CollectionofJobClassificationBGR record {
     JobClassificationBGR[] results?;
 };
 
-public type Wrapper_66 record {
+public type ListPayScaleGroupsResponse record {
     CollectionofPayScaleGroup d?;
 };
 
-public type Wrapper_64 record {
+public type ListLocalizedDatasResponse record {
     CollectionofLocalizedData d?;
 };
 
-public type Wrapper_65 record {
+public type ListFoTranslationsResponse record {
     CollectionofFoTranslation d?;
 };
 
-public type Wrapper_63 record {
+public type ListFOPayGroupsResponse record {
     CollectionofFOPayGroup d?;
 };
 
-public type Wrapper_60 record {
+public type ListLegalEntityARGsResponse record {
     CollectionofLegalEntityARG d?;
 };
 
-public type Wrapper_61 record {
+public type ListFOBusinessUnitsResponse record {
     CollectionofFOBusinessUnit d?;
 };
 
@@ -2847,7 +2847,7 @@ public type GetLegalEntityRUSQueries record {
     ("LegalEntity_effectiveStartDate"|"LegalEntity_externalCode"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"okpoNumber")[] \$select?;
 };
 
-public type Wrapper_71 record {
+public type ListJobClassificationBGRsResponse record {
     CollectionofJobClassificationBGR d?;
 };
 

@@ -42,7 +42,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountPostingRules(map<string|string[]> headers = {}, *ListTimeAccountPostingRulesQueries queries) returns Wrapper|error {
+    remote isolated function listTimeAccountPostingRules(map<string|string[]> headers = {}, *ListTimeAccountPostingRulesQueries queries) returns ListTimeAccountPostingRulesResponse|error {
         string resourcePath = string `/TimeAccountPostingRule`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -56,7 +56,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountPostingRule(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPostingRuleQueries queries) returns Time\ Account\ Posting\ Rule|error {
+    remote isolated function getTimeAccountPostingRule(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPostingRuleQueries queries) returns GetTimeAccountPostingRuleResponse|error {
         string resourcePath = string `/TimeAccountPostingRule(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -68,7 +68,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModelVariantAssignments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelVariantAssignmentsQueries queries) returns Wrapper_1|error {
+    remote isolated function listWorkScheduleDayModelVariantAssignments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelVariantAssignmentsQueries queries) returns ListWorkScheduleDayModelVariantAssignmentsResponse|error {
         string resourcePath = string `/WorkScheduleDayModelVariantAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -82,7 +82,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModelVariantAssignment(string WorkScheduleDayModel_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelVariantAssignmentQueries queries) returns Work\ Schedule\ Day\ Model\ Variant\ Assignment|error {
+    remote isolated function getWorkScheduleDayModelVariantAssignment(string WorkScheduleDayModel_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelVariantAssignmentQueries queries) returns GetWorkScheduleDayModelVariantAssignmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelVariantAssignment(WorkScheduleDayModel_externalCode='${getEncodedUri(WorkScheduleDayModel_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -94,7 +94,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listHolidayAssignments(map<string|string[]> headers = {}, *ListHolidayAssignmentsQueries queries) returns Wrapper_2|error {
+    remote isolated function listHolidayAssignments(map<string|string[]> headers = {}, *ListHolidayAssignmentsQueries queries) returns ListHolidayAssignmentsResponse|error {
         string resourcePath = string `/HolidayAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -108,7 +108,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getHolidayAssignment(string HolidayCalendar_externalCode, string date, map<string|string[]> headers = {}, *GetHolidayAssignmentQueries queries) returns Holiday\ Assignment|error {
+    remote isolated function getHolidayAssignment(string HolidayCalendar_externalCode, string date, map<string|string[]> headers = {}, *GetHolidayAssignmentQueries queries) returns GetHolidayAssignmentResponse|error {
         string resourcePath = string `/HolidayAssignment(HolidayCalendar_externalCode='${getEncodedUri(HolidayCalendar_externalCode)}',date=${getEncodedUri(date)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -120,7 +120,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountPurchaseProfiles(map<string|string[]> headers = {}, *ListTimeAccountPurchaseProfilesQueries queries) returns Wrapper_3|error {
+    remote isolated function listTimeAccountPurchaseProfiles(map<string|string[]> headers = {}, *ListTimeAccountPurchaseProfilesQueries queries) returns ListTimeAccountPurchaseProfilesResponse|error {
         string resourcePath = string `/TimeAccountPurchaseProfile`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -133,7 +133,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountPurchaseProfile(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPurchaseProfileQueries queries) returns Time\ Account\ Purchase\ Profile|error {
+    remote isolated function getTimeAccountPurchaseProfile(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPurchaseProfileQueries queries) returns GetTimeAccountPurchaseProfileResponse|error {
         string resourcePath = string `/TimeAccountPurchaseProfile('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -145,7 +145,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeCANs(map<string|string[]> headers = {}, *ListTimeTypeCANsQueries queries) returns Wrapper_4|error {
+    remote isolated function listTimeTypeCANs(map<string|string[]> headers = {}, *ListTimeTypeCANsQueries queries) returns ListTimeTypeCANsResponse|error {
         string resourcePath = string `/TimeTypeCAN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -159,7 +159,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeCAN(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeCANQueries queries) returns Time\ Type\ CAN|error {
+    remote isolated function getTimeTypeCAN(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeCANQueries queries) returns GetTimeTypeCANResponse|error {
         string resourcePath = string `/TimeTypeCAN(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -171,7 +171,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModelVariantIdentifiers(map<string|string[]> headers = {}, *ListWorkScheduleDayModelVariantIdentifiersQueries queries) returns Wrapper_5|error {
+    remote isolated function listWorkScheduleDayModelVariantIdentifiers(map<string|string[]> headers = {}, *ListWorkScheduleDayModelVariantIdentifiersQueries queries) returns ListWorkScheduleDayModelVariantIdentifiersResponse|error {
         string resourcePath = string `/WorkScheduleDayModelVariantIdentifier`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -184,7 +184,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModelVariantIdentifier(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelVariantIdentifierQueries queries) returns Work\ Schedule\ Day\ Model\ Variant\ Identifier|error {
+    remote isolated function getWorkScheduleDayModelVariantIdentifier(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelVariantIdentifierQueries queries) returns GetWorkScheduleDayModelVariantIdentifierResponse|error {
         string resourcePath = string `/WorkScheduleDayModelVariantIdentifier('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -196,7 +196,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeManagementTerminationEndHandlingExcludedEventReasons(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExcludedEventReasonsQueries queries) returns Wrapper_6|error {
+    remote isolated function listTimeManagementTerminationEndHandlingExcludedEventReasons(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExcludedEventReasonsQueries queries) returns ListTimeManagementTerminationEndHandlingExcludedEventReasonsResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExcludedEventReason`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -210,7 +210,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeManagementTerminationEndHandlingExcludedEventReason(string TimeManagementTerminationEndHandlingExclusion_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExcludedEventReasonQueries queries) returns Time\ Management\ Termination\ End\ Handling\ Excluded\ Event\ Reason|error {
+    remote isolated function getTimeManagementTerminationEndHandlingExcludedEventReason(string TimeManagementTerminationEndHandlingExclusion_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExcludedEventReasonQueries queries) returns GetTimeManagementTerminationEndHandlingExcludedEventReasonResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExcludedEventReason(TimeManagementTerminationEndHandlingExclusion_externalCode='${getEncodedUri(TimeManagementTerminationEndHandlingExclusion_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -222,7 +222,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountPurchaseProfilePayComponentAssignments(map<string|string[]> headers = {}, *ListTimeAccountPurchaseProfilePayComponentAssignmentsQueries queries) returns Wrapper_7|error {
+    remote isolated function listTimeAccountPurchaseProfilePayComponentAssignments(map<string|string[]> headers = {}, *ListTimeAccountPurchaseProfilePayComponentAssignmentsQueries queries) returns ListTimeAccountPurchaseProfilePayComponentAssignmentsResponse|error {
         string resourcePath = string `/TimeAccountPurchaseProfilePayComponentAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -236,7 +236,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountPurchaseProfilePayComponentAssignment(string TimeAccountPurchaseProfile_externalCode, string payComponent, map<string|string[]> headers = {}, *GetTimeAccountPurchaseProfilePayComponentAssignmentQueries queries) returns Time\ Account\ Purchase\ Profile\ Pay\ Component\ Assignment|error {
+    remote isolated function getTimeAccountPurchaseProfilePayComponentAssignment(string TimeAccountPurchaseProfile_externalCode, string payComponent, map<string|string[]> headers = {}, *GetTimeAccountPurchaseProfilePayComponentAssignmentQueries queries) returns GetTimeAccountPurchaseProfilePayComponentAssignmentResponse|error {
         string resourcePath = string `/TimeAccountPurchaseProfilePayComponentAssignment(TimeAccountPurchaseProfile_externalCode='${getEncodedUri(TimeAccountPurchaseProfile_externalCode)}',payComponent='${getEncodedUri(payComponent)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -274,7 +274,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModelAssignments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelAssignmentsQueries queries) returns Wrapper_9|error {
+    remote isolated function listWorkScheduleDayModelAssignments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelAssignmentsQueries queries) returns ListWorkScheduleDayModelAssignmentsResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -286,7 +286,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelAssignment(WorkScheduleDayModelAssignment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment|error {
+    remote isolated function createWorkScheduleDayModelAssignment(WorkScheduleDayModelAssignment payload, map<string|string[]> headers = {}) returns CreateWorkScheduleDayModelAssignmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -301,7 +301,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModelAssignment(string WorkSchedule_externalCode, int day, map<string|string[]> headers = {}, *GetWorkScheduleDayModelAssignmentQueries queries) returns Work\ Schedule\ Day\ Model\ Assignment|error {
+    remote isolated function getWorkScheduleDayModelAssignment(string WorkSchedule_externalCode, int day, map<string|string[]> headers = {}, *GetWorkScheduleDayModelAssignmentQueries queries) returns GetWorkScheduleDayModelAssignmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignment(WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',day=${getEncodedUri(day)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -315,7 +315,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkScheduleDayModelAssignment(string WorkSchedule_externalCode, int day, ModifiedWork\ Schedule\ Day\ Model\ Assignment payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkScheduleDayModelAssignment(string WorkSchedule_externalCode, int day, UpdateWorkScheduleDayModelAssignmentPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkScheduleDayModelAssignment(WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',day=${getEncodedUri(day)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -378,7 +378,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeNLDs(map<string|string[]> headers = {}, *ListTimeTypeNLDsQueries queries) returns Wrapper_11|error {
+    remote isolated function listTimeTypeNLDs(map<string|string[]> headers = {}, *ListTimeTypeNLDsQueries queries) returns ListTimeTypeNLDsResponse|error {
         string resourcePath = string `/TimeTypeNLD`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -392,7 +392,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeNLD(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeNLDQueries queries) returns Time\ Type\ NLD|error {
+    remote isolated function getTimeTypeNLD(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeNLDQueries queries) returns GetTimeTypeNLDResponse|error {
         string resourcePath = string `/TimeTypeNLD(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -404,7 +404,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeSWEs(map<string|string[]> headers = {}, *ListTimeTypeSWEsQueries queries) returns Wrapper_12|error {
+    remote isolated function listTimeTypeSWEs(map<string|string[]> headers = {}, *ListTimeTypeSWEsQueries queries) returns ListTimeTypeSWEsResponse|error {
         string resourcePath = string `/TimeTypeSWE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -418,7 +418,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeSWE(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeSWEQueries queries) returns Time\ Type\ SWE|error {
+    remote isolated function getTimeTypeSWE(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeSWEQueries queries) returns GetTimeTypeSWEResponse|error {
         string resourcePath = string `/TimeTypeSWE(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -430,7 +430,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeNORs(map<string|string[]> headers = {}, *ListTimeTypeNORsQueries queries) returns Wrapper_13|error {
+    remote isolated function listTimeTypeNORs(map<string|string[]> headers = {}, *ListTimeTypeNORsQueries queries) returns ListTimeTypeNORsResponse|error {
         string resourcePath = string `/TimeTypeNOR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -444,7 +444,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeNOR(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeNORQueries queries) returns Time\ Type\ NOR|error {
+    remote isolated function getTimeTypeNOR(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeNORQueries queries) returns GetTimeTypeNORResponse|error {
         string resourcePath = string `/TimeTypeNOR(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -456,7 +456,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeITAs(map<string|string[]> headers = {}, *ListTimeTypeITAsQueries queries) returns Wrapper_14|error {
+    remote isolated function listTimeTypeITAs(map<string|string[]> headers = {}, *ListTimeTypeITAsQueries queries) returns ListTimeTypeITAsResponse|error {
         string resourcePath = string `/TimeTypeITA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -470,7 +470,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeITA(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeITAQueries queries) returns Time\ Type\ ITA|error {
+    remote isolated function getTimeTypeITA(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeITAQueries queries) returns GetTimeTypeITAResponse|error {
         string resourcePath = string `/TimeTypeITA(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -482,7 +482,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAbsenceCountingMethods(map<string|string[]> headers = {}, *ListAbsenceCountingMethodsQueries queries) returns Wrapper_15|error {
+    remote isolated function listAbsenceCountingMethods(map<string|string[]> headers = {}, *ListAbsenceCountingMethodsQueries queries) returns ListAbsenceCountingMethodsResponse|error {
         string resourcePath = string `/AbsenceCountingMethod`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -495,7 +495,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getAbsenceCountingMethod(string externalCode, map<string|string[]> headers = {}, *GetAbsenceCountingMethodQueries queries) returns Absence\ Counting\ Method|error {
+    remote isolated function getAbsenceCountingMethod(string externalCode, map<string|string[]> headers = {}, *GetAbsenceCountingMethodQueries queries) returns GetAbsenceCountingMethodResponse|error {
         string resourcePath = string `/AbsenceCountingMethod('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -507,7 +507,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listShiftClassifications(map<string|string[]> headers = {}, *ListShiftClassificationsQueries queries) returns Wrapper_16|error {
+    remote isolated function listShiftClassifications(map<string|string[]> headers = {}, *ListShiftClassificationsQueries queries) returns ListShiftClassificationsResponse|error {
         string resourcePath = string `/ShiftClassification`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -520,7 +520,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getShiftClassification(string externalCode, map<string|string[]> headers = {}, *GetShiftClassificationQueries queries) returns Shift\ Classification|error {
+    remote isolated function getShiftClassification(string externalCode, map<string|string[]> headers = {}, *GetShiftClassificationQueries queries) returns GetShiftClassificationResponse|error {
         string resourcePath = string `/ShiftClassification('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -532,7 +532,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDays(map<string|string[]> headers = {}, *ListWorkScheduleDaysQueries queries) returns Wrapper_17|error {
+    remote isolated function listWorkScheduleDays(map<string|string[]> headers = {}, *ListWorkScheduleDaysQueries queries) returns ListWorkScheduleDaysResponse|error {
         string resourcePath = string `/WorkScheduleDay`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -544,7 +544,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDay(WorkScheduleDay payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day|error {
+    remote isolated function createWorkScheduleDay(WorkScheduleDay payload, map<string|string[]> headers = {}) returns CreateWorkScheduleDayResponse|error {
         string resourcePath = string `/WorkScheduleDay`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -559,7 +559,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDay(string WorkSchedule_externalCode, int day, map<string|string[]> headers = {}, *GetWorkScheduleDayQueries queries) returns Work\ Schedule\ Day|error {
+    remote isolated function getWorkScheduleDay(string WorkSchedule_externalCode, int day, map<string|string[]> headers = {}, *GetWorkScheduleDayQueries queries) returns GetWorkScheduleDayResponse|error {
         string resourcePath = string `/WorkScheduleDay(WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',day=${getEncodedUri(day)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -573,7 +573,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkScheduleDay(string WorkSchedule_externalCode, int day, ModifiedWork\ Schedule\ Day payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkScheduleDay(string WorkSchedule_externalCode, int day, UpdateWorkScheduleDayPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkScheduleDay(WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',day=${getEncodedUri(day)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -598,7 +598,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listHolidayCalendars(map<string|string[]> headers = {}, *ListHolidayCalendarsQueries queries) returns Wrapper_18|error {
+    remote isolated function listHolidayCalendars(map<string|string[]> headers = {}, *ListHolidayCalendarsQueries queries) returns ListHolidayCalendarsResponse|error {
         string resourcePath = string `/HolidayCalendar`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -611,7 +611,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getHolidayCalendar(string externalCode, map<string|string[]> headers = {}, *GetHolidayCalendarQueries queries) returns Holiday\ Calendar|error {
+    remote isolated function getHolidayCalendar(string externalCode, map<string|string[]> headers = {}, *GetHolidayCalendarQueries queries) returns GetHolidayCalendarResponse|error {
         string resourcePath = string `/HolidayCalendar('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -623,7 +623,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeManagementTerminationEndHandlingExcludedTimeAccountTypes(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExcludedTimeAccountTypesQueries queries) returns Wrapper_19|error {
+    remote isolated function listTimeManagementTerminationEndHandlingExcludedTimeAccountTypes(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExcludedTimeAccountTypesQueries queries) returns ListTimeManagementTerminationEndHandlingExcludedTimeAccountTypesResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExcludedTimeAccountType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -637,7 +637,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeManagementTerminationEndHandlingExcludedTimeAccountType(string TimeManagementTerminationEndHandlingExclusion_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExcludedTimeAccountTypeQueries queries) returns Time\ Management\ Termination\ End\ Handling\ Excluded\ Time\ Account\ Type|error {
+    remote isolated function getTimeManagementTerminationEndHandlingExcludedTimeAccountType(string TimeManagementTerminationEndHandlingExclusion_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExcludedTimeAccountTypeQueries queries) returns GetTimeManagementTerminationEndHandlingExcludedTimeAccountTypeResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExcludedTimeAccountType(TimeManagementTerminationEndHandlingExclusion_externalCode='${getEncodedUri(TimeManagementTerminationEndHandlingExclusion_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -723,7 +723,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModelAssignmentSegments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelAssignmentSegmentsQueries queries) returns Wrapper_22|error {
+    remote isolated function listWorkScheduleDayModelAssignmentSegments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelAssignmentSegmentsQueries queries) returns ListWorkScheduleDayModelAssignmentSegmentsResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignmentSegment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -735,7 +735,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelAssignmentSegment(WorkScheduleDayModelAssignmentSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Assignment\ Segment|error {
+    remote isolated function createWorkScheduleDayModelAssignmentSegment(WorkScheduleDayModelAssignmentSegment payload, map<string|string[]> headers = {}) returns CreateWorkScheduleDayModelAssignmentSegmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignmentSegment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -751,7 +751,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModelAssignmentSegment(int WorkScheduleDayModelAssignment_day, string WorkSchedule_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelAssignmentSegmentQueries queries) returns Work\ Schedule\ Day\ Model\ Assignment\ Segment|error {
+    remote isolated function getWorkScheduleDayModelAssignmentSegment(int WorkScheduleDayModelAssignment_day, string WorkSchedule_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelAssignmentSegmentQueries queries) returns GetWorkScheduleDayModelAssignmentSegmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelAssignmentSegment(WorkScheduleDayModelAssignment_day=${getEncodedUri(WorkScheduleDayModelAssignment_day)},WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -766,7 +766,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkScheduleDayModelAssignmentSegment(int WorkScheduleDayModelAssignment_day, string WorkSchedule_externalCode, string externalCode, ModifiedWork\ Schedule\ Day\ Model\ Assignment\ Segment payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkScheduleDayModelAssignmentSegment(int WorkScheduleDayModelAssignment_day, string WorkSchedule_externalCode, string externalCode, UpdateWorkScheduleDayModelAssignmentSegmentPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkScheduleDayModelAssignmentSegment(WorkScheduleDayModelAssignment_day=${getEncodedUri(WorkScheduleDayModelAssignment_day)},WorkSchedule_externalCode='${getEncodedUri(WorkSchedule_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -868,7 +868,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeManagementTerminationEndHandlingConfigurations(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingConfigurationsQueries queries) returns Wrapper_25|error {
+    remote isolated function listTimeManagementTerminationEndHandlingConfigurations(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingConfigurationsQueries queries) returns ListTimeManagementTerminationEndHandlingConfigurationsResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingConfiguration`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -881,7 +881,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeManagementTerminationEndHandlingConfiguration(string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingConfigurationQueries queries) returns Time\ Management\ Termination\ End\ Handling\ Configuration|error {
+    remote isolated function getTimeManagementTerminationEndHandlingConfiguration(string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingConfigurationQueries queries) returns GetTimeManagementTerminationEndHandlingConfigurationResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingConfiguration('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -893,7 +893,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listHolidayCategorys(map<string|string[]> headers = {}, *ListHolidayCategorysQueries queries) returns Wrapper_26|error {
+    remote isolated function listHolidayCategorys(map<string|string[]> headers = {}, *ListHolidayCategorysQueries queries) returns ListHolidayCategorysResponse|error {
         string resourcePath = string `/HolidayCategory`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -906,7 +906,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getHolidayCategory(string externalCode, map<string|string[]> headers = {}, *GetHolidayCategoryQueries queries) returns Holiday\ Category|error {
+    remote isolated function getHolidayCategory(string externalCode, map<string|string[]> headers = {}, *GetHolidayCategoryQueries queries) returns GetHolidayCategoryResponse|error {
         string resourcePath = string `/HolidayCategory('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -918,7 +918,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listElectronicSicknessCertificateExclusionReasonDEUs(map<string|string[]> headers = {}, *ListElectronicSicknessCertificateExclusionReasonDEUsQueries queries) returns Wrapper_27|error {
+    remote isolated function listElectronicSicknessCertificateExclusionReasonDEUs(map<string|string[]> headers = {}, *ListElectronicSicknessCertificateExclusionReasonDEUsQueries queries) returns ListElectronicSicknessCertificateExclusionReasonDEUsResponse|error {
         string resourcePath = string `/ElectronicSicknessCertificateExclusionReasonDEU`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -931,7 +931,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getElectronicSicknessCertificateExclusionReasonDEU(string externalCode, map<string|string[]> headers = {}, *GetElectronicSicknessCertificateExclusionReasonDEUQueries queries) returns Electronic\ Sickness\ Certificate\ Exclusion\ Reason\ DEU|error {
+    remote isolated function getElectronicSicknessCertificateExclusionReasonDEU(string externalCode, map<string|string[]> headers = {}, *GetElectronicSicknessCertificateExclusionReasonDEUQueries queries) returns GetElectronicSicknessCertificateExclusionReasonDEUResponse|error {
         string resourcePath = string `/ElectronicSicknessCertificateExclusionReasonDEU('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -968,7 +968,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountTypes(map<string|string[]> headers = {}, *ListTimeAccountTypesQueries queries) returns Wrapper_29|error {
+    remote isolated function listTimeAccountTypes(map<string|string[]> headers = {}, *ListTimeAccountTypesQueries queries) returns ListTimeAccountTypesResponse|error {
         string resourcePath = string `/TimeAccountType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -981,7 +981,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountType(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountTypeQueries queries) returns Time\ Account\ Type|error {
+    remote isolated function getTimeAccountType(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountTypeQueries queries) returns GetTimeAccountTypeResponse|error {
         string resourcePath = string `/TimeAccountType('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -993,7 +993,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAccrualCalculationBases(map<string|string[]> headers = {}, *ListAccrualCalculationBasesQueries queries) returns Wrapper_30|error {
+    remote isolated function listAccrualCalculationBases(map<string|string[]> headers = {}, *ListAccrualCalculationBasesQueries queries) returns ListAccrualCalculationBasesResponse|error {
         string resourcePath = string `/AccrualCalculationBase`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1005,7 +1005,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createAccrualCalculationBase(AccrualCalculationBase payload, map<string|string[]> headers = {}) returns CreatedAccrual\ Calculation\ Base|error {
+    remote isolated function createAccrualCalculationBase(AccrualCalculationBase payload, map<string|string[]> headers = {}) returns CreateAccrualCalculationBaseResponse|error {
         string resourcePath = string `/AccrualCalculationBase`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1019,7 +1019,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getAccrualCalculationBase(string externalCode, map<string|string[]> headers = {}, *GetAccrualCalculationBaseQueries queries) returns Accrual\ Calculation\ Base|error {
+    remote isolated function getAccrualCalculationBase(string externalCode, map<string|string[]> headers = {}, *GetAccrualCalculationBaseQueries queries) returns GetAccrualCalculationBaseResponse|error {
         string resourcePath = string `/AccrualCalculationBase('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1032,7 +1032,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateAccrualCalculationBase(string externalCode, ModifiedAccrual\ Calculation\ Base payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateAccrualCalculationBase(string externalCode, UpdateAccrualCalculationBasePayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/AccrualCalculationBase('${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1056,7 +1056,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeUSAs(map<string|string[]> headers = {}, *ListEmployeeTimeUSAsQueries queries) returns Wrapper_31|error {
+    remote isolated function listEmployeeTimeUSAs(map<string|string[]> headers = {}, *ListEmployeeTimeUSAsQueries queries) returns ListEmployeeTimeUSAsResponse|error {
         string resourcePath = string `/EmployeeTimeUSA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1068,7 +1068,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeUSA(EmployeeTimeUSA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ USA|error {
+    remote isolated function createEmployeeTimeUSA(EmployeeTimeUSA payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeUSAResponse|error {
         string resourcePath = string `/EmployeeTimeUSA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1083,7 +1083,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeUSA(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeUSAQueries queries) returns Employee\ Time\ USA|error {
+    remote isolated function getEmployeeTimeUSA(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeUSAQueries queries) returns GetEmployeeTimeUSAResponse|error {
         string resourcePath = string `/EmployeeTimeUSA(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1097,7 +1097,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeUSA(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ USA payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeUSA(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeUSAPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeUSA(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1122,7 +1122,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeUSAs(map<string|string[]> headers = {}, *ListTimeTypeUSAsQueries queries) returns Wrapper_32|error {
+    remote isolated function listTimeTypeUSAs(map<string|string[]> headers = {}, *ListTimeTypeUSAsQueries queries) returns ListTimeTypeUSAsResponse|error {
         string resourcePath = string `/TimeTypeUSA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1136,7 +1136,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeUSA(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeUSAQueries queries) returns Time\ Type\ USA|error {
+    remote isolated function getTimeTypeUSA(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeUSAQueries queries) returns GetTimeTypeUSAResponse|error {
         string resourcePath = string `/TimeTypeUSA(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1148,7 +1148,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTemporaryTimeInformations(map<string|string[]> headers = {}, *ListTemporaryTimeInformationsQueries queries) returns Wrapper_33|error {
+    remote isolated function listTemporaryTimeInformations(map<string|string[]> headers = {}, *ListTemporaryTimeInformationsQueries queries) returns ListTemporaryTimeInformationsResponse|error {
         string resourcePath = string `/TemporaryTimeInformation`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1160,7 +1160,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createTemporaryTimeInformation(TemporaryTimeInformation payload, map<string|string[]> headers = {}) returns CreatedTemporary\ Time\ Information|error {
+    remote isolated function createTemporaryTimeInformation(TemporaryTimeInformation payload, map<string|string[]> headers = {}) returns CreateTemporaryTimeInformationResponse|error {
         string resourcePath = string `/TemporaryTimeInformation`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1174,7 +1174,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTemporaryTimeInformation(string externalCode, map<string|string[]> headers = {}, *GetTemporaryTimeInformationQueries queries) returns Temporary\ Time\ Information|error {
+    remote isolated function getTemporaryTimeInformation(string externalCode, map<string|string[]> headers = {}, *GetTemporaryTimeInformationQueries queries) returns GetTemporaryTimeInformationResponse|error {
         string resourcePath = string `/TemporaryTimeInformation('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1187,7 +1187,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateTemporaryTimeInformation(string externalCode, ModifiedTemporary\ Time\ Information payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateTemporaryTimeInformation(string externalCode, UpdateTemporaryTimeInformationPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/TemporaryTimeInformation('${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1211,7 +1211,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeProfiles(map<string|string[]> headers = {}, *ListTimeTypeProfilesQueries queries) returns Wrapper_34|error {
+    remote isolated function listTimeTypeProfiles(map<string|string[]> headers = {}, *ListTimeTypeProfilesQueries queries) returns ListTimeTypeProfilesResponse|error {
         string resourcePath = string `/TimeTypeProfile`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1225,7 +1225,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeProfile(string externalCode, string mdfSystemEffectiveStartDate, map<string|string[]> headers = {}, *GetTimeTypeProfileQueries queries) returns Time\ Type\ Profile|error {
+    remote isolated function getTimeTypeProfile(string externalCode, string mdfSystemEffectiveStartDate, map<string|string[]> headers = {}, *GetTimeTypeProfileQueries queries) returns GetTimeTypeProfileResponse|error {
         string resourcePath = string `/TimeTypeProfile(externalCode='${getEncodedUri(externalCode)}',mdfSystemEffectiveStartDate=${getEncodedUri(mdfSystemEffectiveStartDate)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1262,7 +1262,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeDEUs(map<string|string[]> headers = {}, *ListTimeTypeDEUsQueries queries) returns Wrapper_36|error {
+    remote isolated function listTimeTypeDEUs(map<string|string[]> headers = {}, *ListTimeTypeDEUsQueries queries) returns ListTimeTypeDEUsResponse|error {
         string resourcePath = string `/TimeTypeDEU`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1276,7 +1276,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeDEU(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeDEUQueries queries) returns Time\ Type\ DEU|error {
+    remote isolated function getTimeTypeDEU(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeDEUQueries queries) returns GetTimeTypeDEUResponse|error {
         string resourcePath = string `/TimeTypeDEU(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1288,7 +1288,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypes(map<string|string[]> headers = {}, *ListTimeTypesQueries queries) returns Wrapper_37|error {
+    remote isolated function listTimeTypes(map<string|string[]> headers = {}, *ListTimeTypesQueries queries) returns ListTimeTypesResponse|error {
         string resourcePath = string `/TimeType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1301,7 +1301,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeType(string externalCode, map<string|string[]> headers = {}, *GetTimeTypeQueries queries) returns Time\ Type|error {
+    remote isolated function getTimeType(string externalCode, map<string|string[]> headers = {}, *GetTimeTypeQueries queries) returns GetTimeTypeResponse|error {
         string resourcePath = string `/TimeType('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1313,7 +1313,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeManagementTerminationEndHandlingExclusions(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExclusionsQueries queries) returns Wrapper_38|error {
+    remote isolated function listTimeManagementTerminationEndHandlingExclusions(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingExclusionsQueries queries) returns ListTimeManagementTerminationEndHandlingExclusionsResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExclusion`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1326,7 +1326,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeManagementTerminationEndHandlingExclusion(string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExclusionQueries queries) returns Time\ Management\ Termination\ End\ Handling\ Exclusion|error {
+    remote isolated function getTimeManagementTerminationEndHandlingExclusion(string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingExclusionQueries queries) returns GetTimeManagementTerminationEndHandlingExclusionResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingExclusion('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1376,7 +1376,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModels(map<string|string[]> headers = {}, *ListWorkScheduleDayModelsQueries queries) returns Wrapper_40|error {
+    remote isolated function listWorkScheduleDayModels(map<string|string[]> headers = {}, *ListWorkScheduleDayModelsQueries queries) returns ListWorkScheduleDayModelsResponse|error {
         string resourcePath = string `/WorkScheduleDayModel`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1388,7 +1388,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModel(WorkScheduleDayModel payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model|error {
+    remote isolated function createWorkScheduleDayModel(WorkScheduleDayModel payload, map<string|string[]> headers = {}) returns CreateWorkScheduleDayModelResponse|error {
         string resourcePath = string `/WorkScheduleDayModel`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1402,7 +1402,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModel(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelQueries queries) returns Work\ Schedule\ Day\ Model|error {
+    remote isolated function getWorkScheduleDayModel(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelQueries queries) returns GetWorkScheduleDayModelResponse|error {
         string resourcePath = string `/WorkScheduleDayModel('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1415,7 +1415,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkScheduleDayModel(string externalCode, ModifiedWork\ Schedule\ Day\ Model payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkScheduleDayModel(string externalCode, UpdateWorkScheduleDayModelPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkScheduleDayModel('${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1439,7 +1439,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountSnapshots(map<string|string[]> headers = {}, *ListTimeAccountSnapshotsQueries queries) returns Wrapper_41|error {
+    remote isolated function listTimeAccountSnapshots(map<string|string[]> headers = {}, *ListTimeAccountSnapshotsQueries queries) returns ListTimeAccountSnapshotsResponse|error {
         string resourcePath = string `/TimeAccountSnapshot`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1452,7 +1452,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountSnapshot(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountSnapshotQueries queries) returns Time\ Account\ Snapshot|error {
+    remote isolated function getTimeAccountSnapshot(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountSnapshotQueries queries) returns GetTimeAccountSnapshotResponse|error {
         string resourcePath = string `/TimeAccountSnapshot('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1464,7 +1464,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmpTimeAccountBalances(map<string|string[]> headers = {}, *ListEmpTimeAccountBalancesQueries queries) returns Wrapper_42|error {
+    remote isolated function listEmpTimeAccountBalances(map<string|string[]> headers = {}, *ListEmpTimeAccountBalancesQueries queries) returns ListEmpTimeAccountBalancesResponse|error {
         string resourcePath = string `/EmpTimeAccountBalance`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1477,7 +1477,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmpTimeAccountBalance(string timeAccount, map<string|string[]> headers = {}, *GetEmpTimeAccountBalanceQueries queries) returns Employee\ Time\ Account\ Balance|error {
+    remote isolated function getEmpTimeAccountBalance(string timeAccount, map<string|string[]> headers = {}, *GetEmpTimeAccountBalanceQueries queries) returns GetEmpTimeAccountBalanceResponse|error {
         string resourcePath = string `/EmpTimeAccountBalance('${getEncodedUri(timeAccount)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1515,7 +1515,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeNLDs(map<string|string[]> headers = {}, *ListEmployeeTimeNLDsQueries queries) returns Wrapper_44|error {
+    remote isolated function listEmployeeTimeNLDs(map<string|string[]> headers = {}, *ListEmployeeTimeNLDsQueries queries) returns ListEmployeeTimeNLDsResponse|error {
         string resourcePath = string `/EmployeeTimeNLD`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1527,7 +1527,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeNLD(EmployeeTimeNLD payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NLD|error {
+    remote isolated function createEmployeeTimeNLD(EmployeeTimeNLD payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeNLDResponse|error {
         string resourcePath = string `/EmployeeTimeNLD`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1542,7 +1542,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeNLD(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeNLDQueries queries) returns Employee\ Time\ NLD|error {
+    remote isolated function getEmployeeTimeNLD(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeNLDQueries queries) returns GetEmployeeTimeNLDResponse|error {
         string resourcePath = string `/EmployeeTimeNLD(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1556,7 +1556,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeNLD(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ NLD payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeNLD(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeNLDPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeNLD(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1581,7 +1581,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeSWEs(map<string|string[]> headers = {}, *ListEmployeeTimeSWEsQueries queries) returns Wrapper_45|error {
+    remote isolated function listEmployeeTimeSWEs(map<string|string[]> headers = {}, *ListEmployeeTimeSWEsQueries queries) returns ListEmployeeTimeSWEsResponse|error {
         string resourcePath = string `/EmployeeTimeSWE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1593,7 +1593,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeSWE(EmployeeTimeSWE payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ SWE|error {
+    remote isolated function createEmployeeTimeSWE(EmployeeTimeSWE payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeSWEResponse|error {
         string resourcePath = string `/EmployeeTimeSWE`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1608,7 +1608,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeSWE(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeSWEQueries queries) returns Employee\ Time\ SWE|error {
+    remote isolated function getEmployeeTimeSWE(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeSWEQueries queries) returns GetEmployeeTimeSWEResponse|error {
         string resourcePath = string `/EmployeeTimeSWE(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1622,7 +1622,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeSWE(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ SWE payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeSWE(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeSWEPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeSWE(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1647,7 +1647,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeNORs(map<string|string[]> headers = {}, *ListEmployeeTimeNORsQueries queries) returns Wrapper_46|error {
+    remote isolated function listEmployeeTimeNORs(map<string|string[]> headers = {}, *ListEmployeeTimeNORsQueries queries) returns ListEmployeeTimeNORsResponse|error {
         string resourcePath = string `/EmployeeTimeNOR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1659,7 +1659,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeNOR(EmployeeTimeNOR payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ NOR|error {
+    remote isolated function createEmployeeTimeNOR(EmployeeTimeNOR payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeNORResponse|error {
         string resourcePath = string `/EmployeeTimeNOR`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1674,7 +1674,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeNOR(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeNORQueries queries) returns Employee\ Time\ NOR|error {
+    remote isolated function getEmployeeTimeNOR(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeNORQueries queries) returns GetEmployeeTimeNORResponse|error {
         string resourcePath = string `/EmployeeTimeNOR(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1688,7 +1688,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeNOR(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ NOR payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeNOR(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeNORPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeNOR(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1713,7 +1713,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeITAs(map<string|string[]> headers = {}, *ListEmployeeTimeITAsQueries queries) returns Wrapper_47|error {
+    remote isolated function listEmployeeTimeITAs(map<string|string[]> headers = {}, *ListEmployeeTimeITAsQueries queries) returns ListEmployeeTimeITAsResponse|error {
         string resourcePath = string `/EmployeeTimeITA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1725,7 +1725,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeITA(EmployeeTimeITA payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ ITA|error {
+    remote isolated function createEmployeeTimeITA(EmployeeTimeITA payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeITAResponse|error {
         string resourcePath = string `/EmployeeTimeITA`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1740,7 +1740,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeITA(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeITAQueries queries) returns Employee\ Time\ ITA|error {
+    remote isolated function getEmployeeTimeITA(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeITAQueries queries) returns GetEmployeeTimeITAResponse|error {
         string resourcePath = string `/EmployeeTimeITA(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1754,7 +1754,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeITA(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ ITA payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeITA(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeITAPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeITA(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1779,7 +1779,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeCANs(map<string|string[]> headers = {}, *ListEmployeeTimeCANsQueries queries) returns Wrapper_48|error {
+    remote isolated function listEmployeeTimeCANs(map<string|string[]> headers = {}, *ListEmployeeTimeCANsQueries queries) returns ListEmployeeTimeCANsResponse|error {
         string resourcePath = string `/EmployeeTimeCAN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1791,7 +1791,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeCAN(EmployeeTimeCAN payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ CAN|error {
+    remote isolated function createEmployeeTimeCAN(EmployeeTimeCAN payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeCANResponse|error {
         string resourcePath = string `/EmployeeTimeCAN`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1806,7 +1806,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeCAN(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeCANQueries queries) returns Employee\ Time\ CAN|error {
+    remote isolated function getEmployeeTimeCAN(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeCANQueries queries) returns GetEmployeeTimeCANResponse|error {
         string resourcePath = string `/EmployeeTimeCAN(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1820,7 +1820,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeCAN(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ CAN payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeCAN(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeCANPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeCAN(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1845,7 +1845,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeManagementTerminationEndHandlingLegalEntityConfigurations(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingLegalEntityConfigurationsQueries queries) returns Wrapper_49|error {
+    remote isolated function listTimeManagementTerminationEndHandlingLegalEntityConfigurations(map<string|string[]> headers = {}, *ListTimeManagementTerminationEndHandlingLegalEntityConfigurationsQueries queries) returns ListTimeManagementTerminationEndHandlingLegalEntityConfigurationsResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingLegalEntityConfiguration`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1859,7 +1859,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeManagementTerminationEndHandlingLegalEntityConfiguration(string TimeManagementTerminationEndHandlingConfiguration_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingLegalEntityConfigurationQueries queries) returns Time\ Management\ Termination\ End\ Handling\ Legal\ Entity\ Configuration|error {
+    remote isolated function getTimeManagementTerminationEndHandlingLegalEntityConfiguration(string TimeManagementTerminationEndHandlingConfiguration_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeManagementTerminationEndHandlingLegalEntityConfigurationQueries queries) returns GetTimeManagementTerminationEndHandlingLegalEntityConfigurationResponse|error {
         string resourcePath = string `/TimeManagementTerminationEndHandlingLegalEntityConfiguration(TimeManagementTerminationEndHandlingConfiguration_externalCode='${getEncodedUri(TimeManagementTerminationEndHandlingConfiguration_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1871,7 +1871,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimePOLs(map<string|string[]> headers = {}, *ListEmployeeTimePOLsQueries queries) returns Wrapper_50|error {
+    remote isolated function listEmployeeTimePOLs(map<string|string[]> headers = {}, *ListEmployeeTimePOLsQueries queries) returns ListEmployeeTimePOLsResponse|error {
         string resourcePath = string `/EmployeeTimePOL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1883,7 +1883,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimePOL(EmployeeTimePOL payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ POL|error {
+    remote isolated function createEmployeeTimePOL(EmployeeTimePOL payload, map<string|string[]> headers = {}) returns CreateEmployeeTimePOLResponse|error {
         string resourcePath = string `/EmployeeTimePOL`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -1898,7 +1898,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimePOL(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimePOLQueries queries) returns Employee\ Time\ POL|error {
+    remote isolated function getEmployeeTimePOL(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimePOLQueries queries) returns GetEmployeeTimePOLResponse|error {
         string resourcePath = string `/EmployeeTimePOL(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1912,7 +1912,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimePOL(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ POL payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimePOL(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimePOLPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimePOL(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2001,7 +2001,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountPayoutProfiles(map<string|string[]> headers = {}, *ListTimeAccountPayoutProfilesQueries queries) returns Wrapper_51|error {
+    remote isolated function listTimeAccountPayoutProfiles(map<string|string[]> headers = {}, *ListTimeAccountPayoutProfilesQueries queries) returns ListTimeAccountPayoutProfilesResponse|error {
         string resourcePath = string `/TimeAccountPayoutProfile`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2014,7 +2014,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountPayoutProfile(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPayoutProfileQueries queries) returns Time\ Account\ Payout\ Profile|error {
+    remote isolated function getTimeAccountPayoutProfile(string externalCode, map<string|string[]> headers = {}, *GetTimeAccountPayoutProfileQueries queries) returns GetTimeAccountPayoutProfileResponse|error {
         string resourcePath = string `/TimeAccountPayoutProfile('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2026,7 +2026,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountSummarys(map<string|string[]> headers = {}, *ListTimeAccountSummarysQueries queries) returns CollectionofTime\ Account\ Summary|error {
+    remote isolated function listTimeAccountSummarys(map<string|string[]> headers = {}, *ListTimeAccountSummarysQueries queries) returns ListTimeAccountSummarysResponse|error {
         string resourcePath = string `/TimeAccountSummary`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2051,7 +2051,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeAccountTypeAUSs(map<string|string[]> headers = {}, *ListTimeAccountTypeAUSsQueries queries) returns Wrapper_52|error {
+    remote isolated function listTimeAccountTypeAUSs(map<string|string[]> headers = {}, *ListTimeAccountTypeAUSsQueries queries) returns ListTimeAccountTypeAUSsResponse|error {
         string resourcePath = string `/TimeAccountTypeAUS`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2065,7 +2065,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeAccountTypeAUS(string TimeAccountType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeAccountTypeAUSQueries queries) returns Time\ Account\ Type\ AUS|error {
+    remote isolated function getTimeAccountTypeAUS(string TimeAccountType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeAccountTypeAUSQueries queries) returns GetTimeAccountTypeAUSResponse|error {
         string resourcePath = string `/TimeAccountTypeAUS(TimeAccountType_externalCode='${getEncodedUri(TimeAccountType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2077,7 +2077,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPeriodicTimeAccountUpdateProfiles(map<string|string[]> headers = {}, *ListPeriodicTimeAccountUpdateProfilesQueries queries) returns Wrapper_53|error {
+    remote isolated function listPeriodicTimeAccountUpdateProfiles(map<string|string[]> headers = {}, *ListPeriodicTimeAccountUpdateProfilesQueries queries) returns ListPeriodicTimeAccountUpdateProfilesResponse|error {
         string resourcePath = string `/PeriodicTimeAccountUpdateProfile`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2090,7 +2090,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getPeriodicTimeAccountUpdateProfile(string externalCode, map<string|string[]> headers = {}, *GetPeriodicTimeAccountUpdateProfileQueries queries) returns Periodic\ Time\ Account\ Update\ Profile|error {
+    remote isolated function getPeriodicTimeAccountUpdateProfile(string externalCode, map<string|string[]> headers = {}, *GetPeriodicTimeAccountUpdateProfileQueries queries) returns GetPeriodicTimeAccountUpdateProfileResponse|error {
         string resourcePath = string `/PeriodicTimeAccountUpdateProfile('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2102,7 +2102,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAvailableTimeTypes(map<string|string[]> headers = {}, *ListAvailableTimeTypesQueries queries) returns Wrapper_54|error {
+    remote isolated function listAvailableTimeTypes(map<string|string[]> headers = {}, *ListAvailableTimeTypesQueries queries) returns ListAvailableTimeTypesResponse|error {
         string resourcePath = string `/AvailableTimeType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2117,7 +2117,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getAvailableTimeType(string TimeTypeProfile_externalCode, string TimeTypeProfile_mdfSystemEffectiveStartDate, string externalCode, map<string|string[]> headers = {}, *GetAvailableTimeTypeQueries queries) returns Available\ Time\ Type|error {
+    remote isolated function getAvailableTimeType(string TimeTypeProfile_externalCode, string TimeTypeProfile_mdfSystemEffectiveStartDate, string externalCode, map<string|string[]> headers = {}, *GetAvailableTimeTypeQueries queries) returns GetAvailableTimeTypeResponse|error {
         string resourcePath = string `/AvailableTimeType(TimeTypeProfile_externalCode='${getEncodedUri(TimeTypeProfile_externalCode)}',TimeTypeProfile_mdfSystemEffectiveStartDate=${getEncodedUri(TimeTypeProfile_mdfSystemEffectiveStartDate)},externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2129,7 +2129,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkSchedules(map<string|string[]> headers = {}, *ListWorkSchedulesQueries queries) returns Wrapper_55|error {
+    remote isolated function listWorkSchedules(map<string|string[]> headers = {}, *ListWorkSchedulesQueries queries) returns ListWorkSchedulesResponse|error {
         string resourcePath = string `/WorkSchedule`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2141,7 +2141,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkSchedule(WorkSchedule payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule|error {
+    remote isolated function createWorkSchedule(WorkSchedule payload, map<string|string[]> headers = {}) returns CreateWorkScheduleResponse|error {
         string resourcePath = string `/WorkSchedule`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2155,7 +2155,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkSchedule(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleQueries queries) returns Work\ Schedule|error {
+    remote isolated function getWorkSchedule(string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleQueries queries) returns GetWorkScheduleResponse|error {
         string resourcePath = string `/WorkSchedule('${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2168,7 +2168,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkSchedule(string externalCode, ModifiedWork\ Schedule payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkSchedule(string externalCode, UpdateWorkSchedulePayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkSchedule('${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2192,7 +2192,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmployeeTimeAUSs(map<string|string[]> headers = {}, *ListEmployeeTimeAUSsQueries queries) returns Wrapper_56|error {
+    remote isolated function listEmployeeTimeAUSs(map<string|string[]> headers = {}, *ListEmployeeTimeAUSsQueries queries) returns ListEmployeeTimeAUSsResponse|error {
         string resourcePath = string `/EmployeeTimeAUS`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2204,7 +2204,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createEmployeeTimeAUS(EmployeeTimeAUS payload, map<string|string[]> headers = {}) returns CreatedEmployee\ Time\ AUS|error {
+    remote isolated function createEmployeeTimeAUS(EmployeeTimeAUS payload, map<string|string[]> headers = {}) returns CreateEmployeeTimeAUSResponse|error {
         string resourcePath = string `/EmployeeTimeAUS`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2219,7 +2219,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getEmployeeTimeAUS(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeAUSQueries queries) returns Employee\ Time\ AUS|error {
+    remote isolated function getEmployeeTimeAUS(string EmployeeTime_externalCode, int externalCode, map<string|string[]> headers = {}, *GetEmployeeTimeAUSQueries queries) returns GetEmployeeTimeAUSResponse|error {
         string resourcePath = string `/EmployeeTimeAUS(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2233,7 +2233,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateEmployeeTimeAUS(string EmployeeTime_externalCode, int externalCode, ModifiedEmployee\ Time\ AUS payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateEmployeeTimeAUS(string EmployeeTime_externalCode, int externalCode, UpdateEmployeeTimeAUSPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/EmployeeTimeAUS(EmployeeTime_externalCode='${getEncodedUri(EmployeeTime_externalCode)}',externalCode=${getEncodedUri(externalCode)})`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2258,7 +2258,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listWorkScheduleDayModelSegments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelSegmentsQueries queries) returns Wrapper_57|error {
+    remote isolated function listWorkScheduleDayModelSegments(map<string|string[]> headers = {}, *ListWorkScheduleDayModelSegmentsQueries queries) returns ListWorkScheduleDayModelSegmentsResponse|error {
         string resourcePath = string `/WorkScheduleDayModelSegment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2270,7 +2270,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New entity 
     # + return - Created entity 
-    remote isolated function createWorkScheduleDayModelSegment(WorkScheduleDayModelSegment payload, map<string|string[]> headers = {}) returns CreatedWork\ Schedule\ Day\ Model\ Segment|error {
+    remote isolated function createWorkScheduleDayModelSegment(WorkScheduleDayModelSegment payload, map<string|string[]> headers = {}) returns CreateWorkScheduleDayModelSegmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelSegment`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2285,7 +2285,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getWorkScheduleDayModelSegment(string WorkScheduleDayModel_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelSegmentQueries queries) returns Work\ Schedule\ Day\ Model\ Segment|error {
+    remote isolated function getWorkScheduleDayModelSegment(string WorkScheduleDayModel_externalCode, string externalCode, map<string|string[]> headers = {}, *GetWorkScheduleDayModelSegmentQueries queries) returns GetWorkScheduleDayModelSegmentResponse|error {
         string resourcePath = string `/WorkScheduleDayModelSegment(WorkScheduleDayModel_externalCode='${getEncodedUri(WorkScheduleDayModel_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2299,7 +2299,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + payload - New property values 
     # + return - Success 
-    remote isolated function updateWorkScheduleDayModelSegment(string WorkScheduleDayModel_externalCode, string externalCode, ModifiedWork\ Schedule\ Day\ Model\ Segment payload, map<string|string[]> headers = {}) returns error? {
+    remote isolated function updateWorkScheduleDayModelSegment(string WorkScheduleDayModel_externalCode, string externalCode, UpdateWorkScheduleDayModelSegmentPayload payload, map<string|string[]> headers = {}) returns error? {
         string resourcePath = string `/WorkScheduleDayModelSegment(WorkScheduleDayModel_externalCode='${getEncodedUri(WorkScheduleDayModel_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         http:Request request = new;
         json jsonBody = jsondata:toJson(payload);
@@ -2324,7 +2324,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listRecalculationBasedFields(map<string|string[]> headers = {}, *ListRecalculationBasedFieldsQueries queries) returns Wrapper_58|error {
+    remote isolated function listRecalculationBasedFields(map<string|string[]> headers = {}, *ListRecalculationBasedFieldsQueries queries) returns ListRecalculationBasedFieldsResponse|error {
         string resourcePath = string `/RecalculationBasedField`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2338,7 +2338,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getRecalculationBasedField(string TimeAccountType_externalCode, string recalcField, map<string|string[]> headers = {}, *GetRecalculationBasedFieldQueries queries) returns Recalculation\ Based\ Field|error {
+    remote isolated function getRecalculationBasedField(string TimeAccountType_externalCode, string recalcField, map<string|string[]> headers = {}, *GetRecalculationBasedFieldQueries queries) returns GetRecalculationBasedFieldResponse|error {
         string resourcePath = string `/RecalculationBasedField(TimeAccountType_externalCode='${getEncodedUri(TimeAccountType_externalCode)}',recalcField='${getEncodedUri(recalcField)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2350,7 +2350,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listHolidays(map<string|string[]> headers = {}, *ListHolidaysQueries queries) returns Wrapper_59|error {
+    remote isolated function listHolidays(map<string|string[]> headers = {}, *ListHolidaysQueries queries) returns ListHolidaysResponse|error {
         string resourcePath = string `/Holiday`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2401,7 +2401,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listTimeTypeAUSs(map<string|string[]> headers = {}, *ListTimeTypeAUSsQueries queries) returns Wrapper_61|error {
+    remote isolated function listTimeTypeAUSs(map<string|string[]> headers = {}, *ListTimeTypeAUSsQueries queries) returns ListTimeTypeAUSsResponse|error {
         string resourcePath = string `/TimeTypeAUS`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2415,7 +2415,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entity 
-    remote isolated function getTimeTypeAUS(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeAUSQueries queries) returns Time\ Type\ AUS|error {
+    remote isolated function getTimeTypeAUS(string TimeType_externalCode, string externalCode, map<string|string[]> headers = {}, *GetTimeTypeAUSQueries queries) returns GetTimeTypeAUSResponse|error {
         string resourcePath = string `/TimeTypeAUS(TimeType_externalCode='${getEncodedUri(TimeType_externalCode)}',externalCode='${getEncodedUri(externalCode)}')`;
         map<Encoding> queryParamEncoding = {"$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

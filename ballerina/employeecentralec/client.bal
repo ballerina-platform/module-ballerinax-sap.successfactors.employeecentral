@@ -43,7 +43,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoAREs(map<string|string[]> headers = {}, *ListPerGlobalInfoAREsQueries queries) returns Wrapper|error {
+    remote isolated function listPerGlobalInfoAREs(map<string|string[]> headers = {}, *ListPerGlobalInfoAREsQueries queries) returns ListPerGlobalInfoAREsResponse|error {
         string resourcePath = string `/PerGlobalInfoARE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -70,7 +70,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoCHNs(map<string|string[]> headers = {}, *ListPerGlobalInfoCHNsQueries queries) returns Wrapper_1|error {
+    remote isolated function listPerGlobalInfoCHNs(map<string|string[]> headers = {}, *ListPerGlobalInfoCHNsQueries queries) returns ListPerGlobalInfoCHNsResponse|error {
         string resourcePath = string `/PerGlobalInfoCHN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -97,7 +97,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoFINs(map<string|string[]> headers = {}, *ListPerGlobalInfoFINsQueries queries) returns Wrapper_2|error {
+    remote isolated function listPerGlobalInfoFINs(map<string|string[]> headers = {}, *ListPerGlobalInfoFINsQueries queries) returns ListPerGlobalInfoFINsResponse|error {
         string resourcePath = string `/PerGlobalInfoFIN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -124,7 +124,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEducationDegreeContents(map<string|string[]> headers = {}, *ListEducationDegreeContentsQueries queries) returns Wrapper_3|error {
+    remote isolated function listEducationDegreeContents(map<string|string[]> headers = {}, *ListEducationDegreeContentsQueries queries) returns ListEducationDegreeContentsResponse|error {
         string resourcePath = string `/EducationDegreeContent`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -190,7 +190,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listCurrencyExchangeRates(map<string|string[]> headers = {}, *ListCurrencyExchangeRatesQueries queries) returns Wrapper_4|error {
+    remote isolated function listCurrencyExchangeRates(map<string|string[]> headers = {}, *ListCurrencyExchangeRatesQueries queries) returns ListCurrencyExchangeRatesResponse|error {
         string resourcePath = string `/CurrencyExchangeRate`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -256,7 +256,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listNonRecurringPayments(map<string|string[]> headers = {}, *ListNonRecurringPaymentsQueries queries) returns Wrapper_5|error {
+    remote isolated function listNonRecurringPayments(map<string|string[]> headers = {}, *ListNonRecurringPaymentsQueries queries) returns ListNonRecurringPaymentsResponse|error {
         string resourcePath = string `/NonRecurringPayment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -281,7 +281,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEducationDegreeEntities(map<string|string[]> headers = {}, *ListEducationDegreeEntitiesQueries queries) returns Wrapper_6|error {
+    remote isolated function listEducationDegreeEntities(map<string|string[]> headers = {}, *ListEducationDegreeEntitiesQueries queries) returns ListEducationDegreeEntitiesResponse|error {
         string resourcePath = string `/EducationDegreeEntity`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -344,7 +344,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listServiceDeskContactSupportInformations(map<string|string[]> headers = {}, *ListServiceDeskContactSupportInformationsQueries queries) returns Wrapper_7|error {
+    remote isolated function listServiceDeskContactSupportInformations(map<string|string[]> headers = {}, *ListServiceDeskContactSupportInformationsQueries queries) returns ListServiceDeskContactSupportInformationsResponse|error {
         string resourcePath = string `/ServiceDeskContactSupportInformation`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -407,7 +407,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoBRAs(map<string|string[]> headers = {}, *ListPerGlobalInfoBRAsQueries queries) returns Wrapper_8|error {
+    remote isolated function listPerGlobalInfoBRAs(map<string|string[]> headers = {}, *ListPerGlobalInfoBRAsQueries queries) returns ListPerGlobalInfoBRAsResponse|error {
         string resourcePath = string `/PerGlobalInfoBRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -434,7 +434,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoCHEs(map<string|string[]> headers = {}, *ListPerGlobalInfoCHEsQueries queries) returns Wrapper_9|error {
+    remote isolated function listPerGlobalInfoCHEs(map<string|string[]> headers = {}, *ListPerGlobalInfoCHEsQueries queries) returns ListPerGlobalInfoCHEsResponse|error {
         string resourcePath = string `/PerGlobalInfoCHE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -461,7 +461,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoGBRs(map<string|string[]> headers = {}, *ListPerGlobalInfoGBRsQueries queries) returns Wrapper_10|error {
+    remote isolated function listPerGlobalInfoGBRs(map<string|string[]> headers = {}, *ListPerGlobalInfoGBRsQueries queries) returns ListPerGlobalInfoGBRsResponse|error {
         string resourcePath = string `/PerGlobalInfoGBR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -488,7 +488,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoAUSs(map<string|string[]> headers = {}, *ListPerGlobalInfoAUSsQueries queries) returns Wrapper_11|error {
+    remote isolated function listPerGlobalInfoAUSs(map<string|string[]> headers = {}, *ListPerGlobalInfoAUSsQueries queries) returns ListPerGlobalInfoAUSsResponse|error {
         string resourcePath = string `/PerGlobalInfoAUS`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -515,7 +515,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoESPs(map<string|string[]> headers = {}, *ListPerGlobalInfoESPsQueries queries) returns Wrapper_12|error {
+    remote isolated function listPerGlobalInfoESPs(map<string|string[]> headers = {}, *ListPerGlobalInfoESPsQueries queries) returns ListPerGlobalInfoESPsResponse|error {
         string resourcePath = string `/PerGlobalInfoESP`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -542,7 +542,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEducationMajorEntities(map<string|string[]> headers = {}, *ListEducationMajorEntitiesQueries queries) returns Wrapper_13|error {
+    remote isolated function listEducationMajorEntities(map<string|string[]> headers = {}, *ListEducationMajorEntitiesQueries queries) returns ListEducationMajorEntitiesResponse|error {
         string resourcePath = string `/EducationMajorEntity`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -605,7 +605,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoCANs(map<string|string[]> headers = {}, *ListPerGlobalInfoCANsQueries queries) returns Wrapper_14|error {
+    remote isolated function listPerGlobalInfoCANs(map<string|string[]> headers = {}, *ListPerGlobalInfoCANsQueries queries) returns ListPerGlobalInfoCANsResponse|error {
         string resourcePath = string `/PerGlobalInfoCAN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -632,7 +632,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoUSAs(map<string|string[]> headers = {}, *ListPerGlobalInfoUSAsQueries queries) returns Wrapper_15|error {
+    remote isolated function listPerGlobalInfoUSAs(map<string|string[]> headers = {}, *ListPerGlobalInfoUSAsQueries queries) returns ListPerGlobalInfoUSAsResponse|error {
         string resourcePath = string `/PerGlobalInfoUSA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -659,7 +659,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listServiceDeskCountrySupportInformations(map<string|string[]> headers = {}, *ListServiceDeskCountrySupportInformationsQueries queries) returns Wrapper_16|error {
+    remote isolated function listServiceDeskCountrySupportInformations(map<string|string[]> headers = {}, *ListServiceDeskCountrySupportInformationsQueries queries) returns ListServiceDeskCountrySupportInformationsResponse|error {
         string resourcePath = string `/ServiceDeskCountrySupportInformation`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -725,7 +725,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEducationMajorContents(map<string|string[]> headers = {}, *ListEducationMajorContentsQueries queries) returns Wrapper_17|error {
+    remote isolated function listEducationMajorContents(map<string|string[]> headers = {}, *ListEducationMajorContentsQueries queries) returns ListEducationMajorContentsResponse|error {
         string resourcePath = string `/EducationMajorContent`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -791,7 +791,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoFRAs(map<string|string[]> headers = {}, *ListPerGlobalInfoFRAsQueries queries) returns Wrapper_18|error {
+    remote isolated function listPerGlobalInfoFRAs(map<string|string[]> headers = {}, *ListPerGlobalInfoFRAsQueries queries) returns ListPerGlobalInfoFRAsResponse|error {
         string resourcePath = string `/PerGlobalInfoFRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -818,7 +818,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoDEUs(map<string|string[]> headers = {}, *ListPerGlobalInfoDEUsQueries queries) returns Wrapper_19|error {
+    remote isolated function listPerGlobalInfoDEUs(map<string|string[]> headers = {}, *ListPerGlobalInfoDEUsQueries queries) returns ListPerGlobalInfoDEUsResponse|error {
         string resourcePath = string `/PerGlobalInfoDEU`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -845,7 +845,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoDNKs(map<string|string[]> headers = {}, *ListPerGlobalInfoDNKsQueries queries) returns Wrapper_20|error {
+    remote isolated function listPerGlobalInfoDNKs(map<string|string[]> headers = {}, *ListPerGlobalInfoDNKsQueries queries) returns ListPerGlobalInfoDNKsResponse|error {
         string resourcePath = string `/PerGlobalInfoDNK`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -872,7 +872,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoITAs(map<string|string[]> headers = {}, *ListPerGlobalInfoITAsQueries queries) returns Wrapper_21|error {
+    remote isolated function listPerGlobalInfoITAs(map<string|string[]> headers = {}, *ListPerGlobalInfoITAsQueries queries) returns ListPerGlobalInfoITAsResponse|error {
         string resourcePath = string `/PerGlobalInfoITA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -899,7 +899,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoNLDs(map<string|string[]> headers = {}, *ListPerGlobalInfoNLDsQueries queries) returns Wrapper_22|error {
+    remote isolated function listPerGlobalInfoNLDs(map<string|string[]> headers = {}, *ListPerGlobalInfoNLDsQueries queries) returns ListPerGlobalInfoNLDsResponse|error {
         string resourcePath = string `/PerGlobalInfoNLD`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -926,7 +926,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoPRTs(map<string|string[]> headers = {}, *ListPerGlobalInfoPRTsQueries queries) returns Wrapper_23|error {
+    remote isolated function listPerGlobalInfoPRTs(map<string|string[]> headers = {}, *ListPerGlobalInfoPRTsQueries queries) returns ListPerGlobalInfoPRTsResponse|error {
         string resourcePath = string `/PerGlobalInfoPRT`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -953,7 +953,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoQATs(map<string|string[]> headers = {}, *ListPerGlobalInfoQATsQueries queries) returns Wrapper_24|error {
+    remote isolated function listPerGlobalInfoQATs(map<string|string[]> headers = {}, *ListPerGlobalInfoQATsQueries queries) returns ListPerGlobalInfoQATsResponse|error {
         string resourcePath = string `/PerGlobalInfoQAT`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -980,7 +980,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoSAUs(map<string|string[]> headers = {}, *ListPerGlobalInfoSAUsQueries queries) returns Wrapper_25|error {
+    remote isolated function listPerGlobalInfoSAUs(map<string|string[]> headers = {}, *ListPerGlobalInfoSAUsQueries queries) returns ListPerGlobalInfoSAUsResponse|error {
         string resourcePath = string `/PerGlobalInfoSAU`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1007,7 +1007,7 @@ public isolated client class Client {
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPerGlobalInfoZAFs(map<string|string[]> headers = {}, *ListPerGlobalInfoZAFsQueries queries) returns Wrapper_26|error {
+    remote isolated function listPerGlobalInfoZAFs(map<string|string[]> headers = {}, *ListPerGlobalInfoZAFsQueries queries) returns ListPerGlobalInfoZAFsResponse|error {
         string resourcePath = string `/PerGlobalInfoZAF`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

@@ -42,7 +42,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listSecondaryAssignmentsItems(map<string|string[]> headers = {}, *ListSecondaryAssignmentsItemsQueries queries) returns Wrapper|error {
+    remote isolated function listSecondaryAssignmentsItems(map<string|string[]> headers = {}, *ListSecondaryAssignmentsItemsQueries queries) returns ListSecondaryAssignmentsItemsResponse|error {
         string resourcePath = string `/SecondaryAssignmentsItem`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -111,7 +111,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listSecondaryAssignmentss(map<string|string[]> headers = {}, *ListSecondaryAssignmentssQueries queries) returns Wrapper_1|error {
+    remote isolated function listSecondaryAssignmentss(map<string|string[]> headers = {}, *ListSecondaryAssignmentssQueries queries) returns ListSecondaryAssignmentssResponse|error {
         string resourcePath = string `/SecondaryAssignments`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -177,7 +177,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listRightToReturns(map<string|string[]> headers = {}, *ListRightToReturnsQueries queries) returns Wrapper_2|error {
+    remote isolated function listRightToReturns(map<string|string[]> headers = {}, *ListRightToReturnsQueries queries) returns ListRightToReturnsResponse|error {
         string resourcePath = string `/RightToReturn`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -246,7 +246,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listEmpGlobalAssignments(map<string|string[]> headers = {}, *ListEmpGlobalAssignmentsQueries queries) returns Wrapper_3|error {
+    remote isolated function listEmpGlobalAssignments(map<string|string[]> headers = {}, *ListEmpGlobalAssignmentsQueries queries) returns ListEmpGlobalAssignmentsResponse|error {
         string resourcePath = string `/EmpGlobalAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

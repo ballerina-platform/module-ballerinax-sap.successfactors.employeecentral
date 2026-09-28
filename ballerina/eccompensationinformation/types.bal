@@ -186,7 +186,7 @@ public type GetOneTimeDeductionQueries record {
     ("additionalInfo"|"advanceId"|"amount"|"auditUserSysId"|"createdBy"|"createdDateTime"|"currency"|"deductionDate"|"equivalentAmount"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemCreatedBy"|"mdfSystemCreatedDate"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemLastModifiedBy"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"payComponentType"|"referenceId"|"unitOfMeasure"|"userSysId")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListOneTimeDeductionsResponse record {
     CollectionofOneTimeDeduction d?;
 };
 
@@ -328,7 +328,7 @@ public type EmpPayCompNonRecurring_1 record {
     EmpPayCompNonRecurring d?;
 };
 
-public type Wrapper_8 record {
+public type ListEmpCompensationGroupSumCalculatedsResponse record {
     CollectionofEmpCompensationGroupSumCalculated d?;
 };
 
@@ -338,7 +338,7 @@ public type GetEmpCompensationCalculatedQueries record {
     ("compaRatio"|"errorCode"|"errorMessage"|"payRange"|"proratedMaxPointOfPayRange"|"proratedMidPointOfPayRange"|"proratedMinPointOfPayRange"|"rangePenetration"|"seqNumber"|"startDate"|"userId"|"yearlyBaseSalary")[] \$select?;
 };
 
-public type Wrapper_4 record {
+public type ListDeductionScreenIdsResponse record {
     CollectionofDeductionScreenId d?;
 };
 
@@ -349,19 +349,19 @@ public type RecurringDeduction record {
     RelatedCollectionSFOData_RecurringDeductionItem recurringItems?;
 };
 
-public type Wrapper_5 record {
+public type ListRecurringDeductionsResponse record {
     CollectionofRecurringDeduction d?;
 };
 
-public type Wrapper_6 record {
+public type ListEmpCompensationsResponse record {
     CollectionofEmpCompensation d?;
 };
 
-public type Wrapper_7 record {
+public type ListEmpPayCompNonRecurringsResponse record {
     CollectionofEmpPayCompNonRecurring d?;
 };
 
-public type Wrapper_1 record {
+public type ListRecurringDeductionItemsResponse record {
     CollectionofRecurringDeductionItem d?;
 };
 
@@ -371,7 +371,7 @@ public type EmpCompensationCalculated record {
     string userId?;
 };
 
-public type Wrapper_2 record {
+public type ListEmpCompensationExpandEmpCompensationCalculatedNavsResponse record {
     CollectionofEmpCompensationCalculated d?;
 };
 
@@ -379,7 +379,7 @@ public type CollectionofEmpCompensation record {
     EmpCompensation[] results?;
 };
 
-public type Wrapper_3 record {
+public type ListEmpPayCompRecurringsResponse record {
     CollectionofEmpPayCompRecurring d?;
 };
 

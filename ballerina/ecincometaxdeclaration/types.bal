@@ -61,11 +61,11 @@ public type CollectionofItDeclInvestmentType record {
     ItDeclInvestmentType[] results?;
 };
 
-public type Wrapper_4 record {
+public type ListItDeclInvestmentTypesResponse record {
     CollectionofItDeclInvestmentType d?;
 };
 
-public type Wrapper_5 record {
+public type ListItDeclarationsResponse record {
     CollectionofItDeclaration d?;
 };
 
@@ -73,15 +73,15 @@ public type FiscalYearVariant record {
     string externalCode?;
 };
 
-public type Wrapper_1 record {
+public type ListFiscalYearVariantsResponse record {
     CollectionofFiscalYearVariant d?;
 };
 
-public type Wrapper_2 record {
+public type ListFiscalYearToCountryMapsResponse record {
     CollectionofFiscalYearToCountryMap d?;
 };
 
-public type Wrapper_3 record {
+public type ListItDeclarationTimeBoundsResponse record {
     CollectionofItDeclarationTimeBound d?;
 };
 
@@ -153,7 +153,7 @@ public type ListFiscalYearVariantsQueries record {
     ("createdBy"|"createdDateTime"|"description"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListDeclarationTypesResponse record {
     CollectionofDeclarationType d?;
 };
 

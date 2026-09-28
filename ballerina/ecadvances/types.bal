@@ -95,7 +95,7 @@ public type ListAdvancesAccumulationsQueries record {
     ("accumulatedAmount"|"advanceType"|"createdBy"|"createdDate"|"createdDateTime"|"currency"|"currencyGO"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId"|"numberOfOccurances"|"periodEndDate"|"periodStartDate"|"remainingEligibleAmount"|"remainingNumberOfOccurances"|"userSysId")[] \$select?;
 };
 
-public type Wrapper_1 record {
+public type ListAdvancesEligibilitysResponse record {
     CollectionofAdvancesEligibility d?;
 };
 
@@ -103,7 +103,7 @@ public type CollectionofAdvancesAccumulation record {
     AdvancesAccumulation[] results?;
 };
 
-public type Wrapper_2 record {
+public type ListAdvancesAccumulationsResponse record {
     CollectionofAdvancesAccumulation d?;
 };
 
@@ -111,7 +111,7 @@ public type AdvancesAccumulation record {
     string externalCode?;
 };
 
-public type Wrapper_3 record {
+public type ListAdvancesResponse record {
     CollectionofAdvance d?;
 };
 
@@ -159,7 +159,7 @@ public type ConnectionConfig record {|
     boolean laxDataBinding = true;
 |};
 
-public type Wrapper record {
+public type ListAdvancesInstallmentssResponse record {
     CollectionofAdvancesInstallments d?;
 };
 

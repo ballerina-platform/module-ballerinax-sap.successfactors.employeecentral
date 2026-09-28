@@ -209,7 +209,7 @@ public type CollectionofAllowance record {
     Allowance[] results?;
 };
 
-public type Wrapper record {
+public type ListEmployeeTimeSheetsResponse record {
     CollectionofEmployeeTimeSheet d?;
 };
 
@@ -309,11 +309,11 @@ public type CollectionofTimeRecording record {
     TimeRecording[] results?;
 };
 
-public type Wrapper_11 record {
+public type ListTimeRecordingsResponse record {
     CollectionofTimeRecording d?;
 };
 
-public type Wrapper_12 record {
+public type ListAllowancesResponse record {
     CollectionofAllowance d?;
 };
 
@@ -329,7 +329,7 @@ public type CollectionofEmployeeTimeValuationResult record {
     EmployeeTimeValuationResult[] results?;
 };
 
-public type Wrapper_10 record {
+public type ListExternalTimeSegmentsResponse record {
     CollectionofExternalTimeSegment d?;
 };
 
@@ -447,7 +447,7 @@ public type AllowanceRecording record {
     string externalCode?;
 };
 
-public type Wrapper_8 record {
+public type ListAllowanceRecordingsResponse record {
     CollectionofAllowanceRecording d?;
 };
 
@@ -459,7 +459,7 @@ public type CollectionofAvailableAllowanceType record {
     AvailableAllowance[] results?;
 };
 
-public type Wrapper_9 record {
+public type ListAvailableAllowanceTypesResponse record {
     CollectionofAvailableAllowanceType d?;
 };
 
@@ -475,11 +475,11 @@ public type GetExternalTimeRecordQueries record {
     ("createdBy"|"createdDateTime"|"date"|"deleteExternalTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"status"|"userId")[] \$select?;
 };
 
-public type Wrapper_4 record {
+public type ListExternalTimeDataResponse record {
     CollectionofExternalTimeData d?;
 };
 
-public type Wrapper_5 record {
+public type ListDataReplicationProxiesResponse record {
     CollectionofDataReplicationProxy d?;
 };
 
@@ -494,11 +494,11 @@ public type ExternalTimeSegment record {
     string externalCode?;
 };
 
-public type Wrapper_6 record {
+public type ListEmployeeTimeSheetEntriesResponse record {
     CollectionofEmployeeTimeSheetEntry d?;
 };
 
-public type Wrapper_7 record {
+public type ListEmployeeTimeValuationResultsResponse record {
     CollectionofEmployeeTimeValuationResult d?;
 };
 
@@ -522,7 +522,7 @@ public type ListEmployeeTimeSheetsQueries record {
     ("absencesExist"|"approvalStatus"|"comment"|"createdBy"|"createdDateTime"|"cust_hashstring"|"cust_test"|"editable"|"endDate"|"entityUUID"|"externalCode"|"externalTimesExist"|"fullWorkscheduleCovered"|"generatedEntriesExist"|"lastModifiedBy"|"lastModifiedDateTime"|"manualEntriesExist"|"mdfSystemRecordStatus"|"period"|"plannedHoursAndMinutes"|"plannedWorkingTime"|"plannedWorkingTimeInDays"|"recordedHoursAndMinutes"|"recordedWorkingTime"|"recordedWorkingTimeInDays"|"replacedBy"|"replaces"|"singleApprovalRecordsOnly"|"singleRecordApprovalMissing"|"startDate"|"timeRecordingMethod"|"timeRecordingStorage"|"timeSheetHash"|"userId"|"workflowAction"|"workflowRequestId"|"workingTimeAccount"|"workingTimeAccountHoursAndMinutes")[] \$select?;
 };
 
-public type Wrapper_1 record {
+public type ListExternalAllowancesResponse record {
     CollectionofExternalAllowance d?;
 };
 
@@ -532,11 +532,11 @@ public type GetExternalTimeDataQueries record {
     ("category"|"correctionScenario"|"costCenter"|"createdBy"|"createdDateTime"|"deleteExternalTime"|"endDate"|"endTime"|"externalCode"|"hours"|"lastModifiedBy"|"lastModifiedDateTime"|"logicalDate"|"mdfSystemRecordStatus"|"startDate"|"startTime"|"status"|"timeType"|"userId")[] \$select?;
 };
 
-public type Wrapper_2 record {
+public type ListTimeCollectorsResponse record {
     CollectionofTimeCollector d?;
 };
 
-public type Wrapper_3 record {
+public type ListExternalTimeRecordsResponse record {
     CollectionofExternalTimeRecord d?;
 };
 

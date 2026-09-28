@@ -42,7 +42,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3KENs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3KENsQueries queries) returns Wrapper|error {
+    remote isolated function listPaymentInformationDetailV3KENs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3KENsQueries queries) returns ListPaymentInformationDetailV3KENsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3KEN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -114,7 +114,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ISRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ISRsQueries queries) returns Wrapper_1|error {
+    remote isolated function listPaymentInformationDetailV3ISRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ISRsQueries queries) returns ListPaymentInformationDetailV3ISRsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ISR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -186,7 +186,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3s(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3sQueries queries) returns Wrapper_2|error {
+    remote isolated function listPaymentInformationDetailV3s(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3sQueries queries) returns ListPaymentInformationDetailV3sResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -255,7 +255,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ARGs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ARGsQueries queries) returns Wrapper_3|error {
+    remote isolated function listPaymentInformationDetailV3ARGs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ARGsQueries queries) returns ListPaymentInformationDetailV3ARGsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ARG`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -327,7 +327,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentMethodV3s(map<string|string[]> headers = {}, *ListPaymentMethodV3sQueries queries) returns Wrapper_4|error {
+    remote isolated function listPaymentMethodV3s(map<string|string[]> headers = {}, *ListPaymentMethodV3sQueries queries) returns ListPaymentMethodV3sResponse|error {
         string resourcePath = string `/PaymentMethodV3`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -390,7 +390,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listBanks(map<string|string[]> headers = {}, *ListBanksQueries queries) returns Wrapper_5|error {
+    remote isolated function listBanks(map<string|string[]> headers = {}, *ListBanksQueries queries) returns ListBanksResponse|error {
         string resourcePath = string `/Bank`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -453,7 +453,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listCustomPayTypeAssignments(map<string|string[]> headers = {}, *ListCustomPayTypeAssignmentsQueries queries) returns Wrapper_6|error {
+    remote isolated function listCustomPayTypeAssignments(map<string|string[]> headers = {}, *ListCustomPayTypeAssignmentsQueries queries) returns ListCustomPayTypeAssignmentsResponse|error {
         string resourcePath = string `/CustomPayTypeAssignment`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -519,7 +519,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listCustomPayTypes(map<string|string[]> headers = {}, *ListCustomPayTypesQueries queries) returns Wrapper_7|error {
+    remote isolated function listCustomPayTypes(map<string|string[]> headers = {}, *ListCustomPayTypesQueries queries) returns ListCustomPayTypesResponse|error {
         string resourcePath = string `/CustomPayType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -582,7 +582,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3NGAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NGAsQueries queries) returns Wrapper_8|error {
+    remote isolated function listPaymentInformationDetailV3NGAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NGAsQueries queries) returns ListPaymentInformationDetailV3NGAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3NGA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -654,7 +654,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3CZEs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3CZEsQueries queries) returns Wrapper_9|error {
+    remote isolated function listPaymentInformationDetailV3CZEs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3CZEsQueries queries) returns ListPaymentInformationDetailV3CZEsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3CZE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -726,7 +726,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationV3s(map<string|string[]> headers = {}, *ListPaymentInformationV3sQueries queries) returns Wrapper_10|error {
+    remote isolated function listPaymentInformationV3s(map<string|string[]> headers = {}, *ListPaymentInformationV3sQueries queries) returns ListPaymentInformationV3sResponse|error {
         string resourcePath = string `/PaymentInformationV3`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -792,7 +792,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3COLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3COLsQueries queries) returns Wrapper_11|error {
+    remote isolated function listPaymentInformationDetailV3COLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3COLsQueries queries) returns ListPaymentInformationDetailV3COLsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3COL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -864,7 +864,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3VENs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3VENsQueries queries) returns Wrapper_12|error {
+    remote isolated function listPaymentInformationDetailV3VENs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3VENsQueries queries) returns ListPaymentInformationDetailV3VENsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3VEN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -936,7 +936,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3NZLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NZLsQueries queries) returns Wrapper_13|error {
+    remote isolated function listPaymentInformationDetailV3NZLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NZLsQueries queries) returns ListPaymentInformationDetailV3NZLsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3NZL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1008,7 +1008,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3USAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3USAsQueries queries) returns Wrapper_14|error {
+    remote isolated function listPaymentInformationDetailV3USAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3USAsQueries queries) returns ListPaymentInformationDetailV3USAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3USA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1080,7 +1080,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ECUs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ECUsQueries queries) returns Wrapper_15|error {
+    remote isolated function listPaymentInformationDetailV3ECUs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ECUsQueries queries) returns ListPaymentInformationDetailV3ECUsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ECU`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1152,7 +1152,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3GBRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3GBRsQueries queries) returns Wrapper_16|error {
+    remote isolated function listPaymentInformationDetailV3GBRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3GBRsQueries queries) returns ListPaymentInformationDetailV3GBRsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3GBR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1224,7 +1224,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3FRAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3FRAsQueries queries) returns Wrapper_17|error {
+    remote isolated function listPaymentInformationDetailV3FRAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3FRAsQueries queries) returns ListPaymentInformationDetailV3FRAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3FRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1296,7 +1296,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentMethodAssignmentV3s(map<string|string[]> headers = {}, *ListPaymentMethodAssignmentV3sQueries queries) returns Wrapper_18|error {
+    remote isolated function listPaymentMethodAssignmentV3s(map<string|string[]> headers = {}, *ListPaymentMethodAssignmentV3sQueries queries) returns ListPaymentMethodAssignmentV3sResponse|error {
         string resourcePath = string `/PaymentMethodAssignmentV3`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1362,7 +1362,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3JPNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3JPNsQueries queries) returns Wrapper_19|error {
+    remote isolated function listPaymentInformationDetailV3JPNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3JPNsQueries queries) returns ListPaymentInformationDetailV3JPNsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3JPN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1434,7 +1434,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ZAFs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ZAFsQueries queries) returns Wrapper_20|error {
+    remote isolated function listPaymentInformationDetailV3ZAFs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ZAFsQueries queries) returns ListPaymentInformationDetailV3ZAFsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ZAF`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1506,7 +1506,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ITAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ITAsQueries queries) returns Wrapper_21|error {
+    remote isolated function listPaymentInformationDetailV3ITAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ITAsQueries queries) returns ListPaymentInformationDetailV3ITAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ITA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1578,7 +1578,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3MEXs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MEXsQueries queries) returns Wrapper_22|error {
+    remote isolated function listPaymentInformationDetailV3MEXs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MEXsQueries queries) returns ListPaymentInformationDetailV3MEXsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3MEX`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1650,7 +1650,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ESPs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ESPsQueries queries) returns Wrapper_23|error {
+    remote isolated function listPaymentInformationDetailV3ESPs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ESPsQueries queries) returns ListPaymentInformationDetailV3ESPsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ESP`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1722,7 +1722,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3BRAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BRAsQueries queries) returns Wrapper_24|error {
+    remote isolated function listPaymentInformationDetailV3BRAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BRAsQueries queries) returns ListPaymentInformationDetailV3BRAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3BRA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1794,7 +1794,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3CHLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3CHLsQueries queries) returns Wrapper_25|error {
+    remote isolated function listPaymentInformationDetailV3CHLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3CHLsQueries queries) returns ListPaymentInformationDetailV3CHLsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3CHL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1866,7 +1866,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3BLRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BLRsQueries queries) returns Wrapper_26|error {
+    remote isolated function listPaymentInformationDetailV3BLRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BLRsQueries queries) returns ListPaymentInformationDetailV3BLRsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3BLR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -1938,7 +1938,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3IRQs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3IRQsQueries queries) returns Wrapper_27|error {
+    remote isolated function listPaymentInformationDetailV3IRQs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3IRQsQueries queries) returns ListPaymentInformationDetailV3IRQsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3IRQ`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2010,7 +2010,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3MMRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MMRsQueries queries) returns Wrapper_28|error {
+    remote isolated function listPaymentInformationDetailV3MMRs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MMRsQueries queries) returns ListPaymentInformationDetailV3MMRsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3MMR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2082,7 +2082,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3MWIs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MWIsQueries queries) returns Wrapper_29|error {
+    remote isolated function listPaymentInformationDetailV3MWIs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MWIsQueries queries) returns ListPaymentInformationDetailV3MWIsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3MWI`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2154,7 +2154,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3NAMs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NAMsQueries queries) returns Wrapper_30|error {
+    remote isolated function listPaymentInformationDetailV3NAMs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3NAMsQueries queries) returns ListPaymentInformationDetailV3NAMsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3NAM`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2226,7 +2226,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3PERs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3PERsQueries queries) returns Wrapper_31|error {
+    remote isolated function listPaymentInformationDetailV3PERs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3PERsQueries queries) returns ListPaymentInformationDetailV3PERsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3PER`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2298,7 +2298,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3ZWEs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ZWEsQueries queries) returns Wrapper_32|error {
+    remote isolated function listPaymentInformationDetailV3ZWEs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3ZWEsQueries queries) returns ListPaymentInformationDetailV3ZWEsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3ZWE`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2370,7 +2370,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3SVNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SVNsQueries queries) returns Wrapper_33|error {
+    remote isolated function listPaymentInformationDetailV3SVNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SVNsQueries queries) returns ListPaymentInformationDetailV3SVNsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3SVN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2442,7 +2442,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3MKDs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MKDsQueries queries) returns Wrapper_34|error {
+    remote isolated function listPaymentInformationDetailV3MKDs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MKDsQueries queries) returns ListPaymentInformationDetailV3MKDsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3MKD`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2514,7 +2514,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3MOZs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MOZsQueries queries) returns Wrapper_35|error {
+    remote isolated function listPaymentInformationDetailV3MOZs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3MOZsQueries queries) returns ListPaymentInformationDetailV3MOZsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3MOZ`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2586,7 +2586,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3GHAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3GHAsQueries queries) returns Wrapper_36|error {
+    remote isolated function listPaymentInformationDetailV3GHAs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3GHAsQueries queries) returns ListPaymentInformationDetailV3GHAsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3GHA`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2658,7 +2658,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3SVKs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SVKsQueries queries) returns Wrapper_37|error {
+    remote isolated function listPaymentInformationDetailV3SVKs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SVKsQueries queries) returns ListPaymentInformationDetailV3SVKsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3SVK`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2730,7 +2730,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3TUNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3TUNsQueries queries) returns Wrapper_38|error {
+    remote isolated function listPaymentInformationDetailV3TUNs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3TUNsQueries queries) returns ListPaymentInformationDetailV3TUNsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3TUN`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2802,7 +2802,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3SURs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SURsQueries queries) returns Wrapper_39|error {
+    remote isolated function listPaymentInformationDetailV3SURs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3SURsQueries queries) returns ListPaymentInformationDetailV3SURsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3SUR`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2874,7 +2874,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3PRYs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3PRYsQueries queries) returns Wrapper_40|error {
+    remote isolated function listPaymentInformationDetailV3PRYs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3PRYsQueries queries) returns ListPaymentInformationDetailV3PRYsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3PRY`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -2946,7 +2946,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listPaymentInformationDetailV3BOLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BOLsQueries queries) returns Wrapper_41|error {
+    remote isolated function listPaymentInformationDetailV3BOLs(map<string|string[]> headers = {}, *ListPaymentInformationDetailV3BOLsQueries queries) returns ListPaymentInformationDetailV3BOLsResponse|error {
         string resourcePath = string `/PaymentInformationDetailV3BOL`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

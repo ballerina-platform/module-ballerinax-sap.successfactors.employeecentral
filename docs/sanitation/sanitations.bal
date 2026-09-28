@@ -70,6 +70,18 @@ type Post record {
     json responses?;
 };
 
+# Swagger 2.0 body parameters (used for PUT/PATCH request payloads) are carried in `parameters`,
+# not `requestBody` (an OpenAPI 3 concept) - reuse the `Post` shape for PUT/PATCH/DELETE since the
+# fields we care about (operationId, parameters, responses) are identical.
+type Method record {
+    string operationId?;
+    string summary?;
+    string description?;
+    string[] tags?;
+    ParametersItem[] parameters?;
+    json responses?;
+};
+
 type Parameter record {
     string name?;
     string 'in?;
@@ -83,6 +95,9 @@ type Path record {
     Parameter[] parameters?;
     Get get?;
     Post post?;
+    Method put?;
+    Method patch?;
+    Method delete?;
 };
 
 type ResponseCode record {
@@ -194,36 +209,70 @@ function sanitizeResponseSchemaNames(string specPath) returns error? {
     Specification spec = check openAPISpec.cloneWithType(Specification);
 
     map<Path> paths = spec.paths;
-    foreach var [_, value] in paths.entries() {
-        if value.get != () {
-            Get getPath = value.get ?: {};
-            json? responses = getPath?.responses;
-            if responses is () {
-                continue;
-            }
-            json|error r200 = responses.'200;
-            json response200 = r200 is json ? r200 : {};
-            json|error descField = response200.description;
-            string desc = descField is string ? descField : "";
-            if desc == "Retrieved entities" {
-                // Swagger 2.0 inline schema - update title via properties
-                json|error schemaField = response200.schema;
-                json schema = schemaField is json ? schemaField : {};
-                json|error propsField = schema.properties;
-                json props = propsField is json ? propsField : {};
-                json|error dField = props.d;
-                json dProp = dField is json ? dField : {};
-                json|error titleField = dProp.title;
-                string title = (titleField is string ? titleField : "").trim();
-                if title.startsWith("Collection of") {
-                    title = "CollectionOf" + title.substring(14);
-                }
-                if title.endsWith("Type") {
-                    title = title.substring(0, title.length() - 4);
-                }
-            }
-        }
+    foreach var [_, path] in paths.entries() {
+        check retitleOperation(path.get?.operationId, path.get?.responses, path.get?.parameters);
+        check retitleOperation(path.post?.operationId, path.post?.responses, path.post?.parameters);
+        check retitleOperation(path.put?.operationId, path.put?.responses, path.put?.parameters);
+        check retitleOperation(path.patch?.operationId, path.patch?.responses, path.patch?.parameters);
+        check retitleOperation(path.delete?.operationId, path.delete?.responses, path.delete?.parameters);
     }
 
     check io:fileWriteJson(specPath, spec.toJson());
+}
+
+// SuccessFactors' OData v2 spec wraps every entity in a `{"d": ...}` envelope, both for responses
+// and for body parameters. Swagger 2.0 either leaves that envelope schema untitled (bal openapi then
+// invents a meaningless "Wrapper"/"Wrapper_N" name) or copies the entity's own human-readable display
+// name onto it verbatim (e.g. "Time Account Posting Rule"), which collides with the entity's own
+// generated type name and forces bal openapi to fall back to an escaped-space identifier. Giving the
+// envelope a name derived from the operationId is always meaningful and can never collide with the
+// entity type it wraps.
+function retitleOperation(string? operationId, json? responses, ParametersItem[]? parameters) returns error? {
+    string? opId = operationId;
+    if opId is () {
+        return;
+    }
+
+    if responses is map<json> {
+        foreach var [code, response] in responses.entries() {
+            if code == "default" {
+                continue;
+            }
+            check retitleEnvelope(response, "schema", capitalize(opId) + "Response");
+        }
+    }
+
+    foreach ParametersItem parameterItem in parameters ?: [] {
+        if parameterItem.'in == "body" {
+            Schema? schema = parameterItem.schema;
+            json? properties = schema?.properties;
+            if schema is Schema && properties is map<json> && properties.hasKey("d") {
+                schema.title = capitalize(opId) + "Payload";
+            }
+        }
+    }
+}
+
+function retitleEnvelope(json response, string schemaField, string newTitle) returns error? {
+    if response !is map<json> {
+        return;
+    }
+    json? schema = response[schemaField];
+    if schema is map<json> {
+        retitleEnvelopeSchema(schema, newTitle);
+    }
+}
+
+function retitleEnvelopeSchema(map<json> schema, string newTitle) {
+    json? properties = schema["properties"];
+    if properties is map<json> && properties.hasKey("d") {
+        schema["title"] = newTitle;
+    }
+}
+
+function capitalize(string value) returns string {
+    if value == "" {
+        return value;
+    }
+    return value.substring(0, 1).toUpperAscii() + value.substring(1);
 }

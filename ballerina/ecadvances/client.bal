@@ -40,7 +40,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAdvancesInstallmentss(map<string|string[]> headers = {}, *ListAdvancesInstallmentssQueries queries) returns Wrapper|error {
+    remote isolated function listAdvancesInstallmentss(map<string|string[]> headers = {}, *ListAdvancesInstallmentssQueries queries) returns ListAdvancesInstallmentssResponse|error {
         string resourcePath = string `/AdvancesInstallments`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -67,7 +67,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAdvancesEligibilitys(map<string|string[]> headers = {}, *ListAdvancesEligibilitysQueries queries) returns Wrapper_1|error {
+    remote isolated function listAdvancesEligibilitys(map<string|string[]> headers = {}, *ListAdvancesEligibilitysQueries queries) returns ListAdvancesEligibilitysResponse|error {
         string resourcePath = string `/AdvancesEligibility`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -93,7 +93,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAdvancesAccumulations(map<string|string[]> headers = {}, *ListAdvancesAccumulationsQueries queries) returns Wrapper_2|error {
+    remote isolated function listAdvancesAccumulations(map<string|string[]> headers = {}, *ListAdvancesAccumulationsQueries queries) returns ListAdvancesAccumulationsResponse|error {
         string resourcePath = string `/AdvancesAccumulation`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -118,7 +118,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listAdvances(map<string|string[]> headers = {}, *ListAdvancesQueries queries) returns Wrapper_3|error {
+    remote isolated function listAdvances(map<string|string[]> headers = {}, *ListAdvancesQueries queries) returns ListAdvancesResponse|error {
         string resourcePath = string `/Advance`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

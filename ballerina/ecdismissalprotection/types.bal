@@ -39,7 +39,7 @@ public type ListEmployeeDismissalProtectionDetailsQueries record {
     ("EmployeeDismissalProtection_workerId"|"createdBy"|"createdDateTime"|"dismissalProtectionType"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"protectionEndDate"|"protectionStartDate")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListEmployeeDismissalProtectionDetailsResponse record {
     CollectionofEmployeeDismissalProtectionDetail d?;
 };
 
@@ -124,7 +124,7 @@ public type CollectionofEmployeeDismissalProtectionDetail record {
     EmployeeDismissalProtectionDetail[] results?;
 };
 
-public type Wrapper_1 record {
+public type ListEmployeeDismissalProtectionsResponse record {
     CollectionofEmployeeDismissalProtection d?;
 };
 

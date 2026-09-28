@@ -40,7 +40,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listDeclarationTypes(map<string|string[]> headers = {}, *ListDeclarationTypesQueries queries) returns Wrapper|error {
+    remote isolated function listDeclarationTypes(map<string|string[]> headers = {}, *ListDeclarationTypesQueries queries) returns ListDeclarationTypesResponse|error {
         string resourcePath = string `/DeclarationType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -65,7 +65,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listFiscalYearVariants(map<string|string[]> headers = {}, *ListFiscalYearVariantsQueries queries) returns Wrapper_1|error {
+    remote isolated function listFiscalYearVariants(map<string|string[]> headers = {}, *ListFiscalYearVariantsQueries queries) returns ListFiscalYearVariantsResponse|error {
         string resourcePath = string `/FiscalYearVariant`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -90,7 +90,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listFiscalYearToCountryMaps(map<string|string[]> headers = {}, *ListFiscalYearToCountryMapsQueries queries) returns Wrapper_2|error {
+    remote isolated function listFiscalYearToCountryMaps(map<string|string[]> headers = {}, *ListFiscalYearToCountryMapsQueries queries) returns ListFiscalYearToCountryMapsResponse|error {
         string resourcePath = string `/FiscalYearToCountryMap`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -115,7 +115,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listItDeclarationTimeBounds(map<string|string[]> headers = {}, *ListItDeclarationTimeBoundsQueries queries) returns Wrapper_3|error {
+    remote isolated function listItDeclarationTimeBounds(map<string|string[]> headers = {}, *ListItDeclarationTimeBoundsQueries queries) returns ListItDeclarationTimeBoundsResponse|error {
         string resourcePath = string `/ItDeclarationTimeBound`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -140,7 +140,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listItDeclInvestmentTypes(map<string|string[]> headers = {}, *ListItDeclInvestmentTypesQueries queries) returns Wrapper_4|error {
+    remote isolated function listItDeclInvestmentTypes(map<string|string[]> headers = {}, *ListItDeclInvestmentTypesQueries queries) returns ListItDeclInvestmentTypesResponse|error {
         string resourcePath = string `/ItDeclInvestmentType`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);
@@ -166,7 +166,7 @@ string serviceUrl = string `https://${hostname}:${port}/odata/v2`;
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - Retrieved entities 
-    remote isolated function listItDeclarations(map<string|string[]> headers = {}, *ListItDeclarationsQueries queries) returns Wrapper_5|error {
+    remote isolated function listItDeclarations(map<string|string[]> headers = {}, *ListItDeclarationsQueries queries) returns ListItDeclarationsResponse|error {
         string resourcePath = string `/ItDeclaration`;
         map<Encoding> queryParamEncoding = {"$orderby": {style: FORM, explode: false}, "$select": {style: FORM, explode: false}, "$expand": {style: FORM, explode: false}};
         resourcePath = resourcePath + check getPathForQueryParam(queries, queryParamEncoding);

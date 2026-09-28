@@ -96,7 +96,7 @@ public type SecondaryAssignments record {
     RelatedCollectionSFOData_SecondaryAssignmentsItem allSfProcesses?;
 };
 
-public type Wrapper_1 record {
+public type ListSecondaryAssignmentssResponse record {
     CollectionofSecondaryAssignments d?;
 };
 
@@ -116,11 +116,11 @@ public type CollectionofRightToReturn record {
     RightToReturn[] results?;
 };
 
-public type Wrapper_2 record {
+public type ListRightToReturnsResponse record {
     CollectionofRightToReturn d?;
 };
 
-public type Wrapper_3 record {
+public type ListEmpGlobalAssignmentsResponse record {
     CollectionofEmpGlobalAssignment d?;
 };
 
@@ -176,7 +176,7 @@ public type GetSecondaryAssignmentsQueries record {
     ("createdBy"|"createdDate"|"createdDateTime"|"effectiveEndDate"|"effectiveStartDate"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper record {
+public type ListSecondaryAssignmentsItemsResponse record {
     CollectionofSecondaryAssignmentsItem d?;
 };
 

@@ -208,7 +208,7 @@ public type PaymentMethodV3 record {
     RelatedCollectionSFOData_PaymentMethodAssignmentV3 toPaymentMethodAssignmentV3?;
 };
 
-public type Wrapper record {
+public type ListPaymentInformationDetailV3KENsResponse record {
     CollectionofPaymentInformationDetailV3KEN d?;
 };
 
@@ -230,7 +230,7 @@ public type CollectionofBank record {
     Bank[] results?;
 };
 
-public type Wrapper_19 record {
+public type ListPaymentInformationDetailV3JPNsResponse record {
     CollectionofPaymentInformationDetailV3JPN d?;
 };
 
@@ -256,11 +256,11 @@ public type ModifiedPaymentInformationDetailV3NAM record {
     PaymentInformationDetailV3NAM d?;
 };
 
-public type Wrapper_17 record {
+public type ListPaymentInformationDetailV3FRAsResponse record {
     CollectionofPaymentInformationDetailV3FRA d?;
 };
 
-public type Wrapper_18 record {
+public type ListPaymentMethodAssignmentV3sResponse record {
     CollectionofPaymentMethodAssignmentV3 d?;
 };
 
@@ -268,7 +268,7 @@ public type RelatedCollectionSFOData_PaymentMethodAssignmentV3 record {
     PaymentMethodAssignmentV3[] results?;
 };
 
-public type Wrapper_15 record {
+public type ListPaymentInformationDetailV3ECUsResponse record {
     CollectionofPaymentInformationDetailV3ECU d?;
 };
 
@@ -276,7 +276,7 @@ public type PaymentInformationDetailV3MEX record {
     PaymentInformationDetailV3MEX d?;
 };
 
-public type Wrapper_16 record {
+public type ListPaymentInformationDetailV3GBRsResponse record {
     CollectionofPaymentInformationDetailV3GBR d?;
 };
 
@@ -294,15 +294,15 @@ public type GetPaymentInformationDetailV3ARGQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_13 record {
+public type ListPaymentInformationDetailV3NZLsResponse record {
     CollectionofPaymentInformationDetailV3NZL d?;
 };
 
-public type Wrapper_14 record {
+public type ListPaymentInformationDetailV3USAsResponse record {
     CollectionofPaymentInformationDetailV3USA d?;
 };
 
-public type Wrapper_11 record {
+public type ListPaymentInformationDetailV3COLsResponse record {
     CollectionofPaymentInformationDetailV3COL d?;
 };
 
@@ -312,11 +312,11 @@ public type GetBankQueries record {
     ("bankBranch"|"bankCountry"|"bankName"|"businessIdentifierCode"|"city"|"createdBy"|"createdDateTime"|"effectiveStatus"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus"|"postalCode"|"routingNumber"|"street")[] \$select?;
 };
 
-public type Wrapper_12 record {
+public type ListPaymentInformationDetailV3VENsResponse record {
     CollectionofPaymentInformationDetailV3VEN d?;
 };
 
-public type Wrapper_10 record {
+public type ListPaymentInformationV3sResponse record {
     CollectionofPaymentInformationV3 d?;
 };
 
@@ -735,7 +735,7 @@ public type CreatedPaymentInformationDetailV3BRA record {
     PaymentInformationDetailV3BRA d?;
 };
 
-public type Wrapper_40 record {
+public type ListPaymentInformationDetailV3PRYsResponse record {
     CollectionofPaymentInformationDetailV3PRY d?;
 };
 
@@ -743,7 +743,7 @@ public type CreatedPaymentInformationDetailV3ZAF record {
     PaymentInformationDetailV3ZAF d?;
 };
 
-public type Wrapper_41 record {
+public type ListPaymentInformationDetailV3BOLsResponse record {
     CollectionofPaymentInformationDetailV3BOL d?;
 };
 
@@ -931,11 +931,11 @@ public type DeleteCustomPayTypeAssignmentHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_28 record {
+public type ListPaymentInformationDetailV3MMRsResponse record {
     CollectionofPaymentInformationDetailV3MMR d?;
 };
 
-public type Wrapper_29 record {
+public type ListPaymentInformationDetailV3MWIsResponse record {
     CollectionofPaymentInformationDetailV3MWI d?;
 };
 
@@ -957,11 +957,11 @@ public type ListPaymentInformationDetailV3ISRsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"branchName"|"branchNumberCode"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_26 record {
+public type ListPaymentInformationDetailV3BLRsResponse record {
     CollectionofPaymentInformationDetailV3BLR d?;
 };
 
-public type Wrapper_27 record {
+public type ListPaymentInformationDetailV3IRQsResponse record {
     CollectionofPaymentInformationDetailV3IRQ d?;
 };
 
@@ -969,7 +969,7 @@ public type CollectionofPaymentInformationDetailV3PRY record {
     PaymentInformationDetailV3PRY[] results?;
 };
 
-public type Wrapper_24 record {
+public type ListPaymentInformationDetailV3BRAsResponse record {
     CollectionofPaymentInformationDetailV3BRA d?;
 };
 
@@ -989,7 +989,7 @@ public type GetPaymentInformationDetailV3ESPQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"checkDigit"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_25 record {
+public type ListPaymentInformationDetailV3CHLsResponse record {
     CollectionofPaymentInformationDetailV3CHL d?;
 };
 
@@ -1011,11 +1011,11 @@ public type ListPaymentInformationDetailV3FRAsQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"checkDigit"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_22 record {
+public type ListPaymentInformationDetailV3MEXsResponse record {
     CollectionofPaymentInformationDetailV3MEX d?;
 };
 
-public type Wrapper_23 record {
+public type ListPaymentInformationDetailV3ESPsResponse record {
     CollectionofPaymentInformationDetailV3ESP d?;
 };
 
@@ -1023,11 +1023,11 @@ public type CollectionofPaymentInformationDetailV3CZE record {
     PaymentInformationDetailV3CZE[] results?;
 };
 
-public type Wrapper_20 record {
+public type ListPaymentInformationDetailV3ZAFsResponse record {
     CollectionofPaymentInformationDetailV3ZAF d?;
 };
 
-public type Wrapper_21 record {
+public type ListPaymentInformationDetailV3ITAsResponse record {
     CollectionofPaymentInformationDetailV3ITA d?;
 };
 
@@ -1161,19 +1161,19 @@ public type CollectionofPaymentInformationDetailV3ITA record {
     PaymentInformationDetailV3ITA[] results?;
 };
 
-public type Wrapper_39 record {
+public type ListPaymentInformationDetailV3SURsResponse record {
     CollectionofPaymentInformationDetailV3SUR d?;
 };
 
-public type Wrapper_37 record {
+public type ListPaymentInformationDetailV3SVKsResponse record {
     CollectionofPaymentInformationDetailV3SVK d?;
 };
 
-public type Wrapper_38 record {
+public type ListPaymentInformationDetailV3TUNsResponse record {
     CollectionofPaymentInformationDetailV3TUN d?;
 };
 
-public type Wrapper_35 record {
+public type ListPaymentInformationDetailV3MOZsResponse record {
     CollectionofPaymentInformationDetailV3MOZ d?;
 };
 
@@ -1181,11 +1181,11 @@ public type PaymentInformationDetailV3CHL record {
     PaymentInformationDetailV3CHL d?;
 };
 
-public type Wrapper_36 record {
+public type ListPaymentInformationDetailV3GHAsResponse record {
     CollectionofPaymentInformationDetailV3GHA d?;
 };
 
-public type Wrapper_33 record {
+public type ListPaymentInformationDetailV3SVNsResponse record {
     CollectionofPaymentInformationDetailV3SVN d?;
 };
 
@@ -1195,7 +1195,7 @@ public type DeletePaymentInformationDetailV3JPNHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_34 record {
+public type ListPaymentInformationDetailV3MKDsResponse record {
     CollectionofPaymentInformationDetailV3MKD d?;
 };
 
@@ -1205,15 +1205,15 @@ public type GetPaymentInformationDetailV3MKDQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDateTime"|"mdfSystemRecordStatus")[] \$select?;
 };
 
-public type Wrapper_31 record {
+public type ListPaymentInformationDetailV3PERsResponse record {
     CollectionofPaymentInformationDetailV3PER d?;
 };
 
-public type Wrapper_32 record {
+public type ListPaymentInformationDetailV3ZWEsResponse record {
     CollectionofPaymentInformationDetailV3ZWE d?;
 };
 
-public type Wrapper_30 record {
+public type ListPaymentInformationDetailV3NAMsResponse record {
     CollectionofPaymentInformationDetailV3NAM d?;
 };
 
@@ -1516,15 +1516,15 @@ public type DeletePaymentInformationDetailV3ESPHeaders record {
     string If\-Match?;
 };
 
-public type Wrapper_8 record {
+public type ListPaymentInformationDetailV3NGAsResponse record {
     CollectionofPaymentInformationDetailV3NGA d?;
 };
 
-public type Wrapper_9 record {
+public type ListPaymentInformationDetailV3CZEsResponse record {
     CollectionofPaymentInformationDetailV3CZE d?;
 };
 
-public type Wrapper_4 record {
+public type ListPaymentMethodV3sResponse record {
     CollectionofPaymentMethodV3 d?;
 };
 
@@ -1532,11 +1532,11 @@ public type CollectionofPaymentMethodAssignmentV3 record {
     PaymentMethodAssignmentV3[] results?;
 };
 
-public type Wrapper_5 record {
+public type ListBanksResponse record {
     CollectionofBank d?;
 };
 
-public type Wrapper_6 record {
+public type ListCustomPayTypeAssignmentsResponse record {
     CollectionofCustomPayTypeAssignment d?;
 };
 
@@ -1544,7 +1544,7 @@ public type CollectionofPaymentInformationDetailV3SUR record {
     PaymentInformationDetailV3SUR[] results?;
 };
 
-public type Wrapper_7 record {
+public type ListCustomPayTypesResponse record {
     CollectionofCustomPayType d?;
 };
 
@@ -1554,7 +1554,7 @@ public type GetPaymentInformationDetailV3JPNQueries record {
     ("PaymentInformationDetailV3_externalCode"|"PaymentInformationV3_effectiveStartDate"|"PaymentInformationV3_worker"|"accountType"|"createdBy"|"createdDate"|"createdDateTime"|"externalCode"|"lastModifiedBy"|"lastModifiedDate"|"lastModifiedDateTime"|"lastModifiedDateWithTZ"|"mdfSystemEffectiveEndDate"|"mdfSystemEffectiveStartDate"|"mdfSystemEntityId"|"mdfSystemObjectType"|"mdfSystemRecordId"|"mdfSystemRecordStatus"|"mdfSystemStatus"|"mdfSystemTransactionSequence"|"mdfSystemVersionId")[] \$select?;
 };
 
-public type Wrapper_1 record {
+public type ListPaymentInformationDetailV3ISRsResponse record {
     CollectionofPaymentInformationDetailV3ISR d?;
 };
 
@@ -1562,7 +1562,7 @@ public type ModifiedPaymentInformationDetailV3 record {
     PaymentInformationDetailV3 d?;
 };
 
-public type Wrapper_2 record {
+public type ListPaymentInformationDetailV3sResponse record {
     CollectionofPaymentInformationDetailV3 d?;
 };
 
@@ -1570,7 +1570,7 @@ public type CreatedPaymentInformationDetailV3MMR record {
     PaymentInformationDetailV3MMR d?;
 };
 
-public type Wrapper_3 record {
+public type ListPaymentInformationDetailV3ARGsResponse record {
     CollectionofPaymentInformationDetailV3ARG d?;
 };
 

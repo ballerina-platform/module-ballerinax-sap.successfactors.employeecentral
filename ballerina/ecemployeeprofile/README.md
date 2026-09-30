@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Employee Profile provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to maintain the general background information of an employee, including education and outside work experiences.
+WSO2 SAP SuccessFactors Employee Profile provides a way to interact with the [SAP SuccessFactors Employee Central Employee Profile API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to maintain the general background information of an employee, including education and outside work experiences.
 
 ### Key Features
 

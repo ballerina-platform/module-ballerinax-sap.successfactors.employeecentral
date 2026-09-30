@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Alternative Cost Distribution provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee cost distribution across multiple cost centers and organizational units.",
+  "description": "WSO2 SAP SuccessFactors Alternative Cost Distribution provides a way to interact with the [SAP SuccessFactors Employee Central Alternative Cost Distribution API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee cost distribution across multiple cost centers and organizational units.",
   "communication-scenario": "Employee Cost Distribution Management",
   "import-statement": "import ballerinax/sap.successfactors.ecalternativecostdistribution as ecaltcost;",
   "client-init": "ecaltcost:Client ecaltcostClient = check new (",

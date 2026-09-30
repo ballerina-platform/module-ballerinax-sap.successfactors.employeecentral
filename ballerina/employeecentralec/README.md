@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Employee Central Core provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service provides comprehensive access to core employee central functionalities and global employee information.
+WSO2 SAP SuccessFactors Employee Central Core provides a way to interact with the [SAP SuccessFactors Employee Central Core API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service provides comprehensive access to core employee central functionalities and global employee information.
 
 ### Key Features
 

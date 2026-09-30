@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Alternative Cost Distribution provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee cost distribution across multiple cost centers and organizational units.
+WSO2 SAP SuccessFactors Alternative Cost Distribution provides a way to interact with the [SAP SuccessFactors Employee Central Alternative Cost Distribution API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee cost distribution across multiple cost centers and organizational units.
 
 ### Key Features
 

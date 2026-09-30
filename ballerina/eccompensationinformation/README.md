@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Compensation Information provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee compensation data, salary information, and pay components.
+WSO2 SAP SuccessFactors Compensation Information provides a way to interact with the [SAP SuccessFactors Employee Central Compensation Information API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee compensation data, salary information, and pay components.
 
 ### Key Features
 

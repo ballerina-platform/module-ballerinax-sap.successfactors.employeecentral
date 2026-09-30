@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Workflow provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage workflow processes, approvals, and workflow-related operations for employee transactions.",
+  "description": "WSO2 SAP SuccessFactors Workflow provides a way to interact with the [SAP SuccessFactors Employee Central Workflow API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage workflow processes, approvals, and workflow-related operations for employee transactions.",
   "communication-scenario": "Employee Workflow Management",
   "import-statement": "import ballerinax/sap.successfactors.ecworkflow as ecwf;",
   "client-init": "ecwf:Client ecwfClient = check new (",

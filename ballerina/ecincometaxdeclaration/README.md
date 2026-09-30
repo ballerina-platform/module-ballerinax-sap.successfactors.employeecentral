@@ -4,7 +4,7 @@
 capital management solution that helps organizations manage their workforce effectively. It provides a unified platform
 for HR processes including employee data management, organizational structures, and employment lifecycle management.
 
-WSO2 SAP Successfactors Income Tax Declaration provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
+WSO2 SAP SuccessFactors Income Tax Declaration provides a way to interact with the [SAP SuccessFactors Employee Central Income Tax Declaration API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview).
 
 ### Key Features
 

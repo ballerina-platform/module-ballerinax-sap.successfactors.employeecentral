@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Payroll Time Sheets provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee time sheet data, working hours, and payroll-related time information.",
+  "description": "WSO2 SAP SuccessFactors Payroll Time Sheets provides a way to interact with the [SAP SuccessFactors Employee Central Payroll Time Sheets API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee time sheet data, working hours, and payroll-related time information.",
   "communication-scenario": "Employee Payroll Time Management",
   "import-statement": "import ballerinax/sap.successfactors.ecpayrolltimesheets as ecpayroll;",
   "client-init": "ecpayroll:Client ecpayrollClient = check new (",

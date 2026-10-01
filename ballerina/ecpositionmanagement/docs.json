@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Position Management provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage organizational positions, position hierarchies, and position-related information.",
+  "description": "WSO2 SAP SuccessFactors Position Management provides a way to interact with the [SAP SuccessFactors Employee Central Position Management API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage organizational positions, position hierarchies, and position-related information.",
   "communication-scenario": "Organizational Position Management",
   "import-statement": "import ballerinax/sap.successfactors.ecpositionmanagement as ecpos;",
   "client-init": "ecpos:Client ecposClient = check new (",

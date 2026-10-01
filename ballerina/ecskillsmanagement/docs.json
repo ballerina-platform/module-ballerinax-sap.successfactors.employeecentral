@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Skills Management provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee skills, competencies, job profiles, and skills-related assessments.",
+  "description": "WSO2 SAP SuccessFactors Skills Management provides a way to interact with the [SAP SuccessFactors Employee Central Skills Management API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to manage employee skills, competencies, job profiles, and skills-related assessments.",
   "communication-scenario": "Employee Skills and Competency Management",
   "import-statement": "import ballerinax/sap.successfactors.ecskillsmanagement as ecskills;",
   "client-init": "ecskills:Client ecskillsClient = check new (",

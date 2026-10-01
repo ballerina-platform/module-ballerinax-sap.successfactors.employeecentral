@@ -1,5 +1,5 @@
 {
-  "description": "WSO2 SAP Successfactors Master Data Replication provides a way to interact with the [SAP SuccessFactors Employee Central APIs](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to replicate and synchronize employee master data across different systems and maintain data consistency.",
+  "description": "WSO2 SAP SuccessFactors Master Data Replication provides a way to interact with the [SAP SuccessFactors Employee Central Master Data Replication API](https://api.sap.com/package/SuccessFactorsEmployeeCentral/overview). The service allows to replicate and synchronize employee master data across different systems and maintain data consistency.",
   "communication-scenario": "Employee Master Data Replication",
   "import-statement": "import ballerinax/sap.successfactors.ecmasterdatareplication as ecmdr;",
   "client-init": "ecmdr:Client ecmdrClient = check new (",

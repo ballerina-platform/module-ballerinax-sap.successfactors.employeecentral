@@ -25,7 +25,7 @@ pluginManagement {
 }
 
 plugins {
-    id "com.gradle.enterprise" version "3.2"
+    id "com.gradle.develocity" version "3.19.2"
 }
 
 rootProject.name = "module-ballerinax-sap.successfactors.employeecentral"
@@ -80,9 +80,9 @@ project(':employeecentral-ballerina:ecworkflow').projectDir = file("ballerina/ec
 project(':employeecentral-ballerina:employeecentralec').projectDir = file("ballerina/employeecentralec")
 project(':employeecentral-examples').projectDir = file("examples")
 
-gradleEnterprise {
+develocity {
     buildScan {
-        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-        termsOfServiceAgree = 'yes'
+        termsOfUseUrl = 'https://gradle.com/help/legal-terms-of-use'
+        termsOfUseAgree = 'yes'
     }
 }

@@ -17,11 +17,21 @@
  */
 
 import org.apache.tools.ant.taskdefs.condition.Os
+import org.gradle.process.ExecOperations
+
+import javax.inject.Inject
+
+abstract class ExecHelper {
+    @Inject
+    abstract ExecOperations getExecOperations()
+}
+
+def execHelper = project.objects.newInstance(ExecHelper)
 
 task test {
     doLast {
         try {
-            exec {
+            execHelper.execOperations.exec {
                 workingDir project.projectDir
                 println("Working dir: ${workingDir}")
                 if (Os.isFamily(Os.FAMILY_WINDOWS)) {
@@ -37,15 +47,15 @@ task test {
     }
 }
 
-task build {
+def examplesBuildConfig = {
     gradle.taskGraph.whenReady { graph ->
         if (graph.hasTask(":employeecentral-examples:test")) {
-            build.enabled = false
+            enabled = false
         }
     }
     doLast {
         try {
-            exec {
+            execHelper.execOperations.exec {
                 workingDir project.projectDir
                 println("Working dir: ${workingDir}")
                 if (Os.isFamily(Os.FAMILY_WINDOWS)) {
@@ -59,6 +69,12 @@ task build {
             throw e
         }
     }
+}
+
+if (tasks.findByName('build')) {
+    tasks.named('build', examplesBuildConfig)
+} else {
+    tasks.register('build', examplesBuildConfig)
 }
 
 test.dependsOn ":employeecentral-ballerina:build"

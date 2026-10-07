@@ -58,7 +58,7 @@ allprojects {
 task clean {
 }
 
-task build {
+def rootBuildConfig = {
     dependsOn(':employeecentral-sanitation:build')
     dependsOn(':employeecentral-ballerina:ecalternativecostdistribution:build')
     dependsOn(':employeecentral-ballerina:ecapprenticemanagement:build')
@@ -82,4 +82,10 @@ task build {
     dependsOn(':employeecentral-ballerina:ecpersonalinformation:build')
     dependsOn(':employeecentral-ballerina:ectimeoff:build')
     dependsOn(':employeecentral-examples:build')
+}
+
+if (tasks.findByName('build')) {
+    tasks.named('build', rootBuildConfig)
+} else {
+    tasks.register('build', rootBuildConfig)
 }
